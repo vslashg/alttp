@@ -17,13 +17,14 @@ entry:   .entry emu
          STA snes::inidisp
 
          CLC : XCE  ; switch to native mode
-         REP #$28
-         LDA #$0000
-         TCD
-         LDA #$01ff
-         TCS
-         SEP #$30
-         JSR $8901
+         REP #$28   ; BCD mode off; 16-bit accumulator
+
+         ; Zero page and stack offsets
+         LDA #$0000 : TCD
+         LDA #$01ff : TCS
+
+         SEP #$30   ; 8-bit accumulator
+         JSR music::initialize_apu
          JSR $87c0
          LDA #$81
          STA snes::nmitimen

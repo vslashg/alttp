@@ -1,4 +1,4 @@
-         .module apu
+         .module music
 
          ;; Copies data, starting at the 24-bit address stored at $00, to the
          ;; APU.  This address must point to the beginning of a ROM bank.
@@ -143,9 +143,24 @@ wait4:   CMP snes::apui00
          ; If length was non-zero, begin copying bytes
          BVS do_copy
 
+         ; Zero out APU registers and return
          STZ snes::apui00
          STZ snes::apui01
          STZ snes::apui02
          STZ snes::apui03
          PLP
+         RTS
+
+initialize_apu:
+         .entry m8
+         ; Store $198000 at address $00
+         LDA #$00 : STA $00
+         LDA #$80 : STA $01
+         LDA #$19 : STA $02
+
+         ; Call loaddata routine with interrupts disabled
+         SEI
+         JSR loaddata
+         CLI
+
          RTS
