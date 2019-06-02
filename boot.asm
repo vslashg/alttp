@@ -26,7 +26,7 @@ entry: {
 
          SEP #$30   ; 8-bit accumulator
          JSR music::initialize_apu
-         JSR $87c0
+         JSR init::clear_memory
          LDA #$81
          STA snes::nmitimen
 label1:  LDA $12
