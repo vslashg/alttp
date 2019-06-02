@@ -20,6 +20,7 @@
 
          .org $008888
 loaddata:
+       {
          .entry native
 
          ; Push status register, and set data and address registers to 16-bit
@@ -137,9 +138,9 @@ next_block:
          ; write command to apui00, and wait until you can read it back.
          ; (Notably, CMP command leaves the v register alone.)
          STA snes::apui00
+
 wait4:   CMP snes::apui00
          BNE wait4
-
          ; If length was non-zero, begin copying bytes
          BVS do_copy
 
@@ -150,8 +151,10 @@ wait4:   CMP snes::apui00
          STZ snes::apui03
          PLP
          RTS
+       }
 
 initialize_apu:
+       {
          .entry m8
          ; Store $198000 at address $00
          LDA #$00 : STA $00
@@ -164,3 +167,4 @@ initialize_apu:
          CLI
 
          RTS
+       }

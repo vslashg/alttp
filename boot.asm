@@ -1,7 +1,8 @@
          .module boot
 
          .org $008000
-entry:   .entry emu
+entry: {
+         .entry emu
 
          SEI  ; disable interrupts
 
@@ -49,3 +50,4 @@ label3:  INC $1a
 label4:  JSR $85fc
          STZ $12
          BRA label1
+       }
