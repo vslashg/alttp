@@ -156,10 +156,14 @@ wait4:   CMP snes::apui00
 initialize_apu:
        {
          .entry m8
+
          ; Store $198000 at address $00
-         LDA #$00 : STA $00
-         LDA #$80 : STA $01
-         LDA #$19 : STA $02
+         ;
+         ; This is the starting address for music data to provide to loaddata.
+         target .equ $198000
+         LDA #<target : STA $00
+         LDA #>target : STA $01
+         LDA #^target : STA $02
 
          ; Call loaddata routine with interrupts disabled
          SEI

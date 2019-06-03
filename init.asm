@@ -2,7 +2,7 @@
 
          .org $0087c0
 
-clear_memory:
+clear_memory_1:
        {
          .entry m8x8
          REP #$30  ; set all registers 16-bit wide
@@ -70,5 +70,51 @@ skip_clear3:
          LDA #$80
          STA $13
          INC $15
+         RTS
+       }
+
+         ; Writes $f0 to every fourth byte in RAM from $0801 or $09d
+         .org $00841e
+clear_memory_2:
+       {
+         .entry m8x8
+         LDX #$60
+label1:  LDA #$f0
+         STA $0801, X
+         STA $0805, X
+         STA $0809, X
+         STA $080d, X
+         STA $0811, X
+         STA $0815, X
+         STA $0819, X
+         STA $081d, X
+         STA $0881, X
+         STA $0885, X
+         STA $0889, X
+         STA $088d, X
+         STA $0891, X
+         STA $0895, X
+         STA $0899, X
+         STA $089d, X
+         STA $0901, X
+         STA $0905, X
+         STA $0909, X
+         STA $090d, X
+         STA $0911, X
+         STA $0915, X
+         STA $0919, X
+         STA $091d, X
+         STA $0981, X
+         STA $0985, X
+         STA $0989, X
+         STA $098d, X
+         STA $0991, X
+         STA $0995, X
+         STA $0999, X
+         STA $099d, X
+         TXA
+         SUB #$20
+         TAX
+         BPL label1
          RTS
        }
