@@ -61,7 +61,7 @@ target_bank_byte_table:
        ;; long unconditional jump to that address.
        ;;
        ;; jump_to_y is intended to be invoked with a JSL; each point this
-       ;; tramoline will jump to is an ordinary function, and each will invoke
+       ;; trampoline will jump to is an ordinary function, and each will invoke
        ;; RTL to return to the original caller.
 jump_to_y:
        {
