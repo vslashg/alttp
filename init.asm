@@ -73,7 +73,7 @@ skip_clear3:
          RTS
        }
 
-         ; Writes $f0 to every fourth byte in RAM from $0801 or $09d
+         ; Writes $f0 to every fourth byte in RAM from $0801 to $099d
          .org $00841e
 clear_memory_2:
        {
