@@ -46,7 +46,7 @@ label2:  LDA $f6
          BNE label4
 label3:  INC $1a
          JSR init::clear_memory_2
-         JSL $0080b5
+         JSL @jump_table::jump_to_y
 label4:  JSR $85fc
          STZ $12
          BRA label1
