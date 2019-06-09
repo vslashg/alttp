@@ -59,60 +59,64 @@ label4:  JSR per_tick
 per_tick:
        {
          .entry m8x8
+
+         ;; Y is the loop variable, starts at $1c
          LDY #$1c
-label1:  TYA
-         ASL
-         ASL
-         TAX
+
+         ;; Copy the 128 bytes of memory $0a20-$0a9f
+         ;; into the 32 byte range $0a00-$0a1f.
+         ;;
+         ;; Presumably the bytes at $0a20-$0a9f contain values between
+         ;; zero and three.  These values are bit-packed together when copied.
+         ;; That is, $0a20 is put into the low two bits of $0a00,
+         ;; $0a21 is put into the next two lowest bits of $0a00,
+         ;; and so on.
+         ;;
+         ;; Performed as an unrolled loop.
+         ;;
+         ;; TODO: what is stored here?
+compress:
+         ; X = Y * 4
+         TYA : ASL : ASL : TAX
+
          LDA $0a23, X
-         ASL
-         ASL
+         ASL : ASL
          ORA $0a22, X
-         ASL
-         ASL
+         ASL : ASL
          ORA $0a21, X
-         ASL
-         ASL
+         ASL : ASL
          ORA $0a20, X
          STA $0a00, Y
+
          LDA $0a27, X
-         ASL
-         ASL
+         ASL : ASL
          ORA $0a26, X
-         ASL
-         ASL
+         ASL : ASL
          ORA $0a25, X
-         ASL
-         ASL
+         ASL : ASL
          ORA $0a24, X
          STA $0a01, Y
+
          LDA $0a2b, X
-         ASL
-         ASL
+         ASL : ASL
          ORA $0a2a, X
-         ASL
-         ASL
+         ASL : ASL
          ORA $0a29, X
-         ASL
-         ASL
+         ASL : ASL
          ORA $0a28, X
          STA $0a02, Y
+
          LDA $0a2f, X
-         ASL
-         ASL
+         ASL : ASL
          ORA $0a2e, X
-         ASL
-         ASL
+         ASL : ASL
          ORA $0a2d, X
-         ASL
-         ASL
+         ASL : ASL
          ORA $0a2c, X
          STA $0a03, Y
-         DEY
-         DEY
-         DEY
-         DEY
-         BPL label1
+
+         DEY : DEY : DEY : DEY
+         BPL compress
 
          REP #$31     ; 16-bit registers, and clear carry bit
          LDX $0100
