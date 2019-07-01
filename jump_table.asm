@@ -29,6 +29,35 @@ target_19 .equ $029ee3
 target_1a .equ $0ec29e
 target_1b .equ $028484
 
+.remote $0cc100 m8x8
+.remote $0ccc6c m8x8
+.remote $0ccf4a m8x8
+.remote $0cd35f m8x8
+.remote $0cd755 m8x8
+.remote $028046 m8x8
+.remote $02812e m8x8
+.remote $0286a4 m8x8
+.remote $0282c9 m8x8
+.remote $02a36c m8x8
+.remote $0282c9 m8x8
+.remote $02a36c m8x8
+.remote $029816 m8x8
+.remote $029833 m8x8
+.remote $00f800 m8x8
+.remote $02987d m8x8
+.remote $0299d2 m8x8
+.remote $0299f4 m8x8
+.remote $09f290 m8x8
+.remote $029b45 m8x8
+.remote $0ced21 m8x8
+.remote $029bf7 m8x8
+.remote $029d81 m8x8
+.remote $09f79c m8x8
+.remote $029dd3 m8x8
+.remote $029ee3 m8x8
+.remote $0ec29e m8x8
+.remote $028484 m8x8
+
 .org $008061
 target_low_byte_table:
          .db <target_00, <target_01, <target_02, <target_03

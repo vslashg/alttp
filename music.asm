@@ -19,8 +19,9 @@
          ;; https://wiki.superfamicom.org/transferring-data-from-rom-to-the-snes-apu
 
          .org $008888
-loaddata:
+
        {
+export loaddata:
          .entry native
 
          ; Push status register, and set data and address registers to 16-bit

@@ -1,5 +1,7 @@
          .module boot
 
+         .remote $00e5ef m16x8 m8x8
+
          .org $008000
 entry: {
          .entry emu
