@@ -1,4 +1,3 @@
-HACK m16x8 m8x8
 ; ERROR branching to $0cd755 with mode m8x8
 ;   /home/veloso/zelda.rom:0xcd77c: Argument size of opcode 0xa9 (LDA) depends on processor state, which is not known here
 ; ERROR branching to $720280 with mode m8x8
