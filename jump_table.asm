@@ -1,5 +1,7 @@
 .module jump_table
 
+.remote $008781 m8x8 noreturn
+
 target_00 .equ $0cc100
 target_01 .equ $0ccc6c
 target_02 .equ $0ccf4a
@@ -95,12 +97,88 @@ target_bank_byte_table:
 jump_to_y:
        {
          .entry m8x8
-         LDY $10
-         LDA target_low_byte_table, Y
-         STA $03
-         LDA target_high_byte_table, Y
-         STA $04
-         LDA target_bank_byte_table, Y
-         STA $05
-         JMP [$0003]
+         ldy $10
+         lda target_low_byte_table, Y
+         sta $03
+         lda target_high_byte_table, Y
+         sta $04
+         lda target_bank_byte_table, Y
+         sta $05
+         jmp [$0003]
+       }
+
+
+        ;; Uses A as an index into a jump table that appears inline in code.
+        ;; Usage is:
+        ;;   jsl @jump_table::jump_to_a noreturn
+        ;;   .dl @target_zero
+        ;;   .dl @target_one
+        ;;   .dl @target_two
+        ;; etc.
+        ;;
+        ;; Code execution continues at the Ath address put inline after the
+        ;; call.
+        ;;
+        ;; Code does not execute past the JSL call to this routine.  Instead,
+        ;; if subroutine foo calls subroutine bar, and bar calls jump_to_a,
+        ;; then the jump target is expected to exit with `RTL`.  At this point,
+        ;; execution return to subroutine *foo*.
+         .org $00879c
+jump_to_a:
+       {
+         .entry m8x8 noreturn
+
+         ;; store Y, to restore before call.
+         sty $05
+
+         ;; Pop the return address from the stack!
+
+         ; Store the lowest byte of the return address in $02
+         ply : sty $02
+
+         ; Switch to 16 bit registers, but clear the high byte of the
+         ; accumulator.  This is used as the index into the jump table.
+         rep #$30
+         and #$00ff
+
+         ; Triple the value in the accumulator, using $03-$04 as scratch space,
+         ; and store it in the (now 16 bit) Y register.
+         sta $03  ; $03 = A
+         asl      ; A *= 2
+         adc $03  ; A += $03
+         tay      ; Y = A
+
+         ; Pull the high 16 bytes of the return address from the stack, and
+         ; store it in $03-$04, so [$02] refers to the return address.
+         pla : sta $03
+
+         ; The call stack addresses used by 65816 instructions are actually one
+         ; off.  That is, JSL and JSR push the address _one less_ than the
+         ; desired return address.  (This is a hack to simplify the
+         ; implementation of RTS/RTL; these are one-byte instructions and the
+         ; decode pipeline thus wants to increment the PC by 1.)
+         ;
+         ; In any event, increment Y to account for this.
+         iny                        ; 0087af m16x16
+
+         ; [$02], Y now points to the proper three-byte jump target.  Copy it
+         ; into $00-$02.
+         ;
+         ; The following copies the $01 byte twice, but it's the fastest way.
+         lda [$02], Y
+         sta $00
+         iny
+         lda [$02], Y
+         sta $01
+
+         ; Reset status bits to m8x8, and restore the Y register to its initial
+         ; value.
+         sep #$30
+         ldy $05
+
+         ; Unconditionally branch to the address we stored in $00-$03.  Because
+         ; we have popped the return address of jump_to_a from the stack, this
+         ; subroutine "never returns".  When the method at [$0000] calls RTL,
+         ; it will return execution to our grand-caller.
+         jmp [$0000]
        }

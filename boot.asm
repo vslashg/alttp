@@ -1,59 +1,59 @@
          .module boot
 
-         .remote $00e5ef m16x8 m8x8
+         .remote $00e5ef m16x8 yields m8x8
 
          .org $008000
 entry: {
          .entry emu
 
-         SEI  ; disable interrupts
+         sei  ; disable interrupts
 
          ; initialize memory registers
-         STZ snes::nmitimen
-         STZ snes::hdmaen
-         STZ snes::mdmaen
-         STZ snes::apui00
-         STZ snes::apui01
-         STZ snes::apui02
-         STZ snes::apui03
-         LDA #$80
-         STA snes::inidisp
+         stz snes::nmitimen
+         stz snes::hdmaen
+         stz snes::mdmaen
+         stz snes::apui00
+         stz snes::apui01
+         stz snes::apui02
+         stz snes::apui03
+         lda #$80
+         sta snes::inidisp
 
-         CLC : XCE  ; switch to native mode
-         REP #$28   ; BCD mode off; 16-bit accumulator
+         clc : xce  ; switch to native mode
+         rep #$28   ; BCD mode off; 16-bit accumulator
 
          ; Zero page and stack offsets
-         LDA #$0000 : TCD
-         LDA #$01ff : TCS
+         lda #$0000 : tcd
+         lda #$01ff : tcs
 
-         SEP #$30   ; 8-bit accumulator
-         JSR music::initialize_apu
-         JSR init::clear_memory_1
-         LDA #$81
-         STA snes::nmitimen
+         sep #$30   ; 8-bit accumulator
+         jsr music::initialize_apu
+         jsr init::clear_memory_1
+         lda #$81
+         sta snes::nmitimen
 
 frame_wait:
-         LDA $12
-         BEQ frame_wait
-         CLI
-         BRA label3
+         lda $12
+         beq frame_wait
+         cli
+         bra label3
 entry2:  .entry m8x8
-         LDA $f6
-         AND #$20
-         BEQ label2
-         INC $0fd7
-label2:  LDA $f6
-         AND #$10
-         BNE label3
-         LDA $0fd7
-         AND #$01
-         BNE label4
-label3:  INC $1a
-         JSR init::clear_memory_2
-         JSL @jump_table::jump_to_y
-label4:  JSR per_tick
-         STZ $12
-         BRA frame_wait
+         lda $f6
+         and #$20
+         beq label2
+         inc $0fd7
+label2:  lda $f6
+         and #$10
+         bne label3
+         lda $0fd7
+         and #$01
+         bne label4
+label3:  inc $1a
+         jsr init::clear_memory_2
+         jsl @jump_table::jump_to_y
+label4:  jsr per_tick
+         stz $12
+         bra frame_wait
        }
 
 
@@ -63,7 +63,7 @@ per_tick:
          .entry m8x8
 
          ;; Y is the loop variable, starts at $1c
-         LDY #$1c
+         ldy #$1c
 
          ;; Copy the 128 bytes of memory $0a20-$0a9f
          ;; into the 32 byte range $0a00-$0a1f.
@@ -79,155 +79,155 @@ per_tick:
          ;; TODO: what is stored here?
 compress:
          ; X = Y * 4
-         TYA : ASL : ASL : TAX
+         tya : asl : asl : tax
 
-         LDA $0a23, X
-         ASL : ASL
-         ORA $0a22, X
-         ASL : ASL
-         ORA $0a21, X
-         ASL : ASL
-         ORA $0a20, X
-         STA $0a00, Y
+         lda $0a23, X
+         asl : asl
+         ora $0a22, X
+         asl : asl
+         ora $0a21, X
+         asl : asl
+         ora $0a20, X
+         sta $0a00, Y
 
-         LDA $0a27, X
-         ASL : ASL
-         ORA $0a26, X
-         ASL : ASL
-         ORA $0a25, X
-         ASL : ASL
-         ORA $0a24, X
-         STA $0a01, Y
+         lda $0a27, X
+         asl : asl
+         ora $0a26, X
+         asl : asl
+         ora $0a25, X
+         asl : asl
+         ora $0a24, X
+         sta $0a01, Y
 
-         LDA $0a2b, X
-         ASL : ASL
-         ORA $0a2a, X
-         ASL : ASL
-         ORA $0a29, X
-         ASL : ASL
-         ORA $0a28, X
-         STA $0a02, Y
+         lda $0a2b, X
+         asl : asl
+         ora $0a2a, X
+         asl : asl
+         ora $0a29, X
+         asl : asl
+         ora $0a28, X
+         sta $0a02, Y
 
-         LDA $0a2f, X
-         ASL : ASL
-         ORA $0a2e, X
-         ASL : ASL
-         ORA $0a2d, X
-         ASL : ASL
-         ORA $0a2c, X
-         STA $0a03, Y
+         lda $0a2f, X
+         asl : asl
+         ora $0a2e, X
+         asl : asl
+         ora $0a2d, X
+         asl : asl
+         ora $0a2c, X
+         sta $0a03, Y
 
-         DEY : DEY : DEY : DEY
-         BPL compress
+         dey : dey : dey : dey
+         bpl compress
 
-         REP #$31     ; 16-bit registers, and clear carry bit
-         LDX $0100
-         LDA $9396, X
-         STA $0acc
-         ADC #$0200
-         STA $0ace
-         LDA $95f4, X
-         STA $0ad0
-         ADD #$0200
-         STA $0ad2
-         LDX $0102
-         LDA $9852, X
-         STA $0ad4
-         LDX $0104
-         LDA $9852, X
-         STA $0ad6
+         rep #$31     ; 16-bit registers, and clear carry bit
+         ldx $0100
+         lda $9396, X
+         sta $0acc
+         adc #$0200
+         sta $0ace
+         lda $95f4, X
+         sta $0ad0
+         add #$0200
+         sta $0ad2
+         ldx $0102
+         lda $9852, X
+         sta $0ad4
+         ldx $0104
+         lda $9852, X
+         sta $0ad6
 
-         SEP #$10    ; 8-bit index register
-         LDX $0107
-         LDA $849c, X
-         STA $0ac0
-         ADD #$0180
-         STA $0ac2
-         LDX $0108
-         LDA $84ac, X
-         STA $0ac4
-         ADD #$00c0
-         STA $0ac6
-         LDA $0109
-         AND #$00f8
-         LSR
-         LSR
-         TAY
-         LDA $0109
-         ASL
-         TAX
-         LDA $84b2, X
-         STA $0ac8
-         CLC
-         TYX
-         ADC $85b2, X
-         STA $0aca
-         LDA $02c3
-         AND #$0003
-         ASL
-         TAX
-         LDA $8494, X
-         STA $0ad8
-         ADD #$0100
-         STA $0ada
-         LDA $7ec00d
-         DEC
-         STA $7ec00d
-         BNE label5
-         LDA #$0009
-         LDX $8c
-         CPX #$b5
-         BEQ label2
-         CPX #$bc
-         BNE label3
-label2:  LDA #$0017
-label3:  STA $7ec00d
-         LDA $7ec00f
-         ADD #$0400
-         CMP #$0c00
-         BNE label4
-         LDA #$0000
-label4:  STA $7ec00f
-         ADD #$a680
-         STA $0adc
-label5:  LDA $7ec013
-         DEC
-         STA $7ec013
-         BNE label7
-         LDA $7ec015
-         TAX
-         INX
-         INX
-         CPX #$0c
-         BNE label6
-         LDX #$00
-label6:  TXA
-         STA $7ec015
-         LDA $85d2, X
-         STA $7ec013
-         LDA #$b280
-         ADD $85de, X
-         STA $0ae0
-         ADD #$0060
-         STA $0ae2
-label7:  LDA $0ae8
-         ASL
-         ADC #$b940
-         STA $0aec
-         ADC #$0200
-         STA $0aee
-         LDA $0aea
-         ASL
-         ADC #$b940
-         STA $0af0
-         ADC #$0200
-         STA $0af2
-         LDA $0af4
-         ASL
-         ADC #$b540
-         STA $0af6
-         ADC #$0200
-         STA $0af8
-         SEP #$20   ; all registers 8-bit
-         RTS
+         sep #$10    ; 8-bit index register
+         ldx $0107
+         lda $849c, X
+         sta $0ac0
+         add #$0180
+         sta $0ac2
+         ldx $0108
+         lda $84ac, X
+         sta $0ac4
+         add #$00c0
+         sta $0ac6
+         lda $0109
+         and #$00f8
+         lsr
+         lsr
+         tay
+         lda $0109
+         asl
+         tax
+         lda $84b2, X
+         sta $0ac8
+         clc
+         tyx
+         adc $85b2, X
+         sta $0aca
+         lda $02c3
+         and #$0003
+         asl
+         tax
+         lda $8494, X
+         sta $0ad8
+         add #$0100
+         sta $0ada
+         lda $7ec00d
+         dec
+         sta $7ec00d
+         bne label5
+         lda #$0009
+         ldx $8c
+         cpx #$b5
+         beq label2
+         cpx #$bc
+         bne label3
+label2:  lda #$0017
+label3:  sta $7ec00d
+         lda $7ec00f
+         add #$0400
+         cmp #$0c00
+         bne label4
+         lda #$0000
+label4:  sta $7ec00f
+         add #$a680
+         sta $0adc
+label5:  lda $7ec013
+         dec
+         sta $7ec013
+         bne label7
+         lda $7ec015
+         tax
+         inx
+         inx
+         cpx #$0c
+         bne label6
+         ldx #$00
+label6:  txa
+         sta $7ec015
+         lda $85d2, X
+         sta $7ec013
+         lda #$b280
+         add $85de, X
+         sta $0ae0
+         add #$0060
+         sta $0ae2
+label7:  lda $0ae8
+         asl
+         adc #$b940
+         sta $0aec
+         adc #$0200
+         sta $0aee
+         lda $0aea
+         asl
+         adc #$b940
+         sta $0af0
+         adc #$0200
+         sta $0af2
+         lda $0af4
+         asl
+         adc #$b540
+         sta $0af6
+         adc #$0200
+         sta $0af8
+         sep #$20   ; all registers 8-bit
+         rts
        }
