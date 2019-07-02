@@ -1,4 +1,4 @@
-; Disassembled 13848 instructions.
+; Disassembled 13833 instructions.
          .org $00834b
 entry1:  .entry m8x8
          REP #$20                   ; 00834b m16x8
@@ -49,25 +49,8 @@ entry1:  .entry m8x8
          STY $420b                  ; 0083cb m16x8
          SEP #$20                   ; 0083ce m8x8
          RTL                        ; 0083d0 m8x8
-         .org $008781
-entry2:  .entry m8x8
-         STY $03                    ; 008781 m8x8
-         PLY                        ; 008783 m8x8
-         STY $00                    ; 008784 m8x8
-         REP #$30                   ; 008786 m16x16
-         AND #$00ff                 ; 008788 m16x16
-         ASL                        ; 00878b m16x16
-         TAY                        ; 00878c m16x16
-         PLA                        ; 00878d m16x16
-         STA $01                    ; 00878e m16x16
-         INY                        ; 008790 m16x16
-         LDA [$00], Y               ; 008791 m16x16
-         STA $00                    ; 008793 m16x16
-         SEP #$30                   ; 008795 m8x8
-         LDY $03                    ; 008797 m8x8
-         JMP [$0000]                ; 008799 m8x8
          .org $008913
-entry3:  .entry m8x8
+entry2:  .entry m8x8
          LDA #$f5                   ; 008913 m8x8
          STA $00                    ; 008915 m8x8
          LDA #$9e                   ; 008917 m8x8
@@ -78,7 +61,7 @@ label1:  STA $02                    ; 00891d m8x8
          JSR $8888                  ; 008920 m8x8
          CLI                        ; 008923 m8x8
          RTL                        ; 008924 m8x8
-entry4:  .entry m8x8
+entry3:  .entry m8x8
          LDA #$00                   ; 008925 m8x8
          STA $00                    ; 008927 m8x8
          LDA #$80                   ; 008929 m8x8
@@ -86,7 +69,7 @@ entry4:  .entry m8x8
          LDA #$1b                   ; 00892d m8x8
          BRA label1                 ; 00892f m8x8
          .org $00893d
-entry5:  .entry m8x8
+entry4:  .entry m8x8
          LDA #$80                   ; 00893d m8x8
          STA $2100                  ; 00893f m8x8
          STA $13                    ; 008942 m8x8
@@ -94,7 +77,7 @@ entry5:  .entry m8x8
          STZ $9b                    ; 008947 m8x8
          RTL                        ; 008949 m8x8
          .org $008cb0
-entry6:  .entry m8x8
+entry5:  .entry m8x8
          LDX $0116                  ; 008cb0 m8x8
          LDA $9888, X               ; 008cb3 m8x8
          STA $2117                  ; 008cb6 m8x8
@@ -115,11 +98,11 @@ entry6:  .entry m8x8
          STZ $0710                  ; 008ce0 m8x8
          RTS                        ; 008ce3 m8x8
          .org $0090e3
-entry7:  .entry m8x8
-         JSR entry6                 ; 0090e3 m8x8
+entry6:  .entry m8x8
+         JSR entry5                 ; 0090e3 m8x8
          RTL                        ; 0090e6 m8x8
          .org $00913f
-entry8:  .entry m8x8
+entry7:  .entry m8x8
          REP #$31                   ; 00913f m16x16, c=0
          LDA $0418                  ; 009141 m16x16, c=0
          AND #$000f                 ; 009144 m16x16, c=0
@@ -176,7 +159,7 @@ label2:  LDA $7e2000, X             ; 009153 m16x16
          STA $0710                  ; 0091c0 m8x8
          RTL                        ; 0091c3 m8x8
          .org $0091d3
-entry9:  .entry m8x8
+entry8:  .entry m8x8
          REP #$31                   ; 0091d3 m16x16, c=0
          LDA $0418                  ; 0091d5 m16x16, c=0
          AND #$000f                 ; 0091d8 m16x16, c=0
@@ -231,14 +214,14 @@ label3:  LDA $7e4000, X             ; 0091e7 m16x16
          STA $0710                  ; 00924e m8x8
          RTL                        ; 009251 m8x8
          .org $00d308
-entry10: .entry m8x8
+entry9:  .entry m8x8
          PHB                        ; 00d308 m8x8
          PHK                        ; 00d309 m8x8
          PLB                        ; 00d30a m8x8
          LDY #$5f                   ; 00d30b m8x8
-         JSR entry27                ; 00d30d m8x8
+         JSR entry26                ; 00d30d m8x8
          LDY #$5e                   ; 00d310 m8x8
-         JSR entry28                ; 00d312 m8x8
+         JSR entry27                ; 00d312 m8x8
          REP #$21                   ; 00d315 m16x8, c=0
          LDA $7ef359                ; 00d317 m16x8, c=0
          AND #$00ff                 ; 00d31b m16x8, c=0
@@ -250,23 +233,23 @@ entry10: .entry m8x8
          LDX #$0000                 ; 00d327 m16x16
          LDY #$000c                 ; 00d32a m16x16
          PHA                        ; 00d32d m16x16
-         JSR entry16                ; 00d32e m16x16
+         JSR entry15                ; 00d32e m16x16
          PLA                        ; 00d331 m16x16
          ADD #$0180                 ; 00d332 m16x16
          LDY #$000c                 ; 00d336 m16x16
-         JSR entry16                ; 00d339 m16x16
+         JSR entry15                ; 00d339 m16x16
          SEP #$30                   ; 00d33c m8x8
          PLB                        ; 00d33e m8x8
          RTL                        ; 00d33f m8x8
          .org $00d348
-entry11: .entry m8x8
+entry10: .entry m8x8
          PHB                        ; 00d348 m8x8
          PHK                        ; 00d349 m8x8
          PLB                        ; 00d34a m8x8
          LDY #$5f                   ; 00d34b m8x8
-         JSR entry27                ; 00d34d m8x8
+         JSR entry26                ; 00d34d m8x8
          LDY #$5e                   ; 00d350 m8x8
-         JSR entry28                ; 00d352 m8x8
+         JSR entry27                ; 00d352 m8x8
          REP #$21                   ; 00d355 m16x8, c=0
          LDA $7ef35a                ; 00d357 m16x8, c=0
          ASL                        ; 00d35b m16x8
@@ -276,31 +259,31 @@ entry11: .entry m8x8
          REP #$10                   ; 00d362 m16x16
          LDX #$0300                 ; 00d364 m16x16
          PHA                        ; 00d367 m16x16
-         JSR entry15                ; 00d368 m16x16
+         JSR entry14                ; 00d368 m16x16
          PLA                        ; 00d36b m16x16
          ADD #$0180                 ; 00d36c m16x16
-         JSR entry15                ; 00d370 m16x16
+         JSR entry14                ; 00d370 m16x16
          SEP #$30                   ; 00d373 m8x8
          PLB                        ; 00d375 m8x8
          RTL                        ; 00d376 m8x8
-entry12: .entry m8x8
+entry11: .entry m8x8
          PHB                        ; 00d377 m8x8
          PHK                        ; 00d378 m8x8
          PLB                        ; 00d379 m8x8
-         JSR entry30                ; 00d37a m8x8
+         JSR entry29                ; 00d37a m8x8
          REP #$30                   ; 00d37d m16x16
          LDA $00                    ; 00d37f m16x16
          LDY #$0030                 ; 00d381 m16x16
          LDX #$1680                 ; 00d384 m16x16
-         JSR entry14                ; 00d387 m16x16
+         JSR entry13                ; 00d387 m16x16
          SEP #$30                   ; 00d38a m8x8
          LDY #$5c                   ; 00d38c m8x8
-         JSR entry30                ; 00d38e m8x8
+         JSR entry29                ; 00d38e m8x8
          REP #$30                   ; 00d391 m16x16
          LDA $00                    ; 00d393 m16x16
          LDY #$0030                 ; 00d395 m16x16
          LDX #$1c80                 ; 00d398 m16x16
-         JSR entry14                ; 00d39b m16x16
+         JSR entry13                ; 00d39b m16x16
          LDX #$0000                 ; 00d39e m16x16
 label4:  LDA $7ea880, X             ; 00d3a1 m16x16
          PHA                        ; 00d3a5 m16x16
@@ -322,7 +305,7 @@ label4:  LDA $7ea880, X             ; 00d3a1 m16x16
          PLB                        ; 00d3d2 m8x8
          RTL                        ; 00d3d3 m8x8
          .org $00d463
-entry13: .entry m8x8
+entry12: .entry m8x8
          PHB                        ; 00d463 m8x8
          PHK                        ; 00d464 m8x8
          PLB                        ; 00d465 m8x8
@@ -338,9 +321,9 @@ entry13: .entry m8x8
          CMP #$0c                   ; 00d47c m8x8
          BCC label5                 ; 00d47e m8x8, c=1
          LDY #$58                   ; 00d480 m8x8, c=1
-label5:  JSR entry27                ; 00d482 m8x8
+label5:  JSR entry26                ; 00d482 m8x8
          LDY #$65                   ; 00d485 m8x8
-         JSR entry28                ; 00d487 m8x8
+         JSR entry27                ; 00d487 m8x8
          REP #$30                   ; 00d48a m16x16
          LDA $7ef3cc                ; 00d48c m16x16
          AND #$00ff                 ; 00d490 m16x16
@@ -350,12 +333,12 @@ label5:  JSR entry27                ; 00d482 m8x8
          ADD $00d447, X             ; 00d497 m16x16
          LDY #$0020                 ; 00d49c m16x16
          LDX #$2940                 ; 00d49f m16x16
-         JSR entry14                ; 00d4a2 m16x16
+         JSR entry13                ; 00d4a2 m16x16
          SEP #$30                   ; 00d4a5 m8x8
          PLB                        ; 00d4a7 m8x8
          RTL                        ; 00d4a8 m8x8
          .org $00d60e
-entry14: .entry m16x16
+entry13: .entry m16x16
          STY $0e                    ; 00d60e m16x16
 label6:  STA $00                    ; 00d610 m16x16
          ADD #$0010                 ; 00d612 m16x16
@@ -390,9 +373,9 @@ label7:  LDA [$00]                  ; 00d61b m16x16
          DEC $0e                    ; 00d654 m16x16
          BNE label6                 ; 00d656 m16x16
          RTS                        ; 00d658 m16x16
-entry15: .entry m16x16
+entry14: .entry m16x16
          LDY #$0006                 ; 00d659 m16x16
-entry16: .entry m16x16
+entry15: .entry m16x16
          STY $0e                    ; 00d65c m16x16
 label8:  STA $00                    ; 00d65e m16x16
          ADD #$0010                 ; 00d660 m16x16
@@ -432,7 +415,7 @@ label10: LDA $03                    ; 00d6a7 m16x16
          BNE label8                 ; 00d6ab m16x16
          RTS                        ; 00d6ad m16x16
          .org $00e1db
-entry17: .entry m8x8
+entry16: .entry m8x8
          PHB                        ; 00e1db m8x8
          PHK                        ; 00e1dc m8x8
          PLB                        ; 00e1dd m8x8
@@ -441,7 +424,7 @@ entry17: .entry m8x8
          STZ $2116                  ; 00e1e3 m8x8
          LDA #$44                   ; 00e1e6 m8x8
          STA $2117                  ; 00e1e8 m8x8
-         JSR entry26                ; 00e1eb m8x8
+         JSR entry25                ; 00e1eb m8x8
          REP #$30                   ; 00e1ee m16x16
          LDA $0aa3                  ; 00e1f0 m16x16
          AND #$00ff                 ; 00e1f3 m16x16
@@ -474,16 +457,16 @@ label14: LDA $7ec2ff                ; 00e231 m8x16
          LDA #$7e                   ; 00e23b m8x8
          STA $02                    ; 00e23d m8x8
          LDX #$78                   ; 00e23f m8x8
-         JSR entry21                ; 00e241 m8x8
+         JSR entry20                ; 00e241 m8x8
          LDY $08                    ; 00e244 m8x8
          LDX #$7e                   ; 00e246 m8x8
-         JSR entry21                ; 00e248 m8x8
+         JSR entry20                ; 00e248 m8x8
          LDY $07                    ; 00e24b m8x8
          LDX #$84                   ; 00e24d m8x8
-         JSR entry21                ; 00e24f m8x8
+         JSR entry20                ; 00e24f m8x8
          LDY $06                    ; 00e252 m8x8
          LDX #$8a                   ; 00e254 m8x8
-         JSR entry21                ; 00e256 m8x8
+         JSR entry20                ; 00e256 m8x8
          REP #$30                   ; 00e259 m16x16
          LDA #$2000                 ; 00e25b m16x16
          STA $2116                  ; 00e25e m16x16
@@ -531,39 +514,39 @@ label18: STA $7ec2fb                ; 00e2b7 m8x16
          LDA #$07                   ; 00e2c4 m8x8
          STA $0f                    ; 00e2c6 m8x8
          LDY $0d                    ; 00e2c8 m8x8
-         JSR entry23                ; 00e2ca m8x8
+         JSR entry22                ; 00e2ca m8x8
          DEC $0f                    ; 00e2cd m8x8
          LDY $0c                    ; 00e2cf m8x8
-         JSR entry23                ; 00e2d1 m8x8
+         JSR entry22                ; 00e2d1 m8x8
          DEC $0f                    ; 00e2d4 m8x8
          LDY $0b                    ; 00e2d6 m8x8
-         JSR entry23                ; 00e2d8 m8x8
+         JSR entry22                ; 00e2d8 m8x8
          DEC $0f                    ; 00e2db m8x8
          LDY $0a                    ; 00e2dd m8x8
          LDA #$7e                   ; 00e2df m8x8
          LDX #$60                   ; 00e2e1 m8x8
-         JSR entry24                ; 00e2e3 m8x8
+         JSR entry23                ; 00e2e3 m8x8
          DEC $0f                    ; 00e2e6 m8x8
          LDY $09                    ; 00e2e8 m8x8
          LDA #$7e                   ; 00e2ea m8x8
          LDX #$66                   ; 00e2ec m8x8
-         JSR entry24                ; 00e2ee m8x8
+         JSR entry23                ; 00e2ee m8x8
          DEC $0f                    ; 00e2f1 m8x8
          LDY $08                    ; 00e2f3 m8x8
          LDA #$7e                   ; 00e2f5 m8x8
          LDX #$6c                   ; 00e2f7 m8x8
-         JSR entry24                ; 00e2f9 m8x8
+         JSR entry23                ; 00e2f9 m8x8
          DEC $0f                    ; 00e2fc m8x8
          LDY $07                    ; 00e2fe m8x8
          LDA #$7e                   ; 00e300 m8x8
          LDX #$72                   ; 00e302 m8x8
-         JSR entry24                ; 00e304 m8x8
+         JSR entry23                ; 00e304 m8x8
          DEC $0f                    ; 00e307 m8x8
          LDY $06                    ; 00e309 m8x8
-         JSR entry23                ; 00e30b m8x8
+         JSR entry22                ; 00e30b m8x8
          PLB                        ; 00e30e m8x8
          RTL                        ; 00e30f m8x8
-entry18: .entry m8x8
+entry17: .entry m8x8
          PHB                        ; 00e310 m8x8
          PHK                        ; 00e311 m8x8
          PLB                        ; 00e312 m8x8
@@ -609,15 +592,15 @@ label21: LDA [$00]                  ; 00e34a m16x8
          STA $2116                  ; 00e365 m16x8
          SEP #$20                   ; 00e368 m8x8
          LDY #$6a                   ; 00e36a m8x8
-         JSR entry19                ; 00e36c m8x8
+         JSR entry18                ; 00e36c m8x8
          LDY #$6b                   ; 00e36f m8x8
-         JSR entry19                ; 00e371 m8x8
+         JSR entry18                ; 00e371 m8x8
          LDY #$69                   ; 00e374 m8x8
-         JSR entry19                ; 00e376 m8x8
+         JSR entry18                ; 00e376 m8x8
          PLB                        ; 00e379 m8x8
          RTL                        ; 00e37a m8x8
-entry19: .entry m8x8
-         JSR entry28                ; 00e37b m8x8
+entry18: .entry m8x8
+         JSR entry27                ; 00e37b m8x8
          REP #$30                   ; 00e37e m16x16
          LDX #$00ff                 ; 00e380 m16x16
 label22: LDA [$00]                  ; 00e383 m16x16
@@ -643,7 +626,7 @@ label22: LDA [$00]                  ; 00e383 m16x16
          .org $00e411
 label23: RTL                        ; 00e411 m8x8
          .org $00e43a
-entry20: .entry m8x8
+entry19: .entry m8x8
          LDX $0aaa                  ; 00e43a m8x8
          BEQ label23                ; 00e43d m8x8
          PHB                        ; 00e43f m8x8
@@ -658,12 +641,12 @@ entry20: .entry m8x8
          STA $0ab1                  ; 00e450 m8x8
          LDA #$02                   ; 00e453 m8x8
          STA $0aa9                  ; 00e455 m8x8
-         JSL @entry336              ; 00e458 m8x8
+         JSL @entry335              ; 00e458 m8x8
          INC $15                    ; 00e45c m8x8
          BRA label25                ; 00e45e m8x8
 label24: LDA #$02                   ; 00e460 m8x8
          STA $0aa9                  ; 00e462 m8x8
-         JSL @entry337              ; 00e465 m8x8
+         JSL @entry336              ; 00e465 m8x8
          INC $15                    ; 00e469 m8x8
 label25: LDX $0aaa                  ; 00e46b m8x8
          LDY #$44                   ; 00e46e m8x8
@@ -753,30 +736,30 @@ label32: INX                        ; 00e514 m16x16
          PLB                        ; 00e527 m8x8
          RTL                        ; 00e528 m8x8
          .org $00e5c3
-entry21: .entry m8x8
+entry20: .entry m8x8
          STZ $00                    ; 00e5c3 m8x8
          STX $01                    ; 00e5c5 m8x8
          PHY                        ; 00e5c7 m8x8
-         JSR entry29                ; 00e5c8 m8x8
+         JSR entry28                ; 00e5c8 m8x8
          REP #$20                   ; 00e5cb m16x8
          LDY #$3f                   ; 00e5cd m16x8
          PLX                        ; 00e5cf m16x8
          CPX #$52                   ; 00e5d0 m16x8
-         BEQ entry22                ; 00e5d2 m16x8
+         BEQ entry21                ; 00e5d2 m16x8
          CPX #$53                   ; 00e5d4 m16x8
-         BEQ entry22                ; 00e5d6 m16x8
+         BEQ entry21                ; 00e5d6 m16x8
          CPX #$5a                   ; 00e5d8 m16x8
-         BEQ entry22                ; 00e5da m16x8
+         BEQ entry21                ; 00e5da m16x8
          CPX #$5b                   ; 00e5dc m16x8
-         BEQ entry22                ; 00e5de m16x8
+         BEQ entry21                ; 00e5de m16x8
          CPX #$5c                   ; 00e5e0 m16x8
-         BEQ entry22                ; 00e5e2 m16x8
+         BEQ entry21                ; 00e5e2 m16x8
          CPX #$5e                   ; 00e5e4 m16x8
-         BEQ entry22                ; 00e5e6 m16x8
+         BEQ entry21                ; 00e5e6 m16x8
          CPX #$5f                   ; 00e5e8 m16x8
-         BEQ entry22                ; 00e5ea m16x8
-         JMP entry25                ; 00e5ec m16x8
-entry22: .entry m16x8
+         BEQ entry21                ; 00e5ea m16x8
+         JMP entry24                ; 00e5ec m16x8
+entry21: .entry m16x8
          LDX #$0e                   ; 00e5ef m16x8
 label33: LDA [$00]                  ; 00e5f1 m16x8
          STA $2118                  ; 00e5f3 m16x8
@@ -822,17 +805,17 @@ label34: LDA [$00]                  ; 00e61b m16x8
          DEX                        ; 00e640 m16x8
          BPL label34                ; 00e641 m16x8
          DEY                        ; 00e643 m16x8
-         BPL entry22                ; 00e644 m16x8
+         BPL entry21                ; 00e644 m16x8
          SEP #$20                   ; 00e646 m8x8
          RTS                        ; 00e648 m8x8
-entry23: .entry m8x8
+entry22: .entry m8x8
          LDA #$7f                   ; 00e649 m8x8
          LDX #$40                   ; 00e64b m8x8
-entry24: .entry m8x8
+entry23: .entry m8x8
          STZ $00                    ; 00e64d m8x8
          STX $01                    ; 00e64f m8x8
          STA $02                    ; 00e651 m8x8
-         JSR entry31                ; 00e653 m8x8
+         JSR entry30                ; 00e653 m8x8
          REP #$20                   ; 00e656 m16x8
          LDY #$3f                   ; 00e658 m16x8
          LDX $0aa1                  ; 00e65a m16x8
@@ -840,18 +823,18 @@ entry24: .entry m8x8
          BCC label36                ; 00e65f m16x8, c=1
          LDX $0f                    ; 00e661 m16x8, c=1
          CPX #$07                   ; 00e663 m16x8
-         BEQ entry22                ; 00e665 m16x8
+         BEQ entry21                ; 00e665 m16x8
          CPX #$02                   ; 00e667 m16x8
-         BEQ entry22                ; 00e669 m16x8
+         BEQ entry21                ; 00e669 m16x8
          CPX #$04                   ; 00e66b m16x8
-         BEQ entry22                ; 00e66d m16x8
+         BEQ entry21                ; 00e66d m16x8
          CPX #$03                   ; 00e66f m16x8
-         BNE entry25                ; 00e671 m16x8
-label35: JMP entry22                ; 00e673 m16x8
+         BNE entry24                ; 00e671 m16x8
+label35: JMP entry21                ; 00e673 m16x8
 label36: LDX $0f                    ; 00e676 m16x8, c=0
          CPX #$04                   ; 00e678 m16x8
          BCS label35                ; 00e67a m16x8, c=0
-entry25: .entry m16x8
+entry24: .entry m16x8
          LDA [$00]                  ; 00e67c m16x8
          STA $2118                  ; 00e67e m16x8
          INC $00                    ; 00e681 m16x8
@@ -904,10 +887,10 @@ label37: LDA [$00]                  ; 00e6c6 m16x8
          DEX                        ; 00e6ee m16x8
          BPL label37                ; 00e6ef m16x8
          DEY                        ; 00e6f1 m16x8
-         BPL entry25                ; 00e6f2 m16x8
+         BPL entry24                ; 00e6f2 m16x8
          SEP #$20                   ; 00e6f4 m8x8
          RTS                        ; 00e6f6 m8x8
-entry26: .entry m8x8
+entry25: .entry m8x8
          LDY $0aa4                  ; 00e6f7 m8x8
          LDA $d033, Y               ; 00e6fa m8x8
          STA $02                    ; 00e6fd m8x8
@@ -976,32 +959,32 @@ label40: LDA [$00]                  ; 00e739 m16x8
          STA $00                    ; 00e77b m8x8
          REP #$20                   ; 00e77d m16x8
          LDY #$7f                   ; 00e77f m16x8
-         JMP entry25                ; 00e781 m16x8
+         JMP entry24                ; 00e781 m16x8
 label41: STZ $0f                    ; 00e784 m8x8
          LDY #$5e                   ; 00e786 m8x8
          STY $06                    ; 00e788 m8x8
          LDA #$7f                   ; 00e78a m8x8
          STA $02                    ; 00e78c m8x8
          LDX #$40                   ; 00e78e m8x8
-         JSR entry21                ; 00e790 m8x8
+         JSR entry20                ; 00e790 m8x8
          LDY #$5f                   ; 00e793 m8x8
          STY $06                    ; 00e795 m8x8
          LDX #$40                   ; 00e797 m8x8
-         JMP entry21                ; 00e799 m8x8
-entry27: .entry m8x8
+         JMP entry20                ; 00e799 m8x8
+entry26: .entry m8x8
          STZ $00                    ; 00e79c m8x8
          LDA #$46                   ; 00e79e m8x8
          STA $01                    ; 00e7a0 m8x8
          LDA #$7f                   ; 00e7a2 m8x8
          BRA label42                ; 00e7a4 m8x8
-entry28: .entry m8x8
+entry27: .entry m8x8
          STZ $00                    ; 00e7a6 m8x8
          LDA #$40                   ; 00e7a8 m8x8
          STA $01                    ; 00e7aa m8x8
          LDA #$7f                   ; 00e7ac m8x8
 label42: STA $02                    ; 00e7ae m8x8
          STA $05                    ; 00e7b0 m8x8
-entry29: .entry m8x8
+entry28: .entry m8x8
          LDA $d033, Y               ; 00e7b2 m8x8
          STA $ca                    ; 00e7b5 m8x8
          LDA $d112, Y               ; 00e7b7 m8x8
@@ -1009,14 +992,14 @@ entry29: .entry m8x8
          LDA $d1f1, Y               ; 00e7bc m8x8
          STA $c8                    ; 00e7bf m8x8
          BRA label43                ; 00e7c1 m8x8
-entry30: .entry m8x8
+entry29: .entry m8x8
          STZ $00                    ; 00e7c3 m8x8
          LDA #$40                   ; 00e7c5 m8x8
          STA $01                    ; 00e7c7 m8x8
          LDA #$7f                   ; 00e7c9 m8x8
          STA $02                    ; 00e7cb m8x8
          STA $05                    ; 00e7cd m8x8
-entry31: .entry m8x8
+entry30: .entry m8x8
          LDA $cfc0, Y               ; 00e7cf m8x8
          STA $ca                    ; 00e7d2 m8x8
          LDA $d09f, Y               ; 00e7d4 m8x8
@@ -1025,8 +1008,8 @@ entry31: .entry m8x8
          STA $c8                    ; 00e7dc m8x8
 label43: REP #$10                   ; 00e7de m8x16
          LDY #$0000                 ; 00e7e0 m8x16
-entry32: .entry m8x16
-         JSR entry33                ; 00e7e3 m8x16
+entry31: .entry m8x16
+         JSR entry32                ; 00e7e3 m8x16
          CMP #$ff                   ; 00e7e6 m8x16
          BNE label44                ; 00e7e8 m8x16
          SEP #$10                   ; 00e7ea m8x8
@@ -1049,7 +1032,7 @@ label45: LDA $cd                    ; 00e7ff m8x16
          LDA $cd                    ; 00e807 m8x16
          AND #$03                   ; 00e809 m8x16
          XBA                        ; 00e80b m8x16
-         JSR entry33                ; 00e80c m8x16
+         JSR entry32                ; 00e80c m8x16
          REP #$20                   ; 00e80f m16x16
 label46: INC                        ; 00e811 m16x16
          STA $cb                    ; 00e812 m16x16
@@ -1061,32 +1044,32 @@ label46: INC                        ; 00e811 m16x16
          BPL label49                ; 00e81c m8x16
          ASL                        ; 00e81e m8x16
          BPL label51                ; 00e81f m8x16
-         JSR entry33                ; 00e821 m8x16
+         JSR entry32                ; 00e821 m8x16
          LDX $cb                    ; 00e824 m8x16
 label47: STA [$00], Y               ; 00e826 m8x16
          INC                        ; 00e828 m8x16
          INY                        ; 00e829 m8x16
          DEX                        ; 00e82a m8x16
          BNE label47                ; 00e82b m8x16
-         BRA entry32                ; 00e82d m8x16
-label48: JSR entry33                ; 00e82f m8x16
+         BRA entry31                ; 00e82d m8x16
+label48: JSR entry32                ; 00e82f m8x16
          STA [$00], Y               ; 00e832 m8x16
          INY                        ; 00e834 m8x16
          LDX $cb                    ; 00e835 m8x16
          DEX                        ; 00e837 m8x16
          STX $cb                    ; 00e838 m8x16
          BNE label48                ; 00e83a m8x16
-         BRA entry32                ; 00e83c m8x16
-label49: JSR entry33                ; 00e83e m8x16
+         BRA entry31                ; 00e83c m8x16
+label49: JSR entry32                ; 00e83e m8x16
          LDX $cb                    ; 00e841 m8x16
 label50: STA [$00], Y               ; 00e843 m8x16
          INY                        ; 00e845 m8x16
          DEX                        ; 00e846 m8x16
          BNE label50                ; 00e847 m8x16
-         BRA entry32                ; 00e849 m8x16
-label51: JSR entry33                ; 00e84b m8x16
+         BRA entry31                ; 00e849 m8x16
+label51: JSR entry32                ; 00e84b m8x16
          XBA                        ; 00e84e m8x16
-         JSR entry33                ; 00e84f m8x16
+         JSR entry32                ; 00e84f m8x16
          LDX $cb                    ; 00e852 m8x16
 label52: XBA                        ; 00e854 m8x16
          STA [$00], Y               ; 00e855 m8x16
@@ -1098,10 +1081,10 @@ label52: XBA                        ; 00e854 m8x16
          INY                        ; 00e85e m8x16
          DEX                        ; 00e85f m8x16
          BNE label52                ; 00e860 m8x16
-label53: JMP entry32                ; 00e862 m8x16
-label54: JSR entry33                ; 00e865 m8x16
+label53: JMP entry31                ; 00e862 m8x16
+label54: JSR entry32                ; 00e865 m8x16
          XBA                        ; 00e868 m8x16
-         JSR entry33                ; 00e869 m8x16
+         JSR entry32                ; 00e869 m8x16
          XBA                        ; 00e86c m8x16
          TAX                        ; 00e86d m8x16
 label55: PHY                        ; 00e86e m8x16
@@ -1116,8 +1099,8 @@ label55: PHY                        ; 00e86e m8x16
          DEC $cb                    ; 00e87a m16x16
          SEP #$20                   ; 00e87c m8x16
          BNE label55                ; 00e87e m8x16
-         JMP entry32                ; 00e880 m8x16
-entry33: .entry m8x16
+         JMP entry31                ; 00e880 m8x16
+entry32: .entry m8x16
          LDA [$c8]                  ; 00e883 m8x16
          LDX $c8                    ; 00e885 m8x16
          INX                        ; 00e887 m8x16
@@ -1128,7 +1111,7 @@ label56: STX $c8                    ; 00e88f m8x16
          RTS                        ; 00e891 m8x16
          .org $00f567
 label57: RTL                        ; 00f567 m8x8
-entry34: .entry m8x8
+entry33: .entry m8x8
          LDA $0458                  ; 00f568 m8x8
          BEQ label57                ; 00f56b m8x8
          LDA $11                    ; 00f56d m8x8
@@ -1215,7 +1198,7 @@ label66: SUB $00f557, X             ; 00f640 m16x16
          SEP #$30                   ; 00f647 m8x8
          RTL                        ; 00f649 m8x8
          .org $00f800
-entry35: .entry m8x8
+entry34: .entry m8x8
          LDA $1b                    ; 00f800 m8x8
          BEQ label68                ; 00f802 m8x8
          LDA $11                    ; 00f804 m8x8
@@ -1226,7 +1209,7 @@ entry35: .entry m8x8
          CMP #$07                   ; 00f80f m8x8
          BEQ label70                ; 00f811 m8x8
          BRA label72                ; 00f813 m8x8
-label67: JSL @entry75               ; 00f815 m8x8
+label67: JSL @entry74               ; 00f815 m8x8
          BRA label70                ; 00f819 m8x8
 label68: LDA $11                    ; 00f81b m8x8
          CMP #$07                   ; 00f81d m8x8
@@ -1235,18 +1218,18 @@ label68: LDA $11                    ; 00f81b m8x8
          BNE label70                ; 00f823 m8x8
 label69: LDA $0200                  ; 00f825 m8x8
          BNE label72                ; 00f828 m8x8
-label70: JSL @entry167              ; 00f82a m8x8
-         JSL @entry279              ; 00f82e m8x8
+label70: JSL @entry166              ; 00f82a m8x8
+         JSL @entry278              ; 00f82e m8x8
          LDA $1b                    ; 00f832 m8x8
          BNE label71                ; 00f834 m8x8
-         JSL @entry123              ; 00f836 m8x8
-label71: JSL @entry302              ; 00f83a m8x8
+         JSL @entry122              ; 00f836 m8x8
+label71: JSL @entry301              ; 00f83a m8x8
          LDA $11                    ; 00f83e m8x8
          CMP #$02                   ; 00f840 m8x8
          BEQ label72                ; 00f842 m8x8
-         JSL @entry34               ; 00f844 m8x8
+         JSL @entry33               ; 00f844 m8x8
 label72: SEP #$30                   ; 00f848 m8x8
-         JSL @entry36               ; 00f84a m8x8
+         JSL @entry35               ; 00f84a m8x8
          REP #$21                   ; 00f84e m16x8, c=0
          LDA $e2                    ; 00f850 m16x8, c=0
          ADC $011a                  ; 00f852 m16x8
@@ -1263,7 +1246,7 @@ label72: SEP #$30                   ; 00f848 m8x8
          SEP #$20                   ; 00f873 m8x8
          RTL                        ; 00f875 m8x8
          .org $00f89a
-entry36: .entry m8x8
+entry35: .entry m8x8
          LDX $11                    ; 00f89a m8x8
          LDA $00f876, X             ; 00f89c m8x8
          STA $00                    ; 00f8a0 m8x8
@@ -1273,7 +1256,7 @@ entry36: .entry m8x8
          STA $02                    ; 00f8ac m8x8
          JMP [$0000]                ; 00f8ae m8x8
          .org $00fc41
-entry37: .entry m8x8
+entry36: .entry m8x8
          PHB                        ; 00fc41 m8x8
          PHK                        ; 00fc42 m8x8
          PLB                        ; 00fc43 m8x8
@@ -1314,8 +1297,8 @@ label76: LDA $fa41, Y               ; 00fc84 m16x16
          PLB                        ; 00fc9a m8x8
          RTL                        ; 00fc9b m8x8
          .org $01873a
-entry38: .entry m8x8
-         JSR entry48                ; 01873a m8x8
+entry37: .entry m8x8
+         JSR entry47                ; 01873a m8x8
          STZ $03f4                  ; 01873d m8x8
          REP #$30                   ; 018740 m16x16
          LDX $0110                  ; 018742 m16x16
@@ -1389,7 +1372,7 @@ label77: STZ $19a0, X               ; 0187f4 m16x16
          DEX                        ; 01880a m16x16
          BPL label77                ; 01880b m16x16
          STZ $ba                    ; 01880d m16x16
-         JSR entry42                ; 01880f m16x16
+         JSR entry41                ; 01880f m16x16
          LDY $ba                    ; 018812 m16x16
          PHY                        ; 018814 m16x16
          LDA [$b7], Y               ; 018815 m16x16
@@ -1406,7 +1389,7 @@ label77: STZ $19a0, X               ; 0187f4 m16x16
          LDA $04ec0f, X             ; 01882c m16x16
          STA $b7                    ; 018830 m16x16
          STZ $ba                    ; 018832 m16x16
-         JSR entry39                ; 018834 m16x16
+         JSR entry38                ; 018834 m16x16
          PLY                        ; 018837 m16x16
          INY                        ; 018838 m16x16
          STY $ba                    ; 018839 m16x16
@@ -1415,7 +1398,7 @@ label77: STZ $19a0, X               ; 0187f4 m16x16
          STA $b8                    ; 018842 m16x16
          LDA $1f8000, X             ; 018844 m16x16
          STA $b7                    ; 018848 m16x16
-         JSR entry39                ; 01884a m16x16
+         JSR entry38                ; 01884a m16x16
          INC $ba                    ; 01884d m16x16
          INC $ba                    ; 01884f m16x16
          LDX #$001e                 ; 018851 m16x16
@@ -1425,7 +1408,7 @@ label78: LDA $01871a, X             ; 018854 m16x16
          DEX                        ; 01885b m16x16
          DEX                        ; 01885c m16x16
          BPL label78                ; 01885d m16x16
-         JSR entry39                ; 01885f m16x16
+         JSR entry38                ; 01885f m16x16
          INC $ba                    ; 018862 m16x16
          INC $ba                    ; 018864 m16x16
          LDX #$001e                 ; 018866 m16x16
@@ -1435,7 +1418,7 @@ label79: LDA $0186f9, X             ; 018869 m16x16
          DEX                        ; 018870 m16x16
          DEX                        ; 018871 m16x16
          BPL label79                ; 018872 m16x16
-         JSR entry39                ; 018874 m16x16
+         JSR entry38                ; 018874 m16x16
          STZ $ba                    ; 018877 m16x16
 label80: LDX $ba                    ; 018879 m16x16
          LDA $7ef940, X             ; 01887b m16x16
@@ -1444,7 +1427,7 @@ label80: LDX $ba                    ; 018879 m16x16
          LDA $7ef942, X             ; 018883 m16x16
          STA $08                    ; 018887 m16x16
          TAY                        ; 018889 m16x16
-         JSR entry46                ; 01888a m16x16
+         JSR entry45                ; 01888a m16x16
 label81: LDA $ba                    ; 01888d m16x16
          ADD #$0004                 ; 01888f m16x16
          STA $ba                    ; 018893 m16x16
@@ -1477,14 +1460,14 @@ label85: LDA $7efb40, X             ; 0188c9 m16x16
          INX                        ; 0188cf m16x16
          INX                        ; 0188d0 m16x16
          STX $ba                    ; 0188d1 m16x16
-         JSR entry47                ; 0188d3 m16x16
+         JSR entry46                ; 0188d3 m16x16
          LDX $ba                    ; 0188d6 m16x16
          LDA $7efb40, X             ; 0188d8 m16x16
          CMP #$ffff                 ; 0188dc m16x16
          BNE label85                ; 0188df m16x16
 label86: SEP #$30                   ; 0188e1 m8x8
          RTL                        ; 0188e3 m8x8
-entry39: .entry m16x16
+entry38: .entry m16x16
          STZ $b2                    ; 0188e4 m16x16
          STZ $b4                    ; 0188e6 m16x16
          LDY $ba                    ; 0188e8 m16x16
@@ -1494,8 +1477,8 @@ entry39: .entry m16x16
          STA $00                    ; 0188f1 m16x16
          CMP #$fff0                 ; 0188f3 m16x16
          BEQ label88                ; 0188f6 m16x16
-         JSR entry41                ; 0188f8 m16x16
-         BRA entry39                ; 0188fb m16x16
+         JSR entry40                ; 0188f8 m16x16
+         BRA entry38                ; 0188fb m16x16
 label87: RTS                        ; 0188fd m16x16
 label88: INC $ba                    ; 0188fe m16x16
          INC $ba                    ; 018900 m16x16
@@ -1504,11 +1487,11 @@ label89: LDY $ba                    ; 018902 m16x16
          CMP #$ffff                 ; 018906 m16x16
          BEQ label87                ; 018909 m16x16
          STA $00                    ; 01890b m16x16
-         JSR entry40                ; 01890d m16x16
+         JSR entry39                ; 01890d m16x16
          INC $ba                    ; 018910 m16x16
          INC $ba                    ; 018912 m16x16
          BRA label89                ; 018914 m16x16
-entry40: .entry m16x16
+entry39: .entry m16x16
          AND #$00f0                 ; 018916 m16x16
          LSR                        ; 018919 m16x16
          LSR                        ; 01891a m16x16
@@ -1528,7 +1511,7 @@ entry40: .entry m16x16
          LDX $02                    ; 018935 m16x16
          LDA $04                    ; 018937 m16x16
          JMP ($000e)                ; 018939 m16x16
-entry41: .entry m16x16
+entry40: .entry m16x16
          SEP #$20                   ; 01893c m8x16
          AND #$fc                   ; 01893e m8x16
          CMP #$fc                   ; 018940 m8x16
@@ -1614,7 +1597,7 @@ label91: AND #$000e                 ; 0189b8 m16x16, c=1
          TAX                        ; 0189d6 m16x16
          LDY $08                    ; 0189d7 m16x16
          JMP ($000e)                ; 0189d9 m16x16
-entry42: .entry m16x16
+entry41: .entry m16x16
          LDX #$001e                 ; 0189dc m16x16
 label92: LDA $018719, X             ; 0189df m16x16
          STA $bf, X                 ; 0189e3 m16x16
@@ -1632,7 +1615,7 @@ label92: LDA $018719, X             ; 0189df m16x16
          AND #$00f0                 ; 0189f9 m16x16
          STA $0490                  ; 0189fc m16x16
          TAX                        ; 0189ff m16x16
-         JSR entry43                ; 018a00 m16x16
+         JSR entry42                ; 018a00 m16x16
          LDX #$001e                 ; 018a03 m16x16
 label93: LDA $0186f9, X             ; 018a06 m16x16
          STA $c0, X                 ; 018a0a m16x16
@@ -1649,14 +1632,14 @@ label93: LDA $0186f9, X             ; 018a06 m16x16
          ASL                        ; 018a1a m16x16
          STA $046a                  ; 018a1b m16x16
          TAX                        ; 018a1e m16x16
-entry43: .entry m16x16
+entry42: .entry m16x16
          LDY $0c                    ; 018a1f m16x16
          LDA $9b02, Y               ; 018a21 m16x16
          TAY                        ; 018a24 m16x16
          LDA #$0008                 ; 018a25 m16x16
          STA $0e                    ; 018a28 m16x16
 label94: LDA #$0008                 ; 018a2a m16x16
-         JSR entry44                ; 018a2d m16x16
+         JSR entry43                ; 018a2d m16x16
          ADC #$01c0                 ; 018a30 m16x16
          TAY                        ; 018a33 m16x16
          DEC $0e                    ; 018a34 m16x16
@@ -1665,9 +1648,9 @@ label94: LDA #$0008                 ; 018a2a m16x16
          INC $0c                    ; 018a3a m16x16
          LDA $0c                    ; 018a3c m16x16
          CMP #$0008                 ; 018a3e m16x16
-         BNE entry43                ; 018a41 m16x16
+         BNE entry42                ; 018a41 m16x16
          RTS                        ; 018a43 m16x16
-entry44: .entry m16x16
+entry43: .entry m16x16
          STA $0a                    ; 018a44 m16x16
 label95: LDA #$0002                 ; 018a46 m16x16
          STA $04                    ; 018a49 m16x16
@@ -1700,7 +1683,7 @@ label96: LDA $9b52, X               ; 018a4b m16x16
          CLC                        ; 018a87 m16x16, c=0
          RTS                        ; 018a88 m16x16, c=0
          .org $019895
-entry45: .entry m16x16
+entry44: .entry m16x16
          LDA $9b52, X               ; 019895 m16x16
          STA [$bf], Y               ; 019898 m16x16
          LDA $9b54, X               ; 01989a m16x16
@@ -1715,7 +1698,7 @@ entry45: .entry m16x16
          INY                        ; 0198ac m16x16
          RTS                        ; 0198ad m16x16
          .org $01b4d6
-entry46: .entry m16x16
+entry45: .entry m16x16
          LDX $042c                  ; 01b4d6 m16x16
          INC $042c                  ; 01b4d9 m16x16
          INC $042c                  ; 01b4dc m16x16
@@ -1735,8 +1718,8 @@ entry46: .entry m16x16
          LDA [$ce], Y               ; 01b4fe m16x16
          STA $05c0, X               ; 01b500 m16x16
          LDX #$0e52                 ; 01b503 m16x16
-         JMP entry45                ; 01b506 m16x16
-entry47: .entry m16x16
+         JMP entry44                ; 01b506 m16x16
+entry46: .entry m16x16
          LDY $042e                  ; 01b509 m16x16
          STA $0540, Y               ; 01b50c m16x16
          DEX                        ; 01b50f m16x16
@@ -1758,9 +1741,9 @@ label97: STX $0c                    ; 01b531 m16x16
          LDA $08                    ; 01b533 m16x16
          AND #$3fff                 ; 01b535 m16x16
          TAY                        ; 01b538 m16x16
-         JMP entry45                ; 01b539 m16x16
+         JMP entry44                ; 01b539 m16x16
          .org $01b564
-entry48: .entry m8x8
+entry47: .entry m8x8
          STZ $0642                  ; 01b564 m8x8
          STZ $0646                  ; 01b567 m8x8
          STZ $0641                  ; 01b56a m8x8
@@ -1960,34 +1943,34 @@ label105: LDA $a0                   ; 01b714 m16x16
          CMP #$000f                 ; 01b71b m16x16
          BEQ label106               ; 01b71e m16x16
          LDA #$0024                 ; 01b720 m16x16
-         JSR entry49                ; 01b723 m16x16
+         JSR entry48                ; 01b723 m16x16
 label106: LDA $a0                   ; 01b726 m16x16
          INC                        ; 01b728 m16x16
          TAX                        ; 01b729 m16x16
          AND #$000f                 ; 01b72a m16x16
          BEQ label107               ; 01b72d m16x16
          LDA #$0018                 ; 01b72f m16x16
-         JSR entry49                ; 01b732 m16x16
+         JSR entry48                ; 01b732 m16x16
 label107: LDA $a0                   ; 01b735 m16x16
          SUB #$0010                 ; 01b737 m16x16
          TAX                        ; 01b73b m16x16
          BMI label108               ; 01b73c m16x16
          LDA #$000c                 ; 01b73e m16x16
-         JSR entry49                ; 01b741 m16x16
+         JSR entry48                ; 01b741 m16x16
 label108: LDA $a0                   ; 01b744 m16x16
          ADD #$0010                 ; 01b746 m16x16
          TAX                        ; 01b74a m16x16
          CMP #$0140                 ; 01b74b m16x16
          BCS label109               ; 01b74e m16x16, c=0
          LDA #$0000                 ; 01b750 m16x16, c=0
-         JSR entry49                ; 01b753 m16x16
+         JSR entry48                ; 01b753 m16x16
 label109: SEP #$30                  ; 01b756 m8x8
 label110: RTS                       ; 01b758 native
-entry49: .entry m16x16
+entry48: .entry m16x16
          STA $04                    ; 01b759 m16x16
-         JSR entry51                ; 01b75b m16x16
+         JSR entry50                ; 01b75b m16x16
          LDY #$0000                 ; 01b75e m16x16
-entry50: .entry m16x16
+entry49: .entry m16x16
          LDA $1110, Y               ; 01b761 m16x16
          CMP #$ffff                 ; 01b764 m16x16
          BEQ label110               ; 01b767 m16x16
@@ -2051,9 +2034,9 @@ label117: INY                       ; 01b7e4 m16x16
          INY                        ; 01b7e5 m16x16
          CPY #$0010                 ; 01b7e6 m16x16
          BEQ label118               ; 01b7e9 m16x16
-         JMP entry50                ; 01b7eb m16x16
+         JMP entry49                ; 01b7eb m16x16
 label118: RTS                       ; 01b7ee m16x16
-entry51: .entry m16x16
+entry50: .entry m16x16
          STX $0e                    ; 01b7ef m16x16
          TXA                        ; 01b7f1 m16x16
          ASL                        ; 01b7f2 m16x16
@@ -2090,23 +2073,23 @@ label121: INY                       ; 01b838 m16x16
          INX                        ; 01b83b m16x16
          BRA label119               ; 01b83c m16x16
          .org $01b8bf
-entry52: .entry m8x8
+entry51: .entry m8x8
          REP #$20                   ; 01b8bf m16x8
          STZ $b2                    ; 01b8c1 m16x8
          STZ $b4                    ; 01b8c3 m16x8
          LDA #$1000                 ; 01b8c5 m16x8
          STA $00                    ; 01b8c8 m16x8
-         JSR entry53                ; 01b8ca m16x8
+         JSR entry52                ; 01b8ca m16x8
          SEP #$30                   ; 01b8cd m8x8
-         JSR entry54                ; 01b8cf m8x8
-         JSR entry56                ; 01b8d2 m8x8
+         JSR entry53                ; 01b8cf m8x8
+         JSR entry55                ; 01b8d2 m8x8
          LDA $7ec172                ; 01b8d5 m8x8
          BEQ label122               ; 01b8d9 m8x8
-         JSL @entry63               ; 01b8db m8x8
+         JSL @entry62               ; 01b8db m8x8
 label122: STZ $0200                 ; 01b8df m8x8
          RTL                        ; 01b8e2 m8x8
          .org $01b8f3
-entry53: .entry m16x8
+entry52: .entry m16x8
          PHB                        ; 01b8f3 m16x8
          LDX #$7e                   ; 01b8f4 m16x8
          PHX                        ; 01b8f6 m16x8
@@ -2164,7 +2147,7 @@ label125: XBA                       ; 01b941 m8x16
          INC $0200                  ; 01b962 m16x16
 label126: PLB                       ; 01b965 m16x16
          RTS                        ; 01b966 m16x16
-entry54: .entry m8x8
+entry53: .entry m8x8
          REP #$30                   ; 01b967 m16x16
          LDX $0432                  ; 01b969 m16x16
          BEQ label128               ; 01b96c m16x16
@@ -2505,7 +2488,7 @@ label163: LDA $af                   ; 01bce0 m16x16
          BCC label164               ; 01bcf7 m16x16, c=1
          CMP #$0033                 ; 01bcf9 m16x16
          BCC label167               ; 01bcfc m16x16, c=1
-label164: JSR entry55               ; 01bcfe m16x16
+label164: JSR entry54               ; 01bcfe m16x16
 label165: CPY $0498                 ; 01bd01 m16x16
          BEQ label167               ; 01bd04 m16x16
 label166: LDA $06e0, Y              ; 01bd06 m16x16
@@ -2585,7 +2568,7 @@ label171: LDX $06ec, Y              ; 01bdaa m16x16
          BNE label171               ; 01bdd5 m16x16
 label172: INC $0200                 ; 01bdd7 m16x16
          RTS                        ; 01bdda m16x16
-entry55: .entry m16x16
+entry54: .entry m16x16
          LDA $06e0, Y               ; 01bddb m16x16
          BEQ label173               ; 01bdde m16x16
          AND #$7fff                 ; 01bde0 m16x16
@@ -2609,23 +2592,23 @@ label173: LDA $00                   ; 01be07 m16x16
          INY                        ; 01be0f m16x16
          INY                        ; 01be10 m16x16
          CPY $0496                  ; 01be11 m16x16
-         BNE entry55                ; 01be14 m16x16
+         BNE entry54                ; 01be14 m16x16
          RTS                        ; 01be16 m16x16
-entry56: .entry m8x8
+entry55: .entry m8x8
          REP #$30                   ; 01be17 m16x16
          LDY #$0000                 ; 01be19 m16x16
 label174: LDA $19a0, Y              ; 01be1c m16x16
          BEQ label175               ; 01be1f m16x16
-         JSR entry57                ; 01be21 m16x16
+         JSR entry56                ; 01be21 m16x16
 label175: INY                       ; 01be24 m16x16
          INY                        ; 01be25 m16x16
          CPY #$0020                 ; 01be26 m16x16
          BNE label174               ; 01be29 m16x16
-         JSR entry73                ; 01be2b m16x16
-         JSR entry62                ; 01be2e m16x16
+         JSR entry72                ; 01be2b m16x16
+         JSR entry61                ; 01be2e m16x16
          INC $0200                  ; 01be31 m16x16
          RTS                        ; 01be34 m16x16
-entry57: .entry m16x16
+entry56: .entry m16x16
          LDA $1980, Y               ; 01be35 m16x16
          AND #$00fe                 ; 01be38 m16x16
          STA $02                    ; 01be3b m16x16
@@ -2648,13 +2631,13 @@ entry57: .entry m16x16
          BEQ label176               ; 01be65 m16x16
          CMP #$0008                 ; 01be67 m16x16
          BNE label177               ; 01be6a m16x16
-label176: JMP entry61               ; 01be6c m16x16
+label176: JMP entry60               ; 01be6c m16x16
 label177: CMP #$0030                ; 01be6f m16x16
          BNE label178               ; 01be72 m16x16
-         JMP entry58                ; 01be74 m16x16
+         JMP entry57                ; 01be74 m16x16
 label178: CMP #$0040                ; 01be77 m16x16
          BCC label179               ; 01be7a m16x16, c=1
-         JMP entry60                ; 01be7c m16x16
+         JMP entry59                ; 01be7c m16x16
 label179: CMP #$0018                ; 01be7f m16x16
          BEQ label180               ; 01be82 m16x16
          CMP #$0044                 ; 01be84 m16x16
@@ -2772,10 +2755,10 @@ label191: LDA $19a0, Y              ; 01bf8b m16x16
          STA $7f2040, X             ; 01bfa9 m16x16
          STA $7f2080, X             ; 01bfad m16x16
          RTS                        ; 01bfb1 m16x16
-entry58: .entry m16x16
+entry57: .entry m16x16
          RTS                        ; 01bfb2 m16x16
          .org $01bfc1
-entry59: .entry m16x16
+entry58: .entry m16x16
          LDA $19c0, Y               ; 01bfc1 m16x16
          AND #$0002                 ; 01bfc4 m16x16
          BNE label193               ; 01bfc7 m16x16
@@ -2839,17 +2822,17 @@ label194: LDA #$0101                ; 01c01d m16x16
          DEC $00                    ; 01c080 m16x16
          BNE label194               ; 01c082 m16x16
          RTS                        ; 01c084 m16x16
-entry60: .entry m16x16
+entry59: .entry m16x16
          CMP #$0040                 ; 01c085 m16x16
-         BEQ entry61                ; 01c088 m16x16
+         BEQ entry60                ; 01c088 m16x16
          CMP #$0046                 ; 01c08a m16x16
-         BEQ entry61                ; 01c08d m16x16
+         BEQ entry60                ; 01c08d m16x16
          TYA                        ; 01c08f m16x16
          AND #$00ff                 ; 01c090 m16x16
          TAX                        ; 01c093 m16x16
          LDA $068c                  ; 01c094 m16x16
          AND $98c0, X               ; 01c097 m16x16
-         BNE entry61                ; 01c09a m16x16
+         BNE entry60                ; 01c09a m16x16
          SEP #$20                   ; 01c09c m8x16
          TYA                        ; 01c09e m8x16
          LSR                        ; 01c09f m8x16
@@ -2864,7 +2847,7 @@ entry60: .entry m16x16
          STA $7f2041, X             ; 01c0af m16x16
          STA $7f2081, X             ; 01c0b3 m16x16
          RTS                        ; 01c0b7 m16x16
-entry61: .entry m16x16
+entry60: .entry m16x16
          LDX $02                    ; 01c0b8 m16x16
          LDA $9a52, X               ; 01c0ba m16x16
          STA $00                    ; 01c0bd m16x16
@@ -2953,7 +2936,7 @@ label199: LDA $19a0, Y              ; 01c18d m16x16
          STA $7f2084, X             ; 01c1b1 m16x16
          STA $7f2086, X             ; 01c1b5 m16x16
          RTS                        ; 01c1b9 m16x16
-entry62: .entry m16x16
+entry61: .entry m16x16
          REP #$30                   ; 01c1ba m16x16
          LDA $04b0                  ; 01c1bc m16x16
          BEQ label203               ; 01c1bf m16x16
@@ -2995,7 +2978,7 @@ label202: LDA #$2323                ; 01c201 m16x16
 label203: SEP #$30                  ; 01c219 m8x8
          RTS                        ; 01c21b m8x8
          .org $01c22a
-entry63: .entry m8x8
+entry62: .entry m8x8
          REP #$10                   ; 01c22a m8x16
          LDX #$07ff                 ; 01c22c m8x16
 label204: LDA $7f2000, X            ; 01c22f m8x16
@@ -3031,11 +3014,11 @@ label212: DEX                       ; 01c277 m8x16
          SEP #$10                   ; 01c27a m8x8
          RTL                        ; 01c27c m8x8
          .org $01c2fd
-entry64: .entry m8x8
+entry63: .entry m8x8
          LDA $04c7                  ; 01c2fd m8x8
          BNE label213               ; 01c300 m8x8
          SEP #$30                   ; 01c302 m8x8
-         JSR entry65                ; 01c304 m8x8
+         JSR entry64                ; 01c304 m8x8
          STZ $0e                    ; 01c307 m8x8
          LDA $ae                    ; 01c309 m8x8
          ASL                        ; 01c30b m8x8
@@ -3053,7 +3036,7 @@ label213: STZ $04c7                 ; 01c31b m8x8
 label214: PLA                       ; 01c325 m8x16
 label215: SEP #$30                  ; 01c326 m8x8
          RTS                        ; 01c328 m8x8
-entry65: .entry m8x8
+entry64: .entry m8x8
          REP #$20                   ; 01c329 m16x8
          LDA $67                    ; 01c32b m16x8
          AND #$000c                 ; 01c32d m16x8
@@ -3116,7 +3099,7 @@ label219: REP #$20                  ; 01c39c m16x16
          LDA $a0                    ; 01c3a1 m16x16
          STA $a2                    ; 01c3a3 m16x16
          SEP #$30                   ; 01c3a5 m8x8
-         JSL @entry136              ; 01c3a7 m8x8
+         JSL @entry135              ; 01c3a7 m8x8
          SEP #$30                   ; 01c3ab m8x8
          LDA $0e                    ; 01c3ad m8x8
          CMP #$38                   ; 01c3af m8x8
@@ -3127,9 +3110,9 @@ label220: LDX #$20                  ; 01c3b7 m8x8
          STX $0464                  ; 01c3b9 m8x8
          CMP #$38                   ; 01c3bc m8x8
          BNE label221               ; 01c3be m8x8
-         JSL @entry129              ; 01c3c0 m8x8
+         JSL @entry128              ; 01c3c0 m8x8
          BRA label222               ; 01c3c4 m8x8
-label221: JSL @entry127             ; 01c3c6 m8x8
+label221: JSL @entry126             ; 01c3c6 m8x8
 label222: LDA $0462                 ; 01c3ca m8x8
          AND #$03                   ; 01c3cd m8x8
          TAX                        ; 01c3cf m8x8
@@ -3163,12 +3146,12 @@ label223: STX $0492                 ; 01c3eb m8x8
          LDX #$13                   ; 01c40b m8x8
          CMP #$39                   ; 01c40d m8x8
          BEQ label224               ; 01c40f m8x8
-         JSL @entry215              ; 01c411 m8x8
+         JSL @entry214              ; 01c411 m8x8
          LDX #$0e                   ; 01c415 m8x8
          STX $11                    ; 01c417 m8x8
          RTS                        ; 01c419 m8x8
 label224: STX $11                   ; 01c41a m8x8
-         JSL @entry216              ; 01c41c m8x8
+         JSL @entry215              ; 01c41c m8x8
          RTS                        ; 01c420 m8x8
 label225: STX $11                   ; 01c421 m8x8
          LDY #$16                   ; 01c423 m8x8
@@ -3179,7 +3162,7 @@ label225: STX $11                   ; 01c421 m8x8
 label226: STY $012e                 ; 01c42e m8x8
          RTS                        ; 01c431 m8x8
          .org $01ce70
-entry66: .entry m8x8
+entry65: .entry m8x8
          LDA $1a                    ; 01ce70 m8x8
          AND #$03                   ; 01ce72 m8x8
          BNE label229               ; 01ce74 m8x8
@@ -3194,14 +3177,14 @@ label227: LDA $04f0, X              ; 01ce7d m8x8
          TXA                        ; 01ce88 m8x8
          ORA #$c0                   ; 01ce89 m8x8
          STA $0333                  ; 01ce8b m8x8
-         JSL @entry80               ; 01ce8e m8x8
+         JSL @entry79               ; 01ce8e m8x8
          PLX                        ; 01ce92 m8x8
 label228: INX                       ; 01ce93 m8x8
          CPX #$10                   ; 01ce94 m8x8
          BNE label227               ; 01ce96 m8x8
 label229: LDA $02e4                 ; 01ce98 m8x8
          BEQ label230               ; 01ce9b m8x8
-         JMP entry67                ; 01ce9d m8x8
+         JMP entry66                ; 01ce9d m8x8
 label230: REP #$21                  ; 01cea0 m16x8, c=0
          LDA $2f                    ; 01cea2 m16x8, c=0
          AND #$00ff                 ; 01cea4 m16x8, c=0
@@ -3267,11 +3250,11 @@ label232: LDA $7f2000, X            ; 01ceed m16x16
          LDA #$0078                 ; 01cf33 m16x16
          STA $1cf0                  ; 01cf36 m16x16
          SEP #$30                   ; 01cf39 m8x8
-         JSL @entry346              ; 01cf3b m8x8
+         JSL @entry345              ; 01cf3b m8x8
          REP #$30                   ; 01cf3f m16x16
-label233: JMP entry67               ; 01cf41 m16x16
+label233: JMP entry66               ; 01cf41 m16x16
 label234: STZ $04b8                 ; 01cf44 m16x16
-         JMP entry67                ; 01cf47 m16x16
+         JMP entry66                ; 01cf47 m16x16
 label235: CMP #$001c                ; 01cf4a m16x16
          BCC label233               ; 01cf4d m16x16, c=1
          CMP #$002c                 ; 01cf4f m16x16
@@ -3301,14 +3284,14 @@ label237: STZ $0690                 ; 01cf6b m16x16
          RTL                        ; 01cf8d m8x8
 label238: LDA $0372                 ; 01cf8e m16x16
          AND #$00ff                 ; 01cf91 m16x16
-         BEQ entry67                ; 01cf94 m16x16
+         BEQ entry66                ; 01cf94 m16x16
          LDA $02f1                  ; 01cf96 m16x16
          CMP #$003f                 ; 01cf99 m16x16
-         BCS entry67                ; 01cf9c m16x16, c=0
+         BCS entry66                ; 01cf9c m16x16, c=0
          STX $068e                  ; 01cf9e m16x16, c=0
          SEP #$30                   ; 01cfa1 m8x8, c=0
          STY $00                    ; 01cfa3 m8x8, c=0
-         JSL @entry226              ; 01cfa5 m8x8
+         JSL @entry225              ; 01cfa5 m8x8
          BCS label239               ; 01cfa9 m8x8, c=0
          LDY $00                    ; 01cfab m8x8, c=0
          LDA $19c0, Y               ; 01cfad m8x8, c=0
@@ -3337,9 +3320,9 @@ label239: SEP #$30                  ; 01cfda m8x8
          STA $012f                  ; 01cfde m8x8
          LDA #$09                   ; 01cfe1 m8x8
          STA $11                    ; 01cfe3 m8x8
-         JSL @entry194              ; 01cfe5 m8x8
+         JSL @entry193              ; 01cfe5 m8x8
 label240: RTL                       ; 01cfe9 m8x8
-entry67: .entry native
+entry66: .entry native
          SEP #$30                   ; 01cfea m8x8
          LDA $0436                  ; 01cfec m8x8
          BMI label243               ; 01cfef m8x8
@@ -3370,10 +3353,10 @@ label242: CMP $068c                 ; 01d01f m16x8
          LDA $0437                  ; 01d02b m16x16
          AND #$00ff                 ; 01d02e m16x16
          TAY                        ; 01d031 m16x16
-         JSR entry69                ; 01d032 m16x16
-         JSR entry82                ; 01d035 m16x16
+         JSR entry68                ; 01d032 m16x16
+         JSR entry81                ; 01d035 m16x16
          LDY $0460                  ; 01d038 m16x16
-         JSR entry72                ; 01d03b m16x16
+         JSR entry71                ; 01d03b m16x16
          LDY $0c                    ; 01d03e m16x16
          LDA #$ffff                 ; 01d040 m16x16
          STA $1100, Y               ; 01d043 m16x16
@@ -3456,7 +3439,7 @@ label245: ADD $22                   ; 01d086 m16x16
 label246: STZ $0c                   ; 01d0f5 m16x16
          CMP #$006c                 ; 01d0f7 m16x16
          BEQ label247               ; 01d0fa m16x16
-         JMP entry68                ; 01d0fc m16x16
+         JMP entry67                ; 01d0fc m16x16
 label247: STY $0e                   ; 01d0ff m16x16
          CPY #$0040                 ; 01d101 m16x16
          BCC label248               ; 01d104 m16x16, c=1
@@ -3515,7 +3498,7 @@ label250: LDA $9b52, Y              ; 01d160 m16x16
          DEC $0e                    ; 01d184 m16x16
          BNE label250               ; 01d186 m16x16
          BRA label251               ; 01d188 m16x16
-entry68: .entry m16x16
+entry67: .entry m16x16
          LDA $7f2000, X             ; 01d18a m16x16
          AND #$000f                 ; 01d18e m16x16
          ASL                        ; 01d191 m16x16
@@ -3539,15 +3522,15 @@ entry68: .entry m16x16
          ORA $98c0, X               ; 01d1bc m16x16
          STA $0400                  ; 01d1bf m16x16
          STZ $0692                  ; 01d1c2 m16x16
-         JSR entry70                ; 01d1c5 m16x16
+         JSR entry69                ; 01d1c5 m16x16
          LDY $0460                  ; 01d1c8 m16x16
-         JSR entry72                ; 01d1cb m16x16
-label251: JSR entry82               ; 01d1ce m16x16
+         JSR entry71                ; 01d1cb m16x16
+label251: JSR entry81               ; 01d1ce m16x16
          SEP #$30                   ; 01d1d1 m8x8
          LDA $08                    ; 01d1d3 m8x8
          AND #$7f                   ; 01d1d5 m8x8
          ASL                        ; 01d1d7 m8x8
-         JSL @entry301              ; 01d1d8 m8x8
+         JSL @entry300              ; 01d1d8 m8x8
          ORA #$1e                   ; 01d1dc m8x8
          STA $012e                  ; 01d1de m8x8
          REP #$30                   ; 01d1e1 m16x16
@@ -3559,7 +3542,7 @@ label251: JSR entry82               ; 01d1ce m16x16
          STA $18                    ; 01d1ef m8x8
          RTL                        ; 01d1f1 m8x8
          .org $01d338
-entry69: .entry m16x16
+entry68: .entry m16x16
          LDX $19a0, Y               ; 01d338 m16x16
          STX $08                    ; 01d33b m16x16
          STY $0460                  ; 01d33d m16x16
@@ -3568,21 +3551,21 @@ entry69: .entry m16x16
          LDA $19c0, Y               ; 01d345 m16x16
          AND #$0003                 ; 01d348 m16x16
          BNE label252               ; 01d34b m16x16
-         JMP entry85                ; 01d34d m16x16
+         JMP entry84                ; 01d34d m16x16
 label252: CMP #$0001                ; 01d350 m16x16
          BNE label253               ; 01d353 m16x16
-         JMP entry86                ; 01d355 m16x16
+         JMP entry85                ; 01d355 m16x16
 label253: CMP #$0002                ; 01d358 m16x16
          BNE label254               ; 01d35b m16x16
-         JMP entry87                ; 01d35d m16x16
-label254: JMP entry88               ; 01d360 m16x16
-entry70: .entry m16x16
+         JMP entry86                ; 01d35d m16x16
+label254: JMP entry87               ; 01d360 m16x16
+entry69: .entry m16x16
          LDX $19a0, Y               ; 01d363 m16x16
          STX $08                    ; 01d366 m16x16
          STY $0460                  ; 01d368 m16x16
          STY $0694                  ; 01d36b m16x16
-         JMP entry89                ; 01d36e m16x16
-entry71: .entry m16x16
+         JMP entry88                ; 01d36e m16x16
+entry70: .entry m16x16
          STZ $045e                  ; 01d371 m16x16
          STZ $0c                    ; 01d374 m16x16
          STZ $0690                  ; 01d376 m16x16
@@ -3594,11 +3577,11 @@ entry71: .entry m16x16
          STX $08                    ; 01d384 m16x16
          TXA                        ; 01d386 m16x16
          STA $19a0, Y               ; 01d387 m16x16
-         JMP entry91                ; 01d38a m16x16
+         JMP entry90                ; 01d38a m16x16
          .org $01d51a
+entry71: .entry m16x16
+         JSR entry56                ; 01d51a m16x16
 entry72: .entry m16x16
-         JSR entry57                ; 01d51a m16x16
-entry73: .entry m16x16
          LDX $044e                  ; 01d51d m16x16
          BEQ label257               ; 01d520 m16x16
          LDY #$0000                 ; 01d522 m16x16
@@ -3651,15 +3634,15 @@ label259: LDA $7f3000, X            ; 01d591 m16x16
          BNE label258               ; 01d5a5 m16x16
 label260: RTS                       ; 01d5a7 m16x16
          .org $01d6bf
-entry74: .entry m8x8
+entry73: .entry m8x8
          LDA #$06                   ; 01d6bf m8x8
          STA $02e4                  ; 01d6c1 m8x8
          STA $0fc1                  ; 01d6c4 m8x8
          CMP $7f0000                ; 01d6c7 m8x8
          BNE label263               ; 01d6cb m8x8
          REP #$30                   ; 01d6cd m16x16
-         JSR entry71                ; 01d6cf m16x16
-         JSR entry83                ; 01d6d2 m16x16
+         JSR entry70                ; 01d6cf m16x16
+         JSR entry82                ; 01d6d2 m16x16
          LDA #$ffff                 ; 01d6d5 m16x16
          STA $1100, Y               ; 01d6d8 m16x16
          STA $0710                  ; 01d6db m16x16
@@ -3691,11 +3674,11 @@ label261: TYA                       ; 01d713 m16x16
          LDA $a6                    ; 01d721 m16x16
          STA $7ec19c                ; 01d723 m16x16
          LDY $0456                  ; 01d727 m16x16
-         JSR entry59                ; 01d72a m16x16
+         JSR entry58                ; 01d72a m16x16
          STZ $0454                  ; 01d72d m16x16
          STZ $0456                  ; 01d730 m16x16
          SEP #$30                   ; 01d733 m8x8
-         JSL @entry136              ; 01d735 m8x8
+         JSL @entry135              ; 01d735 m8x8
          STZ $02e4                  ; 01d739 m8x8
          STZ $0fc1                  ; 01d73c m8x8
 label262: SEP #$30                  ; 01d73f m8x8
@@ -3707,7 +3690,7 @@ label264: LDA $0500, Y              ; 01d7c6 m16x16
          BEQ label268               ; 01d7c9 m16x16
          CMP #$0001                 ; 01d7cb m16x16
          BNE label265               ; 01d7ce m16x16
-         JSR entry76                ; 01d7d0 m16x16
+         JSR entry75                ; 01d7d0 m16x16
          LDX $0474                  ; 01d7d3 m16x16
          LDA $0540, Y               ; 01d7d6 m16x16
          ADD $01d7be, X             ; 01d7d9 m16x16
@@ -3716,31 +3699,31 @@ label264: LDA $0500, Y              ; 01d7c6 m16x16
 label265: CMP #$0002                ; 01d7e3 m16x16
          BNE label266               ; 01d7e6 m16x16
          SEP #$30                   ; 01d7e8 m8x8
-         JSL @entry208              ; 01d7ea m8x8
+         JSL @entry207              ; 01d7ea m8x8
          REP #$30                   ; 01d7ee m16x16
          LDY $042c                  ; 01d7f0 m16x16
          LDA $0500, Y               ; 01d7f3 m16x16
          CMP #$0003                 ; 01d7f6 m16x16
          BNE label268               ; 01d7f9 m16x16
-         JSR entry78                ; 01d7fb m16x16
+         JSR entry77                ; 01d7fb m16x16
          BRA label267               ; 01d7fe m16x16
 label266: CMP #$0004                ; 01d800 m16x16
          BNE label268               ; 01d803 m16x16
          SEP #$30                   ; 01d805 m8x8
-         JSL @entry209              ; 01d807 m8x8
+         JSL @entry208              ; 01d807 m8x8
          BRA label268               ; 01d80b m8x8
 label267: LDX $042c                 ; 01d80d m16x16
          INC $0500, X               ; 01d810 m16x16
 label268: INC $042c                 ; 01d813 native
          INC $042c                  ; 01d816 native
-entry75: .entry native
+entry74: .entry native
          REP #$30                   ; 01d819 m16x16
          LDY $042c                  ; 01d81b m16x16
          CPY $0478                  ; 01d81e m16x16
          BNE label264               ; 01d821 m16x16
          SEP #$30                   ; 01d823 m8x8
          RTL                        ; 01d825 m8x8
-entry76: .entry m16x16
+entry75: .entry m16x16
          LDX $1000                  ; 01d826 m16x16
          LDA $0560, Y               ; 01d829 m16x16
          STA $1006, X               ; 01d82c m16x16
@@ -3772,21 +3755,21 @@ entry76: .entry m16x16
          LSR                        ; 01d879 m16x16
          TAX                        ; 01d87a m16x16
          LDA $00                    ; 01d87b m16x16
-entry77: .entry m16x16
+entry76: .entry m16x16
          STA $7f2000, X             ; 01d87d m16x16
          STA $7f2040, X             ; 01d881 m16x16
          LDX $1000                  ; 01d885 m16x16
          LDA #$0000                 ; 01d888 m16x16
-         JSR entry79                ; 01d88b m16x16
+         JSR entry78                ; 01d88b m16x16
          STA $1002, X               ; 01d88e m16x16
          LDA #$0080                 ; 01d891 m16x16
-         JSR entry79                ; 01d894 m16x16
+         JSR entry78                ; 01d894 m16x16
          STA $1008, X               ; 01d897 m16x16
          LDA #$0002                 ; 01d89a m16x16
-         JSR entry79                ; 01d89d m16x16
+         JSR entry78                ; 01d89d m16x16
          STA $100e, X               ; 01d8a0 m16x16
          LDA #$0082                 ; 01d8a3 m16x16
-         JSR entry79                ; 01d8a6 m16x16
+         JSR entry78                ; 01d8a6 m16x16
          STA $1014, X               ; 01d8a9 m16x16
          LDA #$0100                 ; 01d8ac m16x16
          STA $1004, X               ; 01d8af m16x16
@@ -3803,7 +3786,7 @@ entry77: .entry m16x16
          STA $14                    ; 01d8cd m8x16
          REP #$30                   ; 01d8cf m16x16
          RTS                        ; 01d8d1 m16x16
-entry78: .entry m16x16
+entry77: .entry m16x16
          LDA $0540, Y               ; 01d8d2 m16x16
          AND #$4000                 ; 01d8d5 m16x16
          BNE label269               ; 01d8d8 m16x16
@@ -3865,7 +3848,7 @@ label270: STZ $05fc, X              ; 01d943 m8x16
 label271: LDA #$ffff                ; 01d95e m16x16
 label272: STA $0500, Y              ; 01d961 m16x16
          LDA #$2727                 ; 01d964 m16x16
-         JMP entry77                ; 01d967 m16x16
+         JMP entry76                ; 01d967 m16x16
 label273: SEP #$20                  ; 01d96a m8x16
          LDA #$20                   ; 01d96c m8x16
          STA $012e                  ; 01d96e m8x16
@@ -3878,7 +3861,7 @@ label273: SEP #$20                  ; 01d96a m8x16
          LDA $0540, Y               ; 01d984 m16x16
          STA $7ef942, X             ; 01d987 m16x16
          RTS                        ; 01d98b m16x16
-entry79: .entry m16x16
+entry78: .entry m16x16
          STA $0e                    ; 01d98c m16x16
          LDA $0540, Y               ; 01d98e m16x16
          AND #$3fff                 ; 01d991 m16x16
@@ -3904,7 +3887,7 @@ entry79: .entry m16x16
          XBA                        ; 01d9b6 m16x16
          RTS                        ; 01d9b7 m16x16
          .org $01f4a4
-entry80: .entry m8x8
+entry79: .entry m8x8
          LDA #$c0                   ; 01f4a4 m8x8
          STA $08                    ; 01f4a6 m8x8
          STZ $09                    ; 01f4a8 m8x8
@@ -3931,7 +3914,7 @@ entry80: .entry m8x8
          TAX                        ; 01f4d4 m16x16
          STX $08                    ; 01f4d5 m16x16
          LDY #$0ec2                 ; 01f4d7 m16x16
-         JSR entry81                ; 01f4da m16x16
+         JSR entry80                ; 01f4da m16x16
          LDY $0c                    ; 01f4dd m16x16
          LDA #$ffff                 ; 01f4df m16x16
          STA $1100, Y               ; 01f4e2 m16x16
@@ -3965,7 +3948,7 @@ label275: LDA $0333                 ; 01f518 m8x8
          STZ $0333                  ; 01f522 m8x8
          RTL                        ; 01f525 m8x8
          .org $01f744
-entry81: .entry m16x16
+entry80: .entry m16x16
          LDA $9b52, Y               ; 01f744 m16x16
          STA $7e2000, X             ; 01f747 m16x16
          LDA $9b54, Y               ; 01f74b m16x16
@@ -3975,7 +3958,7 @@ entry81: .entry m16x16
          LDA $9b58, Y               ; 01f759 m16x16
          STA $7e2082, X             ; 01f75c m16x16
          STZ $0c                    ; 01f760 m16x16
-entry82: .entry m16x16
+entry81: .entry m16x16
          LDA #$0004                 ; 01f762 m16x16
          STA $0a                    ; 01f765 m16x16
          LDY $0c                    ; 01f767 m16x16
@@ -4038,7 +4021,7 @@ label278: TYA                       ; 01f7e2 m16x16
          STY $0c                    ; 01f7ec m16x16
          RTS                        ; 01f7ee m16x16
          .org $01f80f
-entry83: .entry m16x16
+entry82: .entry m16x16
          LDA #$0080                 ; 01f80f m16x16
          STA $06                    ; 01f812 m16x16
          STZ $0e                    ; 01f814 m16x16
@@ -4056,9 +4039,9 @@ label279: LDY $0c                   ; 01f831 m16x16
          LDX $0460                  ; 01f833 m16x16
          LDA $19c0, X               ; 01f836 m16x16
          AND #$0002                 ; 01f839 m16x16
-         BNE entry84                ; 01f83c m16x16
+         BNE entry83                ; 01f83c m16x16
          INC $06                    ; 01f83e m16x16
-entry84: .entry m16x16
+entry83: .entry m16x16
          LDX $08                    ; 01f840 m16x16
          TXA                        ; 01f842 m16x16
          AND #$0040                 ; 01f843 m16x16
@@ -4120,7 +4103,7 @@ entry84: .entry m16x16
          TAY                        ; 01f8d7 m16x16
          DEC $0a                    ; 01f8d8 m16x16
          BEQ label280               ; 01f8da m16x16
-         JMP entry84                ; 01f8dc m16x16
+         JMP entry83                ; 01f8dc m16x16
 label280: LDA $0e                   ; 01f8df m16x16
          BEQ label282               ; 01f8e1 m16x16
          DEC $0e                    ; 01f8e3 m16x16
@@ -4136,12 +4119,12 @@ label281: LDA $01f7ed, X            ; 01f8f2 m16x16
          STA $08                    ; 01f8f9 m16x16
          LDA #$0003                 ; 01f8fb m16x16
          STA $0a                    ; 01f8fe m16x16
-         JMP entry84                ; 01f900 m16x16
+         JMP entry83                ; 01f900 m16x16
 label282: STY $0c                   ; 01f903 m16x16
          RTS                        ; 01f905 m16x16
          .org $01fad5
-entry85: .entry m16x16
-         JSR entry90                ; 01fad5 m16x16
+entry84: .entry m16x16
+         JSR entry89                ; 01fad5 m16x16
          LDY $cd9e, X               ; 01fad8 m16x16
          LDX $0460                  ; 01fadb m16x16
          LDA $19a0, X               ; 01fade m16x16
@@ -4163,8 +4146,8 @@ label283: LDA $9b52, Y              ; 01fae7 m16x16
          BNE label283               ; 01fb06 m16x16
          RTS                        ; 01fb08 m16x16
          .org $01fb8c
-entry86: .entry m16x16
-         JSR entry90                ; 01fb8c m16x16
+entry85: .entry m16x16
+         JSR entry89                ; 01fb8c m16x16
          LDY $ce06, X               ; 01fb8f m16x16
          LDX $0460                  ; 01fb92 m16x16
          LDA $19a0, X               ; 01fb95 m16x16
@@ -4186,8 +4169,8 @@ label284: LDA $9b52, Y              ; 01fb9e m16x16
          BNE label284               ; 01fbbd m16x16
          RTS                        ; 01fbbf m16x16
          .org $01fc43
-entry87: .entry m16x16
-         JSR entry90                ; 01fc43 m16x16
+entry86: .entry m16x16
+         JSR entry89                ; 01fc43 m16x16
          LDY $ce66, X               ; 01fc46 m16x16
          LDX $0460                  ; 01fc49 m16x16
          LDA $19a0, X               ; 01fc4c m16x16
@@ -4211,8 +4194,8 @@ label285: LDA $9b52, Y              ; 01fc55 m16x16
          BNE label285               ; 01fc7b m16x16
          RTS                        ; 01fc7d m16x16
          .org $01fd01
-entry88: .entry m16x16
-         JSR entry90                ; 01fd01 m16x16
+entry87: .entry m16x16
+         JSR entry89                ; 01fd01 m16x16
          LDY $cec6, X               ; 01fd04 m16x16
          LDX $0460                  ; 01fd07 m16x16
          LDA $19a0, X               ; 01fd0a m16x16
@@ -4235,7 +4218,7 @@ label286: LDA $9b52, Y              ; 01fd13 m16x16
          DEC $0e                    ; 01fd37 m16x16
          BNE label286               ; 01fd39 m16x16
          RTS                        ; 01fd3b m16x16
-entry89: .entry m16x16
+entry88: .entry m16x16
          LDX #$0056                 ; 01fd3c m16x16
          LDY $cd9e, X               ; 01fd3f m16x16
          LDX $0460                  ; 01fd42 m16x16
@@ -4259,7 +4242,7 @@ label287: LDA $9b52, Y              ; 01fd4e m16x16
          DEC $0e                    ; 01fd72 m16x16
          BNE label287               ; 01fd74 m16x16
          RTS                        ; 01fd76 m16x16
-entry90: .entry m16x16
+entry89: .entry m16x16
          LDY $0460                  ; 01fd77 m16x16
          LDA $1980, Y               ; 01fd7a m16x16
          AND #$00fe                 ; 01fd7d m16x16
@@ -4271,9 +4254,9 @@ entry90: .entry m16x16
          LDA $9a02, X               ; 01fd8b m16x16
          TAX                        ; 01fd8e m16x16
 label288: RTS                       ; 01fd8f m16x16
-entry91: .entry m16x16
+entry90: .entry m16x16
          LDY #$31ea                 ; 01fd90 m16x16
-         JSR entry92                ; 01fd93 m16x16
+         JSR entry91                ; 01fd93 m16x16
          LDA $0454                  ; 01fd96 m16x16
          DEC                        ; 01fd99 m16x16
          STA $0e                    ; 01fd9a m16x16
@@ -4297,7 +4280,7 @@ label289: STA $7e2000, X            ; 01fda1 m16x16
          BNE label289               ; 01fdd5 m16x16
 label290: INY                       ; 01fdd7 m16x16
          INY                        ; 01fdd8 m16x16
-entry92: .entry m16x16
+entry91: .entry m16x16
          LDA #$0002                 ; 01fdd9 m16x16
          STA $0e                    ; 01fddc m16x16
 label291: LDA $9b52, Y              ; 01fdde m16x16
@@ -4333,7 +4316,7 @@ label291: LDA $9b52, Y              ; 01fdde m16x16
          BNE label291               ; 01fe3c m16x16
          RTS                        ; 01fe3e m16x16
          .org $01fec1
-entry93: .entry m8x8
+entry92: .entry m8x8
          ORA #$20                   ; 01fec1 m8x8
          STA $9c                    ; 01fec3 m8x8
          AND #$1f                   ; 01fec5 m8x8
@@ -4344,8 +4327,8 @@ entry93: .entry m8x8
          STA $9e                    ; 01fecf m8x8
          RTL                        ; 01fed1 m8x8
          .org $028046
-entry94: .entry m8x8
-         JSL @entry5                ; 028046 m8x8
+entry93: .entry m8x8
+         JSL @entry4                ; 028046 m8x8
          STZ $0200                  ; 02804a m8x8
          STZ $03f4                  ; 02804d m8x8
          STZ $02d4                  ; 028050 m8x8
@@ -4356,13 +4339,13 @@ entry94: .entry m8x8
          JSL @entry1                ; 02805f m8x8
          LDA #$02                   ; 028063 m8x8
          STA $2101                  ; 028065 m8x8
-         JSL @entry18               ; 028068 m8x8
-         JSL @entry37               ; 02806c m8x8
-         JSL @entry328              ; 028070 m8x8
-         JSL @entry10               ; 028074 m8x8
-         JSL @entry11               ; 028078 m8x8
-         JSL @entry214              ; 02807c m8x8
-         JSL @entry13               ; 028080 m8x8
+         JSL @entry17               ; 028068 m8x8
+         JSL @entry36               ; 02806c m8x8
+         JSL @entry327              ; 028070 m8x8
+         JSL @entry9                ; 028074 m8x8
+         JSL @entry10               ; 028078 m8x8
+         JSL @entry213              ; 02807c m8x8
+         JSL @entry12               ; 028080 m8x8
          LDA #$46                   ; 028084 m8x8
          STA $7ec2fc                ; 028086 m8x8
          STA $7ec2fd                ; 02808a m8x8
@@ -4376,10 +4359,10 @@ entry94: .entry m8x8
          LDA $7ef3ca                ; 0280a2 m8x8
          BEQ label292               ; 0280a6 m8x8
          LDA $1b                    ; 0280a8 m8x8
-         BNE entry95                ; 0280aa m8x8
-         JSL @entry310              ; 0280ac m8x8
-         JSL @entry316              ; 0280b0 m8x8
-         JSL @entry304              ; 0280b4 m8x8
+         BNE entry94                ; 0280aa m8x8
+         JSL @entry309              ; 0280ac m8x8
+         JSL @entry315              ; 0280b0 m8x8
+         JSL @entry303              ; 0280b4 m8x8
          STZ $010a                  ; 0280b8 m8x8
          LDA #$20                   ; 0280bb m8x8
          STA $a0                    ; 0280bd m8x8
@@ -4391,17 +4374,17 @@ entry94: .entry m8x8
          STZ $04aa                  ; 0280c9 m8x8
          RTL                        ; 0280cc m8x8
 label292: LDA $7ec011               ; 0280cd m8x8
-         BNE entry95                ; 0280d1 m8x8
+         BNE entry94                ; 0280d1 m8x8
          LDA $010a                  ; 0280d3 m8x8
          BEQ label293               ; 0280d6 m8x8
          LDA $04aa                  ; 0280d8 m8x8
-         BEQ entry95                ; 0280db m8x8
+         BEQ entry94                ; 0280db m8x8
 label293: LDA $7ef3c5               ; 0280dd m8x8
          CMP #$02                   ; 0280e1 m8x8
-         BCC entry95                ; 0280e3 m8x8, c=1
+         BCC entry94                ; 0280e3 m8x8, c=1
          LDA $7ef3c8                ; 0280e5 m8x8, c=1
          CMP #$05                   ; 0280e9 m8x8
-         BEQ entry95                ; 0280eb m8x8
+         BEQ entry94                ; 0280eb m8x8
          REP #$10                   ; 0280ed m8x16
          LDX #$0183                 ; 0280ef m8x16
          LDA $7ef353                ; 0280f2 m8x16
@@ -4410,8 +4393,8 @@ label293: LDA $7ef3c5               ; 0280dd m8x8
          LDX #$0182                 ; 0280fa m8x16
 label294: STX $1cf0                 ; 0280fd m8x16
          SEP #$10                   ; 028100 m8x8
-         JSL @entry346              ; 028102 m8x8
-         JSR entry150               ; 028106 m8x8
+         JSL @entry345              ; 028102 m8x8
+         JSR entry149               ; 028106 m8x8
          LDA #$0f                   ; 028109 m8x8
          STA $13                    ; 02810b m8x8
          LDA #$04                   ; 02810d m8x8
@@ -4420,15 +4403,15 @@ label294: STX $1cf0                 ; 0280fd m8x16
          LDA #$1b                   ; 028113 m8x8
          STA $10                    ; 028115 m8x8
          RTL                        ; 028117 m8x8
-entry95: .entry m8x8
+entry94: .entry m8x8
          LDA #$00                   ; 028118 m8x8
          STA $7ec011                ; 02811a m8x8
          ORA #$07                   ; 02811e m8x8
          STA $95                    ; 028120 m8x8
-         JSL @entry310              ; 028122 m8x8
-         JSL @entry316              ; 028126 m8x8
-         JSL @entry304              ; 02812a m8x8
-entry96: .entry m8x8
+         JSL @entry309              ; 028122 m8x8
+         JSL @entry315              ; 028126 m8x8
+         JSL @entry303              ; 02812a m8x8
+entry95: .entry m8x8
          REP #$20                   ; 02812e m16x8
          STZ $a0                    ; 028130 m16x8
          STZ $a2                    ; 028132 m16x8
@@ -4441,7 +4424,7 @@ entry96: .entry m8x8
          STA $7ec021                ; 02814a m16x8
          STA $7ec023                ; 02814e m16x8
          SEP #$20                   ; 028152 m8x8
-         JSR entry152               ; 028154 m8x8
+         JSR entry151               ; 028154 m8x8
          LDA $040c                  ; 028157 m8x8
          CMP #$ff                   ; 02815a m8x8
          BEQ label296               ; 02815c m8x8
@@ -4451,26 +4434,26 @@ entry96: .entry m8x8
 label295: LSR                       ; 028164 m8x8
          TAX                        ; 028165 m8x8
          LDA $7ef37c, X             ; 028166 m8x8
-label296: JSL @entry315             ; 02816a m8x8
+label296: JSL @entry314             ; 02816a m8x8
          STZ $045a                  ; 02816e m8x8
          STZ $0458                  ; 028171 m8x8
-         JSR entry149               ; 028174 m8x8
-         JSL @entry329              ; 028177 m8x8
+         JSR entry148               ; 028174 m8x8
+         JSL @entry328              ; 028177 m8x8
          LDX $0aa1                  ; 02817b m8x8
          LDA $02802e, X             ; 02817e m8x8
          TAY                        ; 028182 m8x8
-         JSL @entry12               ; 028183 m8x8
-         JSL @entry52               ; 028187 m8x8
+         JSL @entry11               ; 028183 m8x8
+         JSL @entry51               ; 028187 m8x8
          LDA #$0a                   ; 02818b m8x8
          STA $0aa4                  ; 02818d m8x8
-         JSL @entry17               ; 028190 m8x8
+         JSL @entry16               ; 028190 m8x8
          LDA #$0a                   ; 028194 m8x8
          STA $0ab1                  ; 028196 m8x8
-         JSR entry150               ; 028199 m8x8
+         JSR entry149               ; 028199 m8x8
          LDA $02e0                  ; 02819c m8x8
          ORA $56                    ; 02819f m8x8
          BEQ label297               ; 0281a1 m8x8
-         JSL @entry156              ; 0281a3 m8x8
+         JSL @entry155              ; 0281a3 m8x8
 label297: REP #$30                  ; 0281a7 m16x16
          LDA $a0                    ; 0281a9 m16x16
          AND #$000f                 ; 0281ab m16x16
@@ -4493,7 +4476,7 @@ label297: REP #$30                  ; 0281a7 m16x16
          LDA #$0000                 ; 0281cf m16x16
          STA $7ec005                ; 0281d2 m16x16
 label298: SEP #$30                  ; 0281d6 m8x8
-         JSL @entry131              ; 0281d8 m8x8
+         JSL @entry130              ; 0281d8 m8x8
          LDA #$02                   ; 0281dc m8x8
          STA $99                    ; 0281de m8x8
          LDA #$b3                   ; 0281e0 m8x8
@@ -4514,7 +4497,7 @@ label299: LDA #$20                  ; 028200 m8x8
 label300: STA $9a                   ; 028202 m8x8
 label301: LDA $02a0dc, X            ; 028204 m8x8
          STA $7ec017                ; 028208 m8x8
-         JSL @entry93               ; 02820c m8x8
+         JSL @entry92               ; 02820c m8x8
          LDA #$1f                   ; 028210 m8x8
          STA $7ec007                ; 028212 m8x8
          LDA #$00                   ; 028216 m8x8
@@ -4525,21 +4508,21 @@ label301: LDA $02a0dc, X            ; 028204 m8x8
          STZ $57                    ; 028225 m8x8
          STZ $3a                    ; 028227 m8x8
          STZ $3c                    ; 028229 m8x8
-         JSR entry103               ; 02822b m8x8
-         JSL @entry345              ; 02822e m8x8
-         JSR entry105               ; 028232 m8x8
+         JSR entry102               ; 02822b m8x8
+         JSL @entry344              ; 02822e m8x8
+         JSR entry104               ; 028232 m8x8
          LDA $7ef3cc                ; 028235 m8x8
          CMP #$0d                   ; 028239 m8x8
          BNE label302               ; 02823b m8x8
          LDA #$00                   ; 02823d m8x8
          STA $7ef3cc                ; 02823f m8x8
          STZ $04b4                  ; 028243 m8x8
-         JSL @entry268              ; 028246 m8x8
+         JSL @entry267              ; 028246 m8x8
 label302: LDA #$09                  ; 02824a m8x8
          STA $94                    ; 02824c m8x8
-         JSL @entry229              ; 02824e m8x8
-         JSL @entry255              ; 028252 m8x8
-         JSL @entry247              ; 028256 m8x8
+         JSL @entry228              ; 02824e m8x8
+         JSL @entry254              ; 028252 m8x8
+         JSL @entry246              ; 028256 m8x8
          STZ $02f0                  ; 02825a m8x8
          INC $04c7                  ; 02825d m8x8
          LDA $7ef3c5                ; 028260 m8x8
@@ -4556,13 +4539,13 @@ label302: LDA #$09                  ; 02824a m8x8
          LDA #$00                   ; 02827a m8x8
          STA $7ec005                ; 02827c m8x8
          STA $7ec006                ; 028280 m8x8
-         JSL @entry197              ; 028284 m8x8
+         JSL @entry196              ; 028284 m8x8
 label303: LDA #$07                  ; 028288 m8x8
          STA $010c                  ; 02828a m8x8
          STA $10                    ; 02828d m8x8
          LDA #$0f                   ; 02828f m8x8
          STA $11                    ; 028291 m8x8
-         JSR entry113               ; 028293 m8x8
+         JSR entry112               ; 028293 m8x8
          LDA $7ef3c5                ; 028296 m8x8
          CMP #$02                   ; 02829a m8x8
          BCS label304               ; 02829c m8x8, c=0
@@ -4582,14 +4565,14 @@ label303: LDA #$07                  ; 028288 m8x8
 label304: SEP #$20                  ; 0282bc m8x8
          RTL                        ; 0282be m8x8
          .org $0282c9
-entry97: .entry m8x8
+entry96: .entry m8x8
          LDA $11                    ; 0282c9 m8x8
          ASL                        ; 0282cb m8x8
          TAX                        ; 0282cc m8x8
          JSR ($82c3, X)             ; 0282cd m8x8
          RTL                        ; 0282d0 m8x8
          .org $02844a
-entry98: .entry m8x8
+entry97: .entry m8x8
          LDA $0136                  ; 02844a m8x8
          BEQ label305               ; 02844d m8x8
          SEI                        ; 02844f m8x8
@@ -4598,17 +4581,17 @@ entry98: .entry m8x8
          STZ $0136                  ; 028456 m8x8
          LDA #$ff                   ; 028459 m8x8
          STA $2140                  ; 02845b m8x8
-         JSL @entry3                ; 02845e m8x8
+         JSL @entry2                ; 02845e m8x8
          LDA #$81                   ; 028462 m8x8
          STA $4200                  ; 028464 m8x8
 label305: RTS                       ; 028467 m8x8
          .org $028484
-entry99: .entry m8x8
-         JSL @entry326              ; 028484 m8x8
+entry98: .entry m8x8
+         JSL @entry325              ; 028484 m8x8
          LDA $11                    ; 028488 m8x8
          BNE label306               ; 02848a m8x8
          STZ $14                    ; 02848c m8x8
-         JSL @entry5                ; 02848e m8x8
+         JSL @entry4                ; 02848e m8x8
          JSL @entry1                ; 028492 m8x8
          LDA $7ef3c8                ; 028496 m8x8
          PHA                        ; 02849a m8x8
@@ -4616,37 +4599,37 @@ entry99: .entry m8x8
          LDA $028481, X             ; 02849e m8x8
          STA $7ef3c8                ; 0284a2 m8x8
          STZ $b0                    ; 0284a6 m8x8
-         JSL @entry95               ; 0284a8 m8x8
+         JSL @entry94               ; 0284a8 m8x8
          PLA                        ; 0284ac m8x8
          STA $7ef3c8                ; 0284ad m8x8
 label306: RTL                       ; 0284b1 m8x8
          .org $0286a4
-entry100: .entry m8x8
+entry99: .entry m8x8
          SEP #$30                   ; 0286a4 m8x8
-         JSL @entry269              ; 0286a6 m8x8
+         JSL @entry268              ; 0286a6 m8x8
          LDA $11                    ; 0286aa m8x8
          ASL                        ; 0286ac m8x8
          TAX                        ; 0286ad m8x8
          JSR ($866e, X)             ; 0286ae m8x8
          STZ $042c                  ; 0286b1 m8x8
-         JSL @entry75               ; 0286b4 m8x8
+         JSL @entry74               ; 0286b4 m8x8
          LDA $11                    ; 0286b8 m8x8
          BNE label308               ; 0286ba m8x8
-         JSL @entry20               ; 0286bc m8x8
-         JSR entry144               ; 0286c0 m8x8
+         JSL @entry19               ; 0286bc m8x8
+         JSR entry143               ; 0286c0 m8x8
          LDA $11                    ; 0286c3 m8x8
          BNE label308               ; 0286c5 m8x8
-         JSL @entry64               ; 0286c7 m8x8
+         JSL @entry63               ; 0286c7 m8x8
          LDA $11                    ; 0286cb m8x8
          BNE label308               ; 0286cd m8x8
-         JSL @entry66               ; 0286cf m8x8
+         JSL @entry65               ; 0286cf m8x8
          LDA $0454                  ; 0286d3 m8x8
          BEQ label307               ; 0286d6 m8x8
-         JSL @entry74               ; 0286d8 m8x8
+         JSL @entry73               ; 0286d8 m8x8
 label307: LDA $6c                   ; 0286dc m8x8
          BNE label308               ; 0286de m8x8
-         JSR entry101               ; 0286e0 m8x8
-label308: JSL @entry34              ; 0286e3 m8x8
+         JSR entry100               ; 0286e0 m8x8
+label308: JSL @entry33              ; 0286e3 m8x8
          REP #$21                   ; 0286e7 m16x8, c=0
          LDA $e2                    ; 0286e9 m16x8, c=0
          PHA                        ; 0286eb m16x8, c=0
@@ -4684,8 +4667,8 @@ label308: JSL @entry34              ; 0286e3 m8x8
          STA $e6                    ; 028737 m16x8
          PHA                        ; 028739 m16x8
 label309: SEP #$20                  ; 02873a m8x8
-         JSL @entry212              ; 02873c m8x8
-         JSL @entry167              ; 028740 m8x8
+         JSL @entry211              ; 02873c m8x8
+         JSL @entry166              ; 028740 m8x8
          REP #$20                   ; 028744 m16x8
          PLA                        ; 028746 m16x8
          STA $e6                    ; 028747 m16x8
@@ -4696,10 +4679,10 @@ label309: SEP #$20                  ; 02873a m8x8
          PLA                        ; 02874f m16x8
          STA $e2                    ; 028750 m16x8
          SEP #$20                   ; 028752 m8x8
-         JSL @entry279              ; 028754 m8x8
-         JSL @entry302              ; 028758 m8x8
-         JMP @entry267              ; 02875c m8x8
-entry101: .entry m8x8
+         JSL @entry278              ; 028754 m8x8
+         JSL @entry301              ; 028758 m8x8
+         JMP @entry266              ; 02875c m8x8
+entry100: .entry m8x8
          REP #$20                   ; 028760 m16x8
          LDA $30                    ; 028762 m16x8
          AND #$00ff                 ; 028764 m16x8
@@ -4730,12 +4713,12 @@ label310: LDA $31                   ; 028783 m16x8
          CMP #$01e9                 ; 02879f m16x8
          BCC label312               ; 0287a2 m16x8, c=1
 label311: SEP #$20                  ; 0287a4 m8x8
-         JSL @entry217              ; 0287a6 m8x8
+         JSL @entry216              ; 0287a6 m8x8
          BCS label312               ; 0287aa m8x8, c=0
          LDA $10                    ; 0287ac m8x8, c=0
          CMP #$07                   ; 0287ae m8x8
          BNE label312               ; 0287b0 m8x8
-         JSL @entry102              ; 0287b2 m8x8
+         JSL @entry101              ; 0287b2 m8x8
          LDA $10                    ; 0287b6 m8x8
          CMP #$07                   ; 0287b8 m8x8
          BNE label312               ; 0287ba m8x8
@@ -4744,14 +4727,14 @@ label311: SEP #$20                  ; 0287a4 m8x8
 label312: SEP #$20                  ; 0287c0 m8x8
          RTS                        ; 0287c2 m8x8
          .org $0287c7
-entry102: .entry m8x8
+entry101: .entry m8x8
          LDA $67                    ; 0287c7 m8x8
          AND $0287c3, X             ; 0287c9 m8x8
          STA $67                    ; 0287cd m8x8
          TXA                        ; 0287cf m8x8
          JSL $00879c NORETURN       ; 0287d0 m8x8
          .org $0289f1
-entry103: .entry m8x8
+entry102: .entry m8x8
          LDY #$16                   ; 0289f1 m8x8
          LDX $0414                  ; 0289f3 m8x8
          LDA $02884e, X             ; 0289f6 m8x8
@@ -4763,9 +4746,9 @@ label313: CPX #$02                  ; 028a00 m8x8
          LDA #$03                   ; 028a04 m8x8
 label314: STY $1c                   ; 028a06 m8x8
          STA $1d                    ; 028a08 m8x8
-         JSL @entry314              ; 028a0a m8x8
-entry104: .entry m8x8
-         JSL @entry235              ; 028a0e m8x8
+         JSL @entry313              ; 028a0a m8x8
+entry103: .entry m8x8
+         JSL @entry234              ; 028a0e m8x8
          LDA $0372                  ; 028a12 m8x8
          BEQ label315               ; 028a15 m8x8
          STZ $4d                    ; 028a17 m8x8
@@ -4781,7 +4764,7 @@ entry104: .entry m8x8
          STA $5d                    ; 028a2d m8x8
 label315: RTS                       ; 028a2f m8x8
          .org $028c73
-entry105: .entry m8x8
+entry104: .entry m8x8
          STZ $0200                  ; 028c73 m8x8
          STZ $b0                    ; 028c76 m8x8
          STZ $0418                  ; 028c78 m8x8
@@ -4834,30 +4817,30 @@ entry105: .entry m8x8
          STA $7ec1aa                ; 028d0c m8x8
          RTS                        ; 028d10 m8x8
          .org $029816
-entry106: .entry m8x8
-         JSR entry147               ; 029816 m8x8
-         JSR entry107               ; 029819 m8x8
+entry105: .entry m8x8
+         JSR entry146               ; 029816 m8x8
+         JSR entry106               ; 029819 m8x8
          RTL                        ; 02981c m8x8
-entry107: .entry m8x8
+entry106: .entry m8x8
          LDA $b0                    ; 02981d m8x8
-         JSL @entry2 NORETURN       ; 02981f m8x8
+         JSL $008781 NORETURN       ; 02981f m8x8
          .org $029833
-entry108: .entry m8x8
+entry107: .entry m8x8
          LDA $7ec007                ; 029833 m8x8
          LSR                        ; 029837 m8x8
          BCC label316               ; 029838 m8x8, c=1
          LDA $7ec011                ; 02983a m8x8, c=1
          SUB #$10                   ; 02983e m8x8
          STA $7ec011                ; 029841 m8x8
-label316: JSR entry148              ; 029845 m8x8
-         JSR entry109               ; 029848 m8x8
+label316: JSR entry147              ; 029845 m8x8
+         JSR entry108               ; 029848 m8x8
          RTL                        ; 02984b m8x8
-entry109: .entry m8x8
+entry108: .entry m8x8
          LDA $b0                    ; 02984c m8x8
-         JSL @entry2 NORETURN       ; 02984e m8x8
+         JSL $008781 NORETURN       ; 02984e m8x8
          .org $02987d
-entry110: .entry m8x8
-         JSL @entry167              ; 02987d m8x8
+entry109: .entry m8x8
+         JSL @entry166              ; 02987d m8x8
          LDA $11                    ; 029881 m8x8
          ASL                        ; 029883 m8x8
          TAX                        ; 029884 m8x8
@@ -4871,7 +4854,7 @@ entry110: .entry m8x8
          STA $0351                  ; 029894 m8x8
 label317: LDA #$06                  ; 029897 m8x8
          STA $5e                    ; 029899 m8x8
-         JSL @entry200              ; 02989b m8x8
+         JSL @entry199              ; 02989b m8x8
          STZ $31                    ; 02989f m8x8
          STZ $30                    ; 0298a1 m8x8
 label318: LDA $2f                   ; 0298a3 m8x8
@@ -4887,25 +4870,25 @@ label318: LDA $2f                   ; 0298a3 m8x8
 label319: LDA $029875, X            ; 0298b5 m8x8
          STA $26                    ; 0298b9 m8x8
          STA $67                    ; 0298bb m8x8
-         JSL @entry204              ; 0298bd m8x8
-         JMP @entry279              ; 0298c1 m8x8
+         JSL @entry203              ; 0298bd m8x8
+         JMP @entry278              ; 0298c1 m8x8
          .org $0299d2
-entry111: .entry m8x8
-         JSL @entry167              ; 0299d2 m8x8
+entry110: .entry m8x8
+         JSL @entry166              ; 0299d2 m8x8
          LDA $11                    ; 0299d6 m8x8
          ASL                        ; 0299d8 m8x8
          TAX                        ; 0299d9 m8x8
          JSR ($99ce, X)             ; 0299da m8x8
-         JMP @entry279              ; 0299dd m8x8
+         JMP @entry278              ; 0299dd m8x8
          .org $0299f4
-entry112: .entry m8x8
+entry111: .entry m8x8
          LDA $b0                    ; 0299f4 m8x8
          ASL                        ; 0299f6 m8x8
          TAX                        ; 0299f7 m8x8
          JSR ($99e8, X)             ; 0299f8 m8x8
          RTL                        ; 0299fb m8x8
          .org $029ad2
-entry113: .entry m8x8
+entry112: .entry m8x8
          LDA $0132                  ; 029ad2 m8x8
          CMP #$ff                   ; 029ad5 m8x8
          BEQ label320               ; 029ad7 m8x8
@@ -4925,21 +4908,21 @@ entry113: .entry m8x8
          INC $0136                  ; 029af5 m8x8
          LDA #$ff                   ; 029af8 m8x8
          STA $2140                  ; 029afa m8x8
-         JSL @entry4                ; 029afd m8x8
+         JSL @entry3                ; 029afd m8x8
          LDA #$81                   ; 029b01 m8x8
          STA $4200                  ; 029b03 m8x8
 label320: RTS                       ; 029b06 m8x8
-label321: JMP entry98               ; 029b07 m8x8
+label321: JMP entry97               ; 029b07 m8x8
          .org $029b45
-entry114: .entry m8x8
+entry113: .entry m8x8
          LDA $11                    ; 029b45 m8x8
          ASL                        ; 029b47 m8x8
          TAX                        ; 029b48 m8x8
          JSR ($9b39, X)             ; 029b49 m8x8
-         JSL @entry167              ; 029b4c m8x8
-         JMP @entry279              ; 029b50 m8x8
+         JSL @entry166              ; 029b4c m8x8
+         JMP @entry278              ; 029b50 m8x8
          .org $029bf7
-entry115: .entry m8x8
+entry114: .entry m8x8
          LDA $11                    ; 029bf7 m8x8
          ASL                        ; 029bf9 m8x8
          TAX                        ; 029bfa m8x8
@@ -4949,19 +4932,19 @@ entry115: .entry m8x8
          BCC label322               ; 029c02 m8x8, c=1
          CMP #$05                   ; 029c04 m8x8
          BCC label323               ; 029c06 m8x8, c=1
-label322: JSL @entry167             ; 029c08 m8x8
-         JSL @entry279              ; 029c0c m8x8
+label322: JSL @entry166             ; 029c08 m8x8
+         JSL @entry278              ; 029c0c m8x8
 label323: RTL                       ; 029c10 m8x8
          .org $029d81
-entry116: .entry m8x8
+entry115: .entry m8x8
          LDA $11                    ; 029d81 m8x8
          ASL                        ; 029d83 m8x8
          TAX                        ; 029d84 m8x8
          JSR ($9d77, X)             ; 029d85 m8x8
-         JSL @entry167              ; 029d88 m8x8
-         JMP @entry279              ; 029d8c m8x8
+         JSL @entry166              ; 029d88 m8x8
+         JMP @entry278              ; 029d8c m8x8
          .org $029dd3
-entry117: .entry m8x8
+entry116: .entry m8x8
          REP #$21                   ; 029dd3 m16x8, c=0
          LDA $e2                    ; 029dd5 m16x8, c=0
          PHA                        ; 029dd7 m16x8, c=0
@@ -4984,7 +4967,7 @@ entry117: .entry m8x8
          STA $e6                    ; 029dff m16x8
          STA $0124                  ; 029e01 m16x8
          SEP #$20                   ; 029e04 m8x8
-         JSL @entry167              ; 029e06 m8x8
+         JSL @entry166              ; 029e06 m8x8
          REP #$20                   ; 029e0a m16x8
          PLA                        ; 029e0c m16x8
          STA $e6                    ; 029e0d m16x8
@@ -4999,9 +4982,9 @@ entry117: .entry m8x8
          ASL                        ; 029e1d m8x8
          TAX                        ; 029e1e m8x8
          JSR ($9dc1, X)             ; 029e1f m8x8
-         JMP @entry279              ; 029e22 m8x8
+         JMP @entry278              ; 029e22 m8x8
          .org $029ee3
-entry118: .entry m8x8
+entry117: .entry m8x8
          LDA $b0                    ; 029ee3 m8x8
          ASL                        ; 029ee5 m8x8
          TAX                        ; 029ee6 m8x8
@@ -5021,11 +5004,11 @@ entry118: .entry m8x8
          BCC label324               ; 029f06 m8x8, c=1
          CMP #$0b                   ; 029f08 m8x8
          BCC label325               ; 029f0a m8x8, c=1
-label324: JSL @entry200             ; 029f0c m8x8
-         JSL @entry204              ; 029f10 m8x8
-label325: JMP @entry279             ; 029f14 m8x8
+label324: JSL @entry199             ; 029f0c m8x8
+         JSL @entry203              ; 029f10 m8x8
+label325: JMP @entry278             ; 029f14 m8x8
          .org $02a0be
-entry119: .entry m8x8
+entry118: .entry m8x8
          LDA $040c                  ; 02a0be m8x8
          CMP #$ff                   ; 02a0c1 m8x8
          BEQ label327               ; 02a0c3 m8x8
@@ -5038,7 +5021,7 @@ label326: LSR                       ; 02a0cb m8x8
          STA $7ef37c, X             ; 02a0d1 m8x8
 label327: RTL                       ; 02a0d5 m8x8
          .org $02a1e7
-entry120: .entry m8x8
+entry119: .entry m8x8
          LDA $a2                    ; 02a1e7 m8x8
          AND #$0f                   ; 02a1e9 m8x8
          STA $00                    ; 02a1eb m8x8
@@ -5098,7 +5081,7 @@ entry120: .entry m8x8
          ADD $00                    ; 02a26c m8x8
          STA $0603                  ; 02a26f m8x8
          RTS                        ; 02a272 m8x8
-entry121: .entry m8x8
+entry120: .entry m8x8
          STY $00                    ; 02a273 m8x8
          STA $048e                  ; 02a275 m8x8
          STA $a2                    ; 02a278 m8x8
@@ -5159,7 +5142,7 @@ label328: LDA $21                   ; 02a2f9 m8x8
          BNE label328               ; 02a301 m8x8
          RTS                        ; 02a303 m8x8
          .org $02a36c
-entry122: .entry m8x8
+entry121: .entry m8x8
          SEP #$30                   ; 02a36c m8x8
          LDA $11                    ; 02a36e m8x8
          ASL                        ; 02a370 m8x8
@@ -5187,7 +5170,7 @@ entry122: .entry m8x8
          STA $e6                    ; 02a3a1 m16x8
          STA $0124                  ; 02a3a3 m16x8
          SEP #$20                   ; 02a3a6 m8x8
-         JSL @entry167              ; 02a3a8 m8x8
+         JSL @entry166              ; 02a3a8 m8x8
          REP #$20                   ; 02a3ac m16x8
          PLA                        ; 02a3ae m16x8
          STA $e6                    ; 02a3af m16x8
@@ -5198,9 +5181,9 @@ entry122: .entry m8x8
          PLA                        ; 02a3b7 m16x8
          STA $e2                    ; 02a3b8 m16x8
          SEP #$20                   ; 02a3ba m8x8
-         JSL @entry279              ; 02a3bc m8x8
-         JSL @entry302              ; 02a3c0 m8x8
-entry123: .entry m8x8
+         JSL @entry278              ; 02a3bc m8x8
+         JSL @entry301              ; 02a3c0 m8x8
+entry122: .entry m8x8
          LDA $8a                    ; 02a3c4 m8x8
          CMP #$70                   ; 02a3c6 m8x8
          BEQ label329               ; 02a3c8 m8x8
@@ -5245,7 +5228,7 @@ label334: LDA $1a                   ; 02a401 m8x8
          STA $e7                    ; 02a421 m8x8
 label335: RTL                       ; 02a423 m8x8
          .org $02b566
-entry124: .entry m8x8
+entry123: .entry m8x8
          REP #$20                   ; 02b566 m16x8
          LDA $22                    ; 02b568 m16x8
          ADD #$0008                 ; 02b56a m16x8
@@ -5257,19 +5240,19 @@ entry124: .entry m8x8
          LDA $a9                    ; 02b575 m8x8
          EOR #$01                   ; 02b577 m8x8
          STA $a9                    ; 02b579 m8x8
-         JSR entry143               ; 02b57b m8x8
+         JSR entry142               ; 02b57b m8x8
          LDX #$08                   ; 02b57e m8x8
-         JSR entry138               ; 02b580 m8x8
-         JSR entry137               ; 02b583 m8x8
+         JSR entry137               ; 02b580 m8x8
+         JSR entry136               ; 02b583 m8x8
          LDA $a9                    ; 02b586 m8x8
-         JSR entry145               ; 02b588 m8x8
+         JSR entry144               ; 02b588 m8x8
          LDY #$02                   ; 02b58b m8x8
-         JSR entry142               ; 02b58d m8x8
+         JSR entry141               ; 02b58d m8x8
          INC $11                    ; 02b590 m8x8
          LDA $a9                    ; 02b592 m8x8
          BNE label340               ; 02b594 m8x8
          LDX #$08                   ; 02b596 m8x8
-         JSR entry139               ; 02b598 m8x8
+         JSR entry138               ; 02b598 m8x8
          LDA $a0                    ; 02b59b m8x8
          STA $a2                    ; 02b59d m8x8
          LDA $0114                  ; 02b59f m8x8
@@ -5280,13 +5263,13 @@ entry124: .entry m8x8
          STA $a0                    ; 02b5ac m8x8
          DEC                        ; 02b5ae m8x8
          LDY #$01                   ; 02b5af m8x8
-         JSR entry121               ; 02b5b1 m8x8
+         JSR entry120               ; 02b5b1 m8x8
          BRA label338               ; 02b5b4 m8x8
 label336: LDA $048e                 ; 02b5b6 m8x8
          CMP $a0                    ; 02b5b9 m8x8
          BEQ label337               ; 02b5bb m8x8
          STA $a2                    ; 02b5bd m8x8
-         JSR entry120               ; 02b5bf m8x8
+         JSR entry119               ; 02b5bf m8x8
 label337: INC $a0                   ; 02b5c2 m8x8
 label338: INC $11                   ; 02b5c4 m8x8
          LDA $ef                    ; 02b5c6 m8x8
@@ -5319,7 +5302,7 @@ label342: LDA #$02                  ; 02b5ff m8x8
          STA $a7                    ; 02b601 m8x8
 label343: PLB                       ; 02b603 m8x8
          RTL                        ; 02b604 m8x8
-entry125: .entry m8x8
+entry124: .entry m8x8
          REP #$20                   ; 02b605 m16x8
          LDA $22                    ; 02b607 m16x8
          SUB #$0008                 ; 02b609 m16x8
@@ -5331,20 +5314,20 @@ entry125: .entry m8x8
          LDA $a9                    ; 02b614 m8x8
          EOR #$01                   ; 02b616 m8x8
          STA $a9                    ; 02b618 m8x8
-         JSR entry143               ; 02b61a m8x8
+         JSR entry142               ; 02b61a m8x8
          LDX #$08                   ; 02b61d m8x8
-         JSR entry140               ; 02b61f m8x8
-         JSR entry137               ; 02b622 m8x8
+         JSR entry139               ; 02b61f m8x8
+         JSR entry136               ; 02b622 m8x8
          LDA $a9                    ; 02b625 m8x8
          EOR #$01                   ; 02b627 m8x8
-         JSR entry145               ; 02b629 m8x8
+         JSR entry144               ; 02b629 m8x8
          LDY #$03                   ; 02b62c m8x8
-         JSR entry142               ; 02b62e m8x8
+         JSR entry141               ; 02b62e m8x8
          INC $11                    ; 02b631 m8x8
          LDA $a9                    ; 02b633 m8x8
          BEQ label348               ; 02b635 m8x8
          LDX #$08                   ; 02b637 m8x8
-         JSR entry141               ; 02b639 m8x8
+         JSR entry140               ; 02b639 m8x8
          LDA $a0                    ; 02b63c m8x8
          STA $a2                    ; 02b63e m8x8
          LDA $0114                  ; 02b640 m8x8
@@ -5355,13 +5338,13 @@ entry125: .entry m8x8
          STA $a0                    ; 02b64d m8x8
          INC                        ; 02b64f m8x8
          LDY #$ff                   ; 02b650 m8x8
-         JSR entry121               ; 02b652 m8x8
+         JSR entry120               ; 02b652 m8x8
          BRA label346               ; 02b655 m8x8
 label344: LDA $048e                 ; 02b657 m8x8
          CMP $a0                    ; 02b65a m8x8
          BEQ label345               ; 02b65c m8x8
          STA $a2                    ; 02b65e m8x8
-         JSR entry120               ; 02b660 m8x8
+         JSR entry119               ; 02b660 m8x8
 label345: DEC $a0                   ; 02b663 m8x8
 label346: INC $11                   ; 02b665 m8x8
          LDA $ef                    ; 02b667 m8x8
@@ -5394,54 +5377,54 @@ label350: LDA #$02                  ; 02b6a0 m8x8
          STA $a7                    ; 02b6a2 m8x8
 label351: PLB                       ; 02b6a4 m8x8
          RTL                        ; 02b6a5 m8x8
-entry126: .entry m8x8
+entry125: .entry m8x8
          REP #$20                   ; 02b6a6 m16x8
          LDA $20                    ; 02b6a8 m16x8
          ADD #$0010                 ; 02b6aa m16x8
          STA $20                    ; 02b6ae m16x8
          SEP #$20                   ; 02b6b0 m8x8
-entry127: .entry m8x8
+entry126: .entry m8x8
          PHB                        ; 02b6b2 m8x8
          PHK                        ; 02b6b3 m8x8
          PLB                        ; 02b6b4 m8x8
          LDA $aa                    ; 02b6b5 m8x8
          EOR #$02                   ; 02b6b7 m8x8
          STA $aa                    ; 02b6b9 m8x8
-         JSR entry143               ; 02b6bb m8x8
+         JSR entry142               ; 02b6bb m8x8
          LDX #$00                   ; 02b6be m8x8
-         JSR entry138               ; 02b6c0 m8x8
-         JSR entry137               ; 02b6c3 m8x8
+         JSR entry137               ; 02b6c0 m8x8
+         JSR entry136               ; 02b6c3 m8x8
          LDA $aa                    ; 02b6c6 m8x8
-         JSR entry146               ; 02b6c8 m8x8
+         JSR entry145               ; 02b6c8 m8x8
          LDY #$00                   ; 02b6cb m8x8
-         JSR entry142               ; 02b6cd m8x8
+         JSR entry141               ; 02b6cd m8x8
          INC $11                    ; 02b6d0 m8x8
          LDA $aa                    ; 02b6d2 m8x8
          BNE label355               ; 02b6d4 m8x8
          LDX #$00                   ; 02b6d6 m8x8
-         JSR entry139               ; 02b6d8 m8x8
+         JSR entry138               ; 02b6d8 m8x8
          LDA $a0                    ; 02b6db m8x8
          STA $a2                    ; 02b6dd m8x8
          LDA $0114                  ; 02b6df m8x8
          CMP #$8e                   ; 02b6e2 m8x8
          BNE label352               ; 02b6e4 m8x8
-entry128: .entry m8x8
-         JSL @entry119              ; 02b6e6 m8x8
-         JSL @entry132              ; 02b6ea m8x8
+entry127: .entry m8x8
+         JSL @entry118              ; 02b6e6 m8x8
+         JSL @entry131              ; 02b6ea m8x8
          LDA #$08                   ; 02b6ee m8x8
          STA $010c                  ; 02b6f0 m8x8
          LDA #$0f                   ; 02b6f3 m8x8
          STA $10                    ; 02b6f5 m8x8
          STZ $11                    ; 02b6f7 m8x8
          STZ $b0                    ; 02b6f9 m8x8
-         JSR entry104               ; 02b6fb m8x8
+         JSR entry103               ; 02b6fb m8x8
          PLB                        ; 02b6fe m8x8
          RTL                        ; 02b6ff m8x8
 label352: LDA $048e                 ; 02b700 m8x8
          CMP $a0                    ; 02b703 m8x8
          BEQ label353               ; 02b705 m8x8
          STA $a2                    ; 02b707 m8x8
-         JSR entry120               ; 02b709 m8x8
+         JSR entry119               ; 02b709 m8x8
 label353: LDA $a0                   ; 02b70c m8x8
          ADD #$10                   ; 02b70e m8x8
          STA $a0                    ; 02b711 m8x8
@@ -5476,37 +5459,37 @@ label357: LDA #$02                  ; 02b74e m8x8
          STA $a6                    ; 02b750 m8x8
 label358: PLB                       ; 02b752 m8x8
          RTL                        ; 02b753 m8x8
-entry129: .entry m8x8
+entry128: .entry m8x8
          PHB                        ; 02b754 m8x8
          PHK                        ; 02b755 m8x8
          PLB                        ; 02b756 m8x8
          LDA $aa                    ; 02b757 m8x8
          EOR #$02                   ; 02b759 m8x8
          STA $aa                    ; 02b75b m8x8
-         JSR entry143               ; 02b75d m8x8
+         JSR entry142               ; 02b75d m8x8
          LDX #$00                   ; 02b760 m8x8
-         JSR entry140               ; 02b762 m8x8
-         JSR entry137               ; 02b765 m8x8
+         JSR entry139               ; 02b762 m8x8
+         JSR entry136               ; 02b765 m8x8
          LDA $aa                    ; 02b768 m8x8
          EOR #$02                   ; 02b76a m8x8
-         JSR entry146               ; 02b76c m8x8
+         JSR entry145               ; 02b76c m8x8
          LDY #$01                   ; 02b76f m8x8
-         JSR entry142               ; 02b771 m8x8
+         JSR entry141               ; 02b771 m8x8
          INC $11                    ; 02b774 m8x8
          LDA $aa                    ; 02b776 m8x8
          BEQ label363               ; 02b778 m8x8
          LDX #$00                   ; 02b77a m8x8
-         JSR entry141               ; 02b77c m8x8
+         JSR entry140               ; 02b77c m8x8
          LDA $a0                    ; 02b77f m8x8
          STA $a2                    ; 02b781 m8x8
          LDA $0114                  ; 02b783 m8x8
          CMP #$8e                   ; 02b786 m8x8
          BNE label359               ; 02b788 m8x8
-         JMP entry128               ; 02b78a m8x8
+         JMP entry127               ; 02b78a m8x8
 label359: LDA $a0                   ; 02b78d m8x8
          ORA $a1                    ; 02b78f m8x8
          BNE label360               ; 02b791 m8x8
-         JSL @entry119              ; 02b793 m8x8
+         JSL @entry118              ; 02b793 m8x8
          LDA #$19                   ; 02b797 m8x8
          STA $10                    ; 02b799 m8x8
          STZ $11                    ; 02b79b m8x8
@@ -5517,7 +5500,7 @@ label360: LDA $048e                 ; 02b7a1 m8x8
          CMP $a0                    ; 02b7a4 m8x8
          BEQ label361               ; 02b7a6 m8x8
          STA $a2                    ; 02b7a8 m8x8
-         JSR entry120               ; 02b7aa m8x8
+         JSR entry119               ; 02b7aa m8x8
 label361: LDA $a0                   ; 02b7ad m8x8
          SUB #$10                   ; 02b7af m8x8
          STA $a0                    ; 02b7b2 m8x8
@@ -5552,14 +5535,14 @@ label365: LDA #$02                  ; 02b7ef m8x8
          STA $a6                    ; 02b7f1 m8x8
 label366: PLB                       ; 02b7f3 m8x8
          RTL                        ; 02b7f4 m8x8
-entry130: .entry m8x8
+entry129: .entry m8x8
          LDA $a9                    ; 02b7f5 m8x8
          EOR #$01                   ; 02b7f7 m8x8
          STA $a9                    ; 02b7f9 m8x8
-         JSR entry143               ; 02b7fb m8x8
+         JSR entry142               ; 02b7fb m8x8
          LDX #$08                   ; 02b7fe m8x8
-         JSR entry138               ; 02b800 m8x8
-entry131: .entry m8x8
+         JSR entry137               ; 02b800 m8x8
+entry130: .entry m8x8
          LDA $a7                    ; 02b803 m8x8
          ASL                        ; 02b805 m8x8
          ASL                        ; 02b806 m8x8
@@ -5573,7 +5556,7 @@ entry131: .entry m8x8
          LDA $02b504, X             ; 02b813 m8x8
          ORA $0408                  ; 02b817 m8x8
          STA $0408                  ; 02b81a m8x8
-entry132: .entry m8x8
+entry131: .entry m8x8
          REP #$30                   ; 02b81d m16x16
          LDA $a0                    ; 02b81f m16x16
          ASL                        ; 02b821 m16x16
@@ -5583,31 +5566,31 @@ entry132: .entry m8x8
          STA $7ef000, X             ; 02b82a m16x16
          SEP #$30                   ; 02b82e m8x8
          RTL                        ; 02b830 m8x8
-entry133: .entry m8x8
+entry132: .entry m8x8
          LDA $a9                    ; 02b831 m8x8
          EOR #$01                   ; 02b833 m8x8
          STA $a9                    ; 02b835 m8x8
-         JSR entry143               ; 02b837 m8x8
+         JSR entry142               ; 02b837 m8x8
          LDX #$08                   ; 02b83a m8x8
-         JSR entry140               ; 02b83c m8x8
-         BRA entry131               ; 02b83f m8x8
-entry134: .entry m8x8
+         JSR entry139               ; 02b83c m8x8
+         BRA entry130               ; 02b83f m8x8
+entry133: .entry m8x8
          LDA $aa                    ; 02b841 m8x8
          EOR #$02                   ; 02b843 m8x8
          STA $aa                    ; 02b845 m8x8
-         JSR entry143               ; 02b847 m8x8
+         JSR entry142               ; 02b847 m8x8
          LDX #$00                   ; 02b84a m8x8
-         JSR entry138               ; 02b84c m8x8
-         BRA entry131               ; 02b84f m8x8
-entry135: .entry m8x8
+         JSR entry137               ; 02b84c m8x8
+         BRA entry130               ; 02b84f m8x8
+entry134: .entry m8x8
          LDA $aa                    ; 02b851 m8x8
          EOR #$02                   ; 02b853 m8x8
          STA $aa                    ; 02b855 m8x8
-         JSR entry143               ; 02b857 m8x8
+         JSR entry142               ; 02b857 m8x8
          LDX #$00                   ; 02b85a m8x8
-         JSR entry140               ; 02b85c m8x8
-         BRA entry131               ; 02b85f m8x8
-entry136: .entry m8x8
+         JSR entry139               ; 02b85c m8x8
+         BRA entry130               ; 02b85f m8x8
+entry135: .entry m8x8
          LDA $a7                    ; 02b861 m8x8
          ASL                        ; 02b863 m8x8
          ASL                        ; 02b864 m8x8
@@ -5621,9 +5604,9 @@ entry136: .entry m8x8
          LDA $02b504, X             ; 02b871 m8x8
          ORA $0408                  ; 02b875 m8x8
          STA $0408                  ; 02b878 m8x8
-         JSR entry137               ; 02b87b m8x8
+         JSR entry136               ; 02b87b m8x8
          RTL                        ; 02b87e m8x8
-entry137: .entry m8x8
+entry136: .entry m8x8
          REP #$30                   ; 02b87f m16x16
          LDA $a0                    ; 02b881 m16x16
          ASL                        ; 02b883 m16x16
@@ -5641,7 +5624,7 @@ entry137: .entry m8x8
          STA $7ef000, X             ; 02b899 m16x16
          SEP #$30                   ; 02b89d m8x8
          RTS                        ; 02b89f m8x8
-entry138: .entry m8x8
+entry137: .entry m8x8
          REP #$20                   ; 02b8a0 m16x8
          LDA $0600, X               ; 02b8a2 m16x8
          ADD #$0100                 ; 02b8a5 m16x8
@@ -5651,7 +5634,7 @@ entry138: .entry m8x8
          STA $0604, X               ; 02b8b3 m16x8
          SEP #$20                   ; 02b8b6 m8x8
          RTS                        ; 02b8b8 m8x8
-entry139: .entry m8x8
+entry138: .entry m8x8
          REP #$20                   ; 02b8b9 m16x8
          LDA $0602, X               ; 02b8bb m16x8
          ADD #$0200                 ; 02b8be m16x8
@@ -5661,7 +5644,7 @@ entry139: .entry m8x8
          STA $0606, X               ; 02b8cc m16x8
          SEP #$20                   ; 02b8cf m8x8
          RTS                        ; 02b8d1 m8x8
-entry140: .entry m8x8
+entry139: .entry m8x8
          REP #$20                   ; 02b8d2 m16x8
          LDA $0600, X               ; 02b8d4 m16x8
          SUB #$0100                 ; 02b8d7 m16x8
@@ -5671,7 +5654,7 @@ entry140: .entry m8x8
          STA $0604, X               ; 02b8e5 m16x8
          SEP #$20                   ; 02b8e8 m8x8
          RTS                        ; 02b8ea m8x8
-entry141: .entry m8x8
+entry140: .entry m8x8
          REP #$20                   ; 02b8eb m16x8
          LDA $0602, X               ; 02b8ed m16x8
          SUB #$0200                 ; 02b8f0 m16x8
@@ -5682,7 +5665,7 @@ entry141: .entry m8x8
          SEP #$20                   ; 02b901 m8x8
          RTS                        ; 02b903 m8x8
          .org $02b914
-entry142: .entry m8x8
+entry141: .entry m8x8
          STY $0418                  ; 02b914 m8x8
          LDA $67                    ; 02b917 m8x8
          AND #$03                   ; 02b919 m8x8
@@ -5721,13 +5704,13 @@ label371: LDA $b904, X              ; 02b951 m16x8
          STA $061a                  ; 02b959 m16x8
          SEP #$20                   ; 02b95c m8x8
          RTS                        ; 02b95e m8x8
-entry143: .entry m8x8
+entry142: .entry m8x8
          LDA $040e                  ; 02b95f m8x8
          ORA $aa                    ; 02b962 m8x8
          ORA $a9                    ; 02b964 m8x8
          STA $a8                    ; 02b966 m8x8
          RTS                        ; 02b968 m8x8
-entry144: .entry m8x8
+entry143: .entry m8x8
          REP #$20                   ; 02b969 m16x8
          LDA #$0001                 ; 02b96b m16x8
          STA $00                    ; 02b96e m16x8
@@ -5885,7 +5868,7 @@ label387: REP #$20                  ; 02bab3 m16x8
 label388: SEP #$20                  ; 02babd m8x8
          RTS                        ; 02babf m8x8
          .org $02bd00
-entry145: .entry m8x8
+entry144: .entry m8x8
          ASL                        ; 02bd00 m8x8
          ASL                        ; 02bd01 m8x8
          TAY                        ; 02bd02 m8x8
@@ -5898,7 +5881,7 @@ label389: LDA $bcf8, Y              ; 02bd05 m8x8
          BNE label389               ; 02bd0f m8x8
          RTS                        ; 02bd11 m8x8
          .org $02bd1a
-entry146: .entry m8x8
+entry145: .entry m8x8
          ASL                        ; 02bd1a m8x8
          TAY                        ; 02bd1b m8x8
          LDX #$00                   ; 02bd1c m8x8
@@ -5910,14 +5893,14 @@ label390: LDA $bd12, Y              ; 02bd1e m8x8
          BNE label390               ; 02bd28 m8x8
          RTS                        ; 02bd2a m8x8
          .org $02c21b
-entry147: .entry m8x8
+entry146: .entry m8x8
          LDA $7ec007                ; 02c21b m8x8
          LSR                        ; 02c21f m8x8
-         BCC entry148               ; 02c220 m8x8, c=1
+         BCC entry147               ; 02c220 m8x8, c=1
          LDA $7ec011                ; 02c222 m8x8, c=1
          ADD #$10                   ; 02c226 m8x8
          STA $7ec011                ; 02c229 m8x8
-entry148: .entry m8x8
+entry147: .entry m8x8
          LDA #$09                   ; 02c22d m8x8
          STA $94                    ; 02c22f m8x8
          LDA $7ec011                ; 02c231 m8x8
@@ -5925,19 +5908,19 @@ entry148: .entry m8x8
          STA $95                    ; 02c237 m8x8
          RTS                        ; 02c239 m8x8
          .org $02c2eb
-entry149: .entry m8x8
+entry148: .entry m8x8
          LDA $9b                    ; 02c2eb m8x8
          PHA                        ; 02c2ed m8x8
          STZ $420c                  ; 02c2ee m8x8
          STZ $9b                    ; 02c2f1 m8x8
-         JSL @entry38               ; 02c2f3 m8x8
+         JSL @entry37               ; 02c2f3 m8x8
          STZ $0418                  ; 02c2f7 m8x8
          STZ $045c                  ; 02c2fa m8x8
          STZ $0200                  ; 02c2fd m8x8
-label391: JSL @entry9               ; 02c300 m8x8
-         JSL @entry7                ; 02c304 m8x8
-         JSL @entry8                ; 02c308 m8x8
-         JSL @entry7                ; 02c30c m8x8
+label391: JSL @entry8               ; 02c300 m8x8
+         JSL @entry6                ; 02c304 m8x8
+         JSL @entry7                ; 02c308 m8x8
+         JSL @entry6                ; 02c30c m8x8
          LDA $045c                  ; 02c310 m8x8
          CMP #$10                   ; 02c313 m8x8
          BNE label391               ; 02c315 m8x8
@@ -5948,19 +5931,19 @@ label391: JSL @entry9               ; 02c300 m8x8
          STZ $b0                    ; 02c31f m8x8
          RTS                        ; 02c321 m8x8
          .org $02c394
-entry150: .entry m8x8
+entry149: .entry m8x8
          STZ $0aa9                  ; 02c394 m8x8
-         JSL @entry277              ; 02c397 m8x8
-         JSL @entry330              ; 02c39b m8x8
-         JSL @entry331              ; 02c39f m8x8
-         JSL @entry332              ; 02c3a3 m8x8
-         JSL @entry333              ; 02c3a7 m8x8
-         JSL @entry334              ; 02c3ab m8x8
-         JSL @entry335              ; 02c3af m8x8
-         JSL @entry336              ; 02c3b3 m8x8
-         JSL @entry338              ; 02c3b7 m8x8
-         JSL @entry339              ; 02c3bb m8x8
-         JSL @entry340              ; 02c3bf m8x8
+         JSL @entry276              ; 02c397 m8x8
+         JSL @entry329              ; 02c39b m8x8
+         JSL @entry330              ; 02c39f m8x8
+         JSL @entry331              ; 02c3a3 m8x8
+         JSL @entry332              ; 02c3a7 m8x8
+         JSL @entry333              ; 02c3ab m8x8
+         JSL @entry334              ; 02c3af m8x8
+         JSL @entry335              ; 02c3b3 m8x8
+         JSL @entry337              ; 02c3b7 m8x8
+         JSL @entry338              ; 02c3bb m8x8
+         JSL @entry339              ; 02c3bf m8x8
          LDA $0ab6                  ; 02c3c3 m8x8
          STA $7ec20a                ; 02c3c6 m8x8
          LDA $0ab8                  ; 02c3ca m8x8
@@ -5974,9 +5957,9 @@ entry150: .entry m8x8
          STA $7ec007                ; 02c3e4 m16x8
          LDA #$0000                 ; 02c3e8 m16x8
          STA $7ec00b                ; 02c3eb m16x8
-         JMP entry151               ; 02c3ef m16x8
+         JMP entry150               ; 02c3ef m16x8
          .org $02c4cd
-entry151: .entry m16x8
+entry150: .entry m16x8
          REP #$20                   ; 02c4cd m16x8
          LDX #$00                   ; 02c4cf m16x8
 label392: LDA $7ec300, X            ; 02c4d1 m16x8
@@ -6003,7 +5986,7 @@ label392: LDA $7ec300, X            ; 02c4d1 m16x8
          INC $15                    ; 02c519 m8x8
          RTS                        ; 02c51b m8x8
          .org $02d617
-entry152: .entry m8x8
+entry151: .entry m8x8
          PHB                        ; 02d617 m8x8
          PHK                        ; 02d618 m8x8
          PLB                        ; 02d619 m8x8
@@ -6012,7 +5995,7 @@ entry152: .entry m8x8
          LDA $010a                  ; 02d61e m8x8
          BEQ label393               ; 02d621 m8x8
          STZ $010a                  ; 02d623 m8x8
-         JMP entry153               ; 02d626 m8x8
+         JMP entry152               ; 02d626 m8x8
 label393: REP #$20                  ; 02d629 m16x8
          LDA $040a                  ; 02d62b m16x8
          STA $7ec140                ; 02d62e m16x8
@@ -6069,7 +6052,7 @@ label393: REP #$20                  ; 02d629 m16x8
          STA $7ec166                ; 02d6d5 m8x8
          LDA $0aa3                  ; 02d6d9 m8x8
          STA $7ec167                ; 02d6dc m8x8
-entry153: .entry m8x8
+entry152: .entry m8x8
          REP #$30                   ; 02d6e0 m16x16
          STZ $011a                  ; 02d6e2 m16x16
          STZ $011c                  ; 02d6e5 m16x16
@@ -6079,7 +6062,7 @@ entry153: .entry m8x8
          BEQ label394               ; 02d6f2 m16x16
          LDA $04aa                  ; 02d6f4 m16x16
          BEQ label395               ; 02d6f7 m16x16
-label394: JMP entry155              ; 02d6f9 m16x16
+label394: JMP entry154              ; 02d6f9 m16x16
 label395: LDA $010e                 ; 02d6fc m16x16
          AND #$00ff                 ; 02d6ff m16x16
          ASL                        ; 02d702 m16x16
@@ -6211,9 +6194,9 @@ label398: LDA $d16a, X              ; 02d7f5 m8x16
          STA $aa                    ; 02d834 m8x16
          LDX $a0                    ; 02d836 m8x16
          CPX #$0100                 ; 02d838 m8x16
-         BCC entry154               ; 02d83b m8x16, c=1
+         BCC entry153               ; 02d83b m8x16, c=1
          STZ $a4                    ; 02d83d m8x16, c=1
-entry154: .entry m8x16
+entry153: .entry m8x16
          LDA #$80                   ; 02d83f m8x16
          STA $45                    ; 02d841 m8x16
          STA $44                    ; 02d843 m8x16
@@ -6274,7 +6257,7 @@ label400: STA $f800, X              ; 02d899 m16x8
          PLB                        ; 02d8d0 m8x8
          RTS                        ; 02d8d1 m8x8
          .org $02d9b9
-entry155: .entry m16x16
+entry154: .entry m16x16
          LDA $7ef3c8                ; 02d9b9 m16x16
          AND #$00ff                 ; 02d9bd m16x16
          ASL                        ; 02d9c0 m16x16
@@ -6399,9 +6382,9 @@ label401: LDA $d950, X              ; 02d9fd m16x16
          LDA #$ff                   ; 02dae3 m8x16
          STA $0132                  ; 02dae5 m8x16
 label402: STZ $04aa                 ; 02dae8 m8x16
-         JMP entry154               ; 02daeb m8x16
+         JMP entry153               ; 02daeb m8x16
          .org $02fd8a
-entry156: .entry m8x8
+entry155: .entry m8x8
          REP #$20                   ; 02fd8a m16x8
          LDA $7ef359                ; 02fd8c m16x8
          STA $0c                    ; 02fd90 m16x8
@@ -6416,7 +6399,7 @@ entry156: .entry m8x8
          REP #$10                   ; 02fda9 m16x16
          LDX #$01b2                 ; 02fdab m16x16
          LDY #$0002                 ; 02fdae m16x16
-         JSR entry157               ; 02fdb1 m16x16
+         JSR entry156               ; 02fdb1 m16x16
          SEP #$10                   ; 02fdb4 m16x8
          LDX $0d                    ; 02fdb6 m16x8
          LDA $1bebc1, X             ; 02fdb8 m16x8
@@ -6425,7 +6408,7 @@ entry156: .entry m8x8
          REP #$10                   ; 02fdc3 m16x16
          LDX #$01b8                 ; 02fdc5 m16x16
          LDY #$0003                 ; 02fdc8 m16x16
-         JSR entry157               ; 02fdcb m16x16
+         JSR entry156               ; 02fdcb m16x16
          SEP #$10                   ; 02fdce m16x8
          LDX $0e                    ; 02fdd0 m16x8
          LDA $1bec06, X             ; 02fdd2 m16x8
@@ -6435,11 +6418,11 @@ entry156: .entry m8x8
          REP #$10                   ; 02fdde m16x16
          LDX #$01e2                 ; 02fde0 m16x16
          LDY #$000e                 ; 02fde3 m16x16
-         JSR entry157               ; 02fde6 m16x16
+         JSR entry156               ; 02fde6 m16x16
          SEP #$30                   ; 02fde9 m8x8
          INC $15                    ; 02fdeb m8x8
          RTL                        ; 02fded m8x8
-entry157: .entry m16x16
+entry156: .entry m16x16
          STA $00                    ; 02fdee m16x16
 label403: LDA [$00]                 ; 02fdf0 m16x16
          STA $7ec300, X             ; 02fdf2 m16x16
@@ -6451,51 +6434,51 @@ label403: LDA [$00]                 ; 02fdf0 m16x16
          DEY                        ; 02fe00 m16x16
          BPL label403               ; 02fe01 m16x16
          RTS                        ; 02fe03 m16x16
-entry158: .entry m8x8
+entry157: .entry m8x8
          REP #$20                   ; 02fe04 m16x8
          LDX #$00                   ; 02fe06 m16x8
-entry159: .entry m16x8
+entry158: .entry m16x8
          LDA $7ec340, X             ; 02fe08 m16x8
-         JSR entry160               ; 02fe0c m16x8
+         JSR entry159               ; 02fe0c m16x8
          STA $7ec540, X             ; 02fe0f m16x8
          LDA $7ec350, X             ; 02fe13 m16x8
-         JSR entry160               ; 02fe17 m16x8
+         JSR entry159               ; 02fe17 m16x8
          STA $7ec550, X             ; 02fe1a m16x8
          LDA $7ec360, X             ; 02fe1e m16x8
-         JSR entry160               ; 02fe22 m16x8
+         JSR entry159               ; 02fe22 m16x8
          STA $7ec560, X             ; 02fe25 m16x8
          LDA $7ec370, X             ; 02fe29 m16x8
-         JSR entry160               ; 02fe2d m16x8
+         JSR entry159               ; 02fe2d m16x8
          STA $7ec570, X             ; 02fe30 m16x8
          LDA $7ec380, X             ; 02fe34 m16x8
-         JSR entry160               ; 02fe38 m16x8
+         JSR entry159               ; 02fe38 m16x8
          STA $7ec580, X             ; 02fe3b m16x8
          LDA $7ec390, X             ; 02fe3f m16x8
-         JSR entry160               ; 02fe43 m16x8
+         JSR entry159               ; 02fe43 m16x8
          STA $7ec590, X             ; 02fe46 m16x8
          LDA $7ec3a0, X             ; 02fe4a m16x8
-         JSR entry160               ; 02fe4e m16x8
+         JSR entry159               ; 02fe4e m16x8
          STA $7ec5a0, X             ; 02fe51 m16x8
          LDA $7ec3b0, X             ; 02fe55 m16x8
-         JSR entry160               ; 02fe59 m16x8
+         JSR entry159               ; 02fe59 m16x8
          STA $7ec5b0, X             ; 02fe5c m16x8
          LDA $7ec3c0, X             ; 02fe60 m16x8
-         JSR entry160               ; 02fe64 m16x8
+         JSR entry159               ; 02fe64 m16x8
          STA $7ec5c0, X             ; 02fe67 m16x8
          LDA $7ec3d0, X             ; 02fe6b m16x8
-         JSR entry160               ; 02fe6f m16x8
+         JSR entry159               ; 02fe6f m16x8
          STA $7ec5d0, X             ; 02fe72 m16x8
          LDA $7ec3e0, X             ; 02fe76 m16x8
-         JSR entry160               ; 02fe7a m16x8
+         JSR entry159               ; 02fe7a m16x8
          STA $7ec5e0, X             ; 02fe7d m16x8
          LDA $7ec3f0, X             ; 02fe81 m16x8
-         JSR entry160               ; 02fe85 m16x8
+         JSR entry159               ; 02fe85 m16x8
          STA $7ec5f0, X             ; 02fe88 m16x8
          INX                        ; 02fe8c m16x8
          INX                        ; 02fe8d m16x8
          CPX #$10                   ; 02fe8e m16x8
          BEQ label404               ; 02fe90 m16x8
-         JMP entry159               ; 02fe92 m16x8
+         JMP entry158               ; 02fe92 m16x8
 label404: REP #$10                  ; 02fe95 m16x16
          LDA $7ec540                ; 02fe97 m16x16
          TAY                        ; 02fe9b m16x16
@@ -6506,7 +6489,7 @@ label405: TYA                       ; 02fea3 m16x16
          STA $7ec500                ; 02fea4 m16x16
          SEP #$30                   ; 02fea8 m8x8
          RTL                        ; 02feaa m8x8
-entry160: .entry m16x8
+entry159: .entry m16x8
          STA $00                    ; 02feab m16x8
          AND #$001f                 ; 02fead m16x8
          ADD #$000e                 ; 02feb0 m16x8
@@ -6530,7 +6513,7 @@ label407: STA $04                   ; 02fecf m16x8
 label408: ORA $02                   ; 02fee2 m16x8
          ORA $04                    ; 02fee4 m16x8
          RTS                        ; 02fee6 m16x8
-entry161: .entry m8x8
+entry160: .entry m8x8
          REP #$20                   ; 02fee7 m16x8
          LDX #$00                   ; 02fee9 m16x8
 label409: LDA $7ec340, X            ; 02feeb m16x8
@@ -6564,7 +6547,7 @@ label409: LDA $7ec340, X            ; 02feeb m16x8
          LDA $7ec540                ; 02ff51 m16x8
          STA $7ec500                ; 02ff55 m16x8
          SEP #$30                   ; 02ff59 m8x8
-entry162: .entry m8x8
+entry161: .entry m8x8
          LDA $1b                    ; 02ff5b m8x8
          BNE label411               ; 02ff5d m8x8
          REP #$10                   ; 02ff5f m8x16
@@ -6600,7 +6583,7 @@ label410: STX $9c                   ; 02ffa1 m8x16
          STY $9d                    ; 02ffa3 m8x16
 label411: SEP #$10                  ; 02ffa5 m8x8
          RTL                        ; 02ffa7 m8x8
-entry163: .entry m8x8
+entry162: .entry m8x8
          REP #$20                   ; 02ffa8 m16x8
          LDX #$7e                   ; 02ffaa m16x8
 label412: LDA $7ec300, X            ; 02ffac m16x8
@@ -6612,9 +6595,9 @@ label412: LDA $7ec300, X            ; 02ffac m16x8
          BPL label412               ; 02ffbe m16x8
          SEP #$20                   ; 02ffc0 m8x8
          INC $15                    ; 02ffc2 m8x8
-         JMP entry162               ; 02ffc4 m8x8
+         JMP entry161               ; 02ffc4 m8x8
          .org $05fa8e
-entry164: .entry m8x8
+entry163: .entry m8x8
          STZ $0223                  ; 05fa8e m8x8
          STZ $1cd8                  ; 05fa91 m8x8
          LDA #$02                   ; 05fa94 m8x8
@@ -6625,7 +6608,7 @@ entry164: .entry m8x8
          STA $10                    ; 05fa9f m8x8
          RTL                        ; 05faa1 m8x8
          .org $0680fa
-entry165: .entry m8x8
+entry164: .entry m8x8
          PHB                        ; 0680fa m8x8
          PHK                        ; 0680fb m8x8
          PLB                        ; 0680fc m8x8
@@ -6648,30 +6631,30 @@ entry165: .entry m8x8
          STA $02                    ; 068121 m8x8
          LDA $80f6, Y               ; 068123 m8x8
          STA $03                    ; 068126 m8x8
-         JSR entry176               ; 068128 m8x8
+         JSR entry175               ; 068128 m8x8
          PLB                        ; 06812b m8x8
          RTL                        ; 06812c m8x8
          .org $068262
 label413: CLC                       ; 068262 m8x8, c=0
          RTS                        ; 068263 m8x8, c=0
-entry166: .entry m8x8
+entry165: .entry m8x8
          LDA $1b                    ; 068264 m8x8
          BNE label414               ; 068266 m8x8
-         JSL @entry290              ; 068268 m8x8
+         JSL @entry289              ; 068268 m8x8
          AND #$08                   ; 06826c m8x8
          BNE label413               ; 06826e m8x8
 label414: LDY $0b9c                 ; 068270 m8x8
          BEQ label413               ; 068273 m8x8
          CPY #$04                   ; 068275 m8x8
          BNE label415               ; 068277 m8x8
-         JSL @entry290              ; 068279 m8x8
+         JSL @entry289              ; 068279 m8x8
          AND #$03                   ; 06827d m8x8
          ADD #$13                   ; 06827f m8x8
          TAY                        ; 068282 m8x8
 label415: STY $0d                   ; 068283 m8x8
          LDA $81f3, Y               ; 068285 m8x8
          BEQ label413               ; 068288 m8x8
-         JSL @entry350              ; 06828a m8x8
+         JSL @entry349              ; 06828a m8x8
          BMI label413               ; 06828e m8x8
          PHX                        ; 068290 m8x8
          LDX $0d                    ; 068291 m8x8
@@ -6704,7 +6687,7 @@ label415: STY $0d                   ; 068283 m8x8
          BNE label416               ; 0682d8 m8x8
          PHX                        ; 0682da m8x8
          TYX                        ; 0682db m8x8
-         JSR entry174               ; 0682dc m8x8
+         JSR entry173               ; 0682dc m8x8
          PLX                        ; 0682df m8x8
 label416: CPX #$0b                  ; 0682e0 m8x8
          BNE label417               ; 0682e2 m8x8
@@ -6739,7 +6722,7 @@ label420: CPX #$79                  ; 06831c m8x8
 label421: SEC                       ; 068325 m8x8, c=1
          PLX                        ; 068326 m8x8, c=1
          RTS                        ; 068327 m8x8, c=1
-entry167: .entry m8x8
+entry166: .entry m8x8
          LDA $1b                    ; 068328 m8x8
          BNE label422               ; 06832a m8x8
          STZ $0c7c                  ; 06832c m8x8
@@ -6747,7 +6730,7 @@ entry167: .entry m8x8
          STZ $0c7e                  ; 068332 m8x8
          STZ $0c7f                  ; 068335 m8x8
          STZ $0c80                  ; 068338 m8x8
-         JSL @entry256              ; 06833b m8x8
+         JSL @entry255              ; 06833b m8x8
 label422: PHB                       ; 06833f m8x8
          PHK                        ; 068340 m8x8
          PLB                        ; 068341 m8x8
@@ -6762,9 +6745,9 @@ label423: STY $0fff                 ; 06834b m8x8
          STZ $0b7d                  ; 068355 m8x8
          STZ $0b7e                  ; 068358 m8x8
          STZ $0b7f                  ; 06835b m8x8
-label424: JSR entry168              ; 06835e m8x8
-         JSL @entry237              ; 068361 m8x8
-         JSL @entry230              ; 068365 m8x8
+label424: JSR entry167              ; 06835e m8x8
+         JSL @entry236              ; 068361 m8x8
+         JSL @entry229              ; 068365 m8x8
          LDA $0314                  ; 068369 m8x8
          STA $0fb2                  ; 06836c m8x8
          STZ $0314                  ; 06836f m8x8
@@ -6782,25 +6765,25 @@ label426: STZ $0379                 ; 068383 m8x8
          LDA $0fdc                  ; 06838c m8x8
          BEQ label427               ; 06838f m8x8
          DEC $0fdc                  ; 068391 m8x8
-label427: JSL @entry219             ; 068394 m8x8
-         JSL @entry243              ; 068398 m8x8
+label427: JSL @entry218             ; 068394 m8x8
+         JSL @entry242              ; 068398 m8x8
          STZ $0b9a                  ; 06839c m8x8
          LDX #$0f                   ; 06839f m8x8
 label428: STX $0fa0                 ; 0683a1 m8x8
-         JSR entry173               ; 0683a4 m8x8
+         JSR entry172               ; 0683a4 m8x8
          DEX                        ; 0683a7 m8x8
          BPL label428               ; 0683a8 m8x8
-         JSL @entry238              ; 0683aa m8x8
+         JSL @entry237              ; 0683aa m8x8
          STZ $069f                  ; 0683ae m8x8
          STZ $069e                  ; 0683b1 m8x8
          PLB                        ; 0683b4 m8x8
-         JSL @entry348              ; 0683b5 m8x8
+         JSL @entry347              ; 0683b5 m8x8
          LDA $0aaa                  ; 0683b9 m8x8
          BEQ label429               ; 0683bc m8x8
          STA $0fc6                  ; 0683be m8x8
 label429: RTL                       ; 0683c1 m8x8
          .org $0683d3
-entry168: .entry m8x8
+entry167: .entry m8x8
          LDY #$00                   ; 0683d3 m8x8
          REP #$20                   ; 0683d5 m16x8
 label430: LDA $83c7, Y              ; 0683d7 m16x8
@@ -6812,8 +6795,8 @@ label430: LDA $83c7, Y              ; 0683d7 m16x8
          SEP #$20                   ; 0683e3 m8x8, c=1
          RTS                        ; 0683e5 m8x8, c=1
          .org $0683f2
-entry169: .entry m8x8
-         JSR entry171               ; 0683f2 m8x8
+entry168: .entry m8x8
+         JSR entry170               ; 0683f2 m8x8
          LDA $0e40, X               ; 0683f5 m8x8
          AND #$1f                   ; 0683f8 m8x8
          INC                        ; 0683fa m8x8
@@ -6823,15 +6806,15 @@ entry169: .entry m8x8
          BEQ label432               ; 068400 m8x8
          LDY $0f20, X               ; 068402 m8x8
          BEQ label431               ; 068405 m8x8
-         JSL @entry294              ; 068407 m8x8
+         JSL @entry293              ; 068407 m8x8
          BRA label433               ; 06840b m8x8
-label431: JSL @entry293             ; 06840d m8x8
+label431: JSL @entry292             ; 06840d m8x8
          BRA label433               ; 068411 m8x8
-label432: JSL @entry291             ; 068413 m8x8
+label432: JSL @entry290             ; 068413 m8x8
 label433: LDA $11                   ; 068417 m8x8
          ORA $0fc1                  ; 068419 m8x8
          BEQ label434               ; 06841c m8x8
-         JMP entry170               ; 06841e m8x8
+         JMP entry169               ; 06841e m8x8
 label434: LDA $0df0, X              ; 068421 m8x8
          BEQ label435               ; 068424 m8x8
          DEC $0df0, X               ; 068426 m8x8
@@ -6866,11 +6849,11 @@ label439: LDA #$3e                  ; 06846b m8x8
          STA $1cf0                  ; 06846d m8x8
          LDA #$01                   ; 068470 m8x8
          STA $1cf1                  ; 068472 m8x8
-         JSL @entry164              ; 068475 m8x8
+         JSL @entry163              ; 068475 m8x8
 label440: PLA                       ; 068479 m8x8
 label441: CMP #$18                  ; 06847a m8x8
          BNE label442               ; 06847c m8x8
-         JSR entry181               ; 06847e m8x8
+         JSR entry180               ; 06847e m8x8
 label442: LDA $0ce2, X              ; 068481 m8x8
          CMP #$fb                   ; 068484 m8x8
          BCS label443               ; 068486 m8x8, c=0
@@ -6883,9 +6866,9 @@ label443: DEC $0ef0, X              ; 068491 m8x8
 label444: STZ $0ef0, X              ; 068496 m8x8
          STZ $0b89, X               ; 068499 m8x8
 label445: LDA $0f10, X              ; 06849c m8x8
-         BEQ entry170               ; 06849f m8x8
+         BEQ entry169               ; 06849f m8x8
          DEC $0f10, X               ; 0684a1 m8x8
-entry170: .entry m8x8
+entry169: .entry m8x8
          LDY $ee                    ; 0684a4 m8x8
          CPY #$03                   ; 0684a6 m8x8
          BEQ label446               ; 0684a8 m8x8
@@ -6896,7 +6879,7 @@ label446: LDA $0b89, X              ; 0684ad m8x8
          STA $0b89, X               ; 0684b5 m8x8
          RTS                        ; 0684b8 m8x8
          .org $0684c1
-entry171: .entry m8x8
+entry170: .entry m8x8
          LDA $0d10, X               ; 0684c1 m8x8
          STA $0fd8                  ; 0684c4 m8x8
          LDA $0d30, X               ; 0684c7 m8x8
@@ -6906,24 +6889,24 @@ entry171: .entry m8x8
          LDA $0d20, X               ; 0684d3 m8x8
          STA $0fdb                  ; 0684d6 m8x8
          RTS                        ; 0684d9 m8x8
-entry172: .entry m8x8
+entry171: .entry m8x8
          PHB                        ; 0684da m8x8
          PHK                        ; 0684db m8x8
          PLB                        ; 0684dc m8x8
-         JSR entry173               ; 0684dd m8x8
+         JSR entry172               ; 0684dd m8x8
          PLB                        ; 0684e0 m8x8
          RTL                        ; 0684e1 m8x8
-entry173: .entry m8x8
+entry172: .entry m8x8
          LDA $0dd0, X               ; 0684e2 m8x8
          BEQ label448               ; 0684e5 m8x8
          PHA                        ; 0684e7 m8x8
-         JSR entry169               ; 0684e8 m8x8
+         JSR entry168               ; 0684e8 m8x8
          PLA                        ; 0684eb m8x8
          CMP #$09                   ; 0684ec m8x8
          BEQ label447               ; 0684ee m8x8
-         JSL @entry2 NORETURN       ; 0684f0 m8x8
+         JSL $008781 NORETURN       ; 0684f0 m8x8
          .org $06850c
-label447: JMP entry175              ; 06850c m8x8
+label447: JMP entry174              ; 06850c m8x8
          .org $068510
 label448: LDA $1b                   ; 068510 m8x8
          BNE label449               ; 068512 m8x8
@@ -6938,14 +6921,14 @@ label449: LDA #$ff                  ; 068520 m8x8
          STA $0bc0, X               ; 068522 m8x8
          RTS                        ; 068525 m8x8
          .org $069269
-entry174: .entry m8x8
+entry173: .entry m8x8
          LDA #$ff                   ; 069269 m8x8
          STA $0e30, X               ; 06926b m8x8
          LDA $0b9b                  ; 06926e m8x8
          STA $0cba, X               ; 069271 m8x8
          INC $0b9b                  ; 069274 m8x8
          RTS                        ; 069277 m8x8
-entry175: .entry m8x8
+entry174: .entry m8x8
          LDA $0e20, X               ; 069278 m8x8
          REP #$30                   ; 06927b m16x16
          AND #$00ff                 ; 06927d m16x16
@@ -6957,7 +6940,7 @@ entry175: .entry m8x8
          SEP #$30                   ; 069287 m8x8
          RTS                        ; 069289 m8x8
          .org $06ad0b
-entry176: .entry m8x8
+entry175: .entry m8x8
          LDY #$0f                   ; 06ad0b m8x8
 label450: LDA $0caa, Y              ; 06ad0d m8x8
          AND #$02                   ; 06ad10 m8x8
@@ -6969,9 +6952,9 @@ label450: LDA $0caa, Y              ; 06ad0d m8x8
          BEQ label451               ; 06ad1e m8x8
          PHX                        ; 06ad20 m8x8
          TYX                        ; 06ad21 m8x8
-         JSR entry188               ; 06ad22 m8x8
+         JSR entry187               ; 06ad22 m8x8
          PLX                        ; 06ad25 m8x8
-         JSR entry189               ; 06ad26 m8x8
+         JSR entry188               ; 06ad26 m8x8
          BCC label452               ; 06ad29 m8x8, c=1
 label451: LDA #$00                  ; 06ad2b m8x8
          STA $0e90, Y               ; 06ad2d m8x8
@@ -6988,11 +6971,11 @@ label451: LDA #$00                  ; 06ad2b m8x8
          LDA $0e20, Y               ; 06ad49 m8x8
          CMP #$d8                   ; 06ad4c m8x8
          BNE label452               ; 06ad4e m8x8
-         JSL @entry177              ; 06ad50 m8x8
+         JSL @entry176              ; 06ad50 m8x8
 label452: DEY                       ; 06ad54 m8x8
          BPL label450               ; 06ad55 m8x8
          RTS                        ; 06ad57 m8x8
-entry177: .entry m8x8
+entry176: .entry m8x8
          LDA #$4a                   ; 06ad58 m8x8
          STA $0e20, Y               ; 06ad5a m8x8
          LDA #$01                   ; 06ad5d m8x8
@@ -7007,21 +6990,21 @@ entry177: .entry m8x8
          STA $0e50, Y               ; 06ad73 m8x8
          RTL                        ; 06ad76 m8x8
          .org $06cf65
-entry178: .entry m8x8
+entry177: .entry m8x8
          STZ $0d50, X               ; 06cf65 m8x8
          STZ $0d40, X               ; 06cf68 m8x8
          RTS                        ; 06cf6b m8x8
          .org $06e09b
-entry179: .entry m8x8
+entry178: .entry m8x8
          LDA #$03                   ; 06e09b m8x8
          STA $0e40, X               ; 06e09d m8x8
          RTS                        ; 06e0a0 m8x8
          .org $06e23f
-entry180: .entry m8x8
+entry179: .entry m8x8
          LDA $0dc0, X               ; 06e23f m8x8
          BEQ label453               ; 06e242 m8x8
          STA $0b9c                  ; 06e244 m8x8
-         JSR entry166               ; 06e247 m8x8
+         JSR entry165               ; 06e247 m8x8
          STZ $0b9c                  ; 06e24a m8x8
 label453: LDY $0db0, X              ; 06e24d m8x8
          LDA $1b                    ; 06e250 m8x8
@@ -7029,7 +7012,7 @@ label453: LDY $0db0, X              ; 06e24d m8x8
          LDY #$00                   ; 06e254 m8x8
 label454: STZ $012e                 ; 06e256 m8x8
          LDA $e283, Y               ; 06e259 m8x8
-         JSL @entry297              ; 06e25c m8x8
+         JSL @entry296              ; 06e25c m8x8
          LDA #$1f                   ; 06e260 m8x8
          STA $0df0, X               ; 06e262 m8x8
          LDA #$06                   ; 06e265 m8x8
@@ -7039,7 +7022,7 @@ label454: STZ $012e                 ; 06e256 m8x8
          STA $0e40, X               ; 06e270 m8x8
          RTS                        ; 06e273 m8x8
          .org $06eece
-entry181: .entry m8x8
+entry180: .entry m8x8
          LDA $0dd0, X               ; 06eece m8x8
          CMP #$09                   ; 06eed1 m8x8
          BCC label455               ; 06eed3 m8x8, c=1
@@ -7049,7 +7032,7 @@ entry181: .entry m8x8
          BNE label456               ; 06eedd m8x8
          STZ $0ce2, X               ; 06eedf m8x8
          LDA #$09                   ; 06eee2 m8x8
-         JSL @entry298              ; 06eee4 m8x8
+         JSL @entry297              ; 06eee4 m8x8
          LDA #$07                   ; 06eee8 m8x8
          STA $0dd0, X               ; 06eeea m8x8
          LDA #$70                   ; 06eeed m8x8
@@ -7080,12 +7063,12 @@ label457: TYA                       ; 06ef15 m8x8
          ASL $0be0, X               ; 06ef24 m8x8
          LSR $0be0, X               ; 06ef27 m8x8
          LDA #$0f                   ; 06ef2a m8x8
-         JSL @entry297              ; 06ef2c m8x8
+         JSL @entry296              ; 06ef2c m8x8
          LDA #$18                   ; 06ef30 m8x8
          STA $0f80, X               ; 06ef32 m8x8
          ASL $0cd2, X               ; 06ef35 m8x8
          LSR $0cd2, X               ; 06ef38 m8x8
-         JSR entry178               ; 06ef3b m8x8
+         JSR entry177               ; 06ef3b m8x8
 label458: LDA #$0b                  ; 06ef3e m8x8
          STA $0dd0, X               ; 06ef40 m8x8
          LDA #$40                   ; 06ef43 m8x8
@@ -7100,7 +7083,7 @@ label458: LDA #$0b                  ; 06ef3e m8x8
          BNE label459               ; 06ef59 m8x8
          INC                        ; 06ef5b m8x8
          STA $0e20, X               ; 06ef5c m8x8
-label459: JMP entry182              ; 06ef5f m8x8
+label459: JMP entry181              ; 06ef5f m8x8
          .org $06ef67
 label460: LDA $0e50, X              ; 06ef67 m8x8, c=0
          STA $00                    ; 06ef6a m8x8, c=0
@@ -7108,7 +7091,7 @@ label460: LDA $0e50, X              ; 06ef67 m8x8, c=0
          STA $0e50, X               ; 06ef70 m8x8
          STZ $0ce2, X               ; 06ef73 m8x8
          BEQ label461               ; 06ef76 m8x8
-         BCS entry182               ; 06ef78 m8x8, c=0
+         BCS entry181               ; 06ef78 m8x8, c=0
 label461: LDA $0cba, X              ; 06ef7a m8x8
          BNE label463               ; 06ef7d m8x8
          LDA $0dd0, X               ; 06ef7f m8x8
@@ -7125,7 +7108,7 @@ label463: LDY $0e20, X              ; 06ef9a m8x8
          CPY #$1b                   ; 06ef9d m8x8
          BEQ label464               ; 06ef9f m8x8
          LDA #$09                   ; 06efa1 m8x8
-         JSL @entry298              ; 06efa3 m8x8
+         JSL @entry297              ; 06efa3 m8x8
 label464: CPY #$40                  ; 06efa7 m8x8
          BNE label465               ; 06efa9 m8x8
          PHX                        ; 06efab m8x8
@@ -7139,8 +7122,8 @@ label465: TYA                       ; 06efb9 m8x8
          BNE label466               ; 06efbc m8x8
          LDY $0db0, X               ; 06efbe m8x8
          CPY #$02                   ; 06efc1 m8x8
-         BNE entry182               ; 06efc3 m8x8
-         JMP entry180               ; 06efc5 m8x8
+         BNE entry181               ; 06efc3 m8x8
+         JMP entry179               ; 06efc5 m8x8
 label466: PHA                       ; 06efc8 m8x8
          LDA $0dd0, X               ; 06efc9 m8x8
          CMP #$0a                   ; 06efcc m8x8
@@ -7156,23 +7139,23 @@ label467: LDA #$06                  ; 06efd6 m8x8
          STA $0dd0, X               ; 06efe2 m8x8
          LDA #$1f                   ; 06efe5 m8x8
          STA $0df0, X               ; 06efe7 m8x8
-         JSR entry179               ; 06efea m8x8
-entry182: .entry m8x8
+         JSR entry178               ; 06efea m8x8
+entry181: .entry m8x8
          RTS                        ; 06efed m8x8
 label468: CMP #$92                  ; 06efee m8x8
          BNE label469               ; 06eff0 m8x8
-         JSL @entry264              ; 06eff2 m8x8
+         JSL @entry263              ; 06eff2 m8x8
          LDA #$ff                   ; 06eff6 m8x8
          STA $0df0, X               ; 06eff8 m8x8
-         JMP entry183               ; 06effb m8x8
+         JMP entry182               ; 06effb m8x8
 label469: CMP #$cb                  ; 06effe m8x8
          BNE label470               ; 06f000 m8x8
-         JMP entry185               ; 06f002 m8x8
+         JMP entry184               ; 06f002 m8x8
 label470: CMP #$cc                  ; 06f005 m8x8
          BEQ label471               ; 06f007 m8x8
          CMP #$cd                   ; 06f009 m8x8
          BNE label472               ; 06f00b m8x8
-label471: JMP entry184              ; 06f00d m8x8
+label471: JMP entry183              ; 06f00d m8x8
 label472: CMP #$53                  ; 06f010 m8x8
          BEQ label481               ; 06f012 m8x8
          CMP #$54                   ; 06f014 m8x8
@@ -7181,7 +7164,7 @@ label472: CMP #$53                  ; 06f010 m8x8
          BEQ label476               ; 06f01a m8x8
          CMP #$7a                   ; 06f01c m8x8
          BNE label473               ; 06f01e m8x8
-         JMP entry186               ; 06f020 m8x8
+         JMP entry185               ; 06f020 m8x8
 label473: CMP #$23                  ; 06f023 m8x8
          BEQ label483               ; 06f025 m8x8
          CMP #$0f                   ; 06f027 m8x8
@@ -7199,7 +7182,7 @@ label474: LDA $0b6b, X              ; 06f034 m8x8
          BCC label475               ; 06f041 m8x8, c=1
          LDA #$1f                   ; 06f043 m8x8, c=1
 label475: STA $0df0, X              ; 06f045 m8x8
-         JMP entry187               ; 06f048 m8x8
+         JMP entry186               ; 06f048 m8x8
          .org $06f04c
 label476: LDA #$03                  ; 06f04c m8x8
          STA $0d80, X               ; 06f04e m8x8
@@ -7207,18 +7190,18 @@ label476: LDA #$03                  ; 06f04c m8x8
          STA $0f10, X               ; 06f053 m8x8
          LDA #$09                   ; 06f056 m8x8
          STA $0dd0, X               ; 06f058 m8x8
-         BRA entry183               ; 06f05b m8x8
+         BRA entry182               ; 06f05b m8x8
 label477: LDA $0e20, X              ; 06f05d m8x8
          CMP #$a2                   ; 06f060 m8x8
          BEQ label478               ; 06f062 m8x8
-         JSL @entry264              ; 06f064 m8x8
+         JSL @entry263              ; 06f064 m8x8
 label478: LDA #$04                  ; 06f068 m8x8
          STA $0dd0, X               ; 06f06a m8x8
          STZ $0d90, X               ; 06f06d m8x8
          LDA #$ff                   ; 06f070 m8x8
 label479: STA $0df0, X              ; 06f072 m8x8
          STA $0ef0, X               ; 06f075 m8x8
-         BRA entry183               ; 06f078 m8x8
+         BRA entry182               ; 06f078 m8x8
 label480: LDA #$05                  ; 06f07a m8x8
          STA $0d80, X               ; 06f07c m8x8
          LDA #$c0                   ; 06f07f m8x8
@@ -7227,11 +7210,11 @@ label481: LDA #$23                  ; 06f083 m8x8
          STA $0df0, X               ; 06f085 m8x8
          STZ $0ef0, X               ; 06f088 m8x8
          BRA label482               ; 06f08b m8x8
-entry183: .entry m8x8
+entry182: .entry m8x8
          INC $0ffc                  ; 06f08d m8x8
 label482: STZ $012f                 ; 06f090 m8x8
          LDA #$22                   ; 06f093 m8x8
-         JSL @entry298              ; 06f095 m8x8
+         JSL @entry297              ; 06f095 m8x8
          RTS                        ; 06f099 m8x8
 label483: LDA $0db0, X              ; 06f09a m8x8
          BNE label474               ; 06f09d m8x8
@@ -7243,24 +7226,24 @@ label483: LDA $0db0, X              ; 06f09a m8x8
          STA $0dd0, X               ; 06f0ab m8x8
          STZ $0ef0, X               ; 06f0ae m8x8
          RTS                        ; 06f0b1 m8x8
-entry184: .entry m8x8
+entry183: .entry m8x8
          LDA #$80                   ; 06f0b2 m8x8
          STA $0d80, X               ; 06f0b4 m8x8
          LDA #$60                   ; 06f0b7 m8x8
          STA $0df0, X               ; 06f0b9 m8x8
          LDA #$09                   ; 06f0bc m8x8
          STA $0dd0, X               ; 06f0be m8x8
-         BRA entry183               ; 06f0c1 m8x8
-entry185: .entry m8x8
+         BRA entry182               ; 06f0c1 m8x8
+entry184: .entry m8x8
          LDA #$80                   ; 06f0c3 m8x8
          STA $0d80, X               ; 06f0c5 m8x8
          LDA #$80                   ; 06f0c8 m8x8
          STA $0df0, X               ; 06f0ca m8x8
          LDA #$09                   ; 06f0cd m8x8
          STA $0dd0, X               ; 06f0cf m8x8
-         BRA entry183               ; 06f0d2 m8x8
-entry186: .entry m8x8
-         JSL @entry264              ; 06f0d4 m8x8
+         BRA entry182               ; 06f0d2 m8x8
+entry185: .entry m8x8
+         JSL @entry263              ; 06f0d4 m8x8
          LDA #$09                   ; 06f0d8 m8x8
          STA $0dd0, X               ; 06f0da m8x8
          STA $0ba0, X               ; 06f0dd m8x8
@@ -7272,7 +7255,7 @@ entry186: .entry m8x8
          STA $0df0, X               ; 06f0ec m8x8
          LDA #$20                   ; 06f0ef m8x8
          STA $0f80, X               ; 06f0f1 m8x8
-         JMP entry183               ; 06f0f4 m8x8
+         JMP entry182               ; 06f0f4 m8x8
 label484: LDA #$ff                  ; 06f0f7 m8x8
          STA $0df0, X               ; 06f0f9 m8x8
          LDA #$08                   ; 06f0fc m8x8
@@ -7282,8 +7265,8 @@ label484: LDA #$ff                  ; 06f0f7 m8x8
          STA $0d82                  ; 06f105 m8x8
          STZ $0dc1                  ; 06f108 m8x8
          STZ $0dc2                  ; 06f10b m8x8
-         JMP entry183               ; 06f10e m8x8
-entry187: .entry m8x8
+         JMP entry182               ; 06f10e m8x8
+entry186: .entry m8x8
          LDA $0e40, X               ; 06f111 m8x8
          ADD #$04                   ; 06f114 m8x8
          STA $0e40, X               ; 06f117 m8x8
@@ -7294,7 +7277,7 @@ entry187: .entry m8x8
          STA $0be0, X               ; 06f123 m8x8
 label485: RTS                       ; 06f126 m8x8
          .org $06f7f5
-entry188: .entry m8x8
+entry187: .entry m8x8
          LDA $0f70, X               ; 06f7f5 m8x8
          BMI label486               ; 06f7f8 m8x8
          PHY                        ; 06f7fa m8x8
@@ -7326,7 +7309,7 @@ entry188: .entry m8x8
 label486: LDA #$80                  ; 06f837 m8x8
          STA $0a                    ; 06f839 m8x8
          RTS                        ; 06f83b m8x8
-entry189: .entry m8x8
+entry188: .entry m8x8
          PHX                        ; 06f83c m8x8
          LDX #$01                   ; 06f83d m8x8
 label487: LDA $04, X                ; 06f83f m8x8
@@ -7353,32 +7336,32 @@ label487: LDA $04, X                ; 06f83f m8x8
 label488: PLX                       ; 06f868 m8x8
          RTS                        ; 06f869 m8x8
          .org $078028
-entry190: .entry m8x8
-         JSR entry192               ; 078028 m8x8
+entry189: .entry m8x8
+         JSR entry191               ; 078028 m8x8
          STA $012e                  ; 07802b m8x8
          RTS                        ; 07802e m8x8
-entry191: .entry m8x8
-         JSR entry192               ; 07802f m8x8
+entry190: .entry m8x8
+         JSR entry191               ; 07802f m8x8
          STA $012f                  ; 078032 m8x8
          RTS                        ; 078035 m8x8
-entry192: .entry m8x8
+entry191: .entry m8x8
          STA $0cf8                  ; 078036 m8x8
-         JSL @entry296              ; 078039 m8x8
+         JSL @entry295              ; 078039 m8x8
          ORA $0cf8                  ; 07803d m8x8
          RTS                        ; 078040 m8x8
          .org $0791eb
-entry193: .entry m8x8
+entry192: .entry m8x8
          LDA $0372                  ; 0791eb m8x8
          BEQ label489               ; 0791ee m8x8
          LDA $02f1                  ; 0791f0 m8x8
          CMP #$40                   ; 0791f3 m8x8
          BNE label490               ; 0791f5 m8x8
 label489: BRL label494              ; 0791f7 m8x8
-label490: JSL @entry195             ; 0791fa m8x8
+label490: JSL @entry194             ; 0791fa m8x8
          LDY #$01                   ; 0791fe m8x8
          LDA #$1d                   ; 079200 m8x8
-         JSL @entry225              ; 079202 m8x8
-         JSL @entry165              ; 079206 m8x8
+         JSL @entry224              ; 079202 m8x8
+         JSL @entry164              ; 079206 m8x8
          LDA $012f                  ; 07920a m8x8
          AND #$3f                   ; 07920d m8x8
          CMP #$1b                   ; 07920f m8x8
@@ -7386,7 +7369,7 @@ label490: JSL @entry195             ; 0791fa m8x8
          CMP #$32                   ; 079213 m8x8
          BEQ label491               ; 079215 m8x8
          LDA #$03                   ; 079217 m8x8
-         JSR entry191               ; 079219 m8x8
+         JSR entry190               ; 079219 m8x8
 label491: LDX $66                   ; 07921c m8x8
          LDA $91b7, X               ; 07921e m8x8
          STA $27                    ; 079221 m8x8
@@ -7439,7 +7422,7 @@ label492: LDA #$01                  ; 07926d m8x8
          BRA label494               ; 079286 m8x8
 label493: STZ $30                   ; 079288 m8x8
 label494: RTS                       ; 07928a m8x8
-entry194: .entry m8x8
+entry193: .entry m8x8
          PHB                        ; 07928b m8x8
          PHK                        ; 07928c m8x8
          PLB                        ; 07928d m8x8
@@ -7447,23 +7430,23 @@ entry194: .entry m8x8
          LDA $2f                    ; 07928f m8x8
          LSR                        ; 079291 m8x8
          STA $66                    ; 079292 m8x8
-         JSR entry193               ; 079294 m8x8
+         JSR entry192               ; 079294 m8x8
          PLX                        ; 079297 m8x8
          PLB                        ; 079298 m8x8
          RTL                        ; 079299 m8x8
          .org $07982a
-entry195: .entry m8x8
+entry194: .entry m8x8
          PHB                        ; 07982a m8x8
          PHK                        ; 07982b m8x8
          PLB                        ; 07982c m8x8
          STZ $02cb                  ; 07982d m8x8
          STZ $034f                  ; 079830 m8x8
          STZ $032a                  ; 079833 m8x8
-         JSR entry196               ; 079836 m8x8
+         JSR entry195               ; 079836 m8x8
          PLB                        ; 079839 m8x8
          RTL                        ; 07983a m8x8
          .org $079863
-entry196: .entry m8x8
+entry195: .entry m8x8
          REP #$20                   ; 079863 m16x8
          STZ $032f                  ; 079865 m16x8
          STZ $0331                  ; 079868 m16x8
@@ -7478,7 +7461,7 @@ entry196: .entry m8x8
          SEP #$20                   ; 079883 m8x8
          RTS                        ; 079885 m8x8
          .org $079a1c
-entry197: .entry m8x8
+entry196: .entry m8x8
          PHB                        ; 079a1c m8x8
          PHK                        ; 079a1d m8x8
          PLB                        ; 079a1e m8x8
@@ -7495,11 +7478,11 @@ entry197: .entry m8x8
          LDA #$03                   ; 079a37 m8x8
          STA $0374                  ; 079a39 m8x8
          LDA #$20                   ; 079a3c m8x8
-         JSL @entry223              ; 079a3e m8x8
+         JSL @entry222              ; 079a3e m8x8
          PLB                        ; 079a42 m8x8
          RTL                        ; 079a43 m8x8
          .org $079d74
-entry198: .entry m8x8
+entry197: .entry m8x8
          STZ $5e                    ; 079d74 m8x8
          LDA $48                    ; 079d76 m8x8
          AND #$f6                   ; 079d78 m8x8
@@ -7516,7 +7499,7 @@ entry198: .entry m8x8
          .org $079e52
 label495: RTS                       ; 079e52 m8x8
          .org $07ae3d
-entry199: .entry m8x8
+entry198: .entry m8x8
          LDA #$20                   ; 07ae3d m8x8
          STA $02e2                  ; 07ae3f m8x8
          STZ $037b                  ; 07ae42 m8x8
@@ -7524,7 +7507,7 @@ entry199: .entry m8x8
          STZ $0360                  ; 07ae47 m8x8
          RTS                        ; 07ae4a m8x8
          .org $07e22e
-entry200: .entry m8x8
+entry199: .entry m8x8
          PHB                        ; 07e22e m8x8
          PHK                        ; 07e22f m8x8
          PLB                        ; 07e230 m8x8
@@ -7727,8 +7710,8 @@ label520: PLP                       ; 07e3ae m8x8
          DEX                        ; 07e3ba m8x8
          DEX                        ; 07e3bb m8x8
          BPL label519               ; 07e3bc m8x8
-         JSR entry201               ; 07e3be m8x8
-         JSR entry203               ; 07e3c1 m8x8
+         JSR entry200               ; 07e3be m8x8
+         JSR entry202               ; 07e3c1 m8x8
          BRA label521               ; 07e3c4 m8x8
          .org $07e3c9
 label521: REP #$20                  ; 07e3c9 m16x8
@@ -7882,7 +7865,7 @@ label536: ASL                       ; 07e50b m8x8
          LDA $046c                  ; 07e519 m8x8
          CMP #$04                   ; 07e51c m8x8
          BNE label537               ; 07e51e m8x8
-         JSR entry202               ; 07e520 m8x8
+         JSR entry201               ; 07e520 m8x8
 label537: STZ $68                   ; 07e523 m8x8
          STZ $69                    ; 07e525 m8x8
          BRL label521               ; 07e527 m8x8
@@ -7930,7 +7913,7 @@ label544: PHA                       ; 07e570 m16x8
          STA $08, X                 ; 07e577 m16x8
          SEP #$20                   ; 07e579 m8x8
          BRL label533               ; 07e57b m8x8
-entry201: .entry m8x8
+entry200: .entry m8x8
          LDA $046c                  ; 07e57e m8x8
          BEQ label549               ; 07e581 m8x8
          LDA $24                    ; 07e583 m8x8
@@ -7953,12 +7936,12 @@ label546: TYA                       ; 07e5a5 m8x8
          TSB $67                    ; 07e5a6 m8x8
 label547: LDY #$02                  ; 07e5a8 m8x8
          LDA $0312                  ; 07e5aa m8x8
-         BEQ entry202               ; 07e5ad m8x8
+         BEQ entry201               ; 07e5ad m8x8
          BMI label548               ; 07e5af m8x8
          LDY #$01                   ; 07e5b1 m8x8
 label548: TYA                       ; 07e5b3 m8x8
          TSB $67                    ; 07e5b4 m8x8
-entry202: .entry m8x8
+entry201: .entry m8x8
          STZ $6a                    ; 07e5b6 m8x8
          REP #$20                   ; 07e5b8 m16x8
          LDA $20                    ; 07e5ba m16x8
@@ -7970,7 +7953,7 @@ entry202: .entry m8x8
          SEP #$20                   ; 07e5ca m8x8
 label549: RTS                       ; 07e5cc m8x8
          .org $07e5d9
-entry203: .entry m8x8
+entry202: .entry m8x8
          LDA $03f3                  ; 07e5d9 m8x8
          BEQ label549               ; 07e5dc m8x8
          LDA $24                    ; 07e5de m8x8
@@ -8038,7 +8021,7 @@ label553: ADC $0020, Y              ; 07e644 m8x8
          SEP #$20                   ; 07e657 m8x8
          RTS                        ; 07e659 m8x8
          .org $07e68f
-entry204: .entry m8x8
+entry203: .entry m8x8
          PHB                        ; 07e68f m8x8
          PHK                        ; 07e690 m8x8
          PLB                        ; 07e691 m8x8
@@ -8298,15 +8281,15 @@ label597: LDA $e863, X              ; 07e8ba m8x8
 label598: STA $2e                   ; 07e8d5 m8x8
 label599: PLB                       ; 07e8d7 m8x8
          RTL                        ; 07e8d8 m8x8
-entry205: .entry m8x8
+entry204: .entry m8x8
          LDA $1b                    ; 07e8d9 m8x8
          BEQ label601               ; 07e8db m8x8
          LDA $6c                    ; 07e8dd m8x8
          BEQ label600               ; 07e8df m8x8
-         JMP @entry206              ; 07e8e1 m8x8
-label600: JSL @entry207             ; 07e8e5 m8x8
+         JMP @entry205              ; 07e8e1 m8x8
+label600: JSL @entry206             ; 07e8e5 m8x8
 label601: RTS                       ; 07e8e9 m8x8
-entry206: .entry m8x8
+entry205: .entry m8x8
          STZ $68                    ; 07e8ea m8x8
          STZ $69                    ; 07e8ec m8x8
          LDA $26                    ; 07e8ee m8x8
@@ -8372,13 +8355,13 @@ label605: SEP #$20                  ; 07e96a m8x8
          STZ $0308                  ; 07e975 m8x8
          STZ $0309                  ; 07e978 m8x8
          STZ $0376                  ; 07e97b m8x8
-         JSL @entry124              ; 07e97e m8x8
+         JSL @entry123              ; 07e97e m8x8
          RTS                        ; 07e982 m8x8
 label606: STZ $030b                 ; 07e983 m8x8
          STZ $0308                  ; 07e986 m8x8
          STZ $0309                  ; 07e989 m8x8
          STZ $0376                  ; 07e98c m8x8
-         JSL @entry125              ; 07e98f m8x8
+         JSL @entry124              ; 07e98f m8x8
          RTS                        ; 07e993 m8x8
 label607: LDA $68                   ; 07e994 m8x8
          BEQ label609               ; 07e996 m8x8
@@ -8387,15 +8370,15 @@ label607: LDA $68                   ; 07e994 m8x8
          STZ $0308                  ; 07e99d m8x8
          STZ $0309                  ; 07e9a0 m8x8
          STZ $0376                  ; 07e9a3 m8x8
-         JSL @entry129              ; 07e9a6 m8x8
+         JSL @entry128              ; 07e9a6 m8x8
          RTS                        ; 07e9aa m8x8
 label608: STZ $030b                 ; 07e9ab m8x8
          STZ $0308                  ; 07e9ae m8x8
          STZ $0309                  ; 07e9b1 m8x8
          STZ $0376                  ; 07e9b4 m8x8
-         JSL @entry126              ; 07e9b7 m8x8
+         JSL @entry125              ; 07e9b7 m8x8
 label609: RTS                       ; 07e9bb m8x8
-entry207: .entry m8x8
+entry206: .entry m8x8
          PHB                        ; 07e9bc m8x8
          PHK                        ; 07e9bd m8x8
          PLB                        ; 07e9be m8x8
@@ -8408,20 +8391,20 @@ entry207: .entry m8x8
          LDA $69                    ; 07e9cd m8x8
          BEQ label611               ; 07e9cf m8x8
          BMI label610               ; 07e9d1 m8x8
-         JSL @entry130              ; 07e9d3 m8x8
+         JSL @entry129              ; 07e9d3 m8x8
          BRA label611               ; 07e9d7 m8x8
-label610: JSL @entry133             ; 07e9d9 m8x8
+label610: JSL @entry132             ; 07e9d9 m8x8
 label611: LDA $68                   ; 07e9dd m8x8
          BEQ label613               ; 07e9df m8x8
          BPL label612               ; 07e9e1 m8x8
-         JSL @entry135              ; 07e9e3 m8x8
+         JSL @entry134              ; 07e9e3 m8x8
          PLB                        ; 07e9e7 m8x8
          RTL                        ; 07e9e8 m8x8
-label612: JSL @entry134             ; 07e9e9 m8x8
+label612: JSL @entry133             ; 07e9e9 m8x8
 label613: PLB                       ; 07e9ed m8x8
          RTL                        ; 07e9ee m8x8
          .org $07ed9e
-entry208: .entry m8x8
+entry207: .entry m8x8
          SEP #$30                   ; 07ed9e m8x8
          PHB                        ; 07eda0 m8x8
          PHK                        ; 07eda1 m8x8
@@ -8442,7 +8425,7 @@ label614: TXA                       ; 07edb6 m8x8
          LDA #$09                   ; 07edb9 m8x8
          STA $02c4                  ; 07edbb m8x8
          STZ $02c3                  ; 07edbe m8x8
-         JSR entry210               ; 07edc1 m8x8
+         JSR entry209               ; 07edc1 m8x8
          LDA $05f0, Y               ; 07edc4 m8x8
          STA $72                    ; 07edc7 m8x8
          LDA $05ec, Y               ; 07edc9 m8x8
@@ -8451,11 +8434,11 @@ label614: TXA                       ; 07edb6 m8x8
          STA $74                    ; 07edd1 m8x8
          LDA $05e0, Y               ; 07edd3 m8x8
          STA $75                    ; 07edd6 m8x8
-         JSR entry211               ; 07edd8 m8x8
+         JSR entry210               ; 07edd8 m8x8
 label615: PLB                       ; 07eddb m8x8
          RTL                        ; 07eddc m8x8
          .org $07ede2
-entry209: .entry m8x8
+entry208: .entry m8x8
          SEP #$30                   ; 07ede2 m8x8
          PHB                        ; 07ede4 m8x8
          PHK                        ; 07ede5 m8x8
@@ -8485,7 +8468,7 @@ label617: PLY                       ; 07ee16 m8x8
          PLB                        ; 07ee17 m8x8
          RTL                        ; 07ee18 m8x8
          .org $07ee1e
-entry210: .entry m8x8
+entry209: .entry m8x8
          STZ $27                    ; 07ee1e m8x8
          STZ $28                    ; 07ee20 m8x8
          LDA $ee19                  ; 07ee22 m8x8
@@ -8634,7 +8617,7 @@ label628: SEP #$20                  ; 07ef43 m8x8
          PLX                        ; 07ef48 m8x8
          RTS                        ; 07ef49 m8x8
          .org $07efa2
-entry211: .entry m8x8
+entry210: .entry m8x8
          PHY                        ; 07efa2 m8x8
          STY $0e                    ; 07efa3 m8x8
          STZ $0f                    ; 07efa5 m8x8
@@ -8747,10 +8730,10 @@ label637: LDA $30, X                ; 07f087 m8x8
          ADD $00                    ; 07f089 m8x8
          STA $30, X                 ; 07f08c m8x8
 label638: SEP #$20                  ; 07f08e m8x8
-         JSR entry205               ; 07f090 m8x8
+         JSR entry204               ; 07f090 m8x8
          PLY                        ; 07f093 m8x8
          RTS                        ; 07f094 m8x8
-entry212: .entry m8x8
+entry211: .entry m8x8
          PHB                        ; 07f095 m8x8
          PHK                        ; 07f096 m8x8
          PLB                        ; 07f097 m8x8
@@ -8764,17 +8747,17 @@ label639: LDA $05fc, X              ; 07f0a2 m8x8
          ASL                        ; 07f0a8 m8x8
          TAY                        ; 07f0a9 m8x8
          PHX                        ; 07f0aa m8x8
-         JSR entry213               ; 07f0ab m8x8
+         JSR entry212               ; 07f0ab m8x8
          PLX                        ; 07f0ae m8x8
 label640: DEX                       ; 07f0af m8x8
          BPL label639               ; 07f0b0 m8x8
 label641: PLB                       ; 07f0b2 m8x8
          RTL                        ; 07f0b3 m8x8
          .org $07f0c2
-entry213: .entry m8x8
+entry212: .entry m8x8
          PHY                        ; 07f0c2 m8x8
          LDA #$04                   ; 07f0c3 m8x8
-         JSL @entry292              ; 07f0c5 m8x8
+         JSL @entry291              ; 07f0c5 m8x8
          PLY                        ; 07f0c9 m8x8
          LDA $05f0, Y               ; 07f0ca m8x8
          STA $00                    ; 07f0cd m8x8
@@ -8824,7 +8807,7 @@ label642: XBA                       ; 07f104 m8x8
          STA ($92), Y               ; 07f121 m8x8
 label643: PLY                       ; 07f123 m8x8
          RTS                        ; 07f124 m8x8
-entry214: .entry m8x8
+entry213: .entry m8x8
          PHB                        ; 07f125 m8x8
          PHK                        ; 07f126 m8x8
          PLB                        ; 07f127 m8x8
@@ -8846,7 +8829,7 @@ entry214: .entry m8x8
          STZ $0308                  ; 07f14e m8x8
          STZ $0309                  ; 07f151 m8x8
          STZ $0376                  ; 07f154 m8x8
-         JSL @entry195              ; 07f157 m8x8
+         JSL @entry194              ; 07f157 m8x8
          LDA $50                    ; 07f15b m8x8
          AND #$fe                   ; 07f15d m8x8
          STA $50                    ; 07f15f m8x8
@@ -8857,8 +8840,8 @@ entry214: .entry m8x8
          STZ $0360                  ; 07f16a m8x8
          STZ $02da                  ; 07f16d m8x8
          STZ $55                    ; 07f170 m8x8
-         JSR entry199               ; 07f172 m8x8
-         JSR entry198               ; 07f175 m8x8
+         JSR entry198               ; 07f172 m8x8
+         JSR entry197               ; 07f175 m8x8
          STZ $037b                  ; 07f178 m8x8
          STZ $0300                  ; 07f17b m8x8
          LDA $67                    ; 07f17e m8x8
@@ -8869,7 +8852,7 @@ entry214: .entry m8x8
          PLB                        ; 07f18a m8x8
          RTL                        ; 07f18b m8x8
          .org $07f243
-entry215: .entry m8x8
+entry214: .entry m8x8
          PHB                        ; 07f243 m8x8
          PHK                        ; 07f244 m8x8
          PLB                        ; 07f245 m8x8
@@ -8890,10 +8873,10 @@ label644: STZ $2a                   ; 07f24e m8x8
          AND #$04                   ; 07f267 m8x8
          BEQ label645               ; 07f269 m8x8
          LDA #$18                   ; 07f26b m8x8
-         JSR entry190               ; 07f26d m8x8
+         JSR entry189               ; 07f26d m8x8
          BRA label646               ; 07f270 m8x8
 label645: LDA #$16                  ; 07f272 m8x8
-         JSR entry190               ; 07f274 m8x8
+         JSR entry189               ; 07f274 m8x8
 label646: STZ $01                   ; 07f277 m8x8
          LDX #$10                   ; 07f279 m8x8
          LDA $0462                  ; 07f27b m8x8
@@ -8913,7 +8896,7 @@ label647: STX $00                   ; 07f288 m8x8
          PLB                        ; 07f299 m8x8
          RTL                        ; 07f29a m8x8
          .org $07f3cd
-entry216: .entry m8x8
+entry215: .entry m8x8
          PHB                        ; 07f3cd m8x8
          PHK                        ; 07f3ce m8x8
          PLB                        ; 07f3cf m8x8
@@ -8922,7 +8905,7 @@ entry216: .entry m8x8
          PLB                        ; 07f3d5 m8x8
          RTL                        ; 07f3d6 m8x8
          .org $07f413
-entry217: .entry m8x8
+entry216: .entry m8x8
          PHB                        ; 07f413 m8x8
          PHK                        ; 07f414 m8x8
          PLB                        ; 07f415 m8x8
@@ -8953,7 +8936,7 @@ label648: STZ $27                   ; 07f42c m8x8
 label649: CLC                       ; 07f446 m8x8, c=0
          PLB                        ; 07f447 m8x8, c=0
          RTL                        ; 07f448 m8x8, c=0
-entry218: .entry m8x8
+entry217: .entry m8x8
          LDA $5d                    ; 07f449 m8x8
          CMP #$00                   ; 07f44b m8x8
          BEQ label650               ; 07f44d m8x8
@@ -8976,25 +8959,25 @@ label650: LDA $3a                   ; 07f457 m8x8
 label651: CLC                       ; 07f474 m8x8, c=0
          RTL                        ; 07f475 m8x8, c=0
          .org $088242
-entry219: .entry m8x8
+entry218: .entry m8x8
          PHB                        ; 088242 m8x8
          PHK                        ; 088243 m8x8
          PLB                        ; 088244 m8x8
-         JSR entry222               ; 088245 m8x8
-         JSR entry220               ; 088248 m8x8
+         JSR entry221               ; 088245 m8x8
+         JSR entry219               ; 088248 m8x8
          PLB                        ; 08824b m8x8
          RTL                        ; 08824c m8x8
          .org $08832b
-entry220: .entry m8x8
+entry219: .entry m8x8
          LDX #$09                   ; 08832b m8x8
 label652: STX $0fa0                 ; 08832d m8x8
          LDA $0c4a, X               ; 088330 m8x8
          BEQ label653               ; 088333 m8x8
-         JSR entry221               ; 088335 m8x8
+         JSR entry220               ; 088335 m8x8
 label653: DEX                       ; 088338 m8x8
          BPL label652               ; 088339 m8x8
          RTS                        ; 08833b m8x8
-entry221: .entry m8x8
+entry220: .entry m8x8
          PHA                        ; 08833c m8x8
          CPX #$06                   ; 08833d m8x8
          BCS label657               ; 08833f m8x8, c=0
@@ -9003,11 +8986,11 @@ entry221: .entry m8x8
          BEQ label655               ; 088347 m8x8, c=0
          LDY $0c7c, X               ; 088349 m8x8, c=0
          BNE label654               ; 08834c m8x8, c=0
-         JSL @entry293              ; 08834e m8x8
+         JSL @entry292              ; 08834e m8x8
          BRA label656               ; 088352 m8x8
-label654: JSL @entry294             ; 088354 m8x8
+label654: JSL @entry293             ; 088354 m8x8
          BRA label656               ; 088358 m8x8
-label655: JSL @entry291             ; 08835a m8x8
+label655: JSL @entry290             ; 08835a m8x8
 label656: TYA                       ; 08835e m8x8
          STA $0c86, X               ; 08835f m8x8
 label657: LDY $11                   ; 088362 m8x8
@@ -9027,7 +9010,7 @@ label658: PLA                       ; 08836e m8x8
          .org $088f81
 label659: RTS                       ; 088f81 m8x8
          .org $088f89
-entry222: .entry m8x8
+entry221: .entry m8x8
          LDA $0fac                  ; 088f89 m8x8
          BEQ label659               ; 088f8c m8x8
          LDA #$02                   ; 088f8e m8x8
@@ -9042,11 +9025,11 @@ label660: LDA #$10                  ; 088fa0 m8x8
          BEQ label662               ; 088fa5 m8x8
          LDY $0b68                  ; 088fa7 m8x8
          BNE label661               ; 088faa m8x8
-         JSL @entry293              ; 088fac m8x8
+         JSL @entry292              ; 088fac m8x8
          BRA label663               ; 088fb0 m8x8
-label661: JSL @entry294             ; 088fb2 m8x8
+label661: JSL @entry293             ; 088fb2 m8x8
          BRA label663               ; 088fb6 m8x8
-label662: JSL @entry291             ; 088fb8 m8x8
+label662: JSL @entry290             ; 088fb8 m8x8
 label663: LDA $0fad                 ; 088fbc m8x8
          SUB $00e2                  ; 088fbf m8x8
          CMP #$f8                   ; 088fc3 m8x8
@@ -9142,7 +9125,7 @@ label666: LDA $00                   ; 08900d m8x8, c=0
          STA ($92), Y               ; 08907d m8x8
          RTS                        ; 08907f m8x8
          .org $098091
-entry223: .entry m8x8
+entry222: .entry m8x8
          PHB                        ; 098091 m8x8
          PHK                        ; 098092 m8x8
          PLB                        ; 098093 m8x8
@@ -9166,15 +9149,15 @@ entry223: .entry m8x8
          LDA #$0938                 ; 0980bc m16x8
          STA $02                    ; 0980bf m16x8
          SEP #$20                   ; 0980c1 m8x8
-label667: JSR entry236              ; 0980c3 m8x8
+label667: JSR entry235              ; 0980c3 m8x8
          PLB                        ; 0980c6 m8x8
          RTL                        ; 0980c7 m8x8
          .org $098de5
-entry224: .entry m8x8
+entry223: .entry m8x8
          PHB                        ; 098de5 m8x8
          PHK                        ; 098de6 m8x8
          PLB                        ; 098de7 m8x8
-         JSR entry227               ; 098de8 m8x8
+         JSR entry226               ; 098de8 m8x8
          BCC label668               ; 098deb m8x8, c=1
          BRL label669               ; 098ded m8x8, c=1
 label668: STZ $03ea, X              ; 098df0 m8x8, c=0
@@ -9208,13 +9191,13 @@ label668: STZ $03ea, X              ; 098df0 m8x8, c=0
 label669: PLB                       ; 098e38 m8x8, c=1
          RTL                        ; 098e39 m8x8, c=1
          .org $0993df
-entry225: .entry m8x8
+entry224: .entry m8x8
          PHB                        ; 0993df m8x8
          PHK                        ; 0993e0 m8x8
          PLB                        ; 0993e1 m8x8
-         JSR entry228               ; 0993e2 m8x8
+         JSR entry227               ; 0993e2 m8x8
          BCS label671               ; 0993e5 m8x8, c=0
-         JSR entry227               ; 0993e7 m8x8
+         JSR entry226               ; 0993e7 m8x8
          BCS label671               ; 0993ea m8x8, c=0
          LDA #$10                   ; 0993ec m8x8, c=0
          STA $0c5e, X               ; 0993ee m8x8, c=0
@@ -9253,13 +9236,13 @@ label670: PLX                       ; 099425 m8x8
 label671: PLB                       ; 099432 m8x8
          RTL                        ; 099433 m8x8
          .org $099c24
-entry226: .entry m8x8
+entry225: .entry m8x8
          PHB                        ; 099c24 m8x8
          PHK                        ; 099c25 m8x8
          PLB                        ; 099c26 m8x8
          LDY #$01                   ; 099c27 m8x8
          LDA #$08                   ; 099c29 m8x8
-         JSR entry227               ; 099c2b m8x8
+         JSR entry226               ; 099c2b m8x8
          BCS label672               ; 099c2e m8x8, c=0
          STZ $03c2, X               ; 099c30 m8x8, c=0
          LDA #$07                   ; 099c33 m8x8, c=0
@@ -9268,9 +9251,9 @@ entry226: .entry m8x8
 label672: PLB                       ; 099c39 m8x8
          RTL                        ; 099c3a m8x8
          .org $099cce
-entry227: .entry m8x8
+entry226: .entry m8x8
          PHA                        ; 099cce m8x8
-         JSL @entry344              ; 099ccf m8x8
+         JSL @entry343              ; 099ccf m8x8
          PLA                        ; 099cd3 m8x8
          TYX                        ; 099cd4 m8x8
          BMI label673               ; 099cd5 m8x8
@@ -9296,7 +9279,7 @@ entry227: .entry m8x8
 label673: SEC                       ; 099d02 m8x8, c=1
          RTS                        ; 099d03 m8x8, c=1
          .org $099d0c
-entry228: .entry m8x8
+entry227: .entry m8x8
          LDX #$05                   ; 099d0c m8x8
 label674: CMP $0c4a, X              ; 099d0e m8x8
          BEQ label675               ; 099d11 m8x8
@@ -9307,7 +9290,7 @@ label674: CMP $0c4a, X              ; 099d0e m8x8
 label675: SEC                       ; 099d18 m8x8, c=1
          RTS                        ; 099d19 m8x8, c=1
          .org $099ee8
-entry229: .entry m8x8
+entry228: .entry m8x8
          PHB                        ; 099ee8 m8x8
          PHK                        ; 099ee9 m8x8
          PLB                        ; 099eea m8x8
@@ -9338,15 +9321,15 @@ entry229: .entry m8x8
          PLB                        ; 099f23 m8x8
          RTL                        ; 099f24 m8x8
          .org $099f7d
-entry230: .entry m8x8
+entry229: .entry m8x8
          PHB                        ; 099f7d m8x8
          PHK                        ; 099f7e m8x8
          PLB                        ; 099f7f m8x8
-         JSR entry231               ; 099f80 m8x8
+         JSR entry230               ; 099f80 m8x8
          PLB                        ; 099f83 m8x8
          RTL                        ; 099f84 m8x8
          .org $099fb0
-entry231: .entry m8x8
+entry230: .entry m8x8
          LDA $7ef3cc                ; 099fb0 m8x8
          BNE label676               ; 099fb4 m8x8
          RTS                        ; 099fb6 m8x8
@@ -9371,7 +9354,7 @@ label680: REP #$20                  ; 099fdd m16x8
          DEC $02cd                  ; 099fdf m16x8
          BPL label682               ; 099fe2 m16x8
          SEP #$20                   ; 099fe4 m8x8
-         JSL @entry218              ; 099fe6 m8x8
+         JSL @entry217              ; 099fe6 m8x8
          BCS label681               ; 099fea m8x8, c=0
          STZ $02cd                  ; 099fec m8x8, c=0
          STZ $02ce                  ; 099fef m8x8, c=0
@@ -9387,7 +9370,7 @@ label681: REP #$20                  ; 099ff4 m16x8, c=1
          LDA $9faa, Y               ; 09a003 m16x8
          STA $1cf0                  ; 09a006 m16x8
          SEP #$20                   ; 09a009 m8x8
-         JSL @entry346              ; 09a00b m8x8
+         JSL @entry345              ; 09a00b m8x8
          PLY                        ; 09a00f m8x8
 label682: SEP #$20                  ; 09a010 m8x8
          CPY #$00                   ; 09a012 m8x8
@@ -9555,9 +9538,9 @@ label704: LDA $7ef3d1               ; 09a29e m8x8
          BNE label703               ; 09a2a4 m8x8
          LDA $0372                  ; 09a2a6 m8x8
          BNE label706               ; 09a2a9 m8x8
-         JSR entry232               ; 09a2ab m8x8
+         JSR entry231               ; 09a2ab m8x8
          BCS label706               ; 09a2ae m8x8, c=0
-         JSL @entry229              ; 09a2b0 m8x8
+         JSL @entry228              ; 09a2b0 m8x8
          LDA $1b                    ; 09a2b4 m8x8
          STA $7ef3d1                ; 09a2b6 m8x8
          LDA $7ef3cc                ; 09a2ba m8x8
@@ -9578,7 +9561,7 @@ label706: LDA $7ef3cc               ; 09a2d3 m8x8
          BNE label707               ; 09a2e2 m8x8
          LDY #$00                   ; 09a2e4 m8x8
          LDA #$3a                   ; 09a2e6 m8x8
-         JSL @entry224              ; 09a2e8 m8x8
+         JSL @entry223              ; 09a2e8 m8x8
          LDA #$00                   ; 09a2ec m8x8
          STA $7ef3d3                ; 09a2ee m8x8
 label707: BRL label708              ; 09a2f2 m8x8
@@ -9608,7 +9591,7 @@ label709: LDA $9ee4, X              ; 09a447 m8x8
          LDX #$01                   ; 09a474 m8x8
 label710: TXA                       ; 09a476 m8x8
          BRL label737               ; 09a477 m8x8
-entry232: .entry m8x8
+entry231: .entry m8x8
          DEC $02d2                  ; 09a47a m8x8
          BPL label711               ; 09a47d m8x8
          STZ $02d2                  ; 09a47f m8x8
@@ -9677,7 +9660,7 @@ label718: STX $0c                   ; 09a5c5 m16x16
          LDA $a4c8, X               ; 09a5e4 m16x16
          STA $04                    ; 09a5e7 m16x16
          SEP #$30                   ; 09a5e9 m8x8
-         JSR entry234               ; 09a5eb m8x8
+         JSR entry233               ; 09a5eb m8x8
          BCS label723               ; 09a5ee m8x8, c=0
          REP #$30                   ; 09a5f0 m16x16, c=0
 label719: LDA $0c                   ; 09a5f2 m16x16
@@ -9705,7 +9688,7 @@ label721: STX $0c                   ; 09a609 m16x16
          LDA $a546, X               ; 09a628 m16x16
          STA $04                    ; 09a62b m16x16
          SEP #$30                   ; 09a62d m8x8
-         JSR entry234               ; 09a62f m8x8
+         JSR entry233               ; 09a62f m8x8
          BCS label723               ; 09a632 m8x8, c=0
          REP #$30                   ; 09a634 m16x16, c=0
 label722: LDA $0c                   ; 09a636 m16x16
@@ -9739,9 +9722,9 @@ label724: SEP #$20                  ; 09a671 m8x8
          CMP #$14                   ; 09a677 m8x8
          BNE label725               ; 09a679 m8x8
          LDA #$00                   ; 09a67b m8x8
-label725: JSL @entry354             ; 09a67d m8x8
+label725: JSL @entry353             ; 09a67d m8x8
 label726: SEP #$20                  ; 09a681 m8x8
-         JSL @entry346              ; 09a683 m8x8
+         JSL @entry345              ; 09a683 m8x8
          BRA label730               ; 09a687 m8x8
 label727: SEP #$30                  ; 09a689 m8x8
          LDA $02cf                  ; 09a68b m8x8
@@ -9754,7 +9737,7 @@ label728: PHA                       ; 09a695 m8x8
          AND #$03                   ; 09a698 m8x8
          BNE label729               ; 09a69a m8x8
          PLA                        ; 09a69c m8x8
-         JSL @entry351              ; 09a69d m8x8
+         JSL @entry350              ; 09a69d m8x8
          BRA label730               ; 09a6a1 m8x8
 label729: PLA                       ; 09a6a3 m8x8
          STA $00                    ; 09a6a4 m8x8
@@ -9763,7 +9746,7 @@ label729: PLA                       ; 09a6a3 m8x8
          AND #$01                   ; 09a6ac m8x8
          BNE label730               ; 09a6ae m8x8
          LDA $00                    ; 09a6b0 m8x8
-         JSL @entry353              ; 09a6b2 m8x8
+         JSL @entry352              ; 09a6b2 m8x8
 label730: SEP #$30                  ; 09a6b6 m8x8
          RTS                        ; 09a6b8 m8x8
          .org $09a8f3
@@ -9970,7 +9953,7 @@ label758: LDA $02d7                 ; 09aa7e m8x8
          STA $02                    ; 09aa96 m16x8
          STZ $74                    ; 09aa98 m16x8
          SEP #$20                   ; 09aa9a m8x8
-         JSR entry233               ; 09aa9c m8x8
+         JSR entry232               ; 09aa9c m8x8
          LDA $a8c5, X               ; 09aa9f m8x8
          STA ($90), Y               ; 09aaa2 m8x8
          INY                        ; 09aaa4 m8x8
@@ -9993,7 +9976,7 @@ label758: LDA $02d7                 ; 09aa7e m8x8
          STA $02                    ; 09aac2 m16x8
          STZ $74                    ; 09aac4 m16x8
          SEP #$20                   ; 09aac6 m8x8
-         JSR entry233               ; 09aac8 m8x8
+         JSR entry232               ; 09aac8 m8x8
          LDA $a8c7, X               ; 09aacb m8x8
          STA ($90), Y               ; 09aace m8x8
          INY                        ; 09aad0 m8x8
@@ -10060,7 +10043,7 @@ label762: LDA $7ef3cc               ; 09ab14 m8x8
          STA $02                    ; 09ab49 m16x16
          PLY                        ; 09ab4b m16x16
          SEP #$30                   ; 09ab4c m8x8
-         JSR entry233               ; 09ab4e m8x8
+         JSR entry232               ; 09ab4e m8x8
          LDA #$20                   ; 09ab51 m8x8
          STA ($90), Y               ; 09ab53 m8x8
          INY                        ; 09ab55 m8x8
@@ -10110,7 +10093,7 @@ label763: REP #$30                  ; 09ab7e m16x16
          STA $02                    ; 09abab m16x16
          PLY                        ; 09abad m16x16
          SEP #$30                   ; 09abae m8x8
-         JSR entry233               ; 09abb0 m8x8
+         JSR entry232               ; 09abb0 m8x8
          LDA #$22                   ; 09abb3 m8x8
          STA ($90), Y               ; 09abb5 m8x8
          INY                        ; 09abb7 m8x8
@@ -10141,7 +10124,7 @@ label763: REP #$30                  ; 09ab7e m16x16
          PLY                        ; 09abe2 m8x8
          PLX                        ; 09abe3 m8x8
          RTS                        ; 09abe4 m8x8
-entry233: .entry m8x8
+entry232: .entry m8x8
          REP #$20                   ; 09abe5 m16x8
          LDA $02                    ; 09abe7 m16x8
          STA ($90), Y               ; 09abe9 m16x8
@@ -10162,7 +10145,7 @@ label764: LDA #$00f0                ; 09ac09 m16x8, c=1
 label765: SEP #$20                  ; 09ac0e m8x8
          INY                        ; 09ac10 m8x8
          RTS                        ; 09ac11 m8x8
-entry234: .entry m8x8
+entry233: .entry m8x8
          REP #$20                   ; 09ac12 m16x8
          LDA $00                    ; 09ac14 m16x8
          ADD $0a                    ; 09ac16 m16x8
@@ -10193,7 +10176,7 @@ label767: CMP #$0018                ; 09ac4a m16x8
 label768: SEP #$20                  ; 09ac53 m8x8, c=1
          CLC                        ; 09ac55 m8x8, c=0
          RTS                        ; 09ac56 m8x8, c=0
-entry235: .entry m8x8
+entry234: .entry m8x8
          PHB                        ; 09ac57 m8x8
          PHK                        ; 09ac58 m8x8
          PLB                        ; 09ac59 m8x8
@@ -10258,7 +10241,7 @@ label775: STZ $03f0                 ; 09aca4 m8x8
 label776: PLB                       ; 09acdd m8x8
          RTL                        ; 09acde m8x8
          .org $09acf2
-entry236: .entry m8x8
+entry235: .entry m8x8
          LDA $00                    ; 09acf2 m8x8
          STA $0bfa, X               ; 09acf4 m8x8
          LDA $01                    ; 09acf7 m8x8
@@ -10269,40 +10252,40 @@ entry236: .entry m8x8
          STA $0c18, X               ; 09ad03 m8x8
          RTS                        ; 09ad06 m8x8
          .org $09b06e
-entry237: .entry m8x8
-         JSL @entry347              ; 09b06e m8x8
+entry236: .entry m8x8
+         JSL @entry346              ; 09b06e m8x8
          LDA $0fb4                  ; 09b072 m8x8
          BEQ label777               ; 09b075 m8x8
          PHB                        ; 09b077 m8x8
          PHK                        ; 09b078 m8x8
          PLB                        ; 09b079 m8x8
-         JSR entry239               ; 09b07a m8x8
+         JSR entry238               ; 09b07a m8x8
          PLB                        ; 09b07d m8x8
 label777: RTL                       ; 09b07e m8x8
-entry238: .entry m8x8
+entry237: .entry m8x8
          LDA $0fb4                  ; 09b07f m8x8
          BEQ label778               ; 09b082 m8x8
          PHB                        ; 09b084 m8x8
          PHK                        ; 09b085 m8x8
          PLB                        ; 09b086 m8x8
-         JSR entry240               ; 09b087 m8x8
+         JSR entry239               ; 09b087 m8x8
          PLB                        ; 09b08a m8x8
 label778: RTL                       ; 09b08b m8x8
-entry239: .entry m8x8
+entry238: .entry m8x8
          LDX #$1d                   ; 09b08c m8x8
-label779: JSR entry241              ; 09b08e m8x8
+label779: JSR entry240              ; 09b08e m8x8
          DEX                        ; 09b091 m8x8
          CPX #$0e                   ; 09b092 m8x8
          BNE label779               ; 09b094 m8x8
          RTS                        ; 09b096 m8x8
-entry240: .entry m8x8
+entry239: .entry m8x8
          LDX #$0e                   ; 09b097 m8x8
-label780: JSR entry241              ; 09b099 m8x8
+label780: JSR entry240              ; 09b099 m8x8
          DEX                        ; 09b09c m8x8
          BPL label780               ; 09b09d m8x8
          RTS                        ; 09b09f m8x8
          .org $09b0b6
-entry241: .entry m8x8
+entry240: .entry m8x8
          STX $0fa0                  ; 09b0b6 m8x8
          LDA $7ff800, X             ; 09b0b9 m8x8
          BEQ label786               ; 09b0bd m8x8
@@ -10325,17 +10308,17 @@ label782: LDY $0fb3                 ; 09b0dd m8x8
          LDA $7ff800, X             ; 09b0e8 m8x8
          TAY                        ; 09b0ec m8x8
          LDA $b09f, Y               ; 09b0ed m8x8
-         JSL @entry294              ; 09b0f0 m8x8
+         JSL @entry293              ; 09b0f0 m8x8
          BRA label785               ; 09b0f4 m8x8
 label783: LDA $7ff800, X            ; 09b0f6 m8x8
          TAY                        ; 09b0fa m8x8
          LDA $b09f, Y               ; 09b0fb m8x8
-         JSL @entry293              ; 09b0fe m8x8
+         JSL @entry292              ; 09b0fe m8x8
          BRA label785               ; 09b102 m8x8
 label784: LDA $7ff800, X            ; 09b104 m8x8
          TAY                        ; 09b108 m8x8
          LDA $b09f, Y               ; 09b109 m8x8
-         JSL @entry291              ; 09b10c m8x8
+         JSL @entry290              ; 09b10c m8x8
 label785: LDA $7ff800, X            ; 09b110 m8x8
          DEC                        ; 09b114 m8x8
          REP #$30                   ; 09b115 m16x16
@@ -10348,7 +10331,7 @@ label785: LDA $7ff800, X            ; 09b110 m8x8
          SEP #$30                   ; 09b121 m8x8
 label786: RTS                       ; 09b123 m8x8
          .org $09b714
-entry242: .entry m8x8
+entry241: .entry m8x8
          LDA $1b                    ; 09b714 m8x8
          BNE label787               ; 09b716 m8x8
          LDA $0ffd                  ; 09b718 m8x8
@@ -10366,9 +10349,9 @@ entry242: .entry m8x8
          BMI label787               ; 09b736 m8x8
          LDA #$c2                   ; 09b738 m8x8
          LDY #$0d                   ; 09b73a m8x8
-         JSL @entry350              ; 09b73c m8x8
+         JSL @entry349              ; 09b73c m8x8
          BMI label787               ; 09b740 m8x8
-         JSL @entry290              ; 09b742 m8x8
+         JSL @entry289              ; 09b742 m8x8
          AND #$7f                   ; 09b746 m8x8
          ADD #$40                   ; 09b748 m8x8
          ADD $e2                    ; 09b74b m8x8
@@ -10387,28 +10370,28 @@ entry242: .entry m8x8
          STA $0de0, Y               ; 09b76c m8x8
          STA $0f70, Y               ; 09b76f m8x8
 label787: RTS                       ; 09b772 m8x8
-entry243: .entry m8x8
+entry242: .entry m8x8
          PHB                        ; 09b773 m8x8
          PHK                        ; 09b774 m8x8
          PLB                        ; 09b775 m8x8
-         JSR entry244               ; 09b776 m8x8
-         JSR entry242               ; 09b779 m8x8
+         JSR entry243               ; 09b776 m8x8
+         JSR entry241               ; 09b779 m8x8
          PLB                        ; 09b77c m8x8
          RTL                        ; 09b77d m8x8
-entry244: .entry m8x8
+entry243: .entry m8x8
          LDA $11                    ; 09b77e m8x8
          ORA $0fc1                  ; 09b780 m8x8
          BNE label790               ; 09b783 m8x8
          LDX #$07                   ; 09b785 m8x8
 label788: LDA $0b00, X              ; 09b787 m8x8
          BEQ label789               ; 09b78a m8x8
-         JSR entry245               ; 09b78c m8x8
+         JSR entry244               ; 09b78c m8x8
 label789: DEX                       ; 09b78f m8x8
          BPL label788               ; 09b790 m8x8
 label790: RTS                       ; 09b792 m8x8
-entry245: .entry m8x8
+entry244: .entry m8x8
          PHA                        ; 09b793 m8x8
-         JSR entry246               ; 09b794 m8x8
+         JSR entry245               ; 09b794 m8x8
          PLA                        ; 09b797 m8x8
          DEC                        ; 09b798 m8x8
          REP #$30                   ; 09b799 m16x16
@@ -10422,7 +10405,7 @@ entry245: .entry m8x8
          RTS                        ; 09b7a7 m8x8
          .org $09c08c
 label791: RTS                       ; 09c08c m8x8
-entry246: .entry m8x8
+entry245: .entry m8x8
          LDA $1b                    ; 09c08d m8x8
          BNE label791               ; 09c08f m8x8
          LDA $1a                    ; 09c091 m8x8
@@ -10490,14 +10473,14 @@ label794: STZ $0b00, X              ; 09c0e4 m8x8
          AND $f24b, Y               ; 09c10e m8x16, c=0
          STA [$01]                  ; 09c111 m8x16, c=0
 label795: RTS                       ; 09c113 m8
-entry247: .entry m8x8
+entry246: .entry m8x8
          PHB                        ; 09c114 m8x8
          PHK                        ; 09c115 m8x8
          PLB                        ; 09c116 m8x8
-         JSR entry248               ; 09c117 m8x8
+         JSR entry247               ; 09c117 m8x8
          STZ $0309                  ; 09c11a m8x8
          STZ $0308                  ; 09c11d m8x8
-         JSL @entry250              ; 09c120 m8x8
+         JSL @entry249              ; 09c120 m8x8
          REP #$20                   ; 09c124 m16x8
          LDA #$ffff                 ; 09c126 m16x8
          STA $0fba                  ; 09c129 m16x8
@@ -10529,16 +10512,16 @@ label796: CMP $0b80, X              ; 09c134 m16x8
          LDA #$0000                 ; 09c167 m16x16
          STA $7fdf80, X             ; 09c16a m16x16
 label797: SEP #$30                  ; 09c16e m8x8
-         JSR entry251               ; 09c170 m8x8
+         JSR entry250               ; 09c170 m8x8
          PLB                        ; 09c173 m8x8
          RTL                        ; 09c174 m8x8
 label798: RTS                       ; 09c175 m8x8
-entry248: .entry m8x8
+entry247: .entry m8x8
          LDA $1b                    ; 09c176 m8x8
          BEQ label798               ; 09c178 m8x8
          STA $0ffa                  ; 09c17a m8x8
          LDX #$0f                   ; 09c17d m8x8
-entry249: .entry m8x8
+entry248: .entry m8x8
          STZ $1d00, X               ; 09c17f m8x8
          LDA $0e20, X               ; 09c182 m8x8
          STA $1d10, X               ; 09c185 m8x8
@@ -10596,9 +10579,9 @@ entry249: .entry m8x8
          STA $7ffadc, X             ; 09c224 m8x8
 label799: DEX                       ; 09c228 m8x8
          BMI label800               ; 09c229 m8x8
-         JMP entry249               ; 09c22b m8x8
+         JMP entry248               ; 09c22b m8x8
 label800: RTS                       ; 09c22e m8x8
-entry250: .entry m8x8
+entry249: .entry m8x8
          LDX #$0f                   ; 09c22f m8x8
 label801: LDA $0dd0, X              ; 09c231 m8x8
          BEQ label803               ; 09c234 m8x8
@@ -10639,7 +10622,7 @@ label806: LDA #$00                  ; 09c286 m8x8
          DEX                        ; 09c28c m8x8
          BPL label806               ; 09c28d m8x8
          RTL                        ; 09c28f m8x8
-entry251: .entry m8x8
+entry250: .entry m8x8
          REP #$30                   ; 09c290 m16x16
          LDA $048e                  ; 09c292 m16x16
          ASL                        ; 09c295 m16x16
@@ -10667,7 +10650,7 @@ label807: LDY $04                   ; 09c2bf m8x8
          LDA ($00), Y               ; 09c2c1 m8x8
          CMP #$ff                   ; 09c2c3 m8x8
          BEQ label808               ; 09c2c5 m8x8
-         JSR entry252               ; 09c2c7 m8x8
+         JSR entry251               ; 09c2c7 m8x8
          INC $02                    ; 09c2ca m8x8
          INC $04                    ; 09c2cc m8x8
          INC $04                    ; 09c2ce m8x8
@@ -10675,7 +10658,7 @@ label807: LDY $04                   ; 09c2bf m8x8
          BRA label807               ; 09c2d2 m8x8
 label808: RTS                       ; 09c2d4 m8x8
          .org $09c327
-entry252: .entry m8x8
+entry251: .entry m8x8
          INY                        ; 09c327 m8x8
          INY                        ; 09c328 m8x8
          LDA ($00), Y               ; 09c329 m8x8
@@ -10688,13 +10671,13 @@ entry252: .entry m8x8
          INY                        ; 09c334 m8x8
          INY                        ; 09c335 m8x8
          CMP #$fe                   ; 09c336 m8x8
-         BEQ entry253               ; 09c338 m8x8
+         BEQ entry252               ; 09c338 m8x8
          CMP #$fd                   ; 09c33a m8x8
          BNE label810               ; 09c33c m8x8
-         JSR entry253               ; 09c33e m8x8
+         JSR entry252               ; 09c33e m8x8
          INC $0cba, X               ; 09c341 m8x8
          RTS                        ; 09c344 m8x8
-entry253: .entry m8x8
+entry252: .entry m8x8
          DEC $02                    ; 09c345 m8x8
          LDX $02                    ; 09c347 m8x8
          LDA #$01                   ; 09c349 m8x8
@@ -10705,7 +10688,7 @@ label809: DEY                       ; 09c34f m8x8
          INY                        ; 09c352 m8x8
          CMP #$e0                   ; 09c353 m8x8
          BCC label810               ; 09c355 m8x8, c=1
-         JSR entry254               ; 09c357 m8x8
+         JSR entry253               ; 09c357 m8x8
          DEC $02                    ; 09c35a m8x8
          RTS                        ; 09c35c m8x8
 label810: LDA $0db725, X            ; 09c35d m8x8
@@ -10780,7 +10763,7 @@ label811: LDX $02                   ; 09c383 m8x8
          STA $0bc0, X               ; 09c3e1 m8x8
          STZ $0cba, X               ; 09c3e4 m8x8
          RTS                        ; 09c3e7 m8x8
-entry254: .entry m8x8
+entry253: .entry m8x8
          LDX #$07                   ; 09c3e8 m8x8
 label812: LDA $0b00, X              ; 09c3ea m8x8
          BEQ label813               ; 09c3ed m8x8
@@ -10816,7 +10799,7 @@ label813: LDA ($00), Y              ; 09c3f3 m8x8
          LDA $0fb0                  ; 09c41f m8x8
          ADC #$00                   ; 09c422 m8x8
          STA $0b10, X               ; 09c424 m8x8
-         JSR entry263               ; 09c427 m8x8
+         JSR entry262               ; 09c427 m8x8
          LDA $0b00, X               ; 09c42a m8x8
          CMP #$0a                   ; 09c42d m8x8
          BEQ label815               ; 09c42f m8x8
@@ -10833,8 +10816,8 @@ label814: RTS                       ; 09c447 m8x8
 label815: LDA #$a0                  ; 09c448 m8x8
          STA $0b30, X               ; 09c44a m8x8
          RTS                        ; 09c44d m8x8
-entry255: .entry m8x8
-         JSL @entry250              ; 09c44e m8x8
+entry254: .entry m8x8
+         JSL @entry249              ; 09c44e m8x8
          STZ $0fdd                  ; 09c452 m8x8
          STZ $0fdc                  ; 09c455 m8x8
          STZ $0ffd                  ; 09c458 m8x8
@@ -10865,29 +10848,29 @@ label819: STA $0b80, Y              ; 09c492 m8x8
          BPL label819               ; 09c496 m8x8
          RTL                        ; 09c498 m8x8
          .org $09c58f
-entry256: .entry m8x8
+entry255: .entry m8x8
          PHB                        ; 09c58f m8x8
          PHK                        ; 09c590 m8x8
          PLB                        ; 09c591 m8x8
          LDA $11                    ; 09c592 m8x8
          BEQ label820               ; 09c594 m8x8
-         JSR entry257               ; 09c596 m8x8
-         JSR entry258               ; 09c599 m8x8
+         JSR entry256               ; 09c596 m8x8
+         JSR entry257               ; 09c599 m8x8
          PLB                        ; 09c59c m8x8
          RTL                        ; 09c59d m8x8
 label820: LDA $0fb7                 ; 09c59e m8x8
          AND #$01                   ; 09c5a1 m8x8
          BNE label821               ; 09c5a3 m8x8
-         JSR entry257               ; 09c5a5 m8x8
+         JSR entry256               ; 09c5a5 m8x8
 label821: LDA $0fb7                 ; 09c5a8 m8x8
          AND #$01                   ; 09c5ab m8x8
          BEQ label822               ; 09c5ad m8x8
-         JSR entry258               ; 09c5af m8x8
+         JSR entry257               ; 09c5af m8x8
 label822: INC $0fb7                 ; 09c5b2 m8x8
          PLB                        ; 09c5b5 m8x8
          RTL                        ; 09c5b6 m8x8
          .org $09c5bb
-entry257: .entry m8x8
+entry256: .entry m8x8
          LDY #$00                   ; 09c5bb m8x8
          LDA $069f                  ; 09c5bd m8x8
          BEQ label825               ; 09c5c0 m8x8
@@ -10906,7 +10889,7 @@ label823: LDA $e2                   ; 09c5c5 m8x8
          SBC #$00                   ; 09c5dd m8x8
          STA $0d                    ; 09c5df m8x8
          LDX #$15                   ; 09c5e1 m8x8
-label824: JSR entry259              ; 09c5e3 m8x8
+label824: JSR entry258              ; 09c5e3 m8x8
          REP #$20                   ; 09c5e6 m16x8
          LDA $0c                    ; 09c5e8 m16x8
          ADD #$0010                 ; 09c5ea m16x8
@@ -10916,7 +10899,7 @@ label824: JSR entry259              ; 09c5e3 m8x8
          BPL label824               ; 09c5f3 m8x8
 label825: RTS                       ; 09c5f5 m8x8
          .org $09c5fa
-entry258: .entry m8x8
+entry257: .entry m8x8
          LDY #$00                   ; 09c5fa m8x8
          LDA $069e                  ; 09c5fc m8x8
          BEQ label828               ; 09c5ff m8x8
@@ -10935,7 +10918,7 @@ label826: LDA $e8                   ; 09c604 m8x8
          SBC #$00                   ; 09c61c m8x8
          STA $0f                    ; 09c61e m8x8
          LDX #$15                   ; 09c620 m8x8
-label827: JSR entry259              ; 09c622 m8x8
+label827: JSR entry258              ; 09c622 m8x8
          REP #$20                   ; 09c625 m16x8
          LDA $0e                    ; 09c627 m16x8
          ADD #$0010                 ; 09c629 m16x8
@@ -10945,7 +10928,7 @@ label827: JSR entry259              ; 09c622 m8x8
          BPL label827               ; 09c632 m8x8
 label828: RTS                       ; 09c634 m8x8
          .org $09c6f5
-entry259: .entry m8x8
+entry258: .entry m8x8
          REP #$20                   ; 09c6f5 m16x8
          LDA $0e                    ; 09c6f7 m16x8
          SUB $0fbc                  ; 09c6f9 m16x8
@@ -10974,12 +10957,12 @@ entry259: .entry m8x8
          ORA $00                    ; 09c725 m8x8
          STA $00                    ; 09c727 m8x8
          PHX                        ; 09c729 m8x8
-         JSR entry260               ; 09c72a m8x8
+         JSR entry259               ; 09c72a m8x8
          PLX                        ; 09c72d m8x8
 label829: SEP #$20                  ; 09c72e m8x8
          RTS                        ; 09c730 m8x8
          .org $09c739
-entry260: .entry m8x8
+entry259: .entry m8x8
          REP #$20                   ; 09c739 m16x8
          LDA $00                    ; 09c73b m16x8
          ADD #$df80                 ; 09c73d m16x8
@@ -11005,13 +10988,13 @@ entry260: .entry m8x8
          LDA [$02]                  ; 09c765 m8x8
          AND $c731, Y               ; 09c767 m8x8
          BNE label830               ; 09c76a m8x8
-         JSR entry261               ; 09c76c m8x8
+         JSR entry260               ; 09c76c m8x8
 label830: RTS                       ; 09c76f m8x8
-entry261: .entry m8x8
+entry260: .entry m8x8
          LDA [$05]                  ; 09c770 m8x8
          CMP #$f4                   ; 09c772 m8x8
          BCC label831               ; 09c774 m8x8, c=1
-         JSR entry262               ; 09c776 m8x8
+         JSR entry261               ; 09c776 m8x8
          RTS                        ; 09c779 m8x8
 label831: LDX #$04                  ; 09c77a m8x8, c=0
          CMP #$58                   ; 09c77c m8x8
@@ -11082,7 +11065,7 @@ label835: LDA [$02]                 ; 09c7af m8x8
          STZ $0e30, X               ; 09c804 m8x8
          STZ $0cba, X               ; 09c807 m8x8
          RTS                        ; 09c80a m8x8
-entry262: .entry m8x8
+entry261: .entry m8x8
          LDX #$07                   ; 09c80b m8x8
 label836: LDA $0b00, X              ; 09c80d m8x8
          BEQ label837               ; 09c810 m8x8
@@ -11132,7 +11115,7 @@ label838: STA $0b08, X              ; 09c842 m8x8
          ADD $0fbf                  ; 09c867 m8x8
          STA $0b20, X               ; 09c86b m8x8
          STZ $0b40, X               ; 09c86e m8x8
-entry263: .entry m8x8
+entry262: .entry m8x8
          LDA $040a                  ; 09c871 m8x8
          STA $0cca, X               ; 09c874 m8x8
          STZ $0b30, X               ; 09c877 m8x8
@@ -11140,7 +11123,7 @@ entry263: .entry m8x8
          STZ $0b38, X               ; 09c87d m8x8
          RTS                        ; 09c880 m8x8
          .org $09ef56
-entry264: .entry m8x8
+entry263: .entry m8x8
          LDY #$0f                   ; 09ef56 m8x8
 label839: CPY $0fa0                 ; 09ef58 m8x8
          BEQ label840               ; 09ef5b m8x8
@@ -11165,7 +11148,7 @@ label840: DEY                       ; 09ef87 m8x8
          BPL label839               ; 09ef88 m8x8
          RTL                        ; 09ef8a m8x8
          .org $09f290
-entry265: .entry m8x8
+entry264: .entry m8x8
          LDA $11                    ; 09f290 m8x8
          ASL                        ; 09f292 m8x8
          TAX                        ; 09f293 m8x8
@@ -11173,23 +11156,23 @@ entry265: .entry m8x8
          LDA $11                    ; 09f297 m8x8
          CMP #$09                   ; 09f299 m8x8
          BEQ label841               ; 09f29b m8x8
-         JSL @entry279              ; 09f29d m8x8
+         JSL @entry278              ; 09f29d m8x8
 label841: RTL                       ; 09f2a1 m8x8
          .org $09f79c
-entry266: .entry m8x8
+entry265: .entry m8x8
          LDA $11                    ; 09f79c m8x8
          ASL                        ; 09f79e m8x8
          TAX                        ; 09f79f m8x8
          JSR ($f798, X)             ; 09f7a0 m8x8
-         JSL @entry167              ; 09f7a3 m8x8
-         JSL @entry279              ; 09f7a7 m8x8
+         JSL @entry166              ; 09f7a3 m8x8
+         JSL @entry278              ; 09f7a7 m8x8
          RTL                        ; 09f7ab m8x8
          .org $0afd2c
-entry267: .entry m8x8
+entry266: .entry m8x8
          REP #$30                   ; 0afd2c m16x16
          LDA $04a0                  ; 0afd2e m16x16
          AND #$00ff                 ; 0afd31 m16x16
-         BEQ entry268               ; 0afd34 m16x16
+         BEQ entry267               ; 0afd34 m16x16
          INC                        ; 0afd36 m16x16
          CMP #$00c0                 ; 0afd37 m16x16
          BNE label842               ; 0afd3a m16x16
@@ -11243,7 +11226,7 @@ label846: ASL                       ; 0afd9a m16x16
          PLB                        ; 0afdac m8x8
          INC $16                    ; 0afdad m8x8
          RTL                        ; 0afdaf m8x8
-entry268: .entry native
+entry267: .entry native
          REP #$20                   ; 0afdb0 m16
          LDA #$007f                 ; 0afdb2 m16
          STA $7ec7f2                ; 0afdb5 m16
@@ -11253,13 +11236,13 @@ entry268: .entry native
          SEP #$30                   ; 0afdc5 m8x8
          RTL                        ; 0afdc7 m8x8
          .org $0afe80
-entry269: .entry m8x8
+entry268: .entry m8x8
          LDA $ad                    ; 0afe80 m8x8
          ASL                        ; 0afe82 m8x8
          TAX                        ; 0afe83 m8x8
          JMP ($fe70, X)             ; 0afe84 m8x8
          .org $0cc100
-entry270: .entry m8x8
+entry269: .entry m8x8
          LDA $11                    ; 0cc100 m8x8
          CMP #$04                   ; 0cc102 m8x8
          BCC label847               ; 0cc104 m8x8, c=1
@@ -11268,11 +11251,11 @@ entry270: .entry m8x8
          ORA $f4                    ; 0cc10a m8x8, c=1
          AND #$d0                   ; 0cc10c m8x8, c=1
          BEQ label847               ; 0cc10e m8x8, c=1
-         JMP entry271               ; 0cc110 m8x8
+         JMP entry270               ; 0cc110 m8x8
 label847: LDA $11                   ; 0cc113 m8x8
          JSL $00879c NORETURN       ; 0cc115 m8x8
          .org $0cc2b6
-entry271: .entry m8x8
+entry270: .entry m8x8
          LDA #$ff                   ; 0cc2b6 m8x8
          STA $0128                  ; 0cc2b8 m8x8
          LDA #$15                   ; 0cc2bb m8x8
@@ -11281,7 +11264,7 @@ entry271: .entry m8x8
          STZ $1b                    ; 0cc2c1 m8x8
          LDA #$f1                   ; 0cc2c3 m8x8
          STA $012c                  ; 0cc2c5 m8x8
-         JSL @entry278              ; 0cc2c8 m8x8
+         JSL @entry277              ; 0cc2c8 m8x8
          REP #$30                   ; 0cc2cc m16x16
          LDX #$006e                 ; 0cc2ce m16x16
 label848: STZ $20, X                ; 0cc2d1 m16x16
@@ -11306,7 +11289,7 @@ label849: STA $7ef000, X            ; 0cc2db m16x16
          STZ $11                    ; 0cc2ff m8x8
          RTL                        ; 0cc301 m8x8
          .org $0ccc6c
-entry272: .entry m8x8
+entry271: .entry m8x8
          STZ $e4                    ; 0ccc6c m8x8
          STZ $e5                    ; 0ccc6e m8x8
          STZ $ea                    ; 0ccc70 m8x8
@@ -11314,20 +11297,20 @@ entry272: .entry m8x8
          LDA $11                    ; 0ccc74 m8x8
          JSL $00879c NORETURN       ; 0ccc76 m8x8
          .org $0ccf4a
-entry273: .entry m8x8
+entry272: .entry m8x8
          STZ $0b9d                  ; 0ccf4a m8x8
          LDA $11                    ; 0ccf4d m8x8
          JSL $00879c NORETURN       ; 0ccf4f m8x8
          .org $0cd35f
-entry274: .entry m8x8
+entry273: .entry m8x8
          LDA $11                    ; 0cd35f m8x8
          JSL $00879c NORETURN       ; 0cd361 m8x8
          .org $0cd755
-entry275: .entry m8x8
+entry274: .entry m8x8
          LDA $11                    ; 0cd755 m8x8
          JSL $00879c NORETURN       ; 0cd757 m8x8
          .org $0ced21
-entry276: .entry m8x8
+entry275: .entry m8x8
          LDA $13                    ; 0ced21 m8x8
          BEQ label850               ; 0ced23 m8x8
          CMP #$80                   ; 0ced25 m8x8
@@ -11348,7 +11331,7 @@ label850: LDA $22                   ; 0ced3f m8x8
          TAX                        ; 0ced42 m8x8
          JMP ($ed46, X)             ; 0ced43 m8x8
          .org $0cff64
-entry277: .entry m8x8
+entry276: .entry m8x8
          REP #$20                   ; 0cff64 m16x8
          LDA #$0000                 ; 0cff66 m16x8
          STA $7ec500                ; 0cff69 m16x8
@@ -11356,7 +11339,7 @@ entry277: .entry m8x8
          STA $7ec300                ; 0cff71 m16x8
          STA $7ec340                ; 0cff75 m16x8
          SEP #$30                   ; 0cff79 m8x8
-entry278: .entry m8x8
+entry277: .entry m8x8
          LDA #$20                   ; 0cff7b m8x8
          STA $9c                    ; 0cff7d m8x8
          LDA #$40                   ; 0cff7f m8x8
@@ -11365,7 +11348,7 @@ entry278: .entry m8x8
          STA $9e                    ; 0cff85 m8x8
          RTL                        ; 0cff87 m8x8
          .org $0da18e
-entry279: .entry m8x8
+entry278: .entry m8x8
          PHB                        ; 0da18e m8x8
          PHK                        ; 0da18f m8x8
          PLB                        ; 0da190 m8x8
@@ -11607,7 +11590,7 @@ label879: LDY #$04                  ; 0da387 m8x8
          BRL label897               ; 0da389 m8x8
 label880: LDA $0308                 ; 0da38c m8x8
          BEQ label885               ; 0da38f m8x8
-         JSR entry280               ; 0da391 m8x8
+         JSR entry279               ; 0da391 m8x8
          CPX #$06                   ; 0da394 m8x8
          BCS label881               ; 0da396 m8x8, c=0
          LDA #$02                   ; 0da398 m8x8, c=0
@@ -11637,12 +11620,12 @@ label885: LDA $0377                 ; 0da3c6 m8x8
          BRA label889               ; 0da3ce m8x8
 label886: LDA $0301                 ; 0da3d0 m8x8
          BEQ label887               ; 0da3d3 m8x8
-         JSR entry280               ; 0da3d5 m8x8
+         JSR entry279               ; 0da3d5 m8x8
          LDY $a13a, X               ; 0da3d8 m8x8
          BRA label888               ; 0da3db m8x8
 label887: LDA $037a                 ; 0da3dd m8x8
          BEQ label890               ; 0da3e0 m8x8
-         JSR entry280               ; 0da3e2 m8x8
+         JSR entry279               ; 0da3e2 m8x8
          LDY $a142, X               ; 0da3e5 m8x8
 label888: LDA $0300                 ; 0da3e8 m8x8
 label889: STA $02                   ; 0da3eb m8x8
@@ -11868,7 +11851,7 @@ label910: TYA                       ; 0da5b2 m16x16
 label911: LDA $0309                 ; 0da5ce m16x16
          AND #$0004                 ; 0da5d1 m16x16
          BEQ label912               ; 0da5d4 m16x16
-         JSR entry284               ; 0da5d6 m16x16
+         JSR entry283               ; 0da5d6 m16x16
          BRA label915               ; 0da5d9 m16x16
 label912: LDA $5d                   ; 0da5db m16x16
          AND #$00ff                 ; 0da5dd m16x16
@@ -11905,7 +11888,7 @@ label913: LDA $7ef359               ; 0da62b m16x16
          INC                        ; 0da62f m16x16
          AND #$00fe                 ; 0da630 m16x16
          BEQ label915               ; 0da633 m16x16
-label914: JSR entry281              ; 0da635 m16x16
+label914: JSR entry280              ; 0da635 m16x16
          BCC label916               ; 0da638 m16x16, c=1
 label915: BRL label932              ; 0da63a m16x16
 label916: LDY $02                   ; 0da63d m16x16, c=0
@@ -11982,7 +11965,7 @@ label923: REP #$20                  ; 0da6b5 m16x16
          PLY                        ; 0da6d9 m16x16
          LDA $0e                    ; 0da6da m16x16
          PHA                        ; 0da6dc m16x16
-         JSR entry283               ; 0da6dd m16x16
+         JSR entry282               ; 0da6dd m16x16
          PLA                        ; 0da6e0 m16x16
          STA $0e                    ; 0da6e1 m16x16
 label924: REP #$20                  ; 0da6e3 m16x16
@@ -12066,7 +12049,7 @@ label932: REP #$30                  ; 0da780 m16x16
          LDA $7ef3c5                ; 0da78b m16x16
          AND #$00ff                 ; 0da78f m16x16
          BEQ label933               ; 0da792 m16x16
-         JSR entry282               ; 0da794 m16x16
+         JSR entry281               ; 0da794 m16x16
          BCC label934               ; 0da797 m16x16, c=1
 label933: BRL label941              ; 0da799 m16x16
 label934: LDY $02                   ; 0da79c m16x16, c=0
@@ -12090,7 +12073,7 @@ label936: STA $0b                   ; 0da7b0 m8x16
          STA $0a                    ; 0da7c4 m8x16
          STA $08                    ; 0da7c6 m8x16
          LDA $96dc, Y               ; 0da7c8 m8x16
-         JSR entry287               ; 0da7cb m8x16
+         JSR entry286               ; 0da7cb m8x16
          STZ $0e                    ; 0da7ce m8x16
          LDA #$0a                   ; 0da7d0 m8x16
          STA $0f                    ; 0da7d2 m8x16
@@ -12174,7 +12157,7 @@ label942: LDA $5d                   ; 0da862 m8x8
          BEQ label943               ; 0da86d m8x8
          LDA $0351                  ; 0da86f m8x8
          BEQ label943               ; 0da872 m8x8
-         JSR entry286               ; 0da874 m8x8
+         JSR entry285               ; 0da874 m8x8
          BRA label944               ; 0da877 m8x8
 label943: LDA $4d                   ; 0da879 m8x8
          CMP #$04                   ; 0da87b m8x8
@@ -12190,7 +12173,7 @@ label943: LDA $4d                   ; 0da879 m8x8
          LDA $5a                    ; 0da88f m8x8
          CMP #$06                   ; 0da891 m8x8
          BCC label944               ; 0da893 m8x8, c=1
-         JSR entry285               ; 0da895 m8x8
+         JSR entry284               ; 0da895 m8x8
 label944: BRL label950              ; 0da898 m8x8
 label945: LDA $4d                   ; 0da89b m8x8
          BEQ label947               ; 0da89d m8x8
@@ -12440,7 +12423,7 @@ label962: PLA                       ; 0daabb m8x8
          STA $20                    ; 0daabf m8x8
 label963: PLB                       ; 0daac1 m8x8
          RTL                        ; 0daac2 m8x8
-entry280: .entry m8x8
+entry279: .entry m8x8
          LDX #$07                   ; 0daac3 m8x8
 label964: ASL                       ; 0daac5 m8x8
          BCS label965               ; 0daac6 m8x8, c=0
@@ -12448,7 +12431,7 @@ label964: ASL                       ; 0daac5 m8x8
          BPL label964               ; 0daac9 m8x8, c=0
 label965: RTS                       ; 0daacb m8x8
          .org $0dab6e
-entry281: .entry m16x16
+entry280: .entry m16x16
          REP #$30                   ; 0dab6e m16x16
          LDY $02                    ; 0dab70 m16x16
          LDA $8af1, Y               ; 0dab72 m16x16
@@ -12491,7 +12474,7 @@ label968: CLC                       ; 0dabc6 m16x16, c=0
 label969: SEC                       ; 0dabc8 m16x16, c=1
          RTS                        ; 0dabc9 m16x16, c=1
          .org $0dabe6
-entry282: .entry m16x16
+entry281: .entry m16x16
          REP #$30                   ; 0dabe6 m16x16
          STZ $0c                    ; 0dabe8 m16x16
          LDY $02                    ; 0dabea m16x16
@@ -12535,7 +12518,7 @@ label973: CLC                       ; 0dac41 m16x16, c=0
 label974: SEC                       ; 0dac43 m16x16, c=1
          RTS                        ; 0dac44 m16x16, c=1
          .org $0dacd5
-entry283: .entry m16x16
+entry282: .entry m16x16
          LDA $0a                    ; 0dacd5 m16x16
          PHA                        ; 0dacd7 m16x16
          PHY                        ; 0dacd8 m16x16
@@ -12595,7 +12578,7 @@ label977: TYA                       ; 0dad3b m16x16
          STA $44                    ; 0dad53 m8x16
          LDA $acb1, Y               ; 0dad55 m8x16
          STA $45                    ; 0dad58 m8x16
-         JSR entry287               ; 0dad5a m8x16
+         JSR entry286               ; 0dad5a m8x16
          REP #$20                   ; 0dad5d m16x16
          LDA $0a                    ; 0dad5f m16x16
          STA $0800, X               ; 0dad61 m16x16
@@ -12619,11 +12602,11 @@ label978: STZ $0e                   ; 0dad7b m16x16
          STA $0a                    ; 0dad7f m16x16
          RTS                        ; 0dad81 m16x16
          .org $0dadb6
-entry284: .entry m16x16
+entry283: .entry m16x16
          SEP #$30                   ; 0dadb6 m8x8
          LSR                        ; 0dadb8 m8x8
          LSR                        ; 0dadb9 m8x8
-         JSR entry280               ; 0dadba m8x8
+         JSR entry279               ; 0dadba m8x8
          LDA $adb4, X               ; 0dadbd m8x8
          ADD $030e                  ; 0dadc0 m8x8
          ASL                        ; 0dadc4 m8x8
@@ -12686,7 +12669,7 @@ label980: PLY                       ; 0dae2b m8x16
          REP #$30                   ; 0dae35 m16x16
          RTS                        ; 0dae37 m16x16
          .org $0dae3b
-entry285: .entry m8x8
+entry284: .entry m8x8
          LDY #$00                   ; 0dae3b m8x8
          LDA $51                    ; 0dae3d m8x8
          SUB #$0c                   ; 0dae3f m8x8
@@ -12760,7 +12743,7 @@ label984: PHX                       ; 0daea7 m16x16
          SEP #$10                   ; 0daec7 m8x8
          RTS                        ; 0daec9 m8x8
          .org $0daed1
-entry286: .entry m8x8
+entry285: .entry m8x8
          LDA $0356                  ; 0daed1 m8x8
          INC                        ; 0daed4 m8x8
          AND #$0f                   ; 0daed5 m8x8
@@ -12859,7 +12842,7 @@ label991: REP #$30                  ; 0daf60 m16x16
          SEP #$30                   ; 0daf9a m8x8
          RTS                        ; 0daf9c m8x8
          .org $0dafc0
-entry287: .entry m8x16
+entry286: .entry m8x16
          REP #$20                   ; 0dafc0 m16x16
          AND #$00ff                 ; 0dafc2 m16x16
          CMP #$0080                 ; 0dafc5 m16x16
@@ -12873,8 +12856,8 @@ label992: ADD $22                   ; 0dafcd m16x16
          SEP #$20                   ; 0dafda m8x16
          RTS                        ; 0dafdc m8x16
          .org $0db818
-entry288: .entry m8x8
-         JSL @entry289              ; 0db818 m8x8
+entry287: .entry m8x8
+         JSL @entry288              ; 0db818 m8x8
          PHY                        ; 0db81c m8x8
          PHB                        ; 0db81d m8x8
          PHK                        ; 0db81e m8x8
@@ -12913,7 +12896,7 @@ label993: STA $0c9a, X              ; 0db857 m8x8
          PLB                        ; 0db86e m8x8
          PLY                        ; 0db86f m8x8
          RTL                        ; 0db870 m8x8
-entry289: .entry m8x8
+entry288: .entry m8x8
          STZ $0f00, X               ; 0db871 m8x8
          STZ $0e90, X               ; 0db874 m8x8
          STZ $0d50, X               ; 0db877 m8x8
@@ -12957,34 +12940,34 @@ entry289: .entry m8x8
          STA $7ff9c2, X             ; 0db8ec m8x8
          RTL                        ; 0db8f0 m8x8
          .org $0dba71
-entry290: .entry m8x8
+entry289: .entry m8x8
          LDA $2137                  ; 0dba71 m8x8
          LDA $213c                  ; 0dba74 m8x8
          ADC $1a                    ; 0dba77 m8x8
          ADC $0fa1                  ; 0dba79 m8x8
          STA $0fa1                  ; 0dba7c m8x8
          RTL                        ; 0dba7f m8x8
-entry291: .entry m8x8
+entry290: .entry m8x8
          LDY #$00                   ; 0dba80 m8x8
          BRA label994               ; 0dba82 m8x8
-entry292: .entry m8x8
+entry291: .entry m8x8
          LDY #$02                   ; 0dba84 m8x8
          BRA label994               ; 0dba86 m8x8
          .org $0dba8c
-entry293: .entry m8x8
+entry292: .entry m8x8
          LDY #$06                   ; 0dba8c m8x8
          BRA label994               ; 0dba8e m8x8
          .org $0dba94
-entry294: .entry m8x8
+entry293: .entry m8x8
          LDY #$0a                   ; 0dba94 m8x8
 label994: PHB                       ; 0dba96 m8x8
          PHK                        ; 0dba97 m8x8
          PLB                        ; 0dba98 m8x8
-         JSR entry295               ; 0dba99 m8x8
+         JSR entry294               ; 0dba99 m8x8
          PLB                        ; 0dba9c m8x8
          RTL                        ; 0dba9d m8x8
          .org $0dbb0a
-entry295: .entry m8x8
+entry294: .entry m8x8
          STA $0e                    ; 0dbb0a m8x8
          STZ $000f                  ; 0dbb0c m8x8
          REP #$20                   ; 0dbb0f m16x8
@@ -13027,34 +13010,34 @@ label996: LDA $90                   ; 0dbb44 m16x8
          LDY $90                    ; 0dbb58 m8x8
          RTS                        ; 0dbb5a m8x8
          .org $0dbb67
-entry296: .entry m8x8
+entry295: .entry m8x8
          LDA $23                    ; 0dbb67 m8x8
          XBA                        ; 0dbb69 m8x8
          LDA $22                    ; 0dbb6a m8x8
          BRA label999               ; 0dbb6c m8x8
          .org $0dbb7c
-entry297: .entry m8x8
+entry296: .entry m8x8
          PHY                        ; 0dbb7c m8x8
          LDY $012e                  ; 0dbb7d m8x8
          BNE label997               ; 0dbb80 m8x8
-         JSR entry299               ; 0dbb82 m8x8
+         JSR entry298               ; 0dbb82 m8x8
          STA $012e                  ; 0dbb85 m8x8
 label997: PLY                       ; 0dbb88 m8x8
          RTL                        ; 0dbb89 m8x8
-entry298: .entry m8x8
+entry297: .entry m8x8
          PHY                        ; 0dbb8a m8x8
          LDY $012f                  ; 0dbb8b m8x8
          BNE label998               ; 0dbb8e m8x8
-         JSR entry299               ; 0dbb90 m8x8
+         JSR entry298               ; 0dbb90 m8x8
          STA $012f                  ; 0dbb93 m8x8
 label998: PLY                       ; 0dbb96 m8x8
          RTL                        ; 0dbb97 m8x8
-entry299: .entry m8x8
+entry298: .entry m8x8
          STA $0d                    ; 0dbb98 m8x8
-         JSL @entry300              ; 0dbb9a m8x8
+         JSL @entry299              ; 0dbb9a m8x8
          ORA $0d                    ; 0dbb9e m8x8
          RTS                        ; 0dbba0 m8x8
-entry300: .entry m8x8
+entry299: .entry m8x8
          LDA $0d30, X               ; 0dbba1 m8x8
          XBA                        ; 0dbba4 m8x8
          LDA $0d10, X               ; 0dbba5 m8x8
@@ -13074,7 +13057,7 @@ label1000: SEP #$20                 ; 0dbbc0 m8x8
          PLX                        ; 0dbbc6 m8x8
          RTL                        ; 0dbbc7 m8x8
          .org $0dbbd0
-entry301: .entry m8x8
+entry300: .entry m8x8
          SUB $e2                    ; 0dbbd0 m8x8
          LSR                        ; 0dbbd3 m8x8
          LSR                        ; 0dbbd4 m8x8
@@ -13087,7 +13070,7 @@ entry301: .entry m8x8
          PLX                        ; 0dbbde m8x8
          RTL                        ; 0dbbdf m8x8
          .org $0ddb75
-entry302: .entry m8x8
+entry301: .entry m8x8
          PHB                        ; 0ddb75 m8x8
          PHK                        ; 0ddb76 m8x8
          PLB                        ; 0ddb77 m8x8
@@ -13095,13 +13078,13 @@ entry302: .entry m8x8
          BEQ label1001              ; 0ddb7b m8x8
          PLB                        ; 0ddb7d m8x8
          RTL                        ; 0ddb7e m8x8
-entry303: .entry m8x8
+entry302: .entry m8x8
          PHB                        ; 0ddb7f m8x8
          PHK                        ; 0ddb80 m8x8
          PLB                        ; 0ddb81 m8x8
-         JSR entry311               ; 0ddb82 m8x8
-         JSR entry308               ; 0ddb85 m8x8
-         JSR entry317               ; 0ddb88 m8x8
+         JSR entry310               ; 0ddb82 m8x8
+         JSR entry307               ; 0ddb85 m8x8
+         JSR entry316               ; 0ddb88 m8x8
          SEP #$30                   ; 0ddb8b m8x8
          STZ $0200                  ; 0ddb8d m8x8
          PLB                        ; 0ddb90 m8x8
@@ -13189,7 +13172,7 @@ label1009: LDA $7ef340              ; 0ddc5c m8x8
          LDA $7ef340                ; 0ddc68 m8x8
          INC                        ; 0ddc6c m8x8
          STA $7ef340                ; 0ddc6d m8x8
-         JSL @entry303              ; 0ddc71 m8x8
+         JSL @entry302              ; 0ddc71 m8x8
 label1010: LDA $02e4                ; 0ddc75 m8x8
          BNE label1012              ; 0ddc78 m8x8
          LDA $7ef372                ; 0ddc7a m8x8
@@ -13244,8 +13227,8 @@ label1015: LDA $7ef372              ; 0ddcf4 m8x8
 label1016: REP #$30                 ; 0ddd07 m16x16
          LDA #$ffff                 ; 0ddd09 m16x16
          STA $0e                    ; 0ddd0c m16x16
-         JSR entry322               ; 0ddd0e m16x16
-         JSR entry313               ; 0ddd11 m16x16
+         JSR entry321               ; 0ddd0e m16x16
+         JSR entry312               ; 0ddd11 m16x16
          SEP #$30                   ; 0ddd14 m8x8
          INC $16                    ; 0ddd16 m8x8
          PLB                        ; 0ddd18 m8x8
@@ -13253,17 +13236,17 @@ label1016: REP #$30                 ; 0ddd07 m16x16
 label1017: REP #$30                 ; 0ddd1a m16x16
          LDA #$ffff                 ; 0ddd1c m16x16
          STA $0e                    ; 0ddd1f m16x16
-         JSR entry321               ; 0ddd21 m16x16
+         JSR entry320               ; 0ddd21 m16x16
          SEP #$30                   ; 0ddd24 m8x8
          INC $16                    ; 0ddd26 m8x8
          PLB                        ; 0ddd28 m8x8
          RTL                        ; 0ddd29 m8x8
          .org $0ddd32
-entry304: .entry m8x8
-         JSR entry309               ; 0ddd32 m8x8
+entry303: .entry m8x8
+         JSR entry308               ; 0ddd32 m8x8
          RTL                        ; 0ddd35 m8x8
          .org $0ddeb0
-entry305: .entry m8x8
+entry304: .entry m8x8
          LDX $0202                  ; 0ddeb0 m8x8
          LDA $7ef33f, X             ; 0ddeb3 m8x8
          BNE label1018              ; 0ddeb7 m8x8
@@ -13272,7 +13255,7 @@ entry305: .entry m8x8
 label1018: SEC                      ; 0ddebb m8x8, c=1
          RTS                        ; 0ddebc m8x8, c=1
          .org $0ddecb
-entry306: .entry m8x8
+entry305: .entry m8x8
          LDA $0202                  ; 0ddecb m8x8
          INC                        ; 0ddece m8x8
          CMP #$15                   ; 0ddecf m8x8
@@ -13281,25 +13264,25 @@ entry306: .entry m8x8
 label1019: STA $0202                ; 0dded5 m8x8
          RTS                        ; 0dded8 m8x8
          .org $0ddee2
-entry307: .entry m8x8
-         JSR entry306               ; 0ddee2 m8x8
-         JSR entry305               ; 0ddee5 m8x8
-         BCC entry307               ; 0ddee8 m8x8, c=1
+entry306: .entry m8x8
+         JSR entry305               ; 0ddee2 m8x8
+         JSR entry304               ; 0ddee5 m8x8
+         BCC entry306               ; 0ddee8 m8x8, c=1
          RTS                        ; 0ddeea m8x8, c=1
          .org $0ddfa9
-entry308: .entry m8x8
+entry307: .entry m8x8
          INC $0200                  ; 0ddfa9 m8x8
-         JSR entry318               ; 0ddfac m8x8
-entry309: .entry m8x8
+         JSR entry317               ; 0ddfac m8x8
+entry308: .entry m8x8
          LDX $0202                  ; 0ddfaf m8x8
          LDA $0dfa35, X             ; 0ddfb2 m8x8
          STA $0303                  ; 0ddfb6 m8x8
          RTS                        ; 0ddfb9 m8x8
          .org $0de395
-entry310: .entry m8x8
-         JSR entry311               ; 0de395 m8x8
+entry309: .entry m8x8
+         JSR entry310               ; 0de395 m8x8
          RTL                        ; 0de398 m8x8
-entry311: .entry m8x8
+entry310: .entry m8x8
          SEP #$30                   ; 0de399 m8x8
          LDX #$12                   ; 0de39b m8x8
          LDA $7ef340                ; 0de39d m8x8
@@ -13316,11 +13299,11 @@ label1022: LDA $0202                ; 0de3b6 m8x8
          BNE label1023              ; 0de3b9 m8x8
          LDA #$01                   ; 0de3bb m8x8
          STA $0202                  ; 0de3bd m8x8
-label1023: JSR entry305             ; 0de3c0 m8x8
+label1023: JSR entry304             ; 0de3c0 m8x8
          BCS label1021              ; 0de3c3 m8x8, c=0
-         JMP entry307               ; 0de3c5 m8x8
+         JMP entry306               ; 0de3c5 m8x8
          .org $0df0f7
-entry312: .entry m16x16
+entry311: .entry m16x16
          REP #$30                   ; 0df0f7 m16x16
          STZ $0003                  ; 0df0f9 m16x16
          LDX #$0000                 ; 0df0fc m16x16
@@ -13346,7 +13329,7 @@ label1027: STA $03, X               ; 0df122 m8x8
          BPL label1026              ; 0df125 m8x8
          RTS                        ; 0df127 m8x8
          .org $0df14f
-entry313: .entry m16x16
+entry312: .entry m16x16
          SEP #$30                   ; 0df14f m8x8
          LDA #$68                   ; 0df151 m8x8
          STA $00                    ; 0df153 m8x8
@@ -13390,12 +13373,12 @@ label1028: SEP #$30                 ; 0df182 m8x8
          STA $0209                  ; 0df1a4 m8x8
          BNE label1029              ; 0df1a7 m8x8
          SEP #$30                   ; 0df1a9 m8x8
-         JSR entry317               ; 0df1ab m8x8
+         JSR entry316               ; 0df1ab m8x8
          STZ $020a                  ; 0df1ae m8x8
 label1029: CLC                      ; 0df1b1 m8x8, c=0
          RTS                        ; 0df1b2 m8x8, c=0
          .org $0dfa53
-entry314: .entry m8x8
+entry313: .entry m8x8
          LDA $7ef34a                ; 0dfa53 m8x8
          BEQ label1030              ; 0dfa57 m8x8
          LDA $7ec005                ; 0dfa59 m8x8
@@ -13412,12 +13395,12 @@ entry314: .entry m8x8
          STA $1d                    ; 0dfa75 m8x8
 label1030: RTL                      ; 0dfa77 m8x8
          .org $0dfa88
-entry315: .entry m8x8
+entry314: .entry m8x8
          STA $7ef36f                ; 0dfa88 m8x8
-entry316: .entry m8x8
-         JSR entry317               ; 0dfa8c m8x8
+entry315: .entry m8x8
+         JSR entry316               ; 0dfa8c m8x8
          RTL                        ; 0dfa8f m8x8
-entry317: .entry m8x8
+entry316: .entry m8x8
          REP #$30                   ; 0dfa90 m16x16
          PHB                        ; 0dfa92 m16x16
          LDA #$0149                 ; 0dfa93 m16x16
@@ -13429,18 +13412,18 @@ entry317: .entry m8x8
          PHK                        ; 0dfaa1 m16x16
          PLB                        ; 0dfaa2 m16x16
          BRA label1031              ; 0dfaa3 m16x16
-entry318: .entry m8x8
+entry317: .entry m8x8
          REP #$30                   ; 0dfaa5 m16x16
          PHB                        ; 0dfaa7 m16x16
          PHK                        ; 0dfaa8 m16x16
          PLB                        ; 0dfaa9 m16x16
-label1031: JSR entry320             ; 0dfaaa m16x16
+label1031: JSR entry319             ; 0dfaaa m16x16
          PLB                        ; 0dfaad m16x16
          SEP #$30                   ; 0dfaae m8x8
          INC $16                    ; 0dfab0 m8x8
          RTS                        ; 0dfab2 m8x8
          .org $0dfb1d
-entry319: .entry m16x16
+entry318: .entry m16x16
          SEP #$30                   ; 0dfb1d m8x8
          LDA $7ef340                ; 0dfb1f m8x8
          BEQ label1034              ; 0dfb23 m8x8
@@ -13507,9 +13490,9 @@ label1036: STA $02                  ; 0dfb81 m16x16
          LDA ($04), Y               ; 0dfbaa m16x16
          STA $7ec78c                ; 0dfbac m16x16
 label1037: RTS                      ; 0dfbb0 m16x16
+entry319: .entry m16x16
+         JSR entry318               ; 0dfbb1 m16x16
 entry320: .entry m16x16
-         JSR entry319               ; 0dfbb1 m16x16
-entry321: .entry m16x16
          SEP #$30                   ; 0dfbb4 m8x8
          LDA #$1d                   ; 0dfbb6 m8x8
          STA $0a                    ; 0dfbb8 m8x8
@@ -13529,7 +13512,7 @@ entry321: .entry m16x16
          STA $00                    ; 0dfbd7 m16x16
          STA $02                    ; 0dfbd9 m16x16
          STA $04                    ; 0dfbdb m16x16
-         JSR entry323               ; 0dfbdd m16x16
+         JSR entry322               ; 0dfbdd m16x16
          SEP #$30                   ; 0dfbe0 m8x8
          LDA #$23                   ; 0dfbe2 m8x8
          STA $0a                    ; 0dfbe4 m8x8
@@ -13558,8 +13541,8 @@ label1038: LDA $7ef36d              ; 0dfc0d m8x8
          LDA $7ef36c                ; 0dfc1d m16x16
          AND #$00ff                 ; 0dfc21 m16x16
          STA $02                    ; 0dfc24 m16x16
-         JSR entry323               ; 0dfc26 m16x16
-entry322: .entry m16x16
+         JSR entry322               ; 0dfc26 m16x16
+entry321: .entry m16x16
          REP #$30                   ; 0dfc29 m16x16
          LDA $7ef37b                ; 0dfc2b m16x16
          AND #$00ff                 ; 0dfc2f m16x16
@@ -13585,7 +13568,7 @@ label1039: LDA $7ef36e              ; 0dfc4c m16x16
          LDA $fe15, X               ; 0dfc70 m16x16
          STA $7ec806                ; 0dfc73 m16x16
          LDA $7ef362                ; 0dfc77 m16x16
-         JSR entry312               ; 0dfc7b m16x16
+         JSR entry311               ; 0dfc7b m16x16
          REP #$30                   ; 0dfc7e m16x16
          LDA $03                    ; 0dfc80 m16x16
          AND #$00ff                 ; 0dfc82 m16x16
@@ -13601,7 +13584,7 @@ label1039: LDA $7ef36e              ; 0dfc4c m16x16
          STA $7ec754                ; 0dfca0 m16x16
          LDA $7ef343                ; 0dfca4 m16x16
          AND #$00ff                 ; 0dfca8 m16x16
-         JSR entry312               ; 0dfcab m16x16
+         JSR entry311               ; 0dfcab m16x16
          REP #$30                   ; 0dfcae m16x16
          LDA $04                    ; 0dfcb0 m16x16
          AND #$00ff                 ; 0dfcb2 m16x16
@@ -13613,7 +13596,7 @@ label1039: LDA $7ef36e              ; 0dfc4c m16x16
          STA $7ec75a                ; 0dfcc4 m16x16
          LDA $7ef377                ; 0dfcc8 m16x16
          AND #$00ff                 ; 0dfccc m16x16
-         JSR entry312               ; 0dfccf m16x16
+         JSR entry311               ; 0dfccf m16x16
          REP #$30                   ; 0dfcd2 m16x16
          LDA $04                    ; 0dfcd4 m16x16
          AND #$00ff                 ; 0dfcd6 m16x16
@@ -13629,7 +13612,7 @@ label1039: LDA $7ef36e              ; 0dfc4c m16x16
          AND #$00ff                 ; 0dfcf5 m16x16
          CMP #$00ff                 ; 0dfcf8 m16x16
          BEQ label1040              ; 0dfcfb m16x16
-         JSR entry312               ; 0dfcfd m16x16
+         JSR entry311               ; 0dfcfd m16x16
 label1040: REP #$30                 ; 0dfd00 m16x16
          LDA $05                    ; 0dfd02 m16x16
          AND #$00ff                 ; 0dfd04 m16x16
@@ -13641,7 +13624,7 @@ label1040: REP #$30                 ; 0dfd00 m16x16
 label1041: SEP #$30                 ; 0dfd17 m8x8
          RTS                        ; 0dfd19 m8x8
          .org $0dfdcb
-entry323: .entry m16x16
+entry322: .entry m16x16
          LDX #$0000                 ; 0dfdcb m16x16
 label1042: LDA $00                  ; 0dfdce m16x16
          CMP #$0008                 ; 0dfdd0 m16x16
@@ -13649,20 +13632,20 @@ label1042: LDA $00                  ; 0dfdce m16x16
          SBC #$0008                 ; 0dfdd5 m16x16
          STA $00                    ; 0dfdd8 m16x16
          LDY #$0004                 ; 0dfdda m16x16
-         JSR entry324               ; 0dfddd m16x16
+         JSR entry323               ; 0dfddd m16x16
          INX                        ; 0dfde0 m16x16
          INX                        ; 0dfde1 m16x16
          BRA label1042              ; 0dfde2 m16x16
 label1043: CMP #$0005               ; 0dfde4 m16x16
          BCC label1044              ; 0dfde7 m16x16, c=1
          LDY #$0004                 ; 0dfde9 m16x16, c=1
-         BRA entry324               ; 0dfdec m16x16, c=1
+         BRA entry323               ; 0dfdec m16x16, c=1
 label1044: CMP #$0001               ; 0dfdee m16x16
          BCC label1045              ; 0dfdf1 m16x16, c=1
          LDY #$0002                 ; 0dfdf3 m16x16, c=1
-         BRA entry324               ; 0dfdf6 m16x16, c=1
+         BRA entry323               ; 0dfdf6 m16x16, c=1
 label1045: RTS                      ; 0dfdf8 m16x16, c=0
-entry324: .entry m16x16
+entry323: .entry m16x16
          CPX #$0014                 ; 0dfdf9 m16x16
          BCC label1046              ; 0dfdfc m16x16, c=1
          LDX #$0000                 ; 0dfdfe m16x16, c=1
@@ -13674,7 +13657,7 @@ label1046: LDA [$0a], Y             ; 0dfe09 m16x16
          STA [$07], Y               ; 0dfe0c m16x16
          RTS                        ; 0dfe0e m16x16
          .org $0ec29e
-entry325: .entry m8x8
+entry324: .entry m8x8
          REP #$20                   ; 0ec29e m16x8
          LDA #$0030                 ; 0ec2a0 m16x8
          STA $0fe0                  ; 0ec2a3 m16x8
@@ -13688,18 +13671,18 @@ entry325: .entry m8x8
          JSR ($c250, X)             ; 0ec2b5 m8x8
          RTL                        ; 0ec2b8 m8x8
          .org $0eee10
-entry326: .entry m8x8
+entry325: .entry m8x8
          PHB                        ; 0eee10 m8x8
          PHK                        ; 0eee11 m8x8
          PLB                        ; 0eee12 m8x8
-         JSR entry327               ; 0eee13 m8x8
+         JSR entry326               ; 0eee13 m8x8
          PLB                        ; 0eee16 m8x8
          RTL                        ; 0eee17 m8x8
-entry327: .entry m8x8
+entry326: .entry m8x8
          LDA $1cd8                  ; 0eee18 m8x8
-         JSL @entry2 NORETURN       ; 0eee1b m8x8
+         JSL $008781 NORETURN       ; 0eee1b m8x8
          .org $0ffd2a
-entry328: .entry m8x8
+entry327: .entry m8x8
          REP #$20                   ; 0ffd2a m16x8
          LDX #$3e                   ; 0ffd2c m16x8
 label1047: LDA $0ff7aa, X           ; 0ffd2e m16x8
@@ -13719,7 +13702,7 @@ label1047: LDA $0ff7aa, X           ; 0ffd2e m16x8
          BPL label1047              ; 0ffd60 m16x8
          SEP #$20                   ; 0ffd62 m8x8
          RTL                        ; 0ffd64 m8x8
-entry329: .entry m8x8
+entry328: .entry m8x8
          PHB                        ; 0ffd65 m8x8
          PHK                        ; 0ffd66 m8x8
          PLB                        ; 0ffd67 m8x8
@@ -13745,7 +13728,7 @@ label1048: LDA $f92a, Y             ; 0ffd79 m16x16
          PLB                        ; 0ffd92 m8x8
          RTL                        ; 0ffd93 m8x8
          .org $1bec77
-entry330: .entry m8x8
+entry329: .entry m8x8
          REP #$21                   ; 1bec77 m16x8, c=0
          LDX $0aac                  ; 1bec79 m16x8, c=0
          LDA $1bebc6, X             ; 1bec7c m16x8, c=0
@@ -13758,10 +13741,10 @@ entry330: .entry m8x8
          BEQ label1049              ; 1bec90 m16x16
          LDA #$01e2                 ; 1bec92 m16x16
 label1049: LDX #$0006               ; 1bec95 m16x16
-         JSR entry341               ; 1bec98 m16x16
+         JSR entry340               ; 1bec98 m16x16
          SEP #$30                   ; 1bec9b m8x8
          RTL                        ; 1bec9d m8x8
-entry331: .entry m8x8
+entry330: .entry m8x8
          REP #$21                   ; 1bec9e m16x8, c=0
          LDX #$00                   ; 1beca0 m16x8, c=0
          LDA $8a                    ; 1beca2 m16x8, c=0
@@ -13776,10 +13759,10 @@ label1050: LDA $1bec73, X           ; 1becab m16x8, c=0
          LDA #$0122                 ; 1becb6 m16x16
          LDX #$000e                 ; 1becb9 m16x16
          LDY #$0003                 ; 1becbc m16x16
-         JSR entry342               ; 1becbf m16x16
+         JSR entry341               ; 1becbf m16x16
          SEP #$30                   ; 1becc2 m8x8
          RTL                        ; 1becc4 m8x8
-entry332: .entry m8x8
+entry331: .entry m8x8
          REP #$31                   ; 1becc5 m16x16, c=0
          LDA $0aad                  ; 1becc7 m16x16, c=0
          AND #$00ff                 ; 1becca m16x16, c=0
@@ -13790,10 +13773,10 @@ entry332: .entry m8x8
          STA $00                    ; 1becd6 m16x16
          LDA #$01a2                 ; 1becd8 m16x16
          LDX #$0006                 ; 1becdb m16x16
-         JSR entry341               ; 1becde m16x16
+         JSR entry340               ; 1becde m16x16
          SEP #$30                   ; 1bece1 m8x8
          RTL                        ; 1bece3 m8x8
-entry333: .entry m8x8
+entry332: .entry m8x8
          REP #$31                   ; 1bece4 m16x16, c=0
          LDA $0aae                  ; 1bece6 m16x16, c=0
          AND #$00ff                 ; 1bece9 m16x16, c=0
@@ -13804,10 +13787,10 @@ entry333: .entry m8x8
          STA $00                    ; 1becf5 m16x16
          LDA #$01c2                 ; 1becf7 m16x16
          LDX #$0006                 ; 1becfa m16x16
-         JSR entry341               ; 1becfd m16x16
+         JSR entry340               ; 1becfd m16x16
          SEP #$30                   ; 1bed00 m8x8
          RTL                        ; 1bed02 m8x8
-entry334: .entry m8x8
+entry333: .entry m8x8
          REP #$21                   ; 1bed03 m16x8, c=0
          LDA $7ef359                ; 1bed05 m16x8, c=0
          AND #$00ff                 ; 1bed09 m16x8, c=0
@@ -13819,11 +13802,11 @@ entry334: .entry m8x8
          REP #$10                   ; 1bed19 m16x16
          LDA #$01b2                 ; 1bed1b m16x16
          LDX #$0002                 ; 1bed1e m16x16
-         JSR entry343               ; 1bed21 m16x16
+         JSR entry342               ; 1bed21 m16x16
          SEP #$30                   ; 1bed24 m8x8
          INC $15                    ; 1bed26 m8x8
          RTL                        ; 1bed28 m8x8
-entry335: .entry m8x8
+entry334: .entry m8x8
          REP #$21                   ; 1bed29 m16x8, c=0
          LDA $7ef35a                ; 1bed2b m16x8, c=0
          AND #$00ff                 ; 1bed2f m16x8, c=0
@@ -13835,15 +13818,15 @@ entry335: .entry m8x8
          REP #$10                   ; 1bed3f m16x16
          LDA #$01b8                 ; 1bed41 m16x16
          LDX #$0003                 ; 1bed44 m16x16
-         JSR entry343               ; 1bed47 m16x16
+         JSR entry342               ; 1bed47 m16x16
          SEP #$30                   ; 1bed4a m8x8
          INC $15                    ; 1bed4c m8x8
          RTL                        ; 1bed4e m8x8
          .org $1bed6e
-entry336: .entry m8x8
+entry335: .entry m8x8
          LDA $1b                    ; 1bed6e m8x8
          BEQ label1051              ; 1bed70 m8x8
-entry337: .entry m8x8
+entry336: .entry m8x8
          REP #$21                   ; 1bed72 m16x8, c=0
          LDX $0ab1                  ; 1bed74 m16x8, c=0
          LDA $1bebc6, X             ; 1bed77 m16x8, c=0
@@ -13853,7 +13836,7 @@ entry337: .entry m8x8
          REP #$10                   ; 1bed83 m16x16
          LDA #$01d2                 ; 1bed85 m16x16
          LDX #$0006                 ; 1bed88 m16x16
-         JSR entry341               ; 1bed8b m16x16
+         JSR entry340               ; 1bed8b m16x16
          SEP #$30                   ; 1bed8e m8x8
          RTL                        ; 1bed90 m8x8
 label1051: REP #$21                 ; 1bed91 m16x8, c=0
@@ -13874,7 +13857,7 @@ label1052: PHX                      ; 1bed9e m16x8, c=0
          BEQ label1053              ; 1bedb3 m16x16
          LDA #$01f2                 ; 1bedb5 m16x16
 label1053: LDX #$0006               ; 1bedb8 m16x16
-         JSR entry341               ; 1bedbb m16x16
+         JSR entry340               ; 1bedbb m16x16
          SEP #$10                   ; 1bedbe m16x8
          PLX                        ; 1bedc0 m16x8
          DEX                        ; 1bedc1 m16x8
@@ -13885,11 +13868,11 @@ label1053: LDX #$0006               ; 1bedb8 m16x16
          REP #$10                   ; 1bedcf m16x16
          LDA #$01d2                 ; 1bedd1 m16x16
          LDX #$0006                 ; 1bedd4 m16x16
-         JSR entry341               ; 1bedd7 m16x16
+         JSR entry340               ; 1bedd7 m16x16
          SEP #$30                   ; 1bedda m8x8
          RTL                        ; 1beddc m8x8
          .org $1bedf9
-entry338: .entry m8x8
+entry337: .entry m8x8
          REP #$21                   ; 1bedf9 m16x8, c=0
          LDA $7ef35b                ; 1bedfb m16x8, c=0
          AND #$00ff                 ; 1bedff m16x8, c=0
@@ -13902,7 +13885,7 @@ entry338: .entry m8x8
          REP #$10                   ; 1bee10 m16x16
          LDA #$01e2                 ; 1bee12 m16x16
          LDX #$000e                 ; 1bee15 m16x16
-         JSR entry343               ; 1bee18 m16x16
+         JSR entry342               ; 1bee18 m16x16
          REP #$30                   ; 1bee1b m16x16
          LDA $7ef354                ; 1bee1d m16x16
          AND #$00ff                 ; 1bee21 m16x16
@@ -13917,7 +13900,7 @@ label1054: SEP #$30                 ; 1bee35 m8x8
          INC $15                    ; 1bee37 m8x8
          RTL                        ; 1bee39 m8x8
          .org $1bee52
-entry339: .entry m8x8
+entry338: .entry m8x8
          REP #$21                   ; 1bee52 m16x8, c=0
          LDX $0ab2                  ; 1bee54 m16x8, c=0
          LDA $1bec47, X             ; 1bee57 m16x8, c=0
@@ -13928,10 +13911,10 @@ entry339: .entry m8x8
          LDA #$0000                 ; 1bee65 m16x16
          LDX #$000f                 ; 1bee68 m16x16
          LDY #$0001                 ; 1bee6b m16x16
-         JSR entry342               ; 1bee6e m16x16
+         JSR entry341               ; 1bee6e m16x16
          SEP #$30                   ; 1bee71 m8x8
          RTL                        ; 1bee73 m8x8
-entry340: .entry m8x8
+entry339: .entry m8x8
          REP #$21                   ; 1bee74 m16x8, c=0
          LDX $0ab6                  ; 1bee76 m16x8, c=0
          LDA $1bec4b, X             ; 1bee79 m16x8, c=0
@@ -13942,7 +13925,7 @@ entry340: .entry m8x8
          LDA #$0042                 ; 1bee85 m16x16
          LDX #$000e                 ; 1bee88 m16x16
          LDY #$0005                 ; 1bee8b m16x16
-         JSR entry342               ; 1bee8e m16x16
+         JSR entry341               ; 1bee8e m16x16
          PLA                        ; 1bee91 m16x16
          STA $00                    ; 1bee92 m16x16
          LDA #$0112                 ; 1bee94 m16x16
@@ -13950,11 +13933,11 @@ entry340: .entry m8x8
          BEQ label1055              ; 1bee9a m16x16
          LDA #$01f2                 ; 1bee9c m16x16
 label1055: LDX #$0006               ; 1bee9f m16x16
-         JSR entry341               ; 1beea2 m16x16
+         JSR entry340               ; 1beea2 m16x16
          SEP #$30                   ; 1beea5 m8x8
          RTL                        ; 1beea7 m8x8
          .org $1bef30
-entry341: .entry m16x16
+entry340: .entry m16x16
          TXY                        ; 1bef30 m16x16
          ADD $0aa8                  ; 1bef31 m16x16
          TAX                        ; 1bef35 m16x16
@@ -13969,7 +13952,7 @@ label1056: LDA [$00]                ; 1bef3b m16x16
          DEY                        ; 1bef47 m16x16
          BPL label1056              ; 1bef48 m16x16
          RTS                        ; 1bef4a m16x16
-entry342: .entry m16x16
+entry341: .entry m16x16
          STA $04                    ; 1bef4b m16x16
          STX $06                    ; 1bef4d m16x16
          STY $08                    ; 1bef4f m16x16
@@ -13993,7 +13976,7 @@ label1058: LDA [$00]                ; 1bef5f m16x16
          DEC $08                    ; 1bef76 m16x16
          BPL label1057              ; 1bef78 m16x16
          RTS                        ; 1bef7a m16x16
-entry343: .entry m16x16
+entry342: .entry m16x16
          TXY                        ; 1bef7b m16x16
          TAX                        ; 1bef7c m16x16
          LDA #$001b                 ; 1bef7d m16x16
@@ -14009,7 +13992,7 @@ label1059: LDA [$00]                ; 1bef82 m16x16
          BPL label1059              ; 1bef93 m16x16
          RTS                        ; 1bef95 m16x16
          .org $1cf537
-entry344: .entry m8x8
+entry343: .entry m8x8
          STY $0f                    ; 1cf537 m8x8
          INY                        ; 1cf539 m8x8
          STY $0e                    ; 1cf53a m8x8
@@ -14050,7 +14033,7 @@ label1065: RTL                      ; 1cf580 m8x8
 label1066: TXY                      ; 1cf581 m8x8
          RTL                        ; 1cf582 m8x8
          .org $1cfce2
-entry345: .entry m8x8
+entry344: .entry m8x8
          LDA $5d                    ; 1cfce2 m8x8
          CMP #$02                   ; 1cfce4 m8x8
          BNE label1068              ; 1cfce6 m8x8
@@ -14064,7 +14047,7 @@ entry345: .entry m8x8
 label1067: STY $5d                  ; 1cfcf8 m8x8
 label1068: RTL                      ; 1cfcfa m8x8
          .org $1cfd69
-entry346: .entry m8x8
+entry345: .entry m8x8
          LDA $10                    ; 1cfd69 m8x8
          CMP #$0e                   ; 1cfd6b m8x8
          BEQ label1069              ; 1cfd6d m8x8
@@ -14078,23 +14061,23 @@ entry346: .entry m8x8
          STA $10                    ; 1cfd80 m8x8
 label1069: RTL                      ; 1cfd82 m8x8
          .org $1de9b6
-entry347: .entry m8x8
+entry346: .entry m8x8
          LDA $0ff9                  ; 1de9b6 m8x8
          BEQ label1073              ; 1de9b9 m8x8
          LDY $11                    ; 1de9bb m8x8
          BNE label1073              ; 1de9bd m8x8
          DEC $0ff9                  ; 1de9bf m8x8
          BNE label1070              ; 1de9c2 m8x8
-         JSL @entry163              ; 1de9c4 m8x8
+         JSL @entry162              ; 1de9c4 m8x8
          RTL                        ; 1de9c8 m8x8
 label1070: AND #$01                 ; 1de9c9 m8x8
          BEQ label1071              ; 1de9cb m8x8
-         JSL @entry158              ; 1de9cd m8x8
+         JSL @entry157              ; 1de9cd m8x8
          BRA label1072              ; 1de9d1 m8x8
-label1071: JSL @entry161            ; 1de9d3 m8x8
+label1071: JSL @entry160            ; 1de9d3 m8x8
 label1072: INC $15                  ; 1de9d7 m8x8
 label1073: RTL                      ; 1de9d9 m8x8
-entry348: .entry m8x8
+entry347: .entry m8x8
          LDA $1b                    ; 1de9da m8x8
          BEQ label1076              ; 1de9dc m8x8
          LDA $11                    ; 1de9de m8x8
@@ -14107,13 +14090,13 @@ entry348: .entry m8x8
 label1074: STX $0fa0                ; 1de9ed m8x8
          LDA $1d00, X               ; 1de9f0 m8x8
          BEQ label1075              ; 1de9f3 m8x8
-         JSR entry349               ; 1de9f5 m8x8
+         JSR entry348               ; 1de9f5 m8x8
 label1075: DEX                      ; 1de9f8 m8x8
          BPL label1074              ; 1de9f9 m8x8
          RTL                        ; 1de9fb m8x8
 label1076: STZ $0ffa                ; 1de9fc m8x8
          RTL                        ; 1de9ff m8x8
-entry349: .entry m8x8
+entry348: .entry m8x8
          LDA $0dd0, X               ; 1dea00 m8x8
          PHA                        ; 1dea03 m8x8
          LDA $0e20, X               ; 1dea04 m8x8
@@ -14210,7 +14193,7 @@ entry349: .entry m8x8
          STA $7ff9c2, X             ; 1deaef m8x8
          LDA $7ffadc, X             ; 1deaf3 m8x8
          STA $0ba0, X               ; 1deaf7 m8x8
-         JSL @entry172              ; 1deafa m8x8
+         JSL @entry171              ; 1deafa m8x8
          LDA $0f00, X               ; 1deafe m8x8
          BEQ label1077              ; 1deb01 m8x8
          STZ $1d00, X               ; 1deb03 m8x8
@@ -14264,7 +14247,7 @@ label1077: PLA                      ; 1deb06 m8x8
          STA $0dd0, X               ; 1deb64 m8x8
          RTS                        ; 1deb67 m8x8
          .org $1df65d
-entry350: .entry m8x8
+entry349: .entry m8x8
          LDY #$0f                   ; 1df65d m8x8
          PHA                        ; 1df65f m8x8
 label1078: LDA $0dd0, Y             ; 1df660 m8x8
@@ -14298,7 +14281,7 @@ label1079: PLA                      ; 1df66b m8x8
          STA $08                    ; 1df69f m8x8
          PHX                        ; 1df6a1 m8x8
          TYX                        ; 1df6a2 m8x8
-         JSL @entry288              ; 1df6a3 m8x8
+         JSL @entry287              ; 1df6a3 m8x8
          LDA $1b                    ; 1df6a7 m8x8
          BNE label1080              ; 1df6a9 m8x8
          TXA                        ; 1df6ab m8x8
@@ -14319,17 +14302,17 @@ label1080: LDA #$ff                 ; 1df6b3 m8x8
          TYA                        ; 1df6cd m8x8
          RTL                        ; 1df6ce m8x8
          .org $1ee665
-entry351: .entry m8x8
-         JSR entry352               ; 1ee665 m8x8
+entry350: .entry m8x8
+         JSR entry351               ; 1ee665 m8x8
          LDA #$01                   ; 1ee668 m8x8
          STA $0e80, Y               ; 1ee66a m8x8
          LDA #$00                   ; 1ee66d m8x8
          STA $7ef3cc                ; 1ee66f m8x8
          RTL                        ; 1ee673 m8x8
-entry352: .entry m8x8
+entry351: .entry m8x8
          PHA                        ; 1ee674 m8x8
          LDA #$b6                   ; 1ee675 m8x8
-         JSL @entry350              ; 1ee677 m8x8
+         JSL @entry349              ; 1ee677 m8x8
          BMI label1081              ; 1ee67b m8x8
          PLA                        ; 1ee67d m8x8
          PHX                        ; 1ee67e m8x8
@@ -14361,16 +14344,16 @@ entry352: .entry m8x8
          RTS                        ; 1ee6be m8x8
 label1081: PLA                      ; 1ee6bf m8x8
          RTS                        ; 1ee6c0 m8x8
-entry353: .entry m8x8
-         JSR entry352               ; 1ee6c1 m8x8
+entry352: .entry m8x8
+         JSR entry351               ; 1ee6c1 m8x8
          LDA #$02                   ; 1ee6c4 m8x8
          STA $0e80, Y               ; 1ee6c6 m8x8
          RTL                        ; 1ee6c9 m8x8
          .org $1ee932
-entry354: .entry m8x8
+entry353: .entry m8x8
          PHA                        ; 1ee932 m8x8
          LDA #$ad                   ; 1ee933 m8x8
-         JSL @entry350              ; 1ee935 m8x8
+         JSL @entry349              ; 1ee935 m8x8
          PLA                        ; 1ee939 m8x8
          PHX                        ; 1ee93a m8x8
          TAX                        ; 1ee93b m8x8
@@ -14395,13 +14378,13 @@ entry354: .entry m8x8
          LDA #$01                   ; 1ee96e m8x8
          STA $0ba0, Y               ; 1ee970 m8x8
          STA $0e80, Y               ; 1ee973 m8x8
-         JSR entry355               ; 1ee976 m8x8
+         JSR entry354               ; 1ee976 m8x8
          PLX                        ; 1ee979 m8x8
          LDA #$00                   ; 1ee97a m8x8
          STA $7ef3cc                ; 1ee97c m8x8
          STZ $5e                    ; 1ee980 m8x8
          RTL                        ; 1ee982 m8x8
-entry355: .entry m8x8
+entry354: .entry m8x8
          LDA #$01                   ; 1ee983 m8x8
          STA $02e4                  ; 1ee985 m8x8
          STA $037b                  ; 1ee988 m8x8
