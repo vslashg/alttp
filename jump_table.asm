@@ -189,7 +189,7 @@ jump_to_a:
         ;;
         ;; Code does not execute past the JSL call to this routine.  Instead,
         ;; if subroutine foo calls subroutine bar, and bar calls jump_to_a,
-        ;; then the jump target is expected to exit with `RTL`.  At this point,
+        ;; then the jump target is expected to exit with *RTS*.  At this point,
         ;; execution return to subroutine *foo*.
          .org $00879c
 jump_long_to_a:
@@ -241,7 +241,117 @@ jump_long_to_a:
 
          ; Unconditionally branch to the address we stored in $00-$03.  Because
          ; we have popped the return address of jump_to_a from the stack, this
-         ; subroutine "never returns".  When the method at [$0000] calls RTL,
+         ; subroutine "never returns".  When the method at [$0000] calls *RTS*,
          ; it will return execution to our grand-caller.
          jmp [$0000]
        }
+
+
+;; Existing inline jump tables
+
+.org $0287d4
+.dl  $02b572
+.dl  $02b611
+.dl  $02b6b2
+.dl  $02b754
+
+.org $029823
+.dw  $8bab
+.dw  $a197
+.dw  $9829
+
+.org $029852
+.dw  $a197
+.dw  $9856
+
+.org $0684f4
+.dw  $8510
+.dw  $852e
+.dw  $e399
+.dw  $859c
+.dw  $8548
+.dw  $fbf0
+.dw  $f8a8
+.dw  $8543  ; looks valid?
+
+.org $0cc119
+.dl  $0cc137
+.dl  $0cc17c
+.dl  $0cc302
+.dl  $0cc3d2
+.dl  $0cc3d2
+.dl  $0cc26b
+.dl  $0cc290
+.dl  $0cc2a5
+.dl  $0cc302
+.dl  $0cc3d2
+
+.org $0ccc7a
+.dl  $0ccc89
+.dl  $0ccd91
+.dl  $0ccdae
+.dl  $0ccdba
+.dl  $0ccdc6
+
+.org $0ccf53
+.dl  $0ccd98
+.dl  $0ccf62
+.dl  $0ccf7c
+.dl  $0ccf97
+.dl  $0ccfae
+
+.org $0cd365
+.dl  $0ccd98
+.dl  $0cd371
+.dl  $0cd376
+.dl  $0cd388
+
+.org $0cd75b
+.dl  $0cd764
+.dl  $0cd7d1
+; .dl  $0cd9c7  ;looks wrong?
+
+; this one looks very short.  What's going on here?
+.org $0eee1f
+.dw  $ee53
+
+
+.remote $028bab m8x8
+.remote $029829 m8x8
+.remote $029856 m8x8
+.remote $02a197 m8x8
+.remote $02b572 m8x8
+.remote $02b611 m8x8
+.remote $02b6b2 m8x8
+.remote $02b754 m8x8
+.remote $068510 m8x8
+.remote $06852e m8x8
+.remote $068543 m8x8
+.remote $068548 m8x8
+.remote $06859c m8x8
+.remote $06e399 m8x8
+.remote $06f8a8 m8x8
+.remote $06fbf0 m8x8
+.remote $0cc137 m8x8
+.remote $0cc17c m8x8
+.remote $0cc26b m8x8
+.remote $0cc290 m8x8
+.remote $0cc2a5 m8x8
+.remote $0cc302 m8x8
+.remote $0cc3d2 m8x8
+.remote $0ccc89 m8x8
+.remote $0ccd91 m8x8
+.remote $0ccd98 m8x8
+.remote $0ccdae m8x8
+.remote $0ccdba m8x8
+.remote $0ccdc6 m8x8
+.remote $0ccf62 m8x8
+.remote $0ccf7c m8x8
+.remote $0ccf97 m8x8
+.remote $0ccfae m8x8
+.remote $0cd371 m8x8
+.remote $0cd376 m8x8
+.remote $0cd388 m8x8
+.remote $0cd764 m8x8
+.remote $0cd7d1 m8x8
+.remote $0eee53 m8x8
