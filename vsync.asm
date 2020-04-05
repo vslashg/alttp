@@ -81,12 +81,12 @@ have_ambient_cmd:
    ; sound_effect_{1,2}_cmd to APU ports {2,3}, before zeroing
    ; that memory out.
 check_sound_effect:
-         LDA sound_effect_1_cmd
+         LDA vars::sound_effect_1_cmd
          STA snes::apui02
-         LDA sound_effect_2_cmd
+         LDA vars::sound_effect_2_cmd
          STA snes::apui03
-         STZ sound_effect_1_cmd
-         STZ sound_effect_2_cmd
+         STZ vars::sound_effect_1_cmd
+         STZ vars::sound_effect_2_cmd
 
          LDA #$80
          STA snes::inidisp
