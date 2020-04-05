@@ -6,6 +6,9 @@
 
          .org $0080c9
 vsync: {
+    state_var_1 .equ $0130
+    current_ambient .equ $0131
+    current_song .equ $0133
          .entry native
          SEI
          REP #$30  ; 16-bit registers
@@ -15,39 +18,76 @@ vsync: {
          TCD
          PHK
          PLB
-         SEP #$30
+         SEP #$30  ; 8-bit registers
+
          LDA snes::rdnmi
-         LDA $012c
-         BNE label1
+
+    ; Once-per-frame check of `vars::music_cmd`.  This will send
+    ; the music command at this address to the APU, but only if the
+    ; value of this memory location has changed.
+    ;
+    ; If nonzero, and different from `current_song`, do the following:
+    ;   * Write `music_cmd` to both `current_song` and to APU port 0.
+    ;   * If `music_cmd` > 0xf2, also write it to `state_var_1`
+    ;   * Write 0 to music_cmd.
+    ;
+    ; If nonzero and equal to `current_song`, do nothing.
+    ; TODO: Understand how we can get into this state.
+    ;
+    ; If zero, check if the APU has written back `current_song` to
+    ; APU port 0.  If it has, write 0x00 to that port.
+check_music:
+         LDA vars::music_cmd
+         BNE have_music_cmd
          LDA snes::apui00
-         CMP $0133
-         BNE label3
+         CMP current_song
+         BNE check_ambient
          STZ snes::apui00
-         BRA label3
-label1:  CMP $0133
-         BEQ label3
+         BRA check_ambient
+have_music_cmd:
+         CMP current_song
+         BEQ check_ambient
          STA snes::apui00
-         STA $0133
+         STA current_song
          CMP #$f2
          BCS label2
-         STA $0130
-label2:  STZ $012c
-label3:  LDA $012d
-         BNE label4
+         STA state_var_1
+label2:  STZ vars::music_cmd
+
+   ; Once-per-frame check of `vars::sound_effect_ambient_cmd`.  This
+   ; sends new ambient sound commands to the APU as necessary.
+   ;
+   ; If nonzero, do the following:
+   ;   * Write `sound_effect_ambient_cmd` to both `current_ambient`
+   ;     and to APU port 0.
+   ;   * Write 0 to ambient
+   ;
+   ; If zero, check if the APU has written back `current_ambient` to
+   ; APU port 1.  If it has, write 0x00 to that port.
+check_ambient:
+         LDA vars::sound_effect_ambient_cmd
+         BNE have_ambient_cmd
          LDA snes::apui01
-         CMP $0131
-         BNE label5
+         CMP current_ambient
+         BNE check_sound_effect
          STZ snes::apui01
-         BRA label5
-label4:  STA $0131
+         BRA check_sound_effect
+have_ambient_cmd:
+         STA current_ambient
          STA snes::apui01
-         STZ $012d
-label5:  LDA $012e
+         STZ vars::sound_effect_ambient_cmd
+
+   ; Once-per-frame, copy the sound effect IDs in
+   ; sound_effect_{1,2}_cmd to APU ports {2,3}, before zeroing
+   ; that memory out.
+check_sound_effect:
+         LDA sound_effect_1_cmd
          STA snes::apui02
-         LDA $012f
+         LDA sound_effect_2_cmd
          STA snes::apui03
-         STZ $012e
-         STZ $012f
+         STZ sound_effect_1_cmd
+         STZ sound_effect_2_cmd
+
          LDA #$80
          STA snes::inidisp
          STZ snes::hdmaen
