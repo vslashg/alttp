@@ -1,85 +1,13 @@
-; Disassembled 18623 instructions.
-         .org $00822d
-entry1:  .entry m8x8
-         jsr entry17                ; $00822d m8x8
-         lda.b $ff                  ; $008230 m8x8
-         sta.b $4209                ; $008232 m8x8
-         stz.b $420a                ; $008235 m8x8
-         lda.b #$a1                 ; $008238 m8x8
-         sta.b $4200                ; $00823a m8x8
-         lda.b $96                  ; $00823d m8x8
-         sta.b $2123                ; $00823f m8x8
-         lda.b $97                  ; $008242 m8x8
-         sta.b $2124                ; $008244 m8x8
-         lda.b $98                  ; $008247 m8x8
-         sta.b $2125                ; $008249 m8x8
-         lda.b $99                  ; $00824c m8x8
-         sta.b $2130                ; $00824e m8x8
-         lda.b $9a                  ; $008251 m8x8
-         sta.b $2131                ; $008253 m8x8
-         lda.b $9c                  ; $008256 m8x8
-         sta.b $2132                ; $008258 m8x8
-         lda.b $9d                  ; $00825b m8x8
-         sta.b $2132                ; $00825d m8x8
-         lda.b $9e                  ; $008260 m8x8
-         sta.b $2132                ; $008262 m8x8
-         lda.b $1c                  ; $008265 m8x8
-         sta.b $212c                ; $008267 m8x8
-         lda.b $1d                  ; $00826a m8x8
-         sta.b $212d                ; $00826c m8x8
-         lda.b $1e                  ; $00826f m8x8
-         sta.b $212e                ; $008271 m8x8
-         lda.b $1f                  ; $008274 m8x8
-         sta.b $212f                ; $008276 m8x8
-         lda.b $0120                ; $008279 m8x8
-         sta.b $210d                ; $00827c m8x8
-         lda.b $0121                ; $00827f m8x8
-         sta.b $210d                ; $008282 m8x8
-         lda.b $0124                ; $008285 m8x8
-         sta.b $210e                ; $008288 m8x8
-         lda.b $0125                ; $00828b m8x8
-         sta.b $210e                ; $00828e m8x8
-         lda.b $011e                ; $008291 m8x8
-         sta.b $210f                ; $008294 m8x8
-         lda.b $011f                ; $008297 m8x8
-         sta.b $210f                ; $00829a m8x8
-         lda.b $0122                ; $00829d m8x8
-         sta.b $2110                ; $0082a0 m8x8
-         lda.b $0123                ; $0082a3 m8x8
-         sta.b $2110                ; $0082a6 m8x8
-         lda.b $e4                  ; $0082a9 m8x8
-         sta.b $2111                ; $0082ab m8x8
-         lda.b $e5                  ; $0082ae m8x8
-         sta.b $2111                ; $0082b0 m8x8
-         lda.b $ea                  ; $0082b3 m8x8
-         sta.b $2112                ; $0082b5 m8x8
-         lda.b $eb                  ; $0082b8 m8x8
-         sta.b $2112                ; $0082ba m8x8
-         lda.b $13                  ; $0082bd m8x8
-         sta.b $2100                ; $0082bf m8x8
-         lda.b $9b                  ; $0082c2 m8x8
-         sta.b $420c                ; $0082c4 m8x8
-         rep #$30                   ; $0082c7 m16x16
-         tsc                        ; $0082c9 m16x16
-         tax.w                      ; $0082ca m16x16
-         lda.w $1f0a                ; $0082cb m16x16
-         tcs                        ; $0082ce m16x16
-         stx.w $1f0a                ; $0082cf m16x16
-         plb                        ; $0082d2 m16x16
-         pld                        ; $0082d3 m16x16
-         ply.w                      ; $0082d4 m16x16
-         plx.w                      ; $0082d5 m16x16
-         pla.w                      ; $0082d6 m16x16
-         rti                        ; $0082d7 m16x16
+; Disassembled 18553 instructions.
          .org $008333
-entry2:  .entry m8x8
+entry1:  .entry m8x8
          rep #$20                   ; $008333 m16x8
          lda.w #$0188               ; $008335 m16x8
          sta.w $02                  ; $008338 m16x8
          lda.w #$007f               ; $00833a m16x8
          bra label1                 ; $00833d m16x8
          .org $00834b
-entry3:  .entry m8x8
+entry2:  .entry m8x8
          rep #$20                   ; $00834b m16x8
          lda.w #$007f               ; $00834d m16x8
          sta.w $02                  ; $008350 m16x8
@@ -128,7 +56,7 @@ label1:  sta.w $00                  ; $008355 m16x8
          sty.b $420b                ; $0083cb m16x8
          sep #$20                   ; $0083ce m8x8
          rtl                        ; $0083d0 m8x8
-entry4:  .entry m8x8
+entry3:  .entry m8x8
          stz.b $4016                ; $0083d1 m8x8
          lda.b $4218                ; $0083d4 m8x8
          sta.b $00                  ; $0083d7 m8x8
@@ -150,7 +78,7 @@ entry4:  .entry m8x8
          sty.b $f8                  ; $0083f6 m8x8
          rts                        ; $0083f8 m8x8
          .org $00882e
-entry5:  .entry m16x8
+entry4:  .entry m16x8
          rep #$30                   ; $00882e m16x16
          lda.w $00                  ; $008830 m16x16
          sub.w $0708                ; $008832 m16x16
@@ -197,7 +125,7 @@ entry5:  .entry m16x8
          ora.b $06                  ; $008885 m8x8
 label2:  rtl                        ; $008887 m8x8
          .org $008913
-entry6:  .entry m8x8
+entry5:  .entry m8x8
          lda.b #$f5                 ; $008913 m8x8
          sta.b $00                  ; $008915 m8x8
          lda.b #$9e                 ; $008917 m8x8
@@ -208,7 +136,7 @@ label3:  sta.b $02                  ; $00891d m8x8
          jsr $8888                  ; $008920 m8x8
          cli                        ; $008923 m8x8
          rtl                        ; $008924 m8x8
-entry7:  .entry m8x8
+entry6:  .entry m8x8
          lda.b #$00                 ; $008925 m8x8
          sta.b $00                  ; $008927 m8x8
          lda.b #$80                 ; $008929 m8x8
@@ -216,7 +144,7 @@ entry7:  .entry m8x8
          lda.b #$1b                 ; $00892d m8x8
          bra label3                 ; $00892f m8x8
          .org $00893d
-entry8:  .entry m8x8
+entry7:  .entry m8x8
          lda.b #$80                 ; $00893d m8x8
          sta.b $2100                ; $00893f m8x8
          sta.b $13                  ; $008942 m8x8
@@ -224,13 +152,13 @@ entry8:  .entry m8x8
          stz.b $9b                  ; $008947 m8x8
          rtl                        ; $008949 m8x8
          .org $0089e0
-entry9:  .entry m8x8
+entry8:  .entry m8x8
          rep #$10                   ; $0089e0 m8x16
          lda.b #$80                 ; $0089e2 m8x16
          sta.b $2115                ; $0089e4 m8x16
          lda.b $0710                ; $0089e7 m8x16
          beq label4                 ; $0089ea m8x16
-         jmp entry10                ; $0089ec m8x16
+         jmp entry9                 ; $0089ec m8x16
 label4:  ldx.w #$1801               ; $0089ef m8x16
          stx.w $4300                ; $0089f2 m8x16
          stx.w $4310                ; $0089f5 m8x16
@@ -359,7 +287,7 @@ label5:  ldx.w $0adc                ; $008b50 m8x16
          stx.w $4305                ; $008b5f m8x16
          lda.b #$01                 ; $008b62 m8x16
          sta.b $420b                ; $008b64 m8x16
-entry10: .entry m8x16
+entry9:  .entry m8x16
          lda.b $16                  ; $008b67 m8x16
          beq label6                 ; $008b69 m8x16
          ldx.w $0219                ; $008b6b m8x16
@@ -407,7 +335,7 @@ label7:  rep #$20                   ; $008baa m16x16
          sta.b $01                  ; $008bdb m8x8
          lda.b $938c, Y             ; $008bdd m8x8
          sta.b $02                  ; $008be0 m8x8
-         jsr entry15                ; $008be2 m8x8
+         jsr entry14                ; $008be2 m8x8
          lda.b $14                  ; $008be5 m8x8
          cmp.b #$01                 ; $008be7 m8x8
          bne label8                 ; $008be9 m8x8
@@ -471,7 +399,7 @@ label12: lda.b $17                  ; $008c75 m8x8
          stz.b $17                  ; $008c79 m8x8
          jmp ($8c7e, X)             ; $008c7b m8x8
          .org $008cb0
-entry11: .entry m8x8
+entry10: .entry m8x8
          ldx.b $0116                ; $008cb0 m8x8
          lda.b $9888, X             ; $008cb3 m8x8
          sta.b $2117                ; $008cb6 m8x8
@@ -492,11 +420,11 @@ entry11: .entry m8x8
          stz.b $0710                ; $008ce0 m8x8
          rts                        ; $008ce3 m8x8
          .org $0090e3
-entry12: .entry m8x8
-         jsr entry11                ; $0090e3 m8x8
+entry11: .entry m8x8
+         jsr entry10                ; $0090e3 m8x8
          rtl                        ; $0090e6 m8x8
          .org $00913f
-entry13: .entry m8x8
+entry12: .entry m8x8
          rep #$31                   ; $00913f m16x16, c=0
          lda.w $0418                ; $009141 m16x16, c=0
          and.w #$000f               ; $009144 m16x16, c=0
@@ -553,7 +481,7 @@ label13: lda.w $7e2000, X           ; $009153 m16x16
          sta.b $0710                ; $0091c0 m8x8
          rtl                        ; $0091c3 m8x8
          .org $0091d3
-entry14: .entry m8x8
+entry13: .entry m8x8
          rep #$31                   ; $0091d3 m16x16, c=0
          lda.w $0418                ; $0091d5 m16x16, c=0
          and.w #$000f               ; $0091d8 m16x16, c=0
@@ -608,16 +536,16 @@ label14: lda.w $7e4000, X           ; $0091e7 m16x16
          sta.b $0710                ; $00924e m8x8
          rtl                        ; $009251 m8x8
          .org $0092a1
-entry15: .entry m8x8
+entry14: .entry m8x8
          rep #$10                   ; $0092a1 m8x16
          sta.b $4314                ; $0092a3 m8x16
          stz.b $06                  ; $0092a6 m8x16
          ldy.w #$0000               ; $0092a8 m8x16
          lda.b [$00], Y             ; $0092ab m8x16
-         bpl entry16                ; $0092ad m8x16
+         bpl entry15                ; $0092ad m8x16
          sep #$30                   ; $0092af m8x8
          rts                        ; $0092b1 m8x8
-entry16: .entry m8x16
+entry15: .entry m8x16
          sta.b $04                  ; $0092b2 m8x16
          iny.w                      ; $0092b4 m8x16
          lda.b [$00], Y             ; $0092b5 m8x16
@@ -692,10 +620,10 @@ label15: stx.w $03                  ; $009328 m16x16
          sta.b $420b                ; $00933a m8x16
          lda.b [$00], Y             ; $00933d m8x16
          bmi label16                ; $00933f m8x16
-         jmp entry16                ; $009341 m8x16
+         jmp entry15                ; $009341 m8x16
 label16: sep #$30                   ; $009344 m8x8
          rts                        ; $009346 m8x8
-entry17: .entry m8x8
+entry16: .entry m8x8
          lda.b $1f0c                ; $009347 m8x8
          beq label17                ; $00934a m8x8
          lda.b #$80                 ; $00934c m8x8
@@ -717,14 +645,14 @@ entry17: .entry m8x8
          stz.b $1f0c                ; $009377 m8x8
 label17: rts                        ; $00937a m8x8
          .org $00d308
-entry18: .entry m8x8
+entry17: .entry m8x8
          phb                        ; $00d308 m8x8
          phk                        ; $00d309 m8x8
          plb                        ; $00d30a m8x8
          ldy.b #$5f                 ; $00d30b m8x8
-         jsr entry39                ; $00d30d m8x8
+         jsr entry38                ; $00d30d m8x8
          ldy.b #$5e                 ; $00d310 m8x8
-         jsr entry40                ; $00d312 m8x8
+         jsr entry39                ; $00d312 m8x8
          rep #$21                   ; $00d315 m16x8, c=0
          lda.w $7ef359              ; $00d317 m16x8, c=0
          and.w #$00ff               ; $00d31b m16x8, c=0
@@ -736,23 +664,23 @@ entry18: .entry m8x8
          ldx.w #$0000               ; $00d327 m16x16
          ldy.w #$000c               ; $00d32a m16x16
          pha.w                      ; $00d32d m16x16
-         jsr entry25                ; $00d32e m16x16
+         jsr entry24                ; $00d32e m16x16
          pla.w                      ; $00d331 m16x16
          add.w #$0180               ; $00d332 m16x16
          ldy.w #$000c               ; $00d336 m16x16
-         jsr entry25                ; $00d339 m16x16
+         jsr entry24                ; $00d339 m16x16
          sep #$30                   ; $00d33c m8x8
          plb                        ; $00d33e m8x8
          rtl                        ; $00d33f m8x8
          .org $00d348
-entry19: .entry m8x8
+entry18: .entry m8x8
          phb                        ; $00d348 m8x8
          phk                        ; $00d349 m8x8
          plb                        ; $00d34a m8x8
          ldy.b #$5f                 ; $00d34b m8x8
-         jsr entry39                ; $00d34d m8x8
+         jsr entry38                ; $00d34d m8x8
          ldy.b #$5e                 ; $00d350 m8x8
-         jsr entry40                ; $00d352 m8x8
+         jsr entry39                ; $00d352 m8x8
          rep #$21                   ; $00d355 m16x8, c=0
          lda.w $7ef35a              ; $00d357 m16x8, c=0
          asl.w                      ; $00d35b m16x8
@@ -762,31 +690,31 @@ entry19: .entry m8x8
          rep #$10                   ; $00d362 m16x16
          ldx.w #$0300               ; $00d364 m16x16
          pha.w                      ; $00d367 m16x16
-         jsr entry24                ; $00d368 m16x16
+         jsr entry23                ; $00d368 m16x16
          pla.w                      ; $00d36b m16x16
          add.w #$0180               ; $00d36c m16x16
-         jsr entry24                ; $00d370 m16x16
+         jsr entry23                ; $00d370 m16x16
          sep #$30                   ; $00d373 m8x8
          plb                        ; $00d375 m8x8
          rtl                        ; $00d376 m8x8
-entry20: .entry m8x8
+entry19: .entry m8x8
          phb                        ; $00d377 m8x8
          phk                        ; $00d378 m8x8
          plb                        ; $00d379 m8x8
-         jsr entry42                ; $00d37a m8x8
+         jsr entry41                ; $00d37a m8x8
          rep #$30                   ; $00d37d m16x16
          lda.w $00                  ; $00d37f m16x16
          ldy.w #$0030               ; $00d381 m16x16
          ldx.w #$1680               ; $00d384 m16x16
-         jsr entry23                ; $00d387 m16x16
+         jsr entry22                ; $00d387 m16x16
          sep #$30                   ; $00d38a m8x8
          ldy.b #$5c                 ; $00d38c m8x8
-         jsr entry42                ; $00d38e m8x8
+         jsr entry41                ; $00d38e m8x8
          rep #$30                   ; $00d391 m16x16
          lda.w $00                  ; $00d393 m16x16
          ldy.w #$0030               ; $00d395 m16x16
          ldx.w #$1c80               ; $00d398 m16x16
-         jsr entry23                ; $00d39b m16x16
+         jsr entry22                ; $00d39b m16x16
          ldx.w #$0000               ; $00d39e m16x16
 label18: lda.w $7ea880, X           ; $00d3a1 m16x16
          pha.w                      ; $00d3a5 m16x16
@@ -808,7 +736,7 @@ label18: lda.w $7ea880, X           ; $00d3a1 m16x16
          plb                        ; $00d3d2 m8x8
          rtl                        ; $00d3d3 m8x8
          .org $00d463
-entry21: .entry m8x8
+entry20: .entry m8x8
          phb                        ; $00d463 m8x8
          phk                        ; $00d464 m8x8
          plb                        ; $00d465 m8x8
@@ -824,9 +752,9 @@ entry21: .entry m8x8
          cmp.b #$0c                 ; $00d47c m8x8
          bcc label19                ; $00d47e m8x8, c=1
          ldy.b #$58                 ; $00d480 m8x8, c=1
-label19: jsr entry39                ; $00d482 m8x8
+label19: jsr entry38                ; $00d482 m8x8
          ldy.b #$65                 ; $00d485 m8x8
-         jsr entry40                ; $00d487 m8x8
+         jsr entry39                ; $00d487 m8x8
          rep #$30                   ; $00d48a m16x16
          lda.w $7ef3cc              ; $00d48c m16x16
          and.w #$00ff               ; $00d490 m16x16
@@ -836,12 +764,12 @@ label19: jsr entry39                ; $00d482 m8x8
          add.w $00d447, X           ; $00d497 m16x16
          ldy.w #$0020               ; $00d49c m16x16
          ldx.w #$2940               ; $00d49f m16x16
-         jsr entry23                ; $00d4a2 m16x16
+         jsr entry22                ; $00d4a2 m16x16
          sep #$30                   ; $00d4a5 m8x8
          plb                        ; $00d4a7 m8x8
          rtl                        ; $00d4a8 m8x8
          .org $00d52d
-entry22: .entry m8x8
+entry21: .entry m8x8
          phb                        ; $00d52d m8x8
          phk                        ; $00d52e m8x8
          plb                        ; $00d52f m8x8
@@ -857,9 +785,9 @@ entry22: .entry m8x8
          cmp.b #$24                 ; $00d541 m8x8
          bcs label20                ; $00d543 m8x8, c=0
          ldy.b #$5b                 ; $00d545 m8x8, c=0
-label20: jsr entry39                ; $00d547 m8x8
+label20: jsr entry38                ; $00d547 m8x8
          ldy.b #$5a                 ; $00d54a m8x8
-         jsr entry40                ; $00d54c m8x8
+         jsr entry39                ; $00d54c m8x8
          pla.b                      ; $00d54f m8x8
          rep #$21                   ; $00d550 m16x8, c=0
          and.w #$00ff               ; $00d552 m16x8, c=0
@@ -871,16 +799,16 @@ label20: jsr entry39                ; $00d547 m8x8
          ldx.w #$2d40               ; $00d55e m16x16
          ldy.w #$0002               ; $00d561 m16x16
          pha.w                      ; $00d564 m16x16
-         jsr entry25                ; $00d565 m16x16
+         jsr entry24                ; $00d565 m16x16
          pla.w                      ; $00d568 m16x16
          add.w #$0180               ; $00d569 m16x16
          ldy.w #$0002               ; $00d56d m16x16
-         jsr entry25                ; $00d570 m16x16
+         jsr entry24                ; $00d570 m16x16
          sep #$30                   ; $00d573 m8x8
          plb                        ; $00d575 m8x8
          rtl                        ; $00d576 m8x8
          .org $00d60e
-entry23: .entry m16x16
+entry22: .entry m16x16
          sty.w $0e                  ; $00d60e m16x16
 label21: sta.w $00                  ; $00d610 m16x16
          add.w #$0010               ; $00d612 m16x16
@@ -915,9 +843,9 @@ label22: lda.w [$00]                ; $00d61b m16x16
          dec.w $0e                  ; $00d654 m16x16
          bne label21                ; $00d656 m16x16
          rts                        ; $00d658 m16x16
-entry24: .entry m16x16
+entry23: .entry m16x16
          ldy.w #$0006               ; $00d659 m16x16
-entry25: .entry m16x16
+entry24: .entry m16x16
          sty.w $0e                  ; $00d65c m16x16
 label23: sta.w $00                  ; $00d65e m16x16
          add.w #$0010               ; $00d660 m16x16
@@ -957,7 +885,7 @@ label25: lda.w $03                  ; $00d6a7 m16x16
          bne label23                ; $00d6ab m16x16
          rts                        ; $00d6ad m16x16
          .org $00d84e
-entry26: .entry m8x8
+entry25: .entry m8x8
          phb                        ; $00d84e m8x8
          phk                        ; $00d84f m8x8
          plb                        ; $00d850 m8x8
@@ -970,7 +898,7 @@ entry26: .entry m8x8
          lda.b #$67                 ; $00d85d m8x8
          sta.b $0e                  ; $00d85f m8x8
 label26: ldy.b $0e                  ; $00d861 m8x8
-         jsr entry41                ; $00d863 m8x8
+         jsr entry40                ; $00d863 m8x8
          lda.b $01                  ; $00d866 m8x8
          add.b #$08                 ; $00d868 m8x8
          sta.b $01                  ; $00d86b m8x8
@@ -981,7 +909,7 @@ label26: ldy.b $0e                  ; $00d861 m8x8
          plb                        ; $00d875 m8x8
          rtl                        ; $00d876 m8x8
          .org $00e1db
-entry27: .entry m8x8
+entry26: .entry m8x8
          phb                        ; $00e1db m8x8
          phk                        ; $00e1dc m8x8
          plb                        ; $00e1dd m8x8
@@ -990,7 +918,7 @@ entry27: .entry m8x8
          stz.b $2116                ; $00e1e3 m8x8
          lda.b #$44                 ; $00e1e6 m8x8
          sta.b $2117                ; $00e1e8 m8x8
-         jsr entry38                ; $00e1eb m8x8
+         jsr entry37                ; $00e1eb m8x8
          rep #$30                   ; $00e1ee m16x16
          lda.w $0aa3                ; $00e1f0 m16x16
          and.w #$00ff               ; $00e1f3 m16x16
@@ -1023,16 +951,16 @@ label30: lda.b $7ec2ff              ; $00e231 m8x16
          lda.b #$7e                 ; $00e23b m8x8
          sta.b $02                  ; $00e23d m8x8
          ldx.b #$78                 ; $00e23f m8x8
-         jsr entry33                ; $00e241 m8x8
+         jsr entry32                ; $00e241 m8x8
          ldy.b $08                  ; $00e244 m8x8
          ldx.b #$7e                 ; $00e246 m8x8
-         jsr entry33                ; $00e248 m8x8
+         jsr entry32                ; $00e248 m8x8
          ldy.b $07                  ; $00e24b m8x8
          ldx.b #$84                 ; $00e24d m8x8
-         jsr entry33                ; $00e24f m8x8
+         jsr entry32                ; $00e24f m8x8
          ldy.b $06                  ; $00e252 m8x8
          ldx.b #$8a                 ; $00e254 m8x8
-         jsr entry33                ; $00e256 m8x8
+         jsr entry32                ; $00e256 m8x8
          rep #$30                   ; $00e259 m16x16
          lda.w #$2000               ; $00e25b m16x16
          sta.w $2116                ; $00e25e m16x16
@@ -1080,39 +1008,39 @@ label34: sta.b $7ec2fb              ; $00e2b7 m8x16
          lda.b #$07                 ; $00e2c4 m8x8
          sta.b $0f                  ; $00e2c6 m8x8
          ldy.b $0d                  ; $00e2c8 m8x8
-         jsr entry35                ; $00e2ca m8x8
+         jsr entry34                ; $00e2ca m8x8
          dec.b $0f                  ; $00e2cd m8x8
          ldy.b $0c                  ; $00e2cf m8x8
-         jsr entry35                ; $00e2d1 m8x8
+         jsr entry34                ; $00e2d1 m8x8
          dec.b $0f                  ; $00e2d4 m8x8
          ldy.b $0b                  ; $00e2d6 m8x8
-         jsr entry35                ; $00e2d8 m8x8
+         jsr entry34                ; $00e2d8 m8x8
          dec.b $0f                  ; $00e2db m8x8
          ldy.b $0a                  ; $00e2dd m8x8
          lda.b #$7e                 ; $00e2df m8x8
          ldx.b #$60                 ; $00e2e1 m8x8
-         jsr entry36                ; $00e2e3 m8x8
+         jsr entry35                ; $00e2e3 m8x8
          dec.b $0f                  ; $00e2e6 m8x8
          ldy.b $09                  ; $00e2e8 m8x8
          lda.b #$7e                 ; $00e2ea m8x8
          ldx.b #$66                 ; $00e2ec m8x8
-         jsr entry36                ; $00e2ee m8x8
+         jsr entry35                ; $00e2ee m8x8
          dec.b $0f                  ; $00e2f1 m8x8
          ldy.b $08                  ; $00e2f3 m8x8
          lda.b #$7e                 ; $00e2f5 m8x8
          ldx.b #$6c                 ; $00e2f7 m8x8
-         jsr entry36                ; $00e2f9 m8x8
+         jsr entry35                ; $00e2f9 m8x8
          dec.b $0f                  ; $00e2fc m8x8
          ldy.b $07                  ; $00e2fe m8x8
          lda.b #$7e                 ; $00e300 m8x8
          ldx.b #$72                 ; $00e302 m8x8
-         jsr entry36                ; $00e304 m8x8
+         jsr entry35                ; $00e304 m8x8
          dec.b $0f                  ; $00e307 m8x8
          ldy.b $06                  ; $00e309 m8x8
-         jsr entry35                ; $00e30b m8x8
+         jsr entry34                ; $00e30b m8x8
          plb                        ; $00e30e m8x8
          rtl                        ; $00e30f m8x8
-entry28: .entry m8x8
+entry27: .entry m8x8
          phb                        ; $00e310 m8x8
          phk                        ; $00e311 m8x8
          plb                        ; $00e312 m8x8
@@ -1158,15 +1086,15 @@ label37: lda.w [$00]                ; $00e34a m16x8
          sta.w $2116                ; $00e365 m16x8
          sep #$20                   ; $00e368 m8x8
          ldy.b #$6a                 ; $00e36a m8x8
-         jsr entry29                ; $00e36c m8x8
+         jsr entry28                ; $00e36c m8x8
          ldy.b #$6b                 ; $00e36f m8x8
-         jsr entry29                ; $00e371 m8x8
+         jsr entry28                ; $00e371 m8x8
          ldy.b #$69                 ; $00e374 m8x8
-         jsr entry29                ; $00e376 m8x8
+         jsr entry28                ; $00e376 m8x8
          plb                        ; $00e379 m8x8
          rtl                        ; $00e37a m8x8
-entry29: .entry m8x8
-         jsr entry40                ; $00e37b m8x8
+entry28: .entry m8x8
+         jsr entry39                ; $00e37b m8x8
          rep #$30                   ; $00e37e m16x16
          ldx.w #$00ff               ; $00e380 m16x16
 label38: lda.w [$00]                ; $00e383 m16x16
@@ -1190,7 +1118,7 @@ label38: lda.w [$00]                ; $00e383 m16x16
          sep #$30                   ; $00e3aa m8x8
          rts                        ; $00e3ac m8x8
          .org $00e3c4
-entry30: .entry m8x8
+entry29: .entry m8x8
          phb                        ; $00e3c4 m8x8
          phk                        ; $00e3c5 m8x8
          plb                        ; $00e3c6 m8x8
@@ -1199,13 +1127,13 @@ entry30: .entry m8x8
          stz.b $2116                ; $00e3cc m8x8
          lda.b #$44                 ; $00e3cf m8x8
          sta.b $2117                ; $00e3d1 m8x8
-         jsr entry38                ; $00e3d4 m8x8
+         jsr entry37                ; $00e3d4 m8x8
          plb                        ; $00e3d7 m8x8
          rtl                        ; $00e3d8 m8x8
          .org $00e411
 label39: rtl                        ; $00e411 m8x8
          .org $00e43a
-entry31: .entry m8x8
+entry30: .entry m8x8
          ldx.b $0aaa                ; $00e43a m8x8
          beq label39                ; $00e43d m8x8
          phb                        ; $00e43f m8x8
@@ -1220,12 +1148,12 @@ entry31: .entry m8x8
          sta.b $0ab1                ; $00e450 m8x8
          lda.b #$02                 ; $00e453 m8x8
          sta.b $0aa9                ; $00e455 m8x8
-         jsl @entry480              ; $00e458 m8x8
+         jsl @entry479              ; $00e458 m8x8
          inc.b $15                  ; $00e45c m8x8
          bra label41                ; $00e45e m8x8
 label40: lda.b #$02                 ; $00e460 m8x8
          sta.b $0aa9                ; $00e462 m8x8
-         jsl @entry481              ; $00e465 m8x8
+         jsl @entry480              ; $00e465 m8x8
          inc.b $15                  ; $00e469 m8x8
 label41: ldx.b $0aaa                ; $00e46b m8x8
          ldy.b #$44                 ; $00e46e m8x8
@@ -1314,7 +1242,7 @@ label48: inx.w                      ; $00e514 m16x16
          sep #$30                   ; $00e525 m8x8
          plb                        ; $00e527 m8x8
          rtl                        ; $00e528 m8x8
-entry32: .entry m8x8
+entry31: .entry m8x8
          lda.b #$02                 ; $00e529 m8x8
          sta.b $2101                ; $00e52b m8x8
          lda.b #$80                 ; $00e52e m8x8
@@ -1326,15 +1254,15 @@ entry32: .entry m8x8
          phk                        ; $00e53c m8x8
          plb                        ; $00e53d m8x8
          ldy.b #$5e                 ; $00e53e m8x8
-         jsr entry40                ; $00e540 m8x8
+         jsr entry39                ; $00e540 m8x8
          rep #$20                   ; $00e543 m16x8
          ldy.b #$3f                 ; $00e545 m16x8
-         jsr entry34 yields m8x8    ; $00e547 m8x8
+         jsr entry33 yields m8x8    ; $00e547 m8x8
          ldy.b #$5f                 ; $00e54a m8x8
-         jsr entry40                ; $00e54c m8x8
+         jsr entry39                ; $00e54c m8x8
          rep #$20                   ; $00e54f m16x8
          ldy.b #$3f                 ; $00e551 m16x8
-         jsr entry34 yields m8x8    ; $00e553 m8x8
+         jsr entry33 yields m8x8    ; $00e553 m8x8
          plb                        ; $00e556 m8x8
          lda.b #$7e                 ; $00e557 m8x8
          sta.b $02                  ; $00e559 m8x8
@@ -1355,7 +1283,7 @@ label49: lda.w [$00]                ; $00e56b m16x16
          phk                        ; $00e57a m8x8
          plb                        ; $00e57b m8x8
          ldy.b #$6b                 ; $00e57c m8x8
-         jsr entry40                ; $00e57e m8x8
+         jsr entry39                ; $00e57e m8x8
          rep #$30                   ; $00e581 m16x16
          ldx.w #$02ff               ; $00e583 m16x16
 label50: lda.w [$00]                ; $00e586 m16x16
@@ -1368,30 +1296,30 @@ label50: lda.w [$00]                ; $00e586 m16x16
          plb                        ; $00e594 m8x8
          rtl                        ; $00e595 m8x8
          .org $00e5c3
-entry33: .entry m8x8
+entry32: .entry m8x8
          stz.b $00                  ; $00e5c3 m8x8
          stx.b $01                  ; $00e5c5 m8x8
          phy.b                      ; $00e5c7 m8x8
-         jsr entry41                ; $00e5c8 m8x8
+         jsr entry40                ; $00e5c8 m8x8
          rep #$20                   ; $00e5cb m16x8
          ldy.b #$3f                 ; $00e5cd m16x8
          plx.b                      ; $00e5cf m16x8
          cpx.b #$52                 ; $00e5d0 m16x8
-         beq entry34                ; $00e5d2 m16x8
+         beq entry33                ; $00e5d2 m16x8
          cpx.b #$53                 ; $00e5d4 m16x8
-         beq entry34                ; $00e5d6 m16x8
+         beq entry33                ; $00e5d6 m16x8
          cpx.b #$5a                 ; $00e5d8 m16x8
-         beq entry34                ; $00e5da m16x8
+         beq entry33                ; $00e5da m16x8
          cpx.b #$5b                 ; $00e5dc m16x8
-         beq entry34                ; $00e5de m16x8
+         beq entry33                ; $00e5de m16x8
          cpx.b #$5c                 ; $00e5e0 m16x8
-         beq entry34                ; $00e5e2 m16x8
+         beq entry33                ; $00e5e2 m16x8
          cpx.b #$5e                 ; $00e5e4 m16x8
-         beq entry34                ; $00e5e6 m16x8
+         beq entry33                ; $00e5e6 m16x8
          cpx.b #$5f                 ; $00e5e8 m16x8
-         beq entry34                ; $00e5ea m16x8
-         jmp entry37                ; $00e5ec m16x8
-entry34: .entry m16x8
+         beq entry33                ; $00e5ea m16x8
+         jmp entry36                ; $00e5ec m16x8
+entry33: .entry m16x8
          ldx.b #$0e                 ; $00e5ef m16x8
 label51: lda.w [$00]                ; $00e5f1 m16x8
          sta.w $2118                ; $00e5f3 m16x8
@@ -1437,17 +1365,17 @@ label52: lda.w [$00]                ; $00e61b m16x8
          dex.b                      ; $00e640 m16x8
          bpl label52                ; $00e641 m16x8
          dey.b                      ; $00e643 m16x8
-         bpl entry34                ; $00e644 m16x8
+         bpl entry33                ; $00e644 m16x8
          sep #$20                   ; $00e646 m8x8
          rts                        ; $00e648 m8x8
-entry35: .entry m8x8
+entry34: .entry m8x8
          lda.b #$7f                 ; $00e649 m8x8
          ldx.b #$40                 ; $00e64b m8x8
-entry36: .entry m8x8
+entry35: .entry m8x8
          stz.b $00                  ; $00e64d m8x8
          stx.b $01                  ; $00e64f m8x8
          sta.b $02                  ; $00e651 m8x8
-         jsr entry43                ; $00e653 m8x8
+         jsr entry42                ; $00e653 m8x8
          rep #$20                   ; $00e656 m16x8
          ldy.b #$3f                 ; $00e658 m16x8
          ldx.b $0aa1                ; $00e65a m16x8
@@ -1455,18 +1383,18 @@ entry36: .entry m8x8
          bcc label54                ; $00e65f m16x8, c=1
          ldx.b $0f                  ; $00e661 m16x8, c=1
          cpx.b #$07                 ; $00e663 m16x8
-         beq entry34                ; $00e665 m16x8
+         beq entry33                ; $00e665 m16x8
          cpx.b #$02                 ; $00e667 m16x8
-         beq entry34                ; $00e669 m16x8
+         beq entry33                ; $00e669 m16x8
          cpx.b #$04                 ; $00e66b m16x8
-         beq entry34                ; $00e66d m16x8
+         beq entry33                ; $00e66d m16x8
          cpx.b #$03                 ; $00e66f m16x8
-         bne entry37                ; $00e671 m16x8
-label53: jmp entry34                ; $00e673 m16x8
+         bne entry36                ; $00e671 m16x8
+label53: jmp entry33                ; $00e673 m16x8
 label54: ldx.b $0f                  ; $00e676 m16x8, c=0
          cpx.b #$04                 ; $00e678 m16x8
          bcs label53                ; $00e67a m16x8, c=0
-entry37: .entry m16x8
+entry36: .entry m16x8
          lda.w [$00]                ; $00e67c m16x8
          sta.w $2118                ; $00e67e m16x8
          inc.w $00                  ; $00e681 m16x8
@@ -1519,10 +1447,10 @@ label55: lda.w [$00]                ; $00e6c6 m16x8
          dex.b                      ; $00e6ee m16x8
          bpl label55                ; $00e6ef m16x8
          dey.b                      ; $00e6f1 m16x8
-         bpl entry37                ; $00e6f2 m16x8
+         bpl entry36                ; $00e6f2 m16x8
          sep #$20                   ; $00e6f4 m8x8
          rts                        ; $00e6f6 m8x8
-entry38: .entry m8x8
+entry37: .entry m8x8
          ldy.b $0aa4                ; $00e6f7 m8x8
          lda.b $d033, Y             ; $00e6fa m8x8
          sta.b $02                  ; $00e6fd m8x8
@@ -1591,32 +1519,32 @@ label58: lda.w [$00]                ; $00e739 m16x8
          sta.b $00                  ; $00e77b m8x8
          rep #$20                   ; $00e77d m16x8
          ldy.b #$7f                 ; $00e77f m16x8
-         jmp entry37                ; $00e781 m16x8
+         jmp entry36                ; $00e781 m16x8
 label59: stz.b $0f                  ; $00e784 m8x8
          ldy.b #$5e                 ; $00e786 m8x8
          sty.b $06                  ; $00e788 m8x8
          lda.b #$7f                 ; $00e78a m8x8
          sta.b $02                  ; $00e78c m8x8
          ldx.b #$40                 ; $00e78e m8x8
-         jsr entry33                ; $00e790 m8x8
+         jsr entry32                ; $00e790 m8x8
          ldy.b #$5f                 ; $00e793 m8x8
          sty.b $06                  ; $00e795 m8x8
          ldx.b #$40                 ; $00e797 m8x8
-         jmp entry33                ; $00e799 m8x8
-entry39: .entry m8x8
+         jmp entry32                ; $00e799 m8x8
+entry38: .entry m8x8
          stz.b $00                  ; $00e79c m8x8
          lda.b #$46                 ; $00e79e m8x8
          sta.b $01                  ; $00e7a0 m8x8
          lda.b #$7f                 ; $00e7a2 m8x8
          bra label60                ; $00e7a4 m8x8
-entry40: .entry m8x8
+entry39: .entry m8x8
          stz.b $00                  ; $00e7a6 m8x8
          lda.b #$40                 ; $00e7a8 m8x8
          sta.b $01                  ; $00e7aa m8x8
          lda.b #$7f                 ; $00e7ac m8x8
 label60: sta.b $02                  ; $00e7ae m8x8
          sta.b $05                  ; $00e7b0 m8x8
-entry41: .entry m8x8
+entry40: .entry m8x8
          lda.b $d033, Y             ; $00e7b2 m8x8
          sta.b $ca                  ; $00e7b5 m8x8
          lda.b $d112, Y             ; $00e7b7 m8x8
@@ -1624,14 +1552,14 @@ entry41: .entry m8x8
          lda.b $d1f1, Y             ; $00e7bc m8x8
          sta.b $c8                  ; $00e7bf m8x8
          bra label61                ; $00e7c1 m8x8
-entry42: .entry m8x8
+entry41: .entry m8x8
          stz.b $00                  ; $00e7c3 m8x8
          lda.b #$40                 ; $00e7c5 m8x8
          sta.b $01                  ; $00e7c7 m8x8
          lda.b #$7f                 ; $00e7c9 m8x8
          sta.b $02                  ; $00e7cb m8x8
          sta.b $05                  ; $00e7cd m8x8
-entry43: .entry m8x8
+entry42: .entry m8x8
          lda.b $cfc0, Y             ; $00e7cf m8x8
          sta.b $ca                  ; $00e7d2 m8x8
          lda.b $d09f, Y             ; $00e7d4 m8x8
@@ -1640,8 +1568,8 @@ entry43: .entry m8x8
          sta.b $c8                  ; $00e7dc m8x8
 label61: rep #$10                   ; $00e7de m8x16
          ldy.w #$0000               ; $00e7e0 m8x16
-entry44: .entry m8x16
-         jsr entry45                ; $00e7e3 m8x16
+entry43: .entry m8x16
+         jsr entry44                ; $00e7e3 m8x16
          cmp.b #$ff                 ; $00e7e6 m8x16
          bne label62                ; $00e7e8 m8x16
          sep #$10                   ; $00e7ea m8x8
@@ -1664,7 +1592,7 @@ label63: lda.b $cd                  ; $00e7ff m8x16
          lda.b $cd                  ; $00e807 m8x16
          and.b #$03                 ; $00e809 m8x16
          xba                        ; $00e80b m8x16
-         jsr entry45                ; $00e80c m8x16
+         jsr entry44                ; $00e80c m8x16
          rep #$20                   ; $00e80f m16x16
 label64: inc.w                      ; $00e811 m16x16
          sta.w $cb                  ; $00e812 m16x16
@@ -1676,32 +1604,32 @@ label64: inc.w                      ; $00e811 m16x16
          bpl label67                ; $00e81c m8x16
          asl.b                      ; $00e81e m8x16
          bpl label69                ; $00e81f m8x16
-         jsr entry45                ; $00e821 m8x16
+         jsr entry44                ; $00e821 m8x16
          ldx.w $cb                  ; $00e824 m8x16
 label65: sta.b [$00], Y             ; $00e826 m8x16
          inc.b                      ; $00e828 m8x16
          iny.w                      ; $00e829 m8x16
          dex.w                      ; $00e82a m8x16
          bne label65                ; $00e82b m8x16
-         bra entry44                ; $00e82d m8x16
-label66: jsr entry45                ; $00e82f m8x16
+         bra entry43                ; $00e82d m8x16
+label66: jsr entry44                ; $00e82f m8x16
          sta.b [$00], Y             ; $00e832 m8x16
          iny.w                      ; $00e834 m8x16
          ldx.w $cb                  ; $00e835 m8x16
          dex.w                      ; $00e837 m8x16
          stx.w $cb                  ; $00e838 m8x16
          bne label66                ; $00e83a m8x16
-         bra entry44                ; $00e83c m8x16
-label67: jsr entry45                ; $00e83e m8x16
+         bra entry43                ; $00e83c m8x16
+label67: jsr entry44                ; $00e83e m8x16
          ldx.w $cb                  ; $00e841 m8x16
 label68: sta.b [$00], Y             ; $00e843 m8x16
          iny.w                      ; $00e845 m8x16
          dex.w                      ; $00e846 m8x16
          bne label68                ; $00e847 m8x16
-         bra entry44                ; $00e849 m8x16
-label69: jsr entry45                ; $00e84b m8x16
+         bra entry43                ; $00e849 m8x16
+label69: jsr entry44                ; $00e84b m8x16
          xba                        ; $00e84e m8x16
-         jsr entry45                ; $00e84f m8x16
+         jsr entry44                ; $00e84f m8x16
          ldx.w $cb                  ; $00e852 m8x16
 label70: xba                        ; $00e854 m8x16
          sta.b [$00], Y             ; $00e855 m8x16
@@ -1713,10 +1641,10 @@ label70: xba                        ; $00e854 m8x16
          iny.w                      ; $00e85e m8x16
          dex.w                      ; $00e85f m8x16
          bne label70                ; $00e860 m8x16
-label71: jmp entry44                ; $00e862 m8x16
-label72: jsr entry45                ; $00e865 m8x16
+label71: jmp entry43                ; $00e862 m8x16
+label72: jsr entry44                ; $00e865 m8x16
          xba                        ; $00e868 m8x16
-         jsr entry45                ; $00e869 m8x16
+         jsr entry44                ; $00e869 m8x16
          xba                        ; $00e86c m8x16
          tax.w                      ; $00e86d m8x16
 label73: phy.w                      ; $00e86e m8x16
@@ -1731,8 +1659,8 @@ label73: phy.w                      ; $00e86e m8x16
          dec.w $cb                  ; $00e87a m16x16
          sep #$20                   ; $00e87c m8x16
          bne label73                ; $00e87e m8x16
-         jmp entry44                ; $00e880 m8x16
-entry45: .entry m8x16
+         jmp entry43                ; $00e880 m8x16
+entry44: .entry m8x16
          lda.b [$c8]                ; $00e883 m8x16
          ldx.w $c8                  ; $00e885 m8x16
          inx.w                      ; $00e887 m8x16
@@ -1742,7 +1670,7 @@ entry45: .entry m8x16
 label74: stx.w $c8                  ; $00e88f m8x16
          rts                        ; $00e891 m8x16
          .org $00e944
-entry46: .entry m8x8
+entry45: .entry m8x8
          rep #$30                   ; $00e944 m16x16
          ldx.w #$e8bc               ; $00e946 m16x16
          lda.w $7ec007              ; $00e949 m16x16
@@ -1768,7 +1696,7 @@ label75: stx.w $b7                  ; $00e954 m16x16
          lda.w $e8b8, X             ; $00e972 m16x16
          sta.w $0a                  ; $00e975 m16x16
          ldx.w #$0040               ; $00e977 m16x16
-         jsr entry47                ; $00e97a m16x16
+         jsr entry46                ; $00e97a m16x16
          lda.w $7ec500              ; $00e97d m16x16
          sta.w $04                  ; $00e981 m16x16
          lda.w $7ec300              ; $00e983 m16x16
@@ -1832,7 +1760,7 @@ label81: lda.w $7ec007              ; $00e9fc m16x16
          sep #$30                   ; $00ea0f m8x8
          inc.b $15                  ; $00ea11 m8x8
          rtl                        ; $00ea13 m8x8
-entry47: .entry m16x16
+entry46: .entry m16x16
          lda.w $7ec500, X           ; $00ea14 m16x16
          sta.w $04                  ; $00ea18 m16x16
          lda.w $7ec300, X           ; $00ea1a m16x16
@@ -1873,16 +1801,16 @@ label84: lda.w $04                  ; $00ea5e m16x16
 label85: inx.w                      ; $00ea64 m16x16
          inx.w                      ; $00ea65 m16x16
          cpx.w #$01b0               ; $00ea66 m16x16
-         bcc entry47                ; $00ea69 m16x16, c=1
+         bcc entry46                ; $00ea69 m16x16, c=1
          bne label86                ; $00ea6b m16x16, c=1
          txa.w                      ; $00ea6d m16x16, c=1
          add.w #$0010               ; $00ea6e m16x16
          tax.w                      ; $00ea72 m16x16
 label86: cpx.w #$01e0               ; $00ea73 m16x16
-         bne entry47                ; $00ea76 m16x16
+         bne entry46                ; $00ea76 m16x16
          rts                        ; $00ea78 m16x16
          .org $00eb59
-entry48: .entry m8x8
+entry47: .entry m8x8
          rep #$20                   ; $00eb59 m16x8
          lda.w #$0000               ; $00eb5b m16x8
          sta.w $7ec520              ; $00eb5e m16x8
@@ -1901,7 +1829,7 @@ entry48: .entry m8x8
          rtl                        ; $00eb8d m8x8
          .org $00f567
 label87: rtl                        ; $00f567 m8x8
-entry49: .entry m8x8
+entry48: .entry m8x8
          lda.b $0458                ; $00f568 m8x8
          beq label87                ; $00f56b m8x8
          lda.b $11                  ; $00f56d m8x8
@@ -1988,7 +1916,7 @@ label96: sub.w $00f557, X           ; $00f640 m16x16
          sep #$30                   ; $00f647 m8x8
          rtl                        ; $00f649 m8x8
          .org $00f800
-entry50: .entry m8x8
+entry49: .entry m8x8
          lda.b $1b                  ; $00f800 m8x8
          beq label98                ; $00f802 m8x8
          lda.b $11                  ; $00f804 m8x8
@@ -1999,7 +1927,7 @@ entry50: .entry m8x8
          cmp.b #$07                 ; $00f80f m8x8
          beq label100               ; $00f811 m8x8
          bra label102               ; $00f813 m8x8
-label97: jsl @entry93               ; $00f815 m8x8
+label97: jsl @entry92               ; $00f815 m8x8
          bra label100               ; $00f819 m8x8
 label98: lda.b $11                  ; $00f81b m8x8
          cmp.b #$07                 ; $00f81d m8x8
@@ -2008,18 +1936,18 @@ label98: lda.b $11                  ; $00f81b m8x8
          bne label100               ; $00f823 m8x8
 label99: lda.b $0200                ; $00f825 m8x8
          bne label102               ; $00f828 m8x8
-label100: jsl @entry202             ; $00f82a m8x8
-         jsl @entry416              ; $00f82e m8x8
+label100: jsl @entry201             ; $00f82a m8x8
+         jsl @entry415              ; $00f82e m8x8
          lda.b $1b                  ; $00f832 m8x8
          bne label101               ; $00f834 m8x8
-         jsl @entry146              ; $00f836 m8x8
-label101: jsl @entry440             ; $00f83a m8x8
+         jsl @entry145              ; $00f836 m8x8
+label101: jsl @entry439             ; $00f83a m8x8
          lda.b $11                  ; $00f83e m8x8
          cmp.b #$02                 ; $00f840 m8x8
          beq label102               ; $00f842 m8x8
-         jsl @entry49               ; $00f844 m8x8
+         jsl @entry48               ; $00f844 m8x8
 label102: sep #$30                  ; $00f848 m8x8
-         jsl @entry51               ; $00f84a m8x8
+         jsl @entry50               ; $00f84a m8x8
          rep #$21                   ; $00f84e m16x8, c=0
          lda.w $e2                  ; $00f850 m16x8, c=0
          adc.w $011a                ; $00f852 m16x8
@@ -2036,7 +1964,7 @@ label102: sep #$30                  ; $00f848 m8x8
          sep #$20                   ; $00f873 m8x8
          rtl                        ; $00f875 m8x8
          .org $00f89a
-entry51: .entry m8x8
+entry50: .entry m8x8
          ldx.b $11                  ; $00f89a m8x8
          lda.b $00f876, X           ; $00f89c m8x8
          sta.b $00                  ; $00f8a0 m8x8
@@ -2046,13 +1974,13 @@ entry51: .entry m8x8
          sta.b $02                  ; $00f8ac m8x8
          jmp [$0000]                ; $00f8ae m8x8
          .org $00f945
-entry52: .entry m8x8
-         jsl @entry53               ; $00f945 m8x8
-         jsl @entry141              ; $00f949 m8x8
+entry51: .entry m8x8
+         jsl @entry52               ; $00f945 m8x8
+         jsl @entry140              ; $00f949 m8x8
          lda.b $0403                ; $00f94d m8x8
          ora.b #$80                 ; $00f950 m8x8
          sta.b $0403                ; $00f952 m8x8
-         jsl @entry161              ; $00f955 m8x8
+         jsl @entry160              ; $00f955 m8x8
          ldx.b #$0c                 ; $00f959 m8x8
          lda.b $a0                  ; $00f95b m8x8
 label103: dex.b                     ; $00f95d m8x8
@@ -2070,8 +1998,8 @@ label103: dex.b                     ; $00f95d m8x8
          lda.b $7ef3ca              ; $00f97e m8x8
          eor.b #$40                 ; $00f982 m8x8
          sta.b $7ef3ca              ; $00f984 m8x8
-         jsl @entry55               ; $00f988 m8x8
-         jsl @entry319              ; $00f98c m8x8
+         jsl @entry54               ; $00f988 m8x8
+         jsl @entry318              ; $00f98c m8x8
          stz.b $037b                ; $00f990 m8x8
          stz.b $3c                  ; $00f993 m8x8
          stz.b $3a                  ; $00f995 m8x8
@@ -2108,7 +2036,7 @@ label107: sta.b $10                 ; $00f9d1 m8x8
          stz.b $11                  ; $00f9d8 m8x8
          stz.b $b0                  ; $00f9da m8x8
          rtl                        ; $00f9dc m8x8
-entry53: .entry m8x8
+entry52: .entry m8x8
          phx.b                      ; $00f9dd m8x8
          rep #$20                   ; $00f9de m16x8
          ldx.b $040c                ; $00f9e0 m16x8
@@ -2122,7 +2050,7 @@ label108: sep #$20                  ; $00f9f6 m8x8
          plx.b                      ; $00f9f8 m8x8
          rtl                        ; $00f9f9 m8x8
          .org $00fc41
-entry54: .entry m8x8
+entry53: .entry m8x8
          phb                        ; $00fc41 m8x8
          phk                        ; $00fc42 m8x8
          plb                        ; $00fc43 m8x8
@@ -2139,7 +2067,7 @@ label109: lda.w $fa41, Y            ; $00fc4c m16x16
          dex.w                      ; $00fc5d m16x16
          bpl label109               ; $00fc5e m16x16
          bra label110               ; $00fc60 m16x16
-entry55: .entry m8x8
+entry54: .entry m8x8
          phb                        ; $00fc62 m8x8
          phk                        ; $00fc63 m8x8
          plb                        ; $00fc64 m8x8
@@ -2167,8 +2095,8 @@ label112: lda.w $fa41, Y            ; $00fc84 m16x16
          plb                        ; $00fc9a m8x8
          rtl                        ; $00fc9b m8x8
          .org $01873a
-entry56: .entry m8x8
-         jsr entry66                ; $01873a m8x8
+entry55: .entry m8x8
+         jsr entry65                ; $01873a m8x8
          stz.b $03f4                ; $01873d m8x8
          rep #$30                   ; $018740 m16x16
          ldx.w $0110                ; $018742 m16x16
@@ -2242,7 +2170,7 @@ label113: stz.w $19a0, X            ; $0187f4 m16x16
          dex.w                      ; $01880a m16x16
          bpl label113               ; $01880b m16x16
          stz.w $ba                  ; $01880d m16x16
-         jsr entry60                ; $01880f m16x16
+         jsr entry59                ; $01880f m16x16
          ldy.w $ba                  ; $018812 m16x16
          phy.w                      ; $018814 m16x16
          lda.w [$b7], Y             ; $018815 m16x16
@@ -2259,7 +2187,7 @@ label113: stz.w $19a0, X            ; $0187f4 m16x16
          lda.w $04ec0f, X           ; $01882c m16x16
          sta.w $b7                  ; $018830 m16x16
          stz.w $ba                  ; $018832 m16x16
-         jsr entry57                ; $018834 m16x16
+         jsr entry56                ; $018834 m16x16
          ply.w                      ; $018837 m16x16
          iny.w                      ; $018838 m16x16
          sty.w $ba                  ; $018839 m16x16
@@ -2268,7 +2196,7 @@ label113: stz.w $19a0, X            ; $0187f4 m16x16
          sta.w $b8                  ; $018842 m16x16
          lda.w $1f8000, X           ; $018844 m16x16
          sta.w $b7                  ; $018848 m16x16
-         jsr entry57                ; $01884a m16x16
+         jsr entry56                ; $01884a m16x16
          inc.w $ba                  ; $01884d m16x16
          inc.w $ba                  ; $01884f m16x16
          ldx.w #$001e               ; $018851 m16x16
@@ -2278,7 +2206,7 @@ label114: lda.w $01871a, X          ; $018854 m16x16
          dex.w                      ; $01885b m16x16
          dex.w                      ; $01885c m16x16
          bpl label114               ; $01885d m16x16
-         jsr entry57                ; $01885f m16x16
+         jsr entry56                ; $01885f m16x16
          inc.w $ba                  ; $018862 m16x16
          inc.w $ba                  ; $018864 m16x16
          ldx.w #$001e               ; $018866 m16x16
@@ -2288,7 +2216,7 @@ label115: lda.w $0186f9, X          ; $018869 m16x16
          dex.w                      ; $018870 m16x16
          dex.w                      ; $018871 m16x16
          bpl label115               ; $018872 m16x16
-         jsr entry57                ; $018874 m16x16
+         jsr entry56                ; $018874 m16x16
          stz.w $ba                  ; $018877 m16x16
 label116: ldx.w $ba                 ; $018879 m16x16
          lda.w $7ef940, X           ; $01887b m16x16
@@ -2297,7 +2225,7 @@ label116: ldx.w $ba                 ; $018879 m16x16
          lda.w $7ef942, X           ; $018883 m16x16
          sta.w $08                  ; $018887 m16x16
          tay.w                      ; $018889 m16x16
-         jsr entry64                ; $01888a m16x16
+         jsr entry63                ; $01888a m16x16
 label117: lda.w $ba                 ; $01888d m16x16
          add.w #$0004               ; $01888f m16x16
          sta.w $ba                  ; $018893 m16x16
@@ -2330,14 +2258,14 @@ label121: lda.w $7efb40, X          ; $0188c9 m16x16
          inx.w                      ; $0188cf m16x16
          inx.w                      ; $0188d0 m16x16
          stx.w $ba                  ; $0188d1 m16x16
-         jsr entry65                ; $0188d3 m16x16
+         jsr entry64                ; $0188d3 m16x16
          ldx.w $ba                  ; $0188d6 m16x16
          lda.w $7efb40, X           ; $0188d8 m16x16
          cmp.w #$ffff               ; $0188dc m16x16
          bne label121               ; $0188df m16x16
 label122: sep #$30                  ; $0188e1 m8x8
          rtl                        ; $0188e3 m8x8
-entry57: .entry m16x16
+entry56: .entry m16x16
          stz.w $b2                  ; $0188e4 m16x16
          stz.w $b4                  ; $0188e6 m16x16
          ldy.w $ba                  ; $0188e8 m16x16
@@ -2347,8 +2275,8 @@ entry57: .entry m16x16
          sta.w $00                  ; $0188f1 m16x16
          cmp.w #$fff0               ; $0188f3 m16x16
          beq label124               ; $0188f6 m16x16
-         jsr entry59                ; $0188f8 m16x16
-         bra entry57                ; $0188fb m16x16
+         jsr entry58                ; $0188f8 m16x16
+         bra entry56                ; $0188fb m16x16
 label123: rts                       ; $0188fd m16x16
 label124: inc.w $ba                 ; $0188fe m16x16
          inc.w $ba                  ; $018900 m16x16
@@ -2357,11 +2285,11 @@ label125: ldy.w $ba                 ; $018902 m16x16
          cmp.w #$ffff               ; $018906 m16x16
          beq label123               ; $018909 m16x16
          sta.w $00                  ; $01890b m16x16
-         jsr entry58                ; $01890d m16x16
+         jsr entry57                ; $01890d m16x16
          inc.w $ba                  ; $018910 m16x16
          inc.w $ba                  ; $018912 m16x16
          bra label125               ; $018914 m16x16
-entry58: .entry m16x16
+entry57: .entry m16x16
          and.w #$00f0               ; $018916 m16x16
          lsr.w                      ; $018919 m16x16
          lsr.w                      ; $01891a m16x16
@@ -2381,7 +2309,7 @@ entry58: .entry m16x16
          ldx.w $02                  ; $018935 m16x16
          lda.w $04                  ; $018937 m16x16
          jmp ($000e)                ; $018939 m16x16
-entry59: .entry m16x16
+entry58: .entry m16x16
          sep #$20                   ; $01893c m8x16
          and.b #$fc                 ; $01893e m8x16
          cmp.b #$fc                 ; $018940 m8x16
@@ -2467,7 +2395,7 @@ label127: and.w #$000e              ; $0189b8 m16x16, c=1
          tax.w                      ; $0189d6 m16x16
          ldy.w $08                  ; $0189d7 m16x16
          jmp ($000e)                ; $0189d9 m16x16
-entry60: .entry m16x16
+entry59: .entry m16x16
          ldx.w #$001e               ; $0189dc m16x16
 label128: lda.w $018719, X          ; $0189df m16x16
          sta.w $bf, X               ; $0189e3 m16x16
@@ -2485,7 +2413,7 @@ label128: lda.w $018719, X          ; $0189df m16x16
          and.w #$00f0               ; $0189f9 m16x16
          sta.w $0490                ; $0189fc m16x16
          tax.w                      ; $0189ff m16x16
-         jsr entry61                ; $018a00 m16x16
+         jsr entry60                ; $018a00 m16x16
          ldx.w #$001e               ; $018a03 m16x16
 label129: lda.w $0186f9, X          ; $018a06 m16x16
          sta.w $c0, X               ; $018a0a m16x16
@@ -2502,14 +2430,14 @@ label129: lda.w $0186f9, X          ; $018a06 m16x16
          asl.w                      ; $018a1a m16x16
          sta.w $046a                ; $018a1b m16x16
          tax.w                      ; $018a1e m16x16
-entry61: .entry m16x16
+entry60: .entry m16x16
          ldy.w $0c                  ; $018a1f m16x16
          lda.w $9b02, Y             ; $018a21 m16x16
          tay.w                      ; $018a24 m16x16
          lda.w #$0008               ; $018a25 m16x16
          sta.w $0e                  ; $018a28 m16x16
 label130: lda.w #$0008              ; $018a2a m16x16
-         jsr entry62                ; $018a2d m16x16
+         jsr entry61                ; $018a2d m16x16
          adc.w #$01c0               ; $018a30 m16x16
          tay.w                      ; $018a33 m16x16
          dec.w $0e                  ; $018a34 m16x16
@@ -2518,9 +2446,9 @@ label130: lda.w #$0008              ; $018a2a m16x16
          inc.w $0c                  ; $018a3a m16x16
          lda.w $0c                  ; $018a3c m16x16
          cmp.w #$0008               ; $018a3e m16x16
-         bne entry61                ; $018a41 m16x16
+         bne entry60                ; $018a41 m16x16
          rts                        ; $018a43 m16x16
-entry62: .entry m16x16
+entry61: .entry m16x16
          sta.w $0a                  ; $018a44 m16x16
 label131: lda.w #$0002              ; $018a46 m16x16
          sta.w $04                  ; $018a49 m16x16
@@ -2553,7 +2481,7 @@ label132: lda.w $9b52, X            ; $018a4b m16x16
          clc                        ; $018a87 m16x16, c=0
          rts                        ; $018a88 m16x16, c=0
          .org $019895
-entry63: .entry m16x16
+entry62: .entry m16x16
          lda.w $9b52, X             ; $019895 m16x16
          sta.w [$bf], Y             ; $019898 m16x16
          lda.w $9b54, X             ; $01989a m16x16
@@ -2568,7 +2496,7 @@ entry63: .entry m16x16
          iny.w                      ; $0198ac m16x16
          rts                        ; $0198ad m16x16
          .org $01b4d6
-entry64: .entry m16x16
+entry63: .entry m16x16
          ldx.w $042c                ; $01b4d6 m16x16
          inc.w $042c                ; $01b4d9 m16x16
          inc.w $042c                ; $01b4dc m16x16
@@ -2588,8 +2516,8 @@ entry64: .entry m16x16
          lda.w [$ce], Y             ; $01b4fe m16x16
          sta.w $05c0, X             ; $01b500 m16x16
          ldx.w #$0e52               ; $01b503 m16x16
-         jmp entry63                ; $01b506 m16x16
-entry65: .entry m16x16
+         jmp entry62                ; $01b506 m16x16
+entry64: .entry m16x16
          ldy.w $042e                ; $01b509 m16x16
          sta.w $0540, Y             ; $01b50c m16x16
          dex.w                      ; $01b50f m16x16
@@ -2611,9 +2539,9 @@ label133: stx.w $0c                 ; $01b531 m16x16
          lda.w $08                  ; $01b533 m16x16
          and.w #$3fff               ; $01b535 m16x16
          tay.w                      ; $01b538 m16x16
-         jmp entry63                ; $01b539 m16x16
+         jmp entry62                ; $01b539 m16x16
          .org $01b564
-entry66: .entry m8x8
+entry65: .entry m8x8
          stz.b $0642                ; $01b564 m8x8
          stz.b $0646                ; $01b567 m8x8
          stz.b $0641                ; $01b56a m8x8
@@ -2813,34 +2741,34 @@ label141: lda.w $a0                 ; $01b714 m16x16
          cmp.w #$000f               ; $01b71b m16x16
          beq label142               ; $01b71e m16x16
          lda.w #$0024               ; $01b720 m16x16
-         jsr entry67                ; $01b723 m16x16
+         jsr entry66                ; $01b723 m16x16
 label142: lda.w $a0                 ; $01b726 m16x16
          inc.w                      ; $01b728 m16x16
          tax.w                      ; $01b729 m16x16
          and.w #$000f               ; $01b72a m16x16
          beq label143               ; $01b72d m16x16
          lda.w #$0018               ; $01b72f m16x16
-         jsr entry67                ; $01b732 m16x16
+         jsr entry66                ; $01b732 m16x16
 label143: lda.w $a0                 ; $01b735 m16x16
          sub.w #$0010               ; $01b737 m16x16
          tax.w                      ; $01b73b m16x16
          bmi label144               ; $01b73c m16x16
          lda.w #$000c               ; $01b73e m16x16
-         jsr entry67                ; $01b741 m16x16
+         jsr entry66                ; $01b741 m16x16
 label144: lda.w $a0                 ; $01b744 m16x16
          add.w #$0010               ; $01b746 m16x16
          tax.w                      ; $01b74a m16x16
          cmp.w #$0140               ; $01b74b m16x16
          bcs label145               ; $01b74e m16x16, c=0
          lda.w #$0000               ; $01b750 m16x16, c=0
-         jsr entry67                ; $01b753 m16x16
+         jsr entry66                ; $01b753 m16x16
 label145: sep #$30                  ; $01b756 m8x8
 label146: rts                       ; $01b758 native
-entry67: .entry m16x16
+entry66: .entry m16x16
          sta.w $04                  ; $01b759 m16x16
-         jsr entry69                ; $01b75b m16x16
+         jsr entry68                ; $01b75b m16x16
          ldy.w #$0000               ; $01b75e m16x16
-entry68: .entry m16x16
+entry67: .entry m16x16
          lda.w $1110, Y             ; $01b761 m16x16
          cmp.w #$ffff               ; $01b764 m16x16
          beq label146               ; $01b767 m16x16
@@ -2904,9 +2832,9 @@ label153: iny.w                     ; $01b7e4 m16x16
          iny.w                      ; $01b7e5 m16x16
          cpy.w #$0010               ; $01b7e6 m16x16
          beq label154               ; $01b7e9 m16x16
-         jmp entry68                ; $01b7eb m16x16
+         jmp entry67                ; $01b7eb m16x16
 label154: rts                       ; $01b7ee m16x16
-entry69: .entry m16x16
+entry68: .entry m16x16
          stx.w $0e                  ; $01b7ef m16x16
          txa.w                      ; $01b7f1 m16x16
          asl.w                      ; $01b7f2 m16x16
@@ -2943,23 +2871,23 @@ label157: iny.w                     ; $01b838 m16x16
          inx.w                      ; $01b83b m16x16
          bra label155               ; $01b83c m16x16
          .org $01b8bf
-entry70: .entry m8x8
+entry69: .entry m8x8
          rep #$20                   ; $01b8bf m16x8
          stz.w $b2                  ; $01b8c1 m16x8
          stz.w $b4                  ; $01b8c3 m16x8
          lda.w #$1000               ; $01b8c5 m16x8
          sta.w $00                  ; $01b8c8 m16x8
-         jsr entry71                ; $01b8ca m16x8
+         jsr entry70                ; $01b8ca m16x8
          sep #$30                   ; $01b8cd m8x8
-         jsr entry72                ; $01b8cf m8x8
-         jsr entry74                ; $01b8d2 m8x8
+         jsr entry71                ; $01b8cf m8x8
+         jsr entry73                ; $01b8d2 m8x8
          lda.b $7ec172              ; $01b8d5 m8x8
          beq label158               ; $01b8d9 m8x8
-         jsl @entry81               ; $01b8db m8x8
+         jsl @entry80               ; $01b8db m8x8
 label158: stz.b $0200               ; $01b8df m8x8
          rtl                        ; $01b8e2 m8x8
          .org $01b8f3
-entry71: .entry m16x8
+entry70: .entry m16x8
          phb                        ; $01b8f3 m16x8
          ldx.b #$7e                 ; $01b8f4 m16x8
          phx.b                      ; $01b8f6 m16x8
@@ -3017,7 +2945,7 @@ label161: xba                       ; $01b941 m8x16
          inc.w $0200                ; $01b962 m16x16
 label162: plb                       ; $01b965 m16x16
          rts                        ; $01b966 m16x16
-entry72: .entry m8x8
+entry71: .entry m8x8
          rep #$30                   ; $01b967 m16x16
          ldx.w $0432                ; $01b969 m16x16
          beq label164               ; $01b96c m16x16
@@ -3358,7 +3286,7 @@ label199: lda.w $af                 ; $01bce0 m16x16
          bcc label200               ; $01bcf7 m16x16, c=1
          cmp.w #$0033               ; $01bcf9 m16x16
          bcc label203               ; $01bcfc m16x16, c=1
-label200: jsr entry73               ; $01bcfe m16x16
+label200: jsr entry72               ; $01bcfe m16x16
 label201: cpy.w $0498               ; $01bd01 m16x16
          beq label203               ; $01bd04 m16x16
 label202: lda.w $06e0, Y            ; $01bd06 m16x16
@@ -3438,7 +3366,7 @@ label207: ldx.w $06ec, Y            ; $01bdaa m16x16
          bne label207               ; $01bdd5 m16x16
 label208: inc.w $0200               ; $01bdd7 m16x16
          rts                        ; $01bdda m16x16
-entry73: .entry m16x16
+entry72: .entry m16x16
          lda.w $06e0, Y             ; $01bddb m16x16
          beq label209               ; $01bdde m16x16
          and.w #$7fff               ; $01bde0 m16x16
@@ -3462,23 +3390,23 @@ label209: lda.w $00                 ; $01be07 m16x16
          iny.w                      ; $01be0f m16x16
          iny.w                      ; $01be10 m16x16
          cpy.w $0496                ; $01be11 m16x16
-         bne entry73                ; $01be14 m16x16
+         bne entry72                ; $01be14 m16x16
          rts                        ; $01be16 m16x16
-entry74: .entry m8x8
+entry73: .entry m8x8
          rep #$30                   ; $01be17 m16x16
          ldy.w #$0000               ; $01be19 m16x16
 label210: lda.w $19a0, Y            ; $01be1c m16x16
          beq label211               ; $01be1f m16x16
-         jsr entry75                ; $01be21 m16x16
+         jsr entry74                ; $01be21 m16x16
 label211: iny.w                     ; $01be24 m16x16
          iny.w                      ; $01be25 m16x16
          cpy.w #$0020               ; $01be26 m16x16
          bne label210               ; $01be29 m16x16
-         jsr entry91                ; $01be2b m16x16
-         jsr entry80                ; $01be2e m16x16
+         jsr entry90                ; $01be2b m16x16
+         jsr entry79                ; $01be2e m16x16
          inc.w $0200                ; $01be31 m16x16
          rts                        ; $01be34 m16x16
-entry75: .entry m16x16
+entry74: .entry m16x16
          lda.w $1980, Y             ; $01be35 m16x16
          and.w #$00fe               ; $01be38 m16x16
          sta.w $02                  ; $01be3b m16x16
@@ -3501,13 +3429,13 @@ entry75: .entry m16x16
          beq label212               ; $01be65 m16x16
          cmp.w #$0008               ; $01be67 m16x16
          bne label213               ; $01be6a m16x16
-label212: jmp entry79               ; $01be6c m16x16
+label212: jmp entry78               ; $01be6c m16x16
 label213: cmp.w #$0030              ; $01be6f m16x16
          bne label214               ; $01be72 m16x16
-         jmp entry76                ; $01be74 m16x16
+         jmp entry75                ; $01be74 m16x16
 label214: cmp.w #$0040              ; $01be77 m16x16
          bcc label215               ; $01be7a m16x16, c=1
-         jmp entry78                ; $01be7c m16x16
+         jmp entry77                ; $01be7c m16x16
 label215: cmp.w #$0018              ; $01be7f m16x16
          beq label216               ; $01be82 m16x16
          cmp.w #$0044               ; $01be84 m16x16
@@ -3625,10 +3553,10 @@ label227: lda.w $19a0, Y            ; $01bf8b m16x16
          sta.w $7f2040, X           ; $01bfa9 m16x16
          sta.w $7f2080, X           ; $01bfad m16x16
          rts                        ; $01bfb1 m16x16
-entry76: .entry m16x16
+entry75: .entry m16x16
          rts                        ; $01bfb2 m16x16
          .org $01bfc1
-entry77: .entry m16x16
+entry76: .entry m16x16
          lda.w $19c0, Y             ; $01bfc1 m16x16
          and.w #$0002               ; $01bfc4 m16x16
          bne label229               ; $01bfc7 m16x16
@@ -3692,17 +3620,17 @@ label230: lda.w #$0101              ; $01c01d m16x16
          dec.w $00                  ; $01c080 m16x16
          bne label230               ; $01c082 m16x16
          rts                        ; $01c084 m16x16
-entry78: .entry m16x16
+entry77: .entry m16x16
          cmp.w #$0040               ; $01c085 m16x16
-         beq entry79                ; $01c088 m16x16
+         beq entry78                ; $01c088 m16x16
          cmp.w #$0046               ; $01c08a m16x16
-         beq entry79                ; $01c08d m16x16
+         beq entry78                ; $01c08d m16x16
          tya.w                      ; $01c08f m16x16
          and.w #$00ff               ; $01c090 m16x16
          tax.w                      ; $01c093 m16x16
          lda.w $068c                ; $01c094 m16x16
          and.w $98c0, X             ; $01c097 m16x16
-         bne entry79                ; $01c09a m16x16
+         bne entry78                ; $01c09a m16x16
          sep #$20                   ; $01c09c m8x16
          tya.b                      ; $01c09e m8x16
          lsr.b                      ; $01c09f m8x16
@@ -3717,7 +3645,7 @@ entry78: .entry m16x16
          sta.w $7f2041, X           ; $01c0af m16x16
          sta.w $7f2081, X           ; $01c0b3 m16x16
          rts                        ; $01c0b7 m16x16
-entry79: .entry m16x16
+entry78: .entry m16x16
          ldx.w $02                  ; $01c0b8 m16x16
          lda.w $9a52, X             ; $01c0ba m16x16
          sta.w $00                  ; $01c0bd m16x16
@@ -3806,7 +3734,7 @@ label235: lda.w $19a0, Y            ; $01c18d m16x16
          sta.w $7f2084, X           ; $01c1b1 m16x16
          sta.w $7f2086, X           ; $01c1b5 m16x16
          rts                        ; $01c1b9 m16x16
-entry80: .entry m16x16
+entry79: .entry m16x16
          rep #$30                   ; $01c1ba m16x16
          lda.w $04b0                ; $01c1bc m16x16
          beq label239               ; $01c1bf m16x16
@@ -3848,7 +3776,7 @@ label238: lda.w #$2323              ; $01c201 m16x16
 label239: sep #$30                  ; $01c219 m8x8
          rts                        ; $01c21b m8x8
          .org $01c22a
-entry81: .entry m8x8
+entry80: .entry m8x8
          rep #$10                   ; $01c22a m8x16
          ldx.w #$07ff               ; $01c22c m8x16
 label240: lda.b $7f2000, X          ; $01c22f m8x16
@@ -3884,11 +3812,11 @@ label248: dex.w                     ; $01c277 m8x16
          sep #$10                   ; $01c27a m8x8
          rtl                        ; $01c27c m8x8
          .org $01c2fd
-entry82: .entry m8x8
+entry81: .entry m8x8
          lda.b $04c7                ; $01c2fd m8x8
          bne label249               ; $01c300 m8x8
          sep #$30                   ; $01c302 m8x8
-         jsr entry83                ; $01c304 m8x8
+         jsr entry82                ; $01c304 m8x8
          stz.b $0e                  ; $01c307 m8x8
          lda.b $ae                  ; $01c309 m8x8
          asl.b                      ; $01c30b m8x8
@@ -3906,7 +3834,7 @@ label249: stz.b $04c7               ; $01c31b m8x8
 label250: pla.b                     ; $01c325 m8x16
 label251: sep #$30                  ; $01c326 m8x8
          rts                        ; $01c328 m8x8
-entry83: .entry m8x8
+entry82: .entry m8x8
          rep #$20                   ; $01c329 m16x8
          lda.w $67                  ; $01c32b m16x8
          and.w #$000c               ; $01c32d m16x8
@@ -3969,7 +3897,7 @@ label255: rep #$20                  ; $01c39c m16x16
          lda.w $a0                  ; $01c3a1 m16x16
          sta.w $a2                  ; $01c3a3 m16x16
          sep #$30                   ; $01c3a5 m8x8
-         jsl @entry161              ; $01c3a7 m8x8
+         jsl @entry160              ; $01c3a7 m8x8
          sep #$30                   ; $01c3ab m8x8
          lda.b $0e                  ; $01c3ad m8x8
          cmp.b #$38                 ; $01c3af m8x8
@@ -3980,9 +3908,9 @@ label256: ldx.b #$20                ; $01c3b7 m8x8
          stx.b $0464                ; $01c3b9 m8x8
          cmp.b #$38                 ; $01c3bc m8x8
          bne label257               ; $01c3be m8x8
-         jsl @entry154              ; $01c3c0 m8x8
+         jsl @entry153              ; $01c3c0 m8x8
          bra label258               ; $01c3c4 m8x8
-label257: jsl @entry152             ; $01c3c6 m8x8
+label257: jsl @entry151             ; $01c3c6 m8x8
 label258: lda.b $0462               ; $01c3ca m8x8
          and.b #$03                 ; $01c3cd m8x8
          tax.b                      ; $01c3cf m8x8
@@ -4016,12 +3944,12 @@ label259: stx.b $0492               ; $01c3eb m8x8
          ldx.b #$13                 ; $01c40b m8x8
          cmp.b #$39                 ; $01c40d m8x8
          beq label260               ; $01c40f m8x8
-         jsl @entry298              ; $01c411 m8x8
+         jsl @entry297              ; $01c411 m8x8
          ldx.b #$0e                 ; $01c415 m8x8
          stx.b $11                  ; $01c417 m8x8
          rts                        ; $01c419 m8x8
 label260: stx.b $11                 ; $01c41a m8x8
-         jsl @entry299              ; $01c41c m8x8
+         jsl @entry298              ; $01c41c m8x8
          rts                        ; $01c420 m8x8
 label261: stx.b $11                 ; $01c421 m8x8
          ldy.b #$16                 ; $01c423 m8x8
@@ -4032,7 +3960,7 @@ label261: stx.b $11                 ; $01c421 m8x8
 label262: sty.b $012e               ; $01c42e m8x8
          rts                        ; $01c431 m8x8
          .org $01ce70
-entry84: .entry m8x8
+entry83: .entry m8x8
          lda.b $1a                  ; $01ce70 m8x8
          and.b #$03                 ; $01ce72 m8x8
          bne label265               ; $01ce74 m8x8
@@ -4047,14 +3975,14 @@ label263: lda.b $04f0, X            ; $01ce7d m8x8
          txa.b                      ; $01ce88 m8x8
          ora.b #$c0                 ; $01ce89 m8x8
          sta.b $0333                ; $01ce8b m8x8
-         jsl @entry98               ; $01ce8e m8x8
+         jsl @entry97               ; $01ce8e m8x8
          plx.b                      ; $01ce92 m8x8
 label264: inx.b                     ; $01ce93 m8x8
          cpx.b #$10                 ; $01ce94 m8x8
          bne label263               ; $01ce96 m8x8
 label265: lda.b $02e4               ; $01ce98 m8x8
          beq label266               ; $01ce9b m8x8
-         jmp entry85                ; $01ce9d m8x8
+         jmp entry84                ; $01ce9d m8x8
 label266: rep #$21                  ; $01cea0 m16x8, c=0
          lda.w $2f                  ; $01cea2 m16x8, c=0
          and.w #$00ff               ; $01cea4 m16x8, c=0
@@ -4120,11 +4048,11 @@ label268: lda.w $7f2000, X          ; $01ceed m16x16
          lda.w #$0078               ; $01cf33 m16x16
          sta.w $1cf0                ; $01cf36 m16x16
          sep #$30                   ; $01cf39 m8x8
-         jsl @entry495              ; $01cf3b m8x8
+         jsl @entry494              ; $01cf3b m8x8
          rep #$30                   ; $01cf3f m16x16
-label269: jmp entry85               ; $01cf41 m16x16
+label269: jmp entry84               ; $01cf41 m16x16
 label270: stz.w $04b8               ; $01cf44 m16x16
-         jmp entry85                ; $01cf47 m16x16
+         jmp entry84                ; $01cf47 m16x16
 label271: cmp.w #$001c              ; $01cf4a m16x16
          bcc label269               ; $01cf4d m16x16, c=1
          cmp.w #$002c               ; $01cf4f m16x16
@@ -4154,14 +4082,14 @@ label273: stz.w $0690               ; $01cf6b m16x16
          rtl                        ; $01cf8d m8x8
 label274: lda.w $0372               ; $01cf8e m16x16
          and.w #$00ff               ; $01cf91 m16x16
-         beq entry85                ; $01cf94 m16x16
+         beq entry84                ; $01cf94 m16x16
          lda.w $02f1                ; $01cf96 m16x16
          cmp.w #$003f               ; $01cf99 m16x16
-         bcs entry85                ; $01cf9c m16x16, c=0
+         bcs entry84                ; $01cf9c m16x16, c=0
          stx.w $068e                ; $01cf9e m16x16, c=0
          sep #$30                   ; $01cfa1 m8x8, c=0
          sty.b $00                  ; $01cfa3 m8x8, c=0
-         jsl @entry310              ; $01cfa5 m8x8
+         jsl @entry309              ; $01cfa5 m8x8
          bcs label275               ; $01cfa9 m8x8, c=0
          ldy.b $00                  ; $01cfab m8x8, c=0
          lda.b $19c0, Y             ; $01cfad m8x8, c=0
@@ -4190,9 +4118,9 @@ label275: sep #$30                  ; $01cfda m8x8
          sta.b $012f                ; $01cfde m8x8
          lda.b #$09                 ; $01cfe1 m8x8
          sta.b $11                  ; $01cfe3 m8x8
-         jsl @entry277              ; $01cfe5 m8x8
+         jsl @entry276              ; $01cfe5 m8x8
 label276: rtl                       ; $01cfe9 m8x8
-entry85: .entry native
+entry84: .entry native
          sep #$30                   ; $01cfea m8x8
          lda.b $0436                ; $01cfec m8x8
          bmi label279               ; $01cfef m8x8
@@ -4223,10 +4151,10 @@ label278: cmp.w $068c               ; $01d01f m16x8
          lda.w $0437                ; $01d02b m16x16
          and.w #$00ff               ; $01d02e m16x16
          tay.w                      ; $01d031 m16x16
-         jsr entry87                ; $01d032 m16x16
-         jsr entry100               ; $01d035 m16x16
+         jsr entry86                ; $01d032 m16x16
+         jsr entry99                ; $01d035 m16x16
          ldy.w $0460                ; $01d038 m16x16
-         jsr entry90                ; $01d03b m16x16
+         jsr entry89                ; $01d03b m16x16
          ldy.w $0c                  ; $01d03e m16x16
          lda.w #$ffff               ; $01d040 m16x16
          sta.w $1100, Y             ; $01d043 m16x16
@@ -4309,7 +4237,7 @@ label281: add.w $22                 ; $01d086 m16x16
 label282: stz.w $0c                 ; $01d0f5 m16x16
          cmp.w #$006c               ; $01d0f7 m16x16
          beq label283               ; $01d0fa m16x16
-         jmp entry86                ; $01d0fc m16x16
+         jmp entry85                ; $01d0fc m16x16
 label283: sty.w $0e                 ; $01d0ff m16x16
          cpy.w #$0040               ; $01d101 m16x16
          bcc label284               ; $01d104 m16x16, c=1
@@ -4368,7 +4296,7 @@ label286: lda.w $9b52, Y            ; $01d160 m16x16
          dec.w $0e                  ; $01d184 m16x16
          bne label286               ; $01d186 m16x16
          bra label287               ; $01d188 m16x16
-entry86: .entry m16x16
+entry85: .entry m16x16
          lda.w $7f2000, X           ; $01d18a m16x16
          and.w #$000f               ; $01d18e m16x16
          asl.w                      ; $01d191 m16x16
@@ -4392,15 +4320,15 @@ entry86: .entry m16x16
          ora.w $98c0, X             ; $01d1bc m16x16
          sta.w $0400                ; $01d1bf m16x16
          stz.w $0692                ; $01d1c2 m16x16
-         jsr entry88                ; $01d1c5 m16x16
+         jsr entry87                ; $01d1c5 m16x16
          ldy.w $0460                ; $01d1c8 m16x16
-         jsr entry90                ; $01d1cb m16x16
-label287: jsr entry100              ; $01d1ce m16x16
+         jsr entry89                ; $01d1cb m16x16
+label287: jsr entry99               ; $01d1ce m16x16
          sep #$30                   ; $01d1d1 m8x8
          lda.b $08                  ; $01d1d3 m8x8
          and.b #$7f                 ; $01d1d5 m8x8
          asl.b                      ; $01d1d7 m8x8
-         jsl @entry439              ; $01d1d8 m8x8
+         jsl @entry438              ; $01d1d8 m8x8
          ora.b #$1e                 ; $01d1dc m8x8
          sta.b $012e                ; $01d1de m8x8
          rep #$30                   ; $01d1e1 m16x16
@@ -4412,7 +4340,7 @@ label287: jsr entry100              ; $01d1ce m16x16
          sta.b $18                  ; $01d1ef m8x8
          rtl                        ; $01d1f1 m8x8
          .org $01d338
-entry87: .entry m16x16
+entry86: .entry m16x16
          ldx.w $19a0, Y             ; $01d338 m16x16
          stx.w $08                  ; $01d33b m16x16
          sty.w $0460                ; $01d33d m16x16
@@ -4421,21 +4349,21 @@ entry87: .entry m16x16
          lda.w $19c0, Y             ; $01d345 m16x16
          and.w #$0003               ; $01d348 m16x16
          bne label288               ; $01d34b m16x16
-         jmp entry103               ; $01d34d m16x16
+         jmp entry102               ; $01d34d m16x16
 label288: cmp.w #$0001              ; $01d350 m16x16
          bne label289               ; $01d353 m16x16
-         jmp entry104               ; $01d355 m16x16
+         jmp entry103               ; $01d355 m16x16
 label289: cmp.w #$0002              ; $01d358 m16x16
          bne label290               ; $01d35b m16x16
-         jmp entry105               ; $01d35d m16x16
-label290: jmp entry106              ; $01d360 m16x16
-entry88: .entry m16x16
+         jmp entry104               ; $01d35d m16x16
+label290: jmp entry105              ; $01d360 m16x16
+entry87: .entry m16x16
          ldx.w $19a0, Y             ; $01d363 m16x16
          stx.w $08                  ; $01d366 m16x16
          sty.w $0460                ; $01d368 m16x16
          sty.w $0694                ; $01d36b m16x16
-         jmp entry107               ; $01d36e m16x16
-entry89: .entry m16x16
+         jmp entry106               ; $01d36e m16x16
+entry88: .entry m16x16
          stz.w $045e                ; $01d371 m16x16
          stz.w $0c                  ; $01d374 m16x16
          stz.w $0690                ; $01d376 m16x16
@@ -4447,11 +4375,11 @@ entry89: .entry m16x16
          stx.w $08                  ; $01d384 m16x16
          txa.w                      ; $01d386 m16x16
          sta.w $19a0, Y             ; $01d387 m16x16
-         jmp entry109               ; $01d38a m16x16
+         jmp entry108               ; $01d38a m16x16
          .org $01d51a
+entry89: .entry m16x16
+         jsr entry74                ; $01d51a m16x16
 entry90: .entry m16x16
-         jsr entry75                ; $01d51a m16x16
-entry91: .entry m16x16
          ldx.w $044e                ; $01d51d m16x16
          beq label293               ; $01d520 m16x16
          ldy.w #$0000               ; $01d522 m16x16
@@ -4504,15 +4432,15 @@ label295: lda.w $7f3000, X          ; $01d591 m16x16
          bne label294               ; $01d5a5 m16x16
 label296: rts                       ; $01d5a7 m16x16
          .org $01d6bf
-entry92: .entry m8x8
+entry91: .entry m8x8
          lda.b #$06                 ; $01d6bf m8x8
          sta.b $02e4                ; $01d6c1 m8x8
          sta.b $0fc1                ; $01d6c4 m8x8
          cmp.b $7f0000              ; $01d6c7 m8x8
          bne label299               ; $01d6cb m8x8
          rep #$30                   ; $01d6cd m16x16
-         jsr entry89                ; $01d6cf m16x16
-         jsr entry101               ; $01d6d2 m16x16
+         jsr entry88                ; $01d6cf m16x16
+         jsr entry100               ; $01d6d2 m16x16
          lda.w #$ffff               ; $01d6d5 m16x16
          sta.w $1100, Y             ; $01d6d8 m16x16
          sta.w $0710                ; $01d6db m16x16
@@ -4544,11 +4472,11 @@ label297: tya.w                     ; $01d713 m16x16
          lda.w $a6                  ; $01d721 m16x16
          sta.w $7ec19c              ; $01d723 m16x16
          ldy.w $0456                ; $01d727 m16x16
-         jsr entry77                ; $01d72a m16x16
+         jsr entry76                ; $01d72a m16x16
          stz.w $0454                ; $01d72d m16x16
          stz.w $0456                ; $01d730 m16x16
          sep #$30                   ; $01d733 m8x8
-         jsl @entry161              ; $01d735 m8x8
+         jsl @entry160              ; $01d735 m8x8
          stz.b $02e4                ; $01d739 m8x8
          stz.b $0fc1                ; $01d73c m8x8
 label298: sep #$30                  ; $01d73f m8x8
@@ -4560,7 +4488,7 @@ label300: lda.w $0500, Y            ; $01d7c6 m16x16
          beq label304               ; $01d7c9 m16x16
          cmp.w #$0001               ; $01d7cb m16x16
          bne label301               ; $01d7ce m16x16
-         jsr entry94                ; $01d7d0 m16x16
+         jsr entry93                ; $01d7d0 m16x16
          ldx.w $0474                ; $01d7d3 m16x16
          lda.w $0540, Y             ; $01d7d6 m16x16
          add.w $01d7be, X           ; $01d7d9 m16x16
@@ -4569,31 +4497,31 @@ label300: lda.w $0500, Y            ; $01d7c6 m16x16
 label301: cmp.w #$0002              ; $01d7e3 m16x16
          bne label302               ; $01d7e6 m16x16
          sep #$30                   ; $01d7e8 m8x8
-         jsl @entry291              ; $01d7ea m8x8
+         jsl @entry290              ; $01d7ea m8x8
          rep #$30                   ; $01d7ee m16x16
          ldy.w $042c                ; $01d7f0 m16x16
          lda.w $0500, Y             ; $01d7f3 m16x16
          cmp.w #$0003               ; $01d7f6 m16x16
          bne label304               ; $01d7f9 m16x16
-         jsr entry96                ; $01d7fb m16x16
+         jsr entry95                ; $01d7fb m16x16
          bra label303               ; $01d7fe m16x16
 label302: cmp.w #$0004              ; $01d800 m16x16
          bne label304               ; $01d803 m16x16
          sep #$30                   ; $01d805 m8x8
-         jsl @entry292              ; $01d807 m8x8
+         jsl @entry291              ; $01d807 m8x8
          bra label304               ; $01d80b m8x8
 label303: ldx.w $042c               ; $01d80d m16x16
          inc.w $0500, X             ; $01d810 m16x16
 label304: inc $042c                 ; $01d813 native
          inc $042c                  ; $01d816 native
-entry93: .entry native
+entry92: .entry native
          rep #$30                   ; $01d819 m16x16
          ldy.w $042c                ; $01d81b m16x16
          cpy.w $0478                ; $01d81e m16x16
          bne label300               ; $01d821 m16x16
          sep #$30                   ; $01d823 m8x8
          rtl                        ; $01d825 m8x8
-entry94: .entry m16x16
+entry93: .entry m16x16
          ldx.w $1000                ; $01d826 m16x16
          lda.w $0560, Y             ; $01d829 m16x16
          sta.w $1006, X             ; $01d82c m16x16
@@ -4625,21 +4553,21 @@ entry94: .entry m16x16
          lsr.w                      ; $01d879 m16x16
          tax.w                      ; $01d87a m16x16
          lda.w $00                  ; $01d87b m16x16
-entry95: .entry m16x16
+entry94: .entry m16x16
          sta.w $7f2000, X           ; $01d87d m16x16
          sta.w $7f2040, X           ; $01d881 m16x16
          ldx.w $1000                ; $01d885 m16x16
          lda.w #$0000               ; $01d888 m16x16
-         jsr entry97                ; $01d88b m16x16
+         jsr entry96                ; $01d88b m16x16
          sta.w $1002, X             ; $01d88e m16x16
          lda.w #$0080               ; $01d891 m16x16
-         jsr entry97                ; $01d894 m16x16
+         jsr entry96                ; $01d894 m16x16
          sta.w $1008, X             ; $01d897 m16x16
          lda.w #$0002               ; $01d89a m16x16
-         jsr entry97                ; $01d89d m16x16
+         jsr entry96                ; $01d89d m16x16
          sta.w $100e, X             ; $01d8a0 m16x16
          lda.w #$0082               ; $01d8a3 m16x16
-         jsr entry97                ; $01d8a6 m16x16
+         jsr entry96                ; $01d8a6 m16x16
          sta.w $1014, X             ; $01d8a9 m16x16
          lda.w #$0100               ; $01d8ac m16x16
          sta.w $1004, X             ; $01d8af m16x16
@@ -4656,7 +4584,7 @@ entry95: .entry m16x16
          sta.b $14                  ; $01d8cd m8x16
          rep #$30                   ; $01d8cf m16x16
          rts                        ; $01d8d1 m16x16
-entry96: .entry m16x16
+entry95: .entry m16x16
          lda.w $0540, Y             ; $01d8d2 m16x16
          and.w #$4000               ; $01d8d5 m16x16
          bne label305               ; $01d8d8 m16x16
@@ -4718,7 +4646,7 @@ label306: stz.b $05fc, X            ; $01d943 m8x16
 label307: lda.w #$ffff              ; $01d95e m16x16
 label308: sta.w $0500, Y            ; $01d961 m16x16
          lda.w #$2727               ; $01d964 m16x16
-         jmp entry95                ; $01d967 m16x16
+         jmp entry94                ; $01d967 m16x16
 label309: sep #$20                  ; $01d96a m8x16
          lda.b #$20                 ; $01d96c m8x16
          sta.b $012e                ; $01d96e m8x16
@@ -4731,7 +4659,7 @@ label309: sep #$20                  ; $01d96a m8x16
          lda.w $0540, Y             ; $01d984 m16x16
          sta.w $7ef942, X           ; $01d987 m16x16
          rts                        ; $01d98b m16x16
-entry97: .entry m16x16
+entry96: .entry m16x16
          sta.w $0e                  ; $01d98c m16x16
          lda.w $0540, Y             ; $01d98e m16x16
          and.w #$3fff               ; $01d991 m16x16
@@ -4757,7 +4685,7 @@ entry97: .entry m16x16
          xba                        ; $01d9b6 m16x16
          rts                        ; $01d9b7 m16x16
          .org $01f4a4
-entry98: .entry m8x8
+entry97: .entry m8x8
          lda.b #$c0                 ; $01f4a4 m8x8
          sta.b $08                  ; $01f4a6 m8x8
          stz.b $09                  ; $01f4a8 m8x8
@@ -4784,7 +4712,7 @@ entry98: .entry m8x8
          tax.w                      ; $01f4d4 m16x16
          stx.w $08                  ; $01f4d5 m16x16
          ldy.w #$0ec2               ; $01f4d7 m16x16
-         jsr entry99                ; $01f4da m16x16
+         jsr entry98                ; $01f4da m16x16
          ldy.w $0c                  ; $01f4dd m16x16
          lda.w #$ffff               ; $01f4df m16x16
          sta.w $1100, Y             ; $01f4e2 m16x16
@@ -4818,7 +4746,7 @@ label311: lda.b $0333               ; $01f518 m8x8
          stz.b $0333                ; $01f522 m8x8
          rtl                        ; $01f525 m8x8
          .org $01f744
-entry99: .entry m16x16
+entry98: .entry m16x16
          lda.w $9b52, Y             ; $01f744 m16x16
          sta.w $7e2000, X           ; $01f747 m16x16
          lda.w $9b54, Y             ; $01f74b m16x16
@@ -4828,7 +4756,7 @@ entry99: .entry m16x16
          lda.w $9b58, Y             ; $01f759 m16x16
          sta.w $7e2082, X           ; $01f75c m16x16
          stz.w $0c                  ; $01f760 m16x16
-entry100: .entry m16x16
+entry99: .entry m16x16
          lda.w #$0004               ; $01f762 m16x16
          sta.w $0a                  ; $01f765 m16x16
          ldy.w $0c                  ; $01f767 m16x16
@@ -4891,7 +4819,7 @@ label314: tya.w                     ; $01f7e2 m16x16
          sty.w $0c                  ; $01f7ec m16x16
          rts                        ; $01f7ee m16x16
          .org $01f80f
-entry101: .entry m16x16
+entry100: .entry m16x16
          lda.w #$0080               ; $01f80f m16x16
          sta.w $06                  ; $01f812 m16x16
          stz.w $0e                  ; $01f814 m16x16
@@ -4909,9 +4837,9 @@ label315: ldy.w $0c                 ; $01f831 m16x16
          ldx.w $0460                ; $01f833 m16x16
          lda.w $19c0, X             ; $01f836 m16x16
          and.w #$0002               ; $01f839 m16x16
-         bne entry102               ; $01f83c m16x16
+         bne entry101               ; $01f83c m16x16
          inc.w $06                  ; $01f83e m16x16
-entry102: .entry m16x16
+entry101: .entry m16x16
          ldx.w $08                  ; $01f840 m16x16
          txa.w                      ; $01f842 m16x16
          and.w #$0040               ; $01f843 m16x16
@@ -4973,7 +4901,7 @@ entry102: .entry m16x16
          tay.w                      ; $01f8d7 m16x16
          dec.w $0a                  ; $01f8d8 m16x16
          beq label316               ; $01f8da m16x16
-         jmp entry102               ; $01f8dc m16x16
+         jmp entry101               ; $01f8dc m16x16
 label316: lda.w $0e                 ; $01f8df m16x16
          beq label318               ; $01f8e1 m16x16
          dec.w $0e                  ; $01f8e3 m16x16
@@ -4989,12 +4917,12 @@ label317: lda.w $01f7ed, X          ; $01f8f2 m16x16
          sta.w $08                  ; $01f8f9 m16x16
          lda.w #$0003               ; $01f8fb m16x16
          sta.w $0a                  ; $01f8fe m16x16
-         jmp entry102               ; $01f900 m16x16
+         jmp entry101               ; $01f900 m16x16
 label318: sty.w $0c                 ; $01f903 m16x16
          rts                        ; $01f905 m16x16
          .org $01fad5
-entry103: .entry m16x16
-         jsr entry108               ; $01fad5 m16x16
+entry102: .entry m16x16
+         jsr entry107               ; $01fad5 m16x16
          ldy.w $cd9e, X             ; $01fad8 m16x16
          ldx.w $0460                ; $01fadb m16x16
          lda.w $19a0, X             ; $01fade m16x16
@@ -5016,8 +4944,8 @@ label319: lda.w $9b52, Y            ; $01fae7 m16x16
          bne label319               ; $01fb06 m16x16
          rts                        ; $01fb08 m16x16
          .org $01fb8c
-entry104: .entry m16x16
-         jsr entry108               ; $01fb8c m16x16
+entry103: .entry m16x16
+         jsr entry107               ; $01fb8c m16x16
          ldy.w $ce06, X             ; $01fb8f m16x16
          ldx.w $0460                ; $01fb92 m16x16
          lda.w $19a0, X             ; $01fb95 m16x16
@@ -5039,8 +4967,8 @@ label320: lda.w $9b52, Y            ; $01fb9e m16x16
          bne label320               ; $01fbbd m16x16
          rts                        ; $01fbbf m16x16
          .org $01fc43
-entry105: .entry m16x16
-         jsr entry108               ; $01fc43 m16x16
+entry104: .entry m16x16
+         jsr entry107               ; $01fc43 m16x16
          ldy.w $ce66, X             ; $01fc46 m16x16
          ldx.w $0460                ; $01fc49 m16x16
          lda.w $19a0, X             ; $01fc4c m16x16
@@ -5064,8 +4992,8 @@ label321: lda.w $9b52, Y            ; $01fc55 m16x16
          bne label321               ; $01fc7b m16x16
          rts                        ; $01fc7d m16x16
          .org $01fd01
-entry106: .entry m16x16
-         jsr entry108               ; $01fd01 m16x16
+entry105: .entry m16x16
+         jsr entry107               ; $01fd01 m16x16
          ldy.w $cec6, X             ; $01fd04 m16x16
          ldx.w $0460                ; $01fd07 m16x16
          lda.w $19a0, X             ; $01fd0a m16x16
@@ -5088,7 +5016,7 @@ label322: lda.w $9b52, Y            ; $01fd13 m16x16
          dec.w $0e                  ; $01fd37 m16x16
          bne label322               ; $01fd39 m16x16
          rts                        ; $01fd3b m16x16
-entry107: .entry m16x16
+entry106: .entry m16x16
          ldx.w #$0056               ; $01fd3c m16x16
          ldy.w $cd9e, X             ; $01fd3f m16x16
          ldx.w $0460                ; $01fd42 m16x16
@@ -5112,7 +5040,7 @@ label323: lda.w $9b52, Y            ; $01fd4e m16x16
          dec.w $0e                  ; $01fd72 m16x16
          bne label323               ; $01fd74 m16x16
          rts                        ; $01fd76 m16x16
-entry108: .entry m16x16
+entry107: .entry m16x16
          ldy.w $0460                ; $01fd77 m16x16
          lda.w $1980, Y             ; $01fd7a m16x16
          and.w #$00fe               ; $01fd7d m16x16
@@ -5124,9 +5052,9 @@ entry108: .entry m16x16
          lda.w $9a02, X             ; $01fd8b m16x16
          tax.w                      ; $01fd8e m16x16
 label324: rts                       ; $01fd8f m16x16
-entry109: .entry m16x16
+entry108: .entry m16x16
          ldy.w #$31ea               ; $01fd90 m16x16
-         jsr entry110               ; $01fd93 m16x16
+         jsr entry109               ; $01fd93 m16x16
          lda.w $0454                ; $01fd96 m16x16
          dec.w                      ; $01fd99 m16x16
          sta.w $0e                  ; $01fd9a m16x16
@@ -5150,7 +5078,7 @@ label325: sta.w $7e2000, X          ; $01fda1 m16x16
          bne label325               ; $01fdd5 m16x16
 label326: iny.w                     ; $01fdd7 m16x16
          iny.w                      ; $01fdd8 m16x16
-entry110: .entry m16x16
+entry109: .entry m16x16
          lda.w #$0002               ; $01fdd9 m16x16
          sta.w $0e                  ; $01fddc m16x16
 label327: lda.w $9b52, Y            ; $01fdde m16x16
@@ -5186,7 +5114,7 @@ label327: lda.w $9b52, Y            ; $01fdde m16x16
          bne label327               ; $01fe3c m16x16
          rts                        ; $01fe3e m16x16
          .org $01fec1
-entry111: .entry m8x8
+entry110: .entry m8x8
          ora.b #$20                 ; $01fec1 m8x8
          sta.b $9c                  ; $01fec3 m8x8
          and.b #$1f                 ; $01fec5 m8x8
@@ -5197,24 +5125,24 @@ entry111: .entry m8x8
          sta.b $9e                  ; $01fecf m8x8
          rtl                        ; $01fed1 m8x8
          .org $028000
-entry112: .entry m8x8
+entry111: .entry m8x8
          lda.b #$10                 ; $028000 m8x8
          sta.b $1c                  ; $028002 m8x8
          stz.b $1d                  ; $028004 m8x8
-         jsr entry174               ; $028006 m8x8
+         jsr entry173               ; $028006 m8x8
          lda.b #$20                 ; $028009 m8x8
          sta.b $99                  ; $02800b m8x8
          lda.b #$02                 ; $02800d m8x8
          sta.b $2101                ; $02800f m8x8
          lda.b #$14                 ; $028012 m8x8
          sta.b $0aaa                ; $028014 m8x8
-         jsl @entry31               ; $028017 m8x8
+         jsl @entry30               ; $028017 m8x8
          stz.b $0aaa                ; $02801b m8x8
-         jsr entry117               ; $02801e m8x8
+         jsr entry116               ; $02801e m8x8
          rtl                        ; $028021 m8x8
          .org $028046
-entry113: .entry m8x8
-         jsl @entry8                ; $028046 m8x8
+entry112: .entry m8x8
+         jsl @entry7                ; $028046 m8x8
          stz.b $0200                ; $02804a m8x8
          stz.b $03f4                ; $02804d m8x8
          stz.b $02d4                ; $028050 m8x8
@@ -5222,16 +5150,16 @@ entry113: .entry m8x8
          stz.b $02f9                ; $028056 m8x8
          stz.b $0379                ; $028059 m8x8
          stz.b $03fd                ; $02805c m8x8
-         jsl @entry3                ; $02805f m8x8
+         jsl @entry2                ; $02805f m8x8
          lda.b #$02                 ; $028063 m8x8
          sta.b $2101                ; $028065 m8x8
-         jsl @entry28               ; $028068 m8x8
-         jsl @entry54               ; $02806c m8x8
-         jsl @entry472              ; $028070 m8x8
-         jsl @entry18               ; $028074 m8x8
-         jsl @entry19               ; $028078 m8x8
-         jsl @entry297              ; $02807c m8x8
-         jsl @entry21               ; $028080 m8x8
+         jsl @entry27               ; $028068 m8x8
+         jsl @entry53               ; $02806c m8x8
+         jsl @entry471              ; $028070 m8x8
+         jsl @entry17               ; $028074 m8x8
+         jsl @entry18               ; $028078 m8x8
+         jsl @entry296              ; $02807c m8x8
+         jsl @entry20               ; $028080 m8x8
          lda.b #$46                 ; $028084 m8x8
          sta.b $7ec2fc              ; $028086 m8x8
          sta.b $7ec2fd              ; $02808a m8x8
@@ -5245,10 +5173,10 @@ entry113: .entry m8x8
          lda.b $7ef3ca              ; $0280a2 m8x8
          beq label328               ; $0280a6 m8x8
          lda.b $1b                  ; $0280a8 m8x8
-         bne entry114               ; $0280aa m8x8
-         jsl @entry448              ; $0280ac m8x8
-         jsl @entry454              ; $0280b0 m8x8
-         jsl @entry442              ; $0280b4 m8x8
+         bne entry113               ; $0280aa m8x8
+         jsl @entry447              ; $0280ac m8x8
+         jsl @entry453              ; $0280b0 m8x8
+         jsl @entry441              ; $0280b4 m8x8
          stz.b $010a                ; $0280b8 m8x8
          lda.b #$20                 ; $0280bb m8x8
          sta.b $a0                  ; $0280bd m8x8
@@ -5260,17 +5188,17 @@ entry113: .entry m8x8
          stz.b $04aa                ; $0280c9 m8x8
          rtl                        ; $0280cc m8x8
 label328: lda.b $7ec011             ; $0280cd m8x8
-         bne entry114               ; $0280d1 m8x8
+         bne entry113               ; $0280d1 m8x8
          lda.b $010a                ; $0280d3 m8x8
          beq label329               ; $0280d6 m8x8
          lda.b $04aa                ; $0280d8 m8x8
-         beq entry114               ; $0280db m8x8
+         beq entry113               ; $0280db m8x8
 label329: lda.b $7ef3c5             ; $0280dd m8x8
          cmp.b #$02                 ; $0280e1 m8x8
-         bcc entry114               ; $0280e3 m8x8, c=1
+         bcc entry113               ; $0280e3 m8x8, c=1
          lda.b $7ef3c8              ; $0280e5 m8x8, c=1
          cmp.b #$05                 ; $0280e9 m8x8
-         beq entry114               ; $0280eb m8x8
+         beq entry113               ; $0280eb m8x8
          rep #$10                   ; $0280ed m8x16
          ldx.w #$0183               ; $0280ef m8x16
          lda.b $7ef353              ; $0280f2 m8x16
@@ -5279,8 +5207,8 @@ label329: lda.b $7ef3c5             ; $0280dd m8x8
          ldx.w #$0182               ; $0280fa m8x16
 label330: stx.w $1cf0               ; $0280fd m8x16
          sep #$10                   ; $028100 m8x8
-         jsl @entry495              ; $028102 m8x8
-         jsr entry176               ; $028106 m8x8
+         jsl @entry494              ; $028102 m8x8
+         jsr entry175               ; $028106 m8x8
          lda.b #$0f                 ; $028109 m8x8
          sta.b $13                  ; $02810b m8x8
          lda.b #$04                 ; $02810d m8x8
@@ -5289,15 +5217,15 @@ label330: stx.w $1cf0               ; $0280fd m8x16
          lda.b #$1b                 ; $028113 m8x8
          sta.b $10                  ; $028115 m8x8
          rtl                        ; $028117 m8x8
-entry114: .entry m8x8
+entry113: .entry m8x8
          lda.b #$00                 ; $028118 m8x8
          sta.b $7ec011              ; $02811a m8x8
          ora.b #$07                 ; $02811e m8x8
          sta.b $95                  ; $028120 m8x8
-         jsl @entry448              ; $028122 m8x8
-         jsl @entry454              ; $028126 m8x8
-         jsl @entry442              ; $02812a m8x8
-entry115: .entry m8x8
+         jsl @entry447              ; $028122 m8x8
+         jsl @entry453              ; $028126 m8x8
+         jsl @entry441              ; $02812a m8x8
+entry114: .entry m8x8
          rep #$20                   ; $02812e m16x8
          stz.w $a0                  ; $028130 m16x8
          stz.w $a2                  ; $028132 m16x8
@@ -5310,7 +5238,7 @@ entry115: .entry m8x8
          sta.w $7ec021              ; $02814a m16x8
          sta.w $7ec023              ; $02814e m16x8
          sep #$20                   ; $028152 m8x8
-         jsr entry178               ; $028154 m8x8
+         jsr entry177               ; $028154 m8x8
          lda.b $040c                ; $028157 m8x8
          cmp.b #$ff                 ; $02815a m8x8
          beq label332               ; $02815c m8x8
@@ -5320,26 +5248,26 @@ entry115: .entry m8x8
 label331: lsr.b                     ; $028164 m8x8
          tax.b                      ; $028165 m8x8
          lda.b $7ef37c, X           ; $028166 m8x8
-label332: jsl @entry453             ; $02816a m8x8
+label332: jsl @entry452             ; $02816a m8x8
          stz.b $045a                ; $02816e m8x8
          stz.b $0458                ; $028171 m8x8
-         jsr entry175               ; $028174 m8x8
-         jsl @entry473              ; $028177 m8x8
+         jsr entry174               ; $028174 m8x8
+         jsl @entry472              ; $028177 m8x8
          ldx.b $0aa1                ; $02817b m8x8
          lda.b $02802e, X           ; $02817e m8x8
          tay.b                      ; $028182 m8x8
-         jsl @entry20               ; $028183 m8x8
-         jsl @entry70               ; $028187 m8x8
+         jsl @entry19               ; $028183 m8x8
+         jsl @entry69               ; $028187 m8x8
          lda.b #$0a                 ; $02818b m8x8
          sta.b $0aa4                ; $02818d m8x8
-         jsl @entry27               ; $028190 m8x8
+         jsl @entry26               ; $028190 m8x8
          lda.b #$0a                 ; $028194 m8x8
          sta.b $0ab1                ; $028196 m8x8
-         jsr entry176               ; $028199 m8x8
+         jsr entry175               ; $028199 m8x8
          lda.b $02e0                ; $02819c m8x8
          ora.b $56                  ; $02819f m8x8
          beq label333               ; $0281a1 m8x8
-         jsl @entry186              ; $0281a3 m8x8
+         jsl @entry185              ; $0281a3 m8x8
 label333: rep #$30                  ; $0281a7 m16x16
          lda.w $a0                  ; $0281a9 m16x16
          and.w #$000f               ; $0281ab m16x16
@@ -5362,7 +5290,7 @@ label333: rep #$30                  ; $0281a7 m16x16
          lda.w #$0000               ; $0281cf m16x16
          sta.w $7ec005              ; $0281d2 m16x16
 label334: sep #$30                  ; $0281d6 m8x8
-         jsl @entry156              ; $0281d8 m8x8
+         jsl @entry155              ; $0281d8 m8x8
          lda.b #$02                 ; $0281dc m8x8
          sta.b $99                  ; $0281de m8x8
          lda.b #$b3                 ; $0281e0 m8x8
@@ -5383,7 +5311,7 @@ label335: lda.b #$20                ; $028200 m8x8
 label336: sta.b $9a                 ; $028202 m8x8
 label337: lda.b $02a0dc, X          ; $028204 m8x8
          sta.b $7ec017              ; $028208 m8x8
-         jsl @entry111              ; $02820c m8x8
+         jsl @entry110              ; $02820c m8x8
          lda.b #$1f                 ; $028210 m8x8
          sta.b $7ec007              ; $028212 m8x8
          lda.b #$00                 ; $028216 m8x8
@@ -5394,21 +5322,21 @@ label337: lda.b $02a0dc, X          ; $028204 m8x8
          stz.b $57                  ; $028225 m8x8
          stz.b $3a                  ; $028227 m8x8
          stz.b $3c                  ; $028229 m8x8
-         jsr entry122               ; $02822b m8x8
-         jsl @entry494              ; $02822e m8x8
-         jsr entry125               ; $028232 m8x8
+         jsr entry121               ; $02822b m8x8
+         jsl @entry493              ; $02822e m8x8
+         jsr entry124               ; $028232 m8x8
          lda.b $7ef3cc              ; $028235 m8x8
          cmp.b #$0d                 ; $028239 m8x8
          bne label338               ; $02823b m8x8
          lda.b #$00                 ; $02823d m8x8
          sta.b $7ef3cc              ; $02823f m8x8
          stz.b $04b4                ; $028243 m8x8
-         jsl @entry360              ; $028246 m8x8
+         jsl @entry359              ; $028246 m8x8
 label338: lda.b #$09                ; $02824a m8x8
          sta.b $94                  ; $02824c m8x8
-         jsl @entry313              ; $02824e m8x8
-         jsl @entry342              ; $028252 m8x8
-         jsl @entry333              ; $028256 m8x8
+         jsl @entry312              ; $02824e m8x8
+         jsl @entry341              ; $028252 m8x8
+         jsl @entry332              ; $028256 m8x8
          stz.b $02f0                ; $02825a m8x8
          inc.b $04c7                ; $02825d m8x8
          lda.b $7ef3c5              ; $028260 m8x8
@@ -5425,13 +5353,13 @@ label338: lda.b #$09                ; $02824a m8x8
          lda.b #$00                 ; $02827a m8x8
          sta.b $7ec005              ; $02827c m8x8
          sta.b $7ec006              ; $028280 m8x8
-         jsl @entry280              ; $028284 m8x8
+         jsl @entry279              ; $028284 m8x8
 label339: lda.b #$07                ; $028288 m8x8
          sta.b $010c                ; $02828a m8x8
          sta.b $10                  ; $02828d m8x8
          lda.b #$0f                 ; $02828f m8x8
          sta.b $11                  ; $028291 m8x8
-         jsr entry135               ; $028293 m8x8
+         jsr entry134               ; $028293 m8x8
          lda.b $7ef3c5              ; $028296 m8x8
          cmp.b #$02                 ; $02829a m8x8
          bcs label340               ; $02829c m8x8, c=0
@@ -5451,14 +5379,14 @@ label339: lda.b #$07                ; $028288 m8x8
 label340: sep #$20                  ; $0282bc m8x8
          rtl                        ; $0282be m8x8
          .org $0282c9
-entry116: .entry m8x8
+entry115: .entry m8x8
          lda.b $11                  ; $0282c9 m8x8
          asl.b                      ; $0282cb m8x8
          tax.b                      ; $0282cc m8x8
          jsr ($82c3, X)             ; $0282cd m8x8
          rtl                        ; $0282d0 m8x8
          .org $02844a
-entry117: .entry m8x8
+entry116: .entry m8x8
          lda.b $0136                ; $02844a m8x8
          beq label341               ; $02844d m8x8
          sei                        ; $02844f m8x8
@@ -5467,55 +5395,55 @@ entry117: .entry m8x8
          stz.b $0136                ; $028456 m8x8
          lda.b #$ff                 ; $028459 m8x8
          sta.b $2140                ; $02845b m8x8
-         jsl @entry6                ; $02845e m8x8
+         jsl @entry5                ; $02845e m8x8
          lda.b #$81                 ; $028462 m8x8
          sta.b $4200                ; $028464 m8x8
 label341: rts                       ; $028467 m8x8
          .org $028484
-entry118: .entry m8x8
-         jsl @entry464              ; $028484 m8x8
+entry117: .entry m8x8
+         jsl @entry463              ; $028484 m8x8
          lda.b $11                  ; $028488 m8x8
          bne label342               ; $02848a m8x8
          stz.b $14                  ; $02848c m8x8
-         jsl @entry8                ; $02848e m8x8
-         jsl @entry3                ; $028492 m8x8
+         jsl @entry7                ; $02848e m8x8
+         jsl @entry2                ; $028492 m8x8
          lda.b $7ef3c8              ; $028496 m8x8
          pha.b                      ; $02849a m8x8
          ldx.b $1ce8                ; $02849b m8x8
          lda.b $028481, X           ; $02849e m8x8
          sta.b $7ef3c8              ; $0284a2 m8x8
          stz.b $b0                  ; $0284a6 m8x8
-         jsl @entry114              ; $0284a8 m8x8
+         jsl @entry113              ; $0284a8 m8x8
          pla.b                      ; $0284ac m8x8
          sta.b $7ef3c8              ; $0284ad m8x8
 label342: rtl                       ; $0284b1 m8x8
          .org $0286a4
-entry119: .entry m8x8
+entry118: .entry m8x8
          sep #$30                   ; $0286a4 m8x8
-         jsl @entry361              ; $0286a6 m8x8
+         jsl @entry360              ; $0286a6 m8x8
          lda.b $11                  ; $0286aa m8x8
          asl.b                      ; $0286ac m8x8
          tax.b                      ; $0286ad m8x8
          jsr ($866e, X)             ; $0286ae m8x8
          stz.b $042c                ; $0286b1 m8x8
-         jsl @entry93               ; $0286b4 m8x8
+         jsl @entry92               ; $0286b4 m8x8
          lda.b $11                  ; $0286b8 m8x8
          bne label344               ; $0286ba m8x8
-         jsl @entry31               ; $0286bc m8x8
-         jsr entry169               ; $0286c0 m8x8
+         jsl @entry30               ; $0286bc m8x8
+         jsr entry168               ; $0286c0 m8x8
          lda.b $11                  ; $0286c3 m8x8
          bne label344               ; $0286c5 m8x8
-         jsl @entry82               ; $0286c7 m8x8
+         jsl @entry81               ; $0286c7 m8x8
          lda.b $11                  ; $0286cb m8x8
          bne label344               ; $0286cd m8x8
-         jsl @entry84               ; $0286cf m8x8
+         jsl @entry83               ; $0286cf m8x8
          lda.b $0454                ; $0286d3 m8x8
          beq label343               ; $0286d6 m8x8
-         jsl @entry92               ; $0286d8 m8x8
+         jsl @entry91               ; $0286d8 m8x8
 label343: lda.b $6c                 ; $0286dc m8x8
          bne label344               ; $0286de m8x8
-         jsr entry120               ; $0286e0 m8x8
-label344: jsl @entry49              ; $0286e3 m8x8
+         jsr entry119               ; $0286e0 m8x8
+label344: jsl @entry48              ; $0286e3 m8x8
          rep #$21                   ; $0286e7 m16x8, c=0
          lda.w $e2                  ; $0286e9 m16x8, c=0
          pha.w                      ; $0286eb m16x8, c=0
@@ -5553,8 +5481,8 @@ label344: jsl @entry49              ; $0286e3 m8x8
          sta.w $e6                  ; $028737 m16x8
          pha.w                      ; $028739 m16x8
 label345: sep #$20                  ; $02873a m8x8
-         jsl @entry295              ; $02873c m8x8
-         jsl @entry202              ; $028740 m8x8
+         jsl @entry294              ; $02873c m8x8
+         jsl @entry201              ; $028740 m8x8
          rep #$20                   ; $028744 m16x8
          pla.w                      ; $028746 m16x8
          sta.w $e6                  ; $028747 m16x8
@@ -5565,10 +5493,10 @@ label345: sep #$20                  ; $02873a m8x8
          pla.w                      ; $02874f m16x8
          sta.w $e2                  ; $028750 m16x8
          sep #$20                   ; $028752 m8x8
-         jsl @entry416              ; $028754 m8x8
-         jsl @entry440              ; $028758 m8x8
-         jmp @entry359              ; $02875c m8x8
-entry120: .entry m8x8
+         jsl @entry415              ; $028754 m8x8
+         jsl @entry439              ; $028758 m8x8
+         jmp @entry358              ; $02875c m8x8
+entry119: .entry m8x8
          rep #$20                   ; $028760 m16x8
          lda.w $30                  ; $028762 m16x8
          and.w #$00ff               ; $028764 m16x8
@@ -5599,12 +5527,12 @@ label346: lda.w $31                 ; $028783 m16x8
          cmp.w #$01e9               ; $02879f m16x8
          bcc label348               ; $0287a2 m16x8, c=1
 label347: sep #$20                  ; $0287a4 m8x8
-         jsl @entry300              ; $0287a6 m8x8
+         jsl @entry299              ; $0287a6 m8x8
          bcs label348               ; $0287aa m8x8, c=0
          lda.b $10                  ; $0287ac m8x8, c=0
          cmp.b #$07                 ; $0287ae m8x8
          bne label348               ; $0287b0 m8x8
-         jsl @entry121              ; $0287b2 m8x8
+         jsl @entry120              ; $0287b2 m8x8
          lda.b $10                  ; $0287b6 m8x8
          cmp.b #$07                 ; $0287b8 m8x8
          bne label348               ; $0287ba m8x8
@@ -5613,14 +5541,14 @@ label347: sep #$20                  ; $0287a4 m8x8
 label348: sep #$20                  ; $0287c0 m8x8
          rts                        ; $0287c2 m8x8
          .org $0287c7
-entry121: .entry m8x8
+entry120: .entry m8x8
          lda.b $67                  ; $0287c7 m8x8
          and.b $0287c3, X           ; $0287c9 m8x8
          sta.b $67                  ; $0287cd m8x8
          txa.b                      ; $0287cf m8x8
          jsl $00879c noreturn       ; $0287d0 m8x8
          .org $0289f1
-entry122: .entry m8x8
+entry121: .entry m8x8
          ldy.b #$16                 ; $0289f1 m8x8
          ldx.b $0414                ; $0289f3 m8x8
          lda.b $02884e, X           ; $0289f6 m8x8
@@ -5632,9 +5560,9 @@ label349: cpx.b #$02                ; $028a00 m8x8
          lda.b #$03                 ; $028a04 m8x8
 label350: sty.b $1c                 ; $028a06 m8x8
          sta.b $1d                  ; $028a08 m8x8
-         jsl @entry452              ; $028a0a m8x8
-entry123: .entry m8x8
-         jsl @entry319              ; $028a0e m8x8
+         jsl @entry451              ; $028a0a m8x8
+entry122: .entry m8x8
+         jsl @entry318              ; $028a0e m8x8
          lda.b $0372                ; $028a12 m8x8
          beq label351               ; $028a15 m8x8
          stz.b $4d                  ; $028a17 m8x8
@@ -5650,7 +5578,7 @@ entry123: .entry m8x8
          sta.b $5d                  ; $028a2d m8x8
 label351: rts                       ; $028a2f m8x8
          .org $028bab
-entry124: .entry m8x8
+entry123: .entry m8x8
          stz.b $0200                ; $028bab m8x8
          rep #$30                   ; $028bae m16x16
          lda.w #$0000               ; $028bb0 m16x16
@@ -5667,12 +5595,12 @@ entry124: .entry m8x8
          sta.w $99                  ; $028bd4 m16x16
 label352: sep #$30                  ; $028bd6 m8x8
          stz.b $0458                ; $028bd8 m8x8
-         jsr entry123               ; $028bdb m8x8
-         jsr entry177               ; $028bde m8x8
+         jsr entry122               ; $028bdb m8x8
+         jsr entry176               ; $028bde m8x8
          inc.b $b0                  ; $028be1 m8x8
          rts                        ; $028be3 m8x8
          .org $028c73
-entry125: .entry m8x8
+entry124: .entry m8x8
          stz.b $0200                ; $028c73 m8x8
          stz.b $b0                  ; $028c76 m8x8
          stz.b $0418                ; $028c78 m8x8
@@ -5725,35 +5653,35 @@ entry125: .entry m8x8
          sta.b $7ec1aa              ; $028d0c m8x8
          rts                        ; $028d10 m8x8
          .org $029816
-entry126: .entry m8x8
-         jsr entry172               ; $029816 m8x8
-         jsr entry127               ; $029819 m8x8
+entry125: .entry m8x8
+         jsr entry171               ; $029816 m8x8
+         jsr entry126               ; $029819 m8x8
          rtl                        ; $02981c m8x8
-entry127: .entry m8x8
+entry126: .entry m8x8
          lda.b $b0                  ; $02981d m8x8
          jsl $008781 noreturn       ; $02981f m8x8
          .org $029829
-entry128: .entry m8x8
+entry127: .entry m8x8
          lda.b $010c                ; $029829 m8x8
          sta.b $10                  ; $02982c m8x8
          stz.b $11                  ; $02982e m8x8
          stz.b $b0                  ; $029830 m8x8
          rts                        ; $029832 m8x8
-entry129: .entry m8x8
+entry128: .entry m8x8
          lda.b $7ec007              ; $029833 m8x8
          lsr.b                      ; $029837 m8x8
          bcc label353               ; $029838 m8x8, c=1
          lda.b $7ec011              ; $02983a m8x8, c=1
          sub.b #$10                 ; $02983e m8x8
          sta.b $7ec011              ; $029841 m8x8
-label353: jsr entry173              ; $029845 m8x8
-         jsr entry130               ; $029848 m8x8
+label353: jsr entry172              ; $029845 m8x8
+         jsr entry129               ; $029848 m8x8
          rtl                        ; $02984b m8x8
-entry130: .entry m8x8
+entry129: .entry m8x8
          lda.b $b0                  ; $02984c m8x8
          jsl $008781 noreturn       ; $02984e m8x8
          .org $029856
-entry131: .entry m8x8
+entry130: .entry m8x8
          stz.b $11                  ; $029856 m8x8
          stz.b $b0                  ; $029858 m8x8
          lda.b $010c                ; $02985a m8x8
@@ -5769,8 +5697,8 @@ entry131: .entry m8x8
          sta.b $069a                ; $029871 m8x8
 label354: rts                       ; $029874 m8x8
          .org $02987d
-entry132: .entry m8x8
-         jsl @entry202              ; $02987d m8x8
+entry131: .entry m8x8
+         jsl @entry201              ; $02987d m8x8
          lda.b $11                  ; $029881 m8x8
          asl.b                      ; $029883 m8x8
          tax.b                      ; $029884 m8x8
@@ -5784,7 +5712,7 @@ entry132: .entry m8x8
          sta.b $0351                ; $029894 m8x8
 label355: lda.b #$06                ; $029897 m8x8
          sta.b $5e                  ; $029899 m8x8
-         jsl @entry283              ; $02989b m8x8
+         jsl @entry282              ; $02989b m8x8
          stz.b $31                  ; $02989f m8x8
          stz.b $30                  ; $0298a1 m8x8
 label356: lda.b $2f                 ; $0298a3 m8x8
@@ -5800,25 +5728,25 @@ label356: lda.b $2f                 ; $0298a3 m8x8
 label357: lda.b $029875, X          ; $0298b5 m8x8
          sta.b $26                  ; $0298b9 m8x8
          sta.b $67                  ; $0298bb m8x8
-         jsl @entry287              ; $0298bd m8x8
-         jmp @entry416              ; $0298c1 m8x8
+         jsl @entry286              ; $0298bd m8x8
+         jmp @entry415              ; $0298c1 m8x8
          .org $0299d2
-entry133: .entry m8x8
-         jsl @entry202              ; $0299d2 m8x8
+entry132: .entry m8x8
+         jsl @entry201              ; $0299d2 m8x8
          lda.b $11                  ; $0299d6 m8x8
          asl.b                      ; $0299d8 m8x8
          tax.b                      ; $0299d9 m8x8
          jsr ($99ce, X)             ; $0299da m8x8
-         jmp @entry416              ; $0299dd m8x8
+         jmp @entry415              ; $0299dd m8x8
          .org $0299f4
-entry134: .entry m8x8
+entry133: .entry m8x8
          lda.b $b0                  ; $0299f4 m8x8
          asl.b                      ; $0299f6 m8x8
          tax.b                      ; $0299f7 m8x8
          jsr ($99e8, X)             ; $0299f8 m8x8
          rtl                        ; $0299fb m8x8
          .org $029ad2
-entry135: .entry m8x8
+entry134: .entry m8x8
          lda.b $0132                ; $029ad2 m8x8
          cmp.b #$ff                 ; $029ad5 m8x8
          beq label358               ; $029ad7 m8x8
@@ -5838,21 +5766,21 @@ entry135: .entry m8x8
          inc.b $0136                ; $029af5 m8x8
          lda.b #$ff                 ; $029af8 m8x8
          sta.b $2140                ; $029afa m8x8
-         jsl @entry7                ; $029afd m8x8
+         jsl @entry6                ; $029afd m8x8
          lda.b #$81                 ; $029b01 m8x8
          sta.b $4200                ; $029b03 m8x8
 label358: rts                       ; $029b06 m8x8
-label359: jmp entry117              ; $029b07 m8x8
+label359: jmp entry116              ; $029b07 m8x8
          .org $029b45
-entry136: .entry m8x8
+entry135: .entry m8x8
          lda.b $11                  ; $029b45 m8x8
          asl.b                      ; $029b47 m8x8
          tax.b                      ; $029b48 m8x8
          jsr ($9b39, X)             ; $029b49 m8x8
-         jsl @entry202              ; $029b4c m8x8
-         jmp @entry416              ; $029b50 m8x8
+         jsl @entry201              ; $029b4c m8x8
+         jmp @entry415              ; $029b50 m8x8
          .org $029bf7
-entry137: .entry m8x8
+entry136: .entry m8x8
          lda.b $11                  ; $029bf7 m8x8
          asl.b                      ; $029bf9 m8x8
          tax.b                      ; $029bfa m8x8
@@ -5862,19 +5790,19 @@ entry137: .entry m8x8
          bcc label360               ; $029c02 m8x8, c=1
          cmp.b #$05                 ; $029c04 m8x8
          bcc label361               ; $029c06 m8x8, c=1
-label360: jsl @entry202             ; $029c08 m8x8
-         jsl @entry416              ; $029c0c m8x8
+label360: jsl @entry201             ; $029c08 m8x8
+         jsl @entry415              ; $029c0c m8x8
 label361: rtl                       ; $029c10 m8x8
          .org $029d81
-entry138: .entry m8x8
+entry137: .entry m8x8
          lda.b $11                  ; $029d81 m8x8
          asl.b                      ; $029d83 m8x8
          tax.b                      ; $029d84 m8x8
          jsr ($9d77, X)             ; $029d85 m8x8
-         jsl @entry202              ; $029d88 m8x8
-         jmp @entry416              ; $029d8c m8x8
+         jsl @entry201              ; $029d88 m8x8
+         jmp @entry415              ; $029d8c m8x8
          .org $029dd3
-entry139: .entry m8x8
+entry138: .entry m8x8
          rep #$21                   ; $029dd3 m16x8, c=0
          lda.w $e2                  ; $029dd5 m16x8, c=0
          pha.w                      ; $029dd7 m16x8, c=0
@@ -5897,7 +5825,7 @@ entry139: .entry m8x8
          sta.w $e6                  ; $029dff m16x8
          sta.w $0124                ; $029e01 m16x8
          sep #$20                   ; $029e04 m8x8
-         jsl @entry202              ; $029e06 m8x8
+         jsl @entry201              ; $029e06 m8x8
          rep #$20                   ; $029e0a m16x8
          pla.w                      ; $029e0c m16x8
          sta.w $e6                  ; $029e0d m16x8
@@ -5912,9 +5840,9 @@ entry139: .entry m8x8
          asl.b                      ; $029e1d m8x8
          tax.b                      ; $029e1e m8x8
          jsr ($9dc1, X)             ; $029e1f m8x8
-         jmp @entry416              ; $029e22 m8x8
+         jmp @entry415              ; $029e22 m8x8
          .org $029ee3
-entry140: .entry m8x8
+entry139: .entry m8x8
          lda.b $b0                  ; $029ee3 m8x8
          asl.b                      ; $029ee5 m8x8
          tax.b                      ; $029ee6 m8x8
@@ -5934,11 +5862,11 @@ entry140: .entry m8x8
          bcc label362               ; $029f06 m8x8, c=1
          cmp.b #$0b                 ; $029f08 m8x8
          bcc label363               ; $029f0a m8x8, c=1
-label362: jsl @entry283             ; $029f0c m8x8
-         jsl @entry287              ; $029f10 m8x8
-label363: jmp @entry416             ; $029f14 m8x8
+label362: jsl @entry282             ; $029f0c m8x8
+         jsl @entry286              ; $029f10 m8x8
+label363: jmp @entry415             ; $029f14 m8x8
          .org $02a0be
-entry141: .entry m8x8
+entry140: .entry m8x8
          lda.b $040c                ; $02a0be m8x8
          cmp.b #$ff                 ; $02a0c1 m8x8
          beq label365               ; $02a0c3 m8x8
@@ -5951,11 +5879,11 @@ label364: lsr.b                     ; $02a0cb m8x8
          sta.b $7ef37c, X           ; $02a0d1 m8x8
 label365: rtl                       ; $02a0d5 m8x8
          .org $02a197
-entry142: .entry m8x8
-         jsl @entry46               ; $02a197 m8x8
+entry141: .entry m8x8
+         jsl @entry45               ; $02a197 m8x8
          rts                        ; $02a19b m8x8
          .org $02a1e7
-entry143: .entry m8x8
+entry142: .entry m8x8
          lda.b $a2                  ; $02a1e7 m8x8
          and.b #$0f                 ; $02a1e9 m8x8
          sta.b $00                  ; $02a1eb m8x8
@@ -6015,7 +5943,7 @@ entry143: .entry m8x8
          add.b $00                  ; $02a26c m8x8
          sta.b $0603                ; $02a26f m8x8
          rts                        ; $02a272 m8x8
-entry144: .entry m8x8
+entry143: .entry m8x8
          sty.b $00                  ; $02a273 m8x8
          sta.b $048e                ; $02a275 m8x8
          sta.b $a2                  ; $02a278 m8x8
@@ -6076,7 +6004,7 @@ label366: lda.b $21                 ; $02a2f9 m8x8
          bne label366               ; $02a301 m8x8
          rts                        ; $02a303 m8x8
          .org $02a36c
-entry145: .entry m8x8
+entry144: .entry m8x8
          sep #$30                   ; $02a36c m8x8
          lda.b $11                  ; $02a36e m8x8
          asl.b                      ; $02a370 m8x8
@@ -6104,7 +6032,7 @@ entry145: .entry m8x8
          sta.w $e6                  ; $02a3a1 m16x8
          sta.w $0124                ; $02a3a3 m16x8
          sep #$20                   ; $02a3a6 m8x8
-         jsl @entry202              ; $02a3a8 m8x8
+         jsl @entry201              ; $02a3a8 m8x8
          rep #$20                   ; $02a3ac m16x8
          pla.w                      ; $02a3ae m16x8
          sta.w $e6                  ; $02a3af m16x8
@@ -6115,9 +6043,9 @@ entry145: .entry m8x8
          pla.w                      ; $02a3b7 m16x8
          sta.w $e2                  ; $02a3b8 m16x8
          sep #$20                   ; $02a3ba m8x8
-         jsl @entry416              ; $02a3bc m8x8
-         jsl @entry440              ; $02a3c0 m8x8
-entry146: .entry m8x8
+         jsl @entry415              ; $02a3bc m8x8
+         jsl @entry439              ; $02a3c0 m8x8
+entry145: .entry m8x8
          lda.b $8a                  ; $02a3c4 m8x8
          cmp.b #$70                 ; $02a3c6 m8x8
          beq label367               ; $02a3c8 m8x8
@@ -6162,32 +6090,32 @@ label372: lda.b $1a                 ; $02a401 m8x8
          sta.b $e7                  ; $02a421 m8x8
 label373: rtl                       ; $02a423 m8x8
          .org $02b566
-entry147: .entry m8x8
+entry146: .entry m8x8
          rep #$20                   ; $02b566 m16x8
          lda.w $22                  ; $02b568 m16x8
          add.w #$0008               ; $02b56a m16x8
          sta.w $22                  ; $02b56e m16x8
          sep #$20                   ; $02b570 m8x8
-entry148: .entry m8x8
+entry147: .entry m8x8
          phb                        ; $02b572 m8x8
          phk                        ; $02b573 m8x8
          plb                        ; $02b574 m8x8
          lda.b $a9                  ; $02b575 m8x8
          eor.b #$01                 ; $02b577 m8x8
          sta.b $a9                  ; $02b579 m8x8
-         jsr entry168               ; $02b57b m8x8
+         jsr entry167               ; $02b57b m8x8
          ldx.b #$08                 ; $02b57e m8x8
-         jsr entry163               ; $02b580 m8x8
-         jsr entry162               ; $02b583 m8x8
+         jsr entry162               ; $02b580 m8x8
+         jsr entry161               ; $02b583 m8x8
          lda.b $a9                  ; $02b586 m8x8
-         jsr entry170               ; $02b588 m8x8
+         jsr entry169               ; $02b588 m8x8
          ldy.b #$02                 ; $02b58b m8x8
-         jsr entry167               ; $02b58d m8x8
+         jsr entry166               ; $02b58d m8x8
          inc.b $11                  ; $02b590 m8x8
          lda.b $a9                  ; $02b592 m8x8
          bne label378               ; $02b594 m8x8
          ldx.b #$08                 ; $02b596 m8x8
-         jsr entry164               ; $02b598 m8x8
+         jsr entry163               ; $02b598 m8x8
          lda.b $a0                  ; $02b59b m8x8
          sta.b $a2                  ; $02b59d m8x8
          lda.b $0114                ; $02b59f m8x8
@@ -6198,13 +6126,13 @@ entry148: .entry m8x8
          sta.b $a0                  ; $02b5ac m8x8
          dec.b                      ; $02b5ae m8x8
          ldy.b #$01                 ; $02b5af m8x8
-         jsr entry144               ; $02b5b1 m8x8
+         jsr entry143               ; $02b5b1 m8x8
          bra label376               ; $02b5b4 m8x8
 label374: lda.b $048e               ; $02b5b6 m8x8
          cmp.b $a0                  ; $02b5b9 m8x8
          beq label375               ; $02b5bb m8x8
          sta.b $a2                  ; $02b5bd m8x8
-         jsr entry143               ; $02b5bf m8x8
+         jsr entry142               ; $02b5bf m8x8
 label375: inc.b $a0                 ; $02b5c2 m8x8
 label376: inc.b $11                 ; $02b5c4 m8x8
          lda.b $ef                  ; $02b5c6 m8x8
@@ -6237,33 +6165,33 @@ label380: lda.b #$02                ; $02b5ff m8x8
          sta.b $a7                  ; $02b601 m8x8
 label381: plb                       ; $02b603 m8x8
          rtl                        ; $02b604 m8x8
-entry149: .entry m8x8
+entry148: .entry m8x8
          rep #$20                   ; $02b605 m16x8
          lda.w $22                  ; $02b607 m16x8
          sub.w #$0008               ; $02b609 m16x8
          sta.w $22                  ; $02b60d m16x8
          sep #$20                   ; $02b60f m8x8
-entry150: .entry m8x8
+entry149: .entry m8x8
          phb                        ; $02b611 m8x8
          phk                        ; $02b612 m8x8
          plb                        ; $02b613 m8x8
          lda.b $a9                  ; $02b614 m8x8
          eor.b #$01                 ; $02b616 m8x8
          sta.b $a9                  ; $02b618 m8x8
-         jsr entry168               ; $02b61a m8x8
+         jsr entry167               ; $02b61a m8x8
          ldx.b #$08                 ; $02b61d m8x8
-         jsr entry165               ; $02b61f m8x8
-         jsr entry162               ; $02b622 m8x8
+         jsr entry164               ; $02b61f m8x8
+         jsr entry161               ; $02b622 m8x8
          lda.b $a9                  ; $02b625 m8x8
          eor.b #$01                 ; $02b627 m8x8
-         jsr entry170               ; $02b629 m8x8
+         jsr entry169               ; $02b629 m8x8
          ldy.b #$03                 ; $02b62c m8x8
-         jsr entry167               ; $02b62e m8x8
+         jsr entry166               ; $02b62e m8x8
          inc.b $11                  ; $02b631 m8x8
          lda.b $a9                  ; $02b633 m8x8
          beq label386               ; $02b635 m8x8
          ldx.b #$08                 ; $02b637 m8x8
-         jsr entry166               ; $02b639 m8x8
+         jsr entry165               ; $02b639 m8x8
          lda.b $a0                  ; $02b63c m8x8
          sta.b $a2                  ; $02b63e m8x8
          lda.b $0114                ; $02b640 m8x8
@@ -6274,13 +6202,13 @@ entry150: .entry m8x8
          sta.b $a0                  ; $02b64d m8x8
          inc.b                      ; $02b64f m8x8
          ldy.b #$ff                 ; $02b650 m8x8
-         jsr entry144               ; $02b652 m8x8
+         jsr entry143               ; $02b652 m8x8
          bra label384               ; $02b655 m8x8
 label382: lda.b $048e               ; $02b657 m8x8
          cmp.b $a0                  ; $02b65a m8x8
          beq label383               ; $02b65c m8x8
          sta.b $a2                  ; $02b65e m8x8
-         jsr entry143               ; $02b660 m8x8
+         jsr entry142               ; $02b660 m8x8
 label383: dec.b $a0                 ; $02b663 m8x8
 label384: inc.b $11                 ; $02b665 m8x8
          lda.b $ef                  ; $02b667 m8x8
@@ -6313,54 +6241,54 @@ label388: lda.b #$02                ; $02b6a0 m8x8
          sta.b $a7                  ; $02b6a2 m8x8
 label389: plb                       ; $02b6a4 m8x8
          rtl                        ; $02b6a5 m8x8
-entry151: .entry m8x8
+entry150: .entry m8x8
          rep #$20                   ; $02b6a6 m16x8
          lda.w $20                  ; $02b6a8 m16x8
          add.w #$0010               ; $02b6aa m16x8
          sta.w $20                  ; $02b6ae m16x8
          sep #$20                   ; $02b6b0 m8x8
-entry152: .entry m8x8
+entry151: .entry m8x8
          phb                        ; $02b6b2 m8x8
          phk                        ; $02b6b3 m8x8
          plb                        ; $02b6b4 m8x8
          lda.b $aa                  ; $02b6b5 m8x8
          eor.b #$02                 ; $02b6b7 m8x8
          sta.b $aa                  ; $02b6b9 m8x8
-         jsr entry168               ; $02b6bb m8x8
+         jsr entry167               ; $02b6bb m8x8
          ldx.b #$00                 ; $02b6be m8x8
-         jsr entry163               ; $02b6c0 m8x8
-         jsr entry162               ; $02b6c3 m8x8
+         jsr entry162               ; $02b6c0 m8x8
+         jsr entry161               ; $02b6c3 m8x8
          lda.b $aa                  ; $02b6c6 m8x8
-         jsr entry171               ; $02b6c8 m8x8
+         jsr entry170               ; $02b6c8 m8x8
          ldy.b #$00                 ; $02b6cb m8x8
-         jsr entry167               ; $02b6cd m8x8
+         jsr entry166               ; $02b6cd m8x8
          inc.b $11                  ; $02b6d0 m8x8
          lda.b $aa                  ; $02b6d2 m8x8
          bne label393               ; $02b6d4 m8x8
          ldx.b #$00                 ; $02b6d6 m8x8
-         jsr entry164               ; $02b6d8 m8x8
+         jsr entry163               ; $02b6d8 m8x8
          lda.b $a0                  ; $02b6db m8x8
          sta.b $a2                  ; $02b6dd m8x8
          lda.b $0114                ; $02b6df m8x8
          cmp.b #$8e                 ; $02b6e2 m8x8
          bne label390               ; $02b6e4 m8x8
-entry153: .entry m8x8
-         jsl @entry141              ; $02b6e6 m8x8
-         jsl @entry157              ; $02b6ea m8x8
+entry152: .entry m8x8
+         jsl @entry140              ; $02b6e6 m8x8
+         jsl @entry156              ; $02b6ea m8x8
          lda.b #$08                 ; $02b6ee m8x8
          sta.b $010c                ; $02b6f0 m8x8
          lda.b #$0f                 ; $02b6f3 m8x8
          sta.b $10                  ; $02b6f5 m8x8
          stz.b $11                  ; $02b6f7 m8x8
          stz.b $b0                  ; $02b6f9 m8x8
-         jsr entry123               ; $02b6fb m8x8
+         jsr entry122               ; $02b6fb m8x8
          plb                        ; $02b6fe m8x8
          rtl                        ; $02b6ff m8x8
 label390: lda.b $048e               ; $02b700 m8x8
          cmp.b $a0                  ; $02b703 m8x8
          beq label391               ; $02b705 m8x8
          sta.b $a2                  ; $02b707 m8x8
-         jsr entry143               ; $02b709 m8x8
+         jsr entry142               ; $02b709 m8x8
 label391: lda.b $a0                 ; $02b70c m8x8
          add.b #$10                 ; $02b70e m8x8
          sta.b $a0                  ; $02b711 m8x8
@@ -6395,37 +6323,37 @@ label395: lda.b #$02                ; $02b74e m8x8
          sta.b $a6                  ; $02b750 m8x8
 label396: plb                       ; $02b752 m8x8
          rtl                        ; $02b753 m8x8
-entry154: .entry m8x8
+entry153: .entry m8x8
          phb                        ; $02b754 m8x8
          phk                        ; $02b755 m8x8
          plb                        ; $02b756 m8x8
          lda.b $aa                  ; $02b757 m8x8
          eor.b #$02                 ; $02b759 m8x8
          sta.b $aa                  ; $02b75b m8x8
-         jsr entry168               ; $02b75d m8x8
+         jsr entry167               ; $02b75d m8x8
          ldx.b #$00                 ; $02b760 m8x8
-         jsr entry165               ; $02b762 m8x8
-         jsr entry162               ; $02b765 m8x8
+         jsr entry164               ; $02b762 m8x8
+         jsr entry161               ; $02b765 m8x8
          lda.b $aa                  ; $02b768 m8x8
          eor.b #$02                 ; $02b76a m8x8
-         jsr entry171               ; $02b76c m8x8
+         jsr entry170               ; $02b76c m8x8
          ldy.b #$01                 ; $02b76f m8x8
-         jsr entry167               ; $02b771 m8x8
+         jsr entry166               ; $02b771 m8x8
          inc.b $11                  ; $02b774 m8x8
          lda.b $aa                  ; $02b776 m8x8
          beq label401               ; $02b778 m8x8
          ldx.b #$00                 ; $02b77a m8x8
-         jsr entry166               ; $02b77c m8x8
+         jsr entry165               ; $02b77c m8x8
          lda.b $a0                  ; $02b77f m8x8
          sta.b $a2                  ; $02b781 m8x8
          lda.b $0114                ; $02b783 m8x8
          cmp.b #$8e                 ; $02b786 m8x8
          bne label397               ; $02b788 m8x8
-         jmp entry153               ; $02b78a m8x8
+         jmp entry152               ; $02b78a m8x8
 label397: lda.b $a0                 ; $02b78d m8x8
          ora.b $a1                  ; $02b78f m8x8
          bne label398               ; $02b791 m8x8
-         jsl @entry141              ; $02b793 m8x8
+         jsl @entry140              ; $02b793 m8x8
          lda.b #$19                 ; $02b797 m8x8
          sta.b $10                  ; $02b799 m8x8
          stz.b $11                  ; $02b79b m8x8
@@ -6436,7 +6364,7 @@ label398: lda.b $048e               ; $02b7a1 m8x8
          cmp.b $a0                  ; $02b7a4 m8x8
          beq label399               ; $02b7a6 m8x8
          sta.b $a2                  ; $02b7a8 m8x8
-         jsr entry143               ; $02b7aa m8x8
+         jsr entry142               ; $02b7aa m8x8
 label399: lda.b $a0                 ; $02b7ad m8x8
          sub.b #$10                 ; $02b7af m8x8
          sta.b $a0                  ; $02b7b2 m8x8
@@ -6471,14 +6399,14 @@ label403: lda.b #$02                ; $02b7ef m8x8
          sta.b $a6                  ; $02b7f1 m8x8
 label404: plb                       ; $02b7f3 m8x8
          rtl                        ; $02b7f4 m8x8
-entry155: .entry m8x8
+entry154: .entry m8x8
          lda.b $a9                  ; $02b7f5 m8x8
          eor.b #$01                 ; $02b7f7 m8x8
          sta.b $a9                  ; $02b7f9 m8x8
-         jsr entry168               ; $02b7fb m8x8
+         jsr entry167               ; $02b7fb m8x8
          ldx.b #$08                 ; $02b7fe m8x8
-         jsr entry163               ; $02b800 m8x8
-entry156: .entry m8x8
+         jsr entry162               ; $02b800 m8x8
+entry155: .entry m8x8
          lda.b $a7                  ; $02b803 m8x8
          asl.b                      ; $02b805 m8x8
          asl.b                      ; $02b806 m8x8
@@ -6492,7 +6420,7 @@ entry156: .entry m8x8
          lda.b $02b504, X           ; $02b813 m8x8
          ora.b $0408                ; $02b817 m8x8
          sta.b $0408                ; $02b81a m8x8
-entry157: .entry m8x8
+entry156: .entry m8x8
          rep #$30                   ; $02b81d m16x16
          lda.w $a0                  ; $02b81f m16x16
          asl.w                      ; $02b821 m16x16
@@ -6502,31 +6430,31 @@ entry157: .entry m8x8
          sta.w $7ef000, X           ; $02b82a m16x16
          sep #$30                   ; $02b82e m8x8
          rtl                        ; $02b830 m8x8
-entry158: .entry m8x8
+entry157: .entry m8x8
          lda.b $a9                  ; $02b831 m8x8
          eor.b #$01                 ; $02b833 m8x8
          sta.b $a9                  ; $02b835 m8x8
-         jsr entry168               ; $02b837 m8x8
+         jsr entry167               ; $02b837 m8x8
          ldx.b #$08                 ; $02b83a m8x8
-         jsr entry165               ; $02b83c m8x8
-         bra entry156               ; $02b83f m8x8
-entry159: .entry m8x8
+         jsr entry164               ; $02b83c m8x8
+         bra entry155               ; $02b83f m8x8
+entry158: .entry m8x8
          lda.b $aa                  ; $02b841 m8x8
          eor.b #$02                 ; $02b843 m8x8
          sta.b $aa                  ; $02b845 m8x8
-         jsr entry168               ; $02b847 m8x8
+         jsr entry167               ; $02b847 m8x8
          ldx.b #$00                 ; $02b84a m8x8
-         jsr entry163               ; $02b84c m8x8
-         bra entry156               ; $02b84f m8x8
-entry160: .entry m8x8
+         jsr entry162               ; $02b84c m8x8
+         bra entry155               ; $02b84f m8x8
+entry159: .entry m8x8
          lda.b $aa                  ; $02b851 m8x8
          eor.b #$02                 ; $02b853 m8x8
          sta.b $aa                  ; $02b855 m8x8
-         jsr entry168               ; $02b857 m8x8
+         jsr entry167               ; $02b857 m8x8
          ldx.b #$00                 ; $02b85a m8x8
-         jsr entry165               ; $02b85c m8x8
-         bra entry156               ; $02b85f m8x8
-entry161: .entry m8x8
+         jsr entry164               ; $02b85c m8x8
+         bra entry155               ; $02b85f m8x8
+entry160: .entry m8x8
          lda.b $a7                  ; $02b861 m8x8
          asl.b                      ; $02b863 m8x8
          asl.b                      ; $02b864 m8x8
@@ -6540,9 +6468,9 @@ entry161: .entry m8x8
          lda.b $02b504, X           ; $02b871 m8x8
          ora.b $0408                ; $02b875 m8x8
          sta.b $0408                ; $02b878 m8x8
-         jsr entry162               ; $02b87b m8x8
+         jsr entry161               ; $02b87b m8x8
          rtl                        ; $02b87e m8x8
-entry162: .entry m8x8
+entry161: .entry m8x8
          rep #$30                   ; $02b87f m16x16
          lda.w $a0                  ; $02b881 m16x16
          asl.w                      ; $02b883 m16x16
@@ -6560,7 +6488,7 @@ entry162: .entry m8x8
          sta.w $7ef000, X           ; $02b899 m16x16
          sep #$30                   ; $02b89d m8x8
          rts                        ; $02b89f m8x8
-entry163: .entry m8x8
+entry162: .entry m8x8
          rep #$20                   ; $02b8a0 m16x8
          lda.w $0600, X             ; $02b8a2 m16x8
          add.w #$0100               ; $02b8a5 m16x8
@@ -6570,7 +6498,7 @@ entry163: .entry m8x8
          sta.w $0604, X             ; $02b8b3 m16x8
          sep #$20                   ; $02b8b6 m8x8
          rts                        ; $02b8b8 m8x8
-entry164: .entry m8x8
+entry163: .entry m8x8
          rep #$20                   ; $02b8b9 m16x8
          lda.w $0602, X             ; $02b8bb m16x8
          add.w #$0200               ; $02b8be m16x8
@@ -6580,7 +6508,7 @@ entry164: .entry m8x8
          sta.w $0606, X             ; $02b8cc m16x8
          sep #$20                   ; $02b8cf m8x8
          rts                        ; $02b8d1 m8x8
-entry165: .entry m8x8
+entry164: .entry m8x8
          rep #$20                   ; $02b8d2 m16x8
          lda.w $0600, X             ; $02b8d4 m16x8
          sub.w #$0100               ; $02b8d7 m16x8
@@ -6590,7 +6518,7 @@ entry165: .entry m8x8
          sta.w $0604, X             ; $02b8e5 m16x8
          sep #$20                   ; $02b8e8 m8x8
          rts                        ; $02b8ea m8x8
-entry166: .entry m8x8
+entry165: .entry m8x8
          rep #$20                   ; $02b8eb m16x8
          lda.w $0602, X             ; $02b8ed m16x8
          sub.w #$0200               ; $02b8f0 m16x8
@@ -6601,7 +6529,7 @@ entry166: .entry m8x8
          sep #$20                   ; $02b901 m8x8
          rts                        ; $02b903 m8x8
          .org $02b914
-entry167: .entry m8x8
+entry166: .entry m8x8
          sty.b $0418                ; $02b914 m8x8
          lda.b $67                  ; $02b917 m8x8
          and.b #$03                 ; $02b919 m8x8
@@ -6640,13 +6568,13 @@ label409: lda.w $b904, X            ; $02b951 m16x8
          sta.w $061a                ; $02b959 m16x8
          sep #$20                   ; $02b95c m8x8
          rts                        ; $02b95e m8x8
-entry168: .entry m8x8
+entry167: .entry m8x8
          lda.b $040e                ; $02b95f m8x8
          ora.b $aa                  ; $02b962 m8x8
          ora.b $a9                  ; $02b964 m8x8
          sta.b $a8                  ; $02b966 m8x8
          rts                        ; $02b968 m8x8
-entry169: .entry m8x8
+entry168: .entry m8x8
          rep #$20                   ; $02b969 m16x8
          lda.w #$0001               ; $02b96b m16x8
          sta.w $00                  ; $02b96e m16x8
@@ -6804,7 +6732,7 @@ label425: rep #$20                  ; $02bab3 m16x8
 label426: sep #$20                  ; $02babd m8x8
          rts                        ; $02babf m8x8
          .org $02bd00
-entry170: .entry m8x8
+entry169: .entry m8x8
          asl.b                      ; $02bd00 m8x8
          asl.b                      ; $02bd01 m8x8
          tay.b                      ; $02bd02 m8x8
@@ -6817,7 +6745,7 @@ label427: lda.b $bcf8, Y            ; $02bd05 m8x8
          bne label427               ; $02bd0f m8x8
          rts                        ; $02bd11 m8x8
          .org $02bd1a
-entry171: .entry m8x8
+entry170: .entry m8x8
          asl.b                      ; $02bd1a m8x8
          tay.b                      ; $02bd1b m8x8
          ldx.b #$00                 ; $02bd1c m8x8
@@ -6829,14 +6757,14 @@ label428: lda.b $bd12, Y            ; $02bd1e m8x8
          bne label428               ; $02bd28 m8x8
          rts                        ; $02bd2a m8x8
          .org $02c21b
-entry172: .entry m8x8
+entry171: .entry m8x8
          lda.b $7ec007              ; $02c21b m8x8
          lsr.b                      ; $02c21f m8x8
-         bcc entry173               ; $02c220 m8x8, c=1
+         bcc entry172               ; $02c220 m8x8, c=1
          lda.b $7ec011              ; $02c222 m8x8, c=1
          add.b #$10                 ; $02c226 m8x8
          sta.b $7ec011              ; $02c229 m8x8
-entry173: .entry m8x8
+entry172: .entry m8x8
          lda.b #$09                 ; $02c22d m8x8
          sta.b $94                  ; $02c22f m8x8
          lda.b $7ec011              ; $02c231 m8x8
@@ -6844,7 +6772,7 @@ entry173: .entry m8x8
          sta.b $95                  ; $02c237 m8x8
          rts                        ; $02c239 m8x8
          .org $02c270
-entry174: .entry m8x8
+entry173: .entry m8x8
          stz.b $2133                ; $02c270 m8x8
          lda.b #$09                 ; $02c273 m8x8
          sta.b $94                  ; $02c275 m8x8
@@ -6869,19 +6797,19 @@ entry174: .entry m8x8
          sta.b $9e                  ; $02c2a0 m8x8
          rts                        ; $02c2a2 m8x8
          .org $02c2eb
-entry175: .entry m8x8
+entry174: .entry m8x8
          lda.b $9b                  ; $02c2eb m8x8
          pha.b                      ; $02c2ed m8x8
          stz.b $420c                ; $02c2ee m8x8
          stz.b $9b                  ; $02c2f1 m8x8
-         jsl @entry56               ; $02c2f3 m8x8
+         jsl @entry55               ; $02c2f3 m8x8
          stz.b $0418                ; $02c2f7 m8x8
          stz.b $045c                ; $02c2fa m8x8
          stz.b $0200                ; $02c2fd m8x8
-label429: jsl @entry14              ; $02c300 m8x8
-         jsl @entry12               ; $02c304 m8x8
-         jsl @entry13               ; $02c308 m8x8
-         jsl @entry12               ; $02c30c m8x8
+label429: jsl @entry13              ; $02c300 m8x8
+         jsl @entry11               ; $02c304 m8x8
+         jsl @entry12               ; $02c308 m8x8
+         jsl @entry11               ; $02c30c m8x8
          lda.b $045c                ; $02c310 m8x8
          cmp.b #$10                 ; $02c313 m8x8
          bne label429               ; $02c315 m8x8
@@ -6892,19 +6820,19 @@ label429: jsl @entry14              ; $02c300 m8x8
          stz.b $b0                  ; $02c31f m8x8
          rts                        ; $02c321 m8x8
          .org $02c394
-entry176: .entry m8x8
+entry175: .entry m8x8
          stz.b $0aa9                ; $02c394 m8x8
-         jsl @entry414              ; $02c397 m8x8
-         jsl @entry474              ; $02c39b m8x8
-         jsl @entry475              ; $02c39f m8x8
-         jsl @entry476              ; $02c3a3 m8x8
-         jsl @entry477              ; $02c3a7 m8x8
-         jsl @entry478              ; $02c3ab m8x8
-         jsl @entry479              ; $02c3af m8x8
-         jsl @entry480              ; $02c3b3 m8x8
-         jsl @entry482              ; $02c3b7 m8x8
-         jsl @entry483              ; $02c3bb m8x8
-         jsl @entry484              ; $02c3bf m8x8
+         jsl @entry413              ; $02c397 m8x8
+         jsl @entry473              ; $02c39b m8x8
+         jsl @entry474              ; $02c39f m8x8
+         jsl @entry475              ; $02c3a3 m8x8
+         jsl @entry476              ; $02c3a7 m8x8
+         jsl @entry477              ; $02c3ab m8x8
+         jsl @entry478              ; $02c3af m8x8
+         jsl @entry479              ; $02c3b3 m8x8
+         jsl @entry481              ; $02c3b7 m8x8
+         jsl @entry482              ; $02c3bb m8x8
+         jsl @entry483              ; $02c3bf m8x8
          lda.b $0ab6                ; $02c3c3 m8x8
          sta.b $7ec20a              ; $02c3c6 m8x8
          lda.b $0ab8                ; $02c3ca m8x8
@@ -6918,9 +6846,9 @@ entry176: .entry m8x8
          sta.w $7ec007              ; $02c3e4 m16x8
          lda.w #$0000               ; $02c3e8 m16x8
          sta.w $7ec00b              ; $02c3eb m16x8
-         jmp entry177               ; $02c3ef m16x8
+         jmp entry176               ; $02c3ef m16x8
          .org $02c4cd
-entry177: .entry x8
+entry176: .entry x8
          rep #$20                   ; $02c4cd m16x8
          ldx.b #$00                 ; $02c4cf m16x8
 label430: lda.w $7ec300, X          ; $02c4d1 m16x8
@@ -6947,7 +6875,7 @@ label430: lda.w $7ec300, X          ; $02c4d1 m16x8
          inc.b $15                  ; $02c519 m8x8
          rts                        ; $02c51b m8x8
          .org $02d617
-entry178: .entry m8x8
+entry177: .entry m8x8
          phb                        ; $02d617 m8x8
          phk                        ; $02d618 m8x8
          plb                        ; $02d619 m8x8
@@ -6956,7 +6884,7 @@ entry178: .entry m8x8
          lda.b $010a                ; $02d61e m8x8
          beq label431               ; $02d621 m8x8
          stz.b $010a                ; $02d623 m8x8
-         jmp entry179               ; $02d626 m8x8
+         jmp entry178               ; $02d626 m8x8
 label431: rep #$20                  ; $02d629 m16x8
          lda.w $040a                ; $02d62b m16x8
          sta.w $7ec140              ; $02d62e m16x8
@@ -7013,7 +6941,7 @@ label431: rep #$20                  ; $02d629 m16x8
          sta.b $7ec166              ; $02d6d5 m8x8
          lda.b $0aa3                ; $02d6d9 m8x8
          sta.b $7ec167              ; $02d6dc m8x8
-entry179: .entry m8x8
+entry178: .entry m8x8
          rep #$30                   ; $02d6e0 m16x16
          stz.w $011a                ; $02d6e2 m16x16
          stz.w $011c                ; $02d6e5 m16x16
@@ -7023,7 +6951,7 @@ entry179: .entry m8x8
          beq label432               ; $02d6f2 m16x16
          lda.w $04aa                ; $02d6f4 m16x16
          beq label433               ; $02d6f7 m16x16
-label432: jmp entry181              ; $02d6f9 m16x16
+label432: jmp entry180              ; $02d6f9 m16x16
 label433: lda.w $010e               ; $02d6fc m16x16
          and.w #$00ff               ; $02d6ff m16x16
          asl.w                      ; $02d702 m16x16
@@ -7155,9 +7083,9 @@ label436: lda.b $d16a, X            ; $02d7f5 m8x16
          sta.b $aa                  ; $02d834 m8x16
          ldx.w $a0                  ; $02d836 m8x16
          cpx.w #$0100               ; $02d838 m8x16
-         bcc entry180               ; $02d83b m8x16, c=1
+         bcc entry179               ; $02d83b m8x16, c=1
          stz.b $a4                  ; $02d83d m8x16, c=1
-entry180: .entry m8x16
+entry179: .entry m8x16
          lda.b #$80                 ; $02d83f m8x16
          sta.b $45                  ; $02d841 m8x16
          sta.b $44                  ; $02d843 m8x16
@@ -7218,7 +7146,7 @@ label438: sta.w $f800, X            ; $02d899 m16x8
          plb                        ; $02d8d0 m8x8
          rts                        ; $02d8d1 m8x8
          .org $02d9b9
-entry181: .entry m16x16
+entry180: .entry m16x16
          lda.w $7ef3c8              ; $02d9b9 m16x16
          and.w #$00ff               ; $02d9bd m16x16
          asl.w                      ; $02d9c0 m16x16
@@ -7343,9 +7271,9 @@ label439: lda.w $d950, X            ; $02d9fd m16x16
          lda.b #$ff                 ; $02dae3 m8x16
          sta.b $0132                ; $02dae5 m8x16
 label440: stz.b $04aa               ; $02dae8 m8x16
-         jmp entry180               ; $02daeb m8x16
+         jmp entry179               ; $02daeb m8x16
          .org $02fbd5
-entry182: .entry m8x8
+entry181: .entry m8x8
          lda.b #$00                 ; $02fbd5 m8x8
          sta.b $00                  ; $02fbd7 m8x8
          lda.b #$40                 ; $02fbd9 m8x8
@@ -7358,7 +7286,7 @@ entry182: .entry m8x8
          sta.b $c9                  ; $02fbe7 m8x8
          lda.b #$04                 ; $02fbe9 m8x8
          sta.b $ca                  ; $02fbeb m8x8
-         jsr entry183               ; $02fbed m8x8
+         jsr entry182               ; $02fbed m8x8
          lda.b #$00                 ; $02fbf0 m8x8
          sta.b $00                  ; $02fbf2 m8x8
          lda.b #$40                 ; $02fbf4 m8x8
@@ -7385,11 +7313,11 @@ label441: lda.b [$00], Y            ; $02fc02 m8x16
          bcc label441               ; $02fc1a m8x16, c=1
          sep #$30                   ; $02fc1c m8x8, c=1
          rtl                        ; $02fc1e m8x8, c=1
-entry183: .entry m8x8
+entry182: .entry m8x8
          rep #$10                   ; $02fc1f m8x16
          ldy.w #$0000               ; $02fc21 m8x16
-entry184: .entry m8x16
-         jsr entry185               ; $02fc24 m8x16
+entry183: .entry m8x16
+         jsr entry184               ; $02fc24 m8x16
          cmp.b #$ff                 ; $02fc27 m8x16
          bne label442               ; $02fc29 m8x16
          sep #$10                   ; $02fc2b m8x8
@@ -7412,7 +7340,7 @@ label443: lda.b $cd                 ; $02fc40 m8x16
          lda.b $cd                  ; $02fc48 m8x16
          and.b #$03                 ; $02fc4a m8x16
          xba                        ; $02fc4c m8x16
-         jsr entry185               ; $02fc4d m8x16
+         jsr entry184               ; $02fc4d m8x16
          rep #$20                   ; $02fc50 m16x16
 label444: inc.w                     ; $02fc52 m16x16
          sta.w $cb                  ; $02fc53 m16x16
@@ -7424,32 +7352,32 @@ label444: inc.w                     ; $02fc52 m16x16
          bpl label447               ; $02fc5d m8x16
          asl.b                      ; $02fc5f m8x16
          bpl label449               ; $02fc60 m8x16
-         jsr entry185               ; $02fc62 m8x16
+         jsr entry184               ; $02fc62 m8x16
          ldx.w $cb                  ; $02fc65 m8x16
 label445: sta.b [$00], Y            ; $02fc67 m8x16
          inc.b                      ; $02fc69 m8x16
          iny.w                      ; $02fc6a m8x16
          dex.w                      ; $02fc6b m8x16
          bne label445               ; $02fc6c m8x16
-         bra entry184               ; $02fc6e m8x16
-label446: jsr entry185              ; $02fc70 m8x16
+         bra entry183               ; $02fc6e m8x16
+label446: jsr entry184              ; $02fc70 m8x16
          sta.b [$00], Y             ; $02fc73 m8x16
          iny.w                      ; $02fc75 m8x16
          ldx.w $cb                  ; $02fc76 m8x16
          dex.w                      ; $02fc78 m8x16
          stx.w $cb                  ; $02fc79 m8x16
          bne label446               ; $02fc7b m8x16
-         bra entry184               ; $02fc7d m8x16
-label447: jsr entry185              ; $02fc7f m8x16
+         bra entry183               ; $02fc7d m8x16
+label447: jsr entry184              ; $02fc7f m8x16
          ldx.w $cb                  ; $02fc82 m8x16
 label448: sta.b [$00], Y            ; $02fc84 m8x16
          iny.w                      ; $02fc86 m8x16
          dex.w                      ; $02fc87 m8x16
          bne label448               ; $02fc88 m8x16
-         bra entry184               ; $02fc8a m8x16
-label449: jsr entry185              ; $02fc8c m8x16
+         bra entry183               ; $02fc8a m8x16
+label449: jsr entry184              ; $02fc8c m8x16
          xba                        ; $02fc8f m8x16
-         jsr entry185               ; $02fc90 m8x16
+         jsr entry184               ; $02fc90 m8x16
          ldx.w $cb                  ; $02fc93 m8x16
 label450: xba                       ; $02fc95 m8x16
          sta.b [$00], Y             ; $02fc96 m8x16
@@ -7461,10 +7389,10 @@ label450: xba                       ; $02fc95 m8x16
          iny.w                      ; $02fc9f m8x16
          dex.w                      ; $02fca0 m8x16
          bne label450               ; $02fca1 m8x16
-label451: jmp entry184              ; $02fca3 m8x16
-label452: jsr entry185              ; $02fca6 m8x16
+label451: jmp entry183              ; $02fca3 m8x16
+label452: jsr entry184              ; $02fca6 m8x16
          xba                        ; $02fca9 m8x16
-         jsr entry185               ; $02fcaa m8x16
+         jsr entry184               ; $02fcaa m8x16
          tax.w                      ; $02fcad m8x16
 label453: phy.w                     ; $02fcae m8x16
          txy.w                      ; $02fcaf m8x16
@@ -7478,8 +7406,8 @@ label453: phy.w                     ; $02fcae m8x16
          dec.w $cb                  ; $02fcba m16x16
          sep #$20                   ; $02fcbc m8x16
          bne label453               ; $02fcbe m8x16
-         jmp entry184               ; $02fcc0 m8x16
-entry185: .entry m8x16
+         jmp entry183               ; $02fcc0 m8x16
+entry184: .entry m8x16
          lda.b [$c8]                ; $02fcc3 m8x16
          ldx.w $c8                  ; $02fcc5 m8x16
          inx.w                      ; $02fcc7 m8x16
@@ -7489,7 +7417,7 @@ entry185: .entry m8x16
 label454: stx.w $c8                 ; $02fccf m8x16
          rts                        ; $02fcd1 m8x16
          .org $02fd8a
-entry186: .entry m8x8
+entry185: .entry m8x8
          rep #$20                   ; $02fd8a m16x8
          lda.w $7ef359              ; $02fd8c m16x8
          sta.w $0c                  ; $02fd90 m16x8
@@ -7504,7 +7432,7 @@ entry186: .entry m8x8
          rep #$10                   ; $02fda9 m16x16
          ldx.w #$01b2               ; $02fdab m16x16
          ldy.w #$0002               ; $02fdae m16x16
-         jsr entry187               ; $02fdb1 m16x16
+         jsr entry186               ; $02fdb1 m16x16
          sep #$10                   ; $02fdb4 m16x8
          ldx.b $0d                  ; $02fdb6 m16x8
          lda.w $1bebc1, X           ; $02fdb8 m16x8
@@ -7513,7 +7441,7 @@ entry186: .entry m8x8
          rep #$10                   ; $02fdc3 m16x16
          ldx.w #$01b8               ; $02fdc5 m16x16
          ldy.w #$0003               ; $02fdc8 m16x16
-         jsr entry187               ; $02fdcb m16x16
+         jsr entry186               ; $02fdcb m16x16
          sep #$10                   ; $02fdce m16x8
          ldx.b $0e                  ; $02fdd0 m16x8
          lda.w $1bec06, X           ; $02fdd2 m16x8
@@ -7523,11 +7451,11 @@ entry186: .entry m8x8
          rep #$10                   ; $02fdde m16x16
          ldx.w #$01e2               ; $02fde0 m16x16
          ldy.w #$000e               ; $02fde3 m16x16
-         jsr entry187               ; $02fde6 m16x16
+         jsr entry186               ; $02fde6 m16x16
          sep #$30                   ; $02fde9 m8x8
          inc.b $15                  ; $02fdeb m8x8
          rtl                        ; $02fded m8x8
-entry187: .entry m16x16
+entry186: .entry m16x16
          sta.w $00                  ; $02fdee m16x16
 label455: lda.w [$00]               ; $02fdf0 m16x16
          sta.w $7ec300, X           ; $02fdf2 m16x16
@@ -7539,51 +7467,51 @@ label455: lda.w [$00]               ; $02fdf0 m16x16
          dey.w                      ; $02fe00 m16x16
          bpl label455               ; $02fe01 m16x16
          rts                        ; $02fe03 m16x16
-entry188: .entry m8x8
+entry187: .entry m8x8
          rep #$20                   ; $02fe04 m16x8
          ldx.b #$00                 ; $02fe06 m16x8
-entry189: .entry m16x8
+entry188: .entry m16x8
          lda.w $7ec340, X           ; $02fe08 m16x8
-         jsr entry190               ; $02fe0c m16x8
+         jsr entry189               ; $02fe0c m16x8
          sta.w $7ec540, X           ; $02fe0f m16x8
          lda.w $7ec350, X           ; $02fe13 m16x8
-         jsr entry190               ; $02fe17 m16x8
+         jsr entry189               ; $02fe17 m16x8
          sta.w $7ec550, X           ; $02fe1a m16x8
          lda.w $7ec360, X           ; $02fe1e m16x8
-         jsr entry190               ; $02fe22 m16x8
+         jsr entry189               ; $02fe22 m16x8
          sta.w $7ec560, X           ; $02fe25 m16x8
          lda.w $7ec370, X           ; $02fe29 m16x8
-         jsr entry190               ; $02fe2d m16x8
+         jsr entry189               ; $02fe2d m16x8
          sta.w $7ec570, X           ; $02fe30 m16x8
          lda.w $7ec380, X           ; $02fe34 m16x8
-         jsr entry190               ; $02fe38 m16x8
+         jsr entry189               ; $02fe38 m16x8
          sta.w $7ec580, X           ; $02fe3b m16x8
          lda.w $7ec390, X           ; $02fe3f m16x8
-         jsr entry190               ; $02fe43 m16x8
+         jsr entry189               ; $02fe43 m16x8
          sta.w $7ec590, X           ; $02fe46 m16x8
          lda.w $7ec3a0, X           ; $02fe4a m16x8
-         jsr entry190               ; $02fe4e m16x8
+         jsr entry189               ; $02fe4e m16x8
          sta.w $7ec5a0, X           ; $02fe51 m16x8
          lda.w $7ec3b0, X           ; $02fe55 m16x8
-         jsr entry190               ; $02fe59 m16x8
+         jsr entry189               ; $02fe59 m16x8
          sta.w $7ec5b0, X           ; $02fe5c m16x8
          lda.w $7ec3c0, X           ; $02fe60 m16x8
-         jsr entry190               ; $02fe64 m16x8
+         jsr entry189               ; $02fe64 m16x8
          sta.w $7ec5c0, X           ; $02fe67 m16x8
          lda.w $7ec3d0, X           ; $02fe6b m16x8
-         jsr entry190               ; $02fe6f m16x8
+         jsr entry189               ; $02fe6f m16x8
          sta.w $7ec5d0, X           ; $02fe72 m16x8
          lda.w $7ec3e0, X           ; $02fe76 m16x8
-         jsr entry190               ; $02fe7a m16x8
+         jsr entry189               ; $02fe7a m16x8
          sta.w $7ec5e0, X           ; $02fe7d m16x8
          lda.w $7ec3f0, X           ; $02fe81 m16x8
-         jsr entry190               ; $02fe85 m16x8
+         jsr entry189               ; $02fe85 m16x8
          sta.w $7ec5f0, X           ; $02fe88 m16x8
          inx.b                      ; $02fe8c m16x8
          inx.b                      ; $02fe8d m16x8
          cpx.b #$10                 ; $02fe8e m16x8
          beq label456               ; $02fe90 m16x8
-         jmp entry189               ; $02fe92 m16x8
+         jmp entry188               ; $02fe92 m16x8
 label456: rep #$10                  ; $02fe95 m16x16
          lda.w $7ec540              ; $02fe97 m16x16
          tay.w                      ; $02fe9b m16x16
@@ -7594,7 +7522,7 @@ label457: tya.w                     ; $02fea3 m16x16
          sta.w $7ec500              ; $02fea4 m16x16
          sep #$30                   ; $02fea8 m8x8
          rtl                        ; $02feaa m8x8
-entry190: .entry m16x8
+entry189: .entry m16x8
          sta.w $00                  ; $02feab m16x8
          and.w #$001f               ; $02fead m16x8
          add.w #$000e               ; $02feb0 m16x8
@@ -7618,7 +7546,7 @@ label459: sta.w $04                 ; $02fecf m16x8
 label460: ora.w $02                 ; $02fee2 m16x8
          ora.w $04                  ; $02fee4 m16x8
          rts                        ; $02fee6 m16x8
-entry191: .entry m8x8
+entry190: .entry m8x8
          rep #$20                   ; $02fee7 m16x8
          ldx.b #$00                 ; $02fee9 m16x8
 label461: lda.w $7ec340, X          ; $02feeb m16x8
@@ -7652,7 +7580,7 @@ label461: lda.w $7ec340, X          ; $02feeb m16x8
          lda.w $7ec540              ; $02ff51 m16x8
          sta.w $7ec500              ; $02ff55 m16x8
          sep #$30                   ; $02ff59 m8x8
-entry192: .entry m8x8
+entry191: .entry m8x8
          lda.b $1b                  ; $02ff5b m8x8
          bne label463               ; $02ff5d m8x8
          rep #$10                   ; $02ff5f m8x16
@@ -7688,7 +7616,7 @@ label462: stx.w $9c                 ; $02ffa1 m8x16
          sty.w $9d                  ; $02ffa3 m8x16
 label463: sep #$10                  ; $02ffa5 m8x8
          rtl                        ; $02ffa7 m8x8
-entry193: .entry m8x8
+entry192: .entry m8x8
          rep #$20                   ; $02ffa8 m16x8
          ldx.b #$7e                 ; $02ffaa m16x8
 label464: lda.w $7ec300, X          ; $02ffac m16x8
@@ -7700,18 +7628,18 @@ label464: lda.w $7ec300, X          ; $02ffac m16x8
          bpl label464               ; $02ffbe m16x8
          sep #$20                   ; $02ffc0 m8x8
          inc.b $15                  ; $02ffc2 m8x8
-         jmp entry192               ; $02ffc4 m8x8
+         jmp entry191               ; $02ffc4 m8x8
          .org $05a51d
-entry194: .entry m8x8
+entry193: .entry m8x8
          phx.b                      ; $05a51d m8x8
          tax.b                      ; $05a51e m8x8
          ldy.b #$04                 ; $05a51f m8x8
          lda.b #$29                 ; $05a521 m8x8
-         jsl @entry307              ; $05a523 m8x8
+         jsl @entry306              ; $05a523 m8x8
          plx.b                      ; $05a527 m8x8
          rtl                        ; $05a528 m8x8
          .org $05ab9c
-entry195: .entry m8x8
+entry194: .entry m8x8
          phx.b                      ; $05ab9c m8x8
          txy.b                      ; $05ab9d m8x8
          ldx.b #$1d                 ; $05ab9e m8x8
@@ -7741,10 +7669,10 @@ label466: lda.b #$0a                ; $05abaa m8x8
          plx.b                      ; $05abe2 m8x8
          rtl                        ; $05abe3 m8x8
          .org $05df6c
-entry196: .entry m8x8
+entry195: .entry m8x8
          sta.b $06                  ; $05df6c m8x8
          stz.b $07                  ; $05df6e m8x8
-         jsr entry197               ; $05df70 m8x8
+         jsr entry196               ; $05df70 m8x8
          bra label467               ; $05df73 m8x8
          .org $05df78
 label467: bcs label471              ; $05df78 m8x8, c=0
@@ -7803,8 +7731,8 @@ label470: sta.w $0002, X            ; $05dfbd m16x16
          plx.b                      ; $05dfe3 m8x8
 label471: rtl                       ; $05dfe4 m8x8
          .org $05dfe9
-entry197: .entry m8x8
-         jsr entry198               ; $05dfe9 m8x8
+entry196: .entry m8x8
+         jsr entry197               ; $05dfe9 m8x8
          php                        ; $05dfec m8x8
          stz.b $0cfe                ; $05dfed m8x8
          stz.b $0cff                ; $05dff0 m8x8
@@ -7819,14 +7747,14 @@ label472: cmp.b #$0b                ; $05dffe m8x8
 label473: plp                       ; $05e009 m8x8
          rts                        ; $05e00a m8x8
          .org $05fa50
-entry198: .entry m8x8
-         jsl @entry230              ; $05fa50 m8x8
+entry197: .entry m8x8
+         jsl @entry229              ; $05fa50 m8x8
          bcc label474               ; $05fa54 m8x8, c=1
          pla.b                      ; $05fa56 m8x8, c=1
          pla.b                      ; $05fa57 m8x8, c=1
 label474: rts                       ; $05fa58 m8x8
          .org $05fa8e
-entry199: .entry m8x8
+entry198: .entry m8x8
          stz.b $0223                ; $05fa8e m8x8
          stz.b $1cd8                ; $05fa91 m8x8
          lda.b #$02                 ; $05fa94 m8x8
@@ -7837,7 +7765,7 @@ entry199: .entry m8x8
          sta.b $10                  ; $05fa9f m8x8
          rtl                        ; $05faa1 m8x8
          .org $0680fa
-entry200: .entry m8x8
+entry199: .entry m8x8
          phb                        ; $0680fa m8x8
          phk                        ; $0680fb m8x8
          plb                        ; $0680fc m8x8
@@ -7860,30 +7788,30 @@ entry200: .entry m8x8
          sta.b $02                  ; $068121 m8x8
          lda.b $80f6, Y             ; $068123 m8x8
          sta.b $03                  ; $068126 m8x8
-         jsr entry221               ; $068128 m8x8
+         jsr entry220               ; $068128 m8x8
          plb                        ; $06812b m8x8
          rtl                        ; $06812c m8x8
          .org $068262
 label475: clc                       ; $068262 m8x8, c=0
          rts                        ; $068263 m8x8, c=0
-entry201: .entry m8x8
+entry200: .entry m8x8
          lda.b $1b                  ; $068264 m8x8
          bne label476               ; $068266 m8x8
-         jsl @entry427              ; $068268 m8x8
+         jsl @entry426              ; $068268 m8x8
          and.b #$08                 ; $06826c m8x8
          bne label475               ; $06826e m8x8
 label476: ldy.b $0b9c               ; $068270 m8x8
          beq label475               ; $068273 m8x8
          cpy.b #$04                 ; $068275 m8x8
          bne label477               ; $068277 m8x8
-         jsl @entry427              ; $068279 m8x8
+         jsl @entry426              ; $068279 m8x8
          and.b #$03                 ; $06827d m8x8
          add.b #$13                 ; $06827f m8x8
          tay.b                      ; $068282 m8x8
 label477: sty.b $0d                 ; $068283 m8x8
          lda.b $81f3, Y             ; $068285 m8x8
          beq label475               ; $068288 m8x8
-         jsl @entry499              ; $06828a m8x8
+         jsl @entry498              ; $06828a m8x8
          bmi label475               ; $06828e m8x8
          phx.b                      ; $068290 m8x8
          ldx.b $0d                  ; $068291 m8x8
@@ -7916,7 +7844,7 @@ label477: sty.b $0d                 ; $068283 m8x8
          bne label478               ; $0682d8 m8x8
          phx.b                      ; $0682da m8x8
          tyx.b                      ; $0682db m8x8
-         jsr entry216               ; $0682dc m8x8
+         jsr entry215               ; $0682dc m8x8
          plx.b                      ; $0682df m8x8
 label478: cpx.b #$0b                ; $0682e0 m8x8
          bne label479               ; $0682e2 m8x8
@@ -7951,7 +7879,7 @@ label482: cpx.b #$79                ; $06831c m8x8
 label483: sec                       ; $068325 m8x8, c=1
          plx.b                      ; $068326 m8x8, c=1
          rts                        ; $068327 m8x8, c=1
-entry202: .entry m8x8
+entry201: .entry m8x8
          lda.b $1b                  ; $068328 m8x8
          bne label484               ; $06832a m8x8
          stz.b $0c7c                ; $06832c m8x8
@@ -7959,7 +7887,7 @@ entry202: .entry m8x8
          stz.b $0c7e                ; $068332 m8x8
          stz.b $0c7f                ; $068335 m8x8
          stz.b $0c80                ; $068338 m8x8
-         jsl @entry343              ; $06833b m8x8
+         jsl @entry342              ; $06833b m8x8
 label484: phb                       ; $06833f m8x8
          phk                        ; $068340 m8x8
          plb                        ; $068341 m8x8
@@ -7974,9 +7902,9 @@ label485: sty.b $0fff               ; $06834b m8x8
          stz.b $0b7d                ; $068355 m8x8
          stz.b $0b7e                ; $068358 m8x8
          stz.b $0b7f                ; $06835b m8x8
-label486: jsr entry203              ; $06835e m8x8
-         jsl @entry323              ; $068361 m8x8
-         jsl @entry314              ; $068365 m8x8
+label486: jsr entry202              ; $06835e m8x8
+         jsl @entry322              ; $068361 m8x8
+         jsl @entry313              ; $068365 m8x8
          lda.b $0314                ; $068369 m8x8
          sta.b $0fb2                ; $06836c m8x8
          stz.b $0314                ; $06836f m8x8
@@ -7994,25 +7922,25 @@ label488: stz.b $0379               ; $068383 m8x8
          lda.b $0fdc                ; $06838c m8x8
          beq label489               ; $06838f m8x8
          dec.b $0fdc                ; $068391 m8x8
-label489: jsl @entry302             ; $068394 m8x8
-         jsl @entry329              ; $068398 m8x8
+label489: jsl @entry301             ; $068394 m8x8
+         jsl @entry328              ; $068398 m8x8
          stz.b $0b9a                ; $06839c m8x8
          ldx.b #$0f                 ; $06839f m8x8
 label490: stx.b $0fa0               ; $0683a1 m8x8
-         jsr entry208               ; $0683a4 m8x8
+         jsr entry207               ; $0683a4 m8x8
          dex.b                      ; $0683a7 m8x8
          bpl label490               ; $0683a8 m8x8
-         jsl @entry324              ; $0683aa m8x8
+         jsl @entry323              ; $0683aa m8x8
          stz.b $069f                ; $0683ae m8x8
          stz.b $069e                ; $0683b1 m8x8
          plb                        ; $0683b4 m8x8
-         jsl @entry497              ; $0683b5 m8x8
+         jsl @entry496              ; $0683b5 m8x8
          lda.b $0aaa                ; $0683b9 m8x8
          beq label491               ; $0683bc m8x8
          sta.b $0fc6                ; $0683be m8x8
 label491: rtl                       ; $0683c1 m8x8
          .org $0683d3
-entry203: .entry m8x8
+entry202: .entry m8x8
          ldy.b #$00                 ; $0683d3 m8x8
          rep #$20                   ; $0683d5 m16x8
 label492: lda.w $83c7, Y            ; $0683d7 m16x8
@@ -8024,8 +7952,8 @@ label492: lda.w $83c7, Y            ; $0683d7 m16x8
          sep #$20                   ; $0683e3 m8x8, c=1
          rts                        ; $0683e5 m8x8, c=1
          .org $0683f2
-entry204: .entry m8x8
-         jsr entry206               ; $0683f2 m8x8
+entry203: .entry m8x8
+         jsr entry205               ; $0683f2 m8x8
          lda.b $0e40, X             ; $0683f5 m8x8
          and.b #$1f                 ; $0683f8 m8x8
          inc.b                      ; $0683fa m8x8
@@ -8035,15 +7963,15 @@ entry204: .entry m8x8
          beq label494               ; $068400 m8x8
          ldy.b $0f20, X             ; $068402 m8x8
          beq label493               ; $068405 m8x8
-         jsl @entry432              ; $068407 m8x8
+         jsl @entry431              ; $068407 m8x8
          bra label495               ; $06840b m8x8
-label493: jsl @entry431             ; $06840d m8x8
+label493: jsl @entry430             ; $06840d m8x8
          bra label495               ; $068411 m8x8
-label494: jsl @entry428             ; $068413 m8x8
+label494: jsl @entry427             ; $068413 m8x8
 label495: lda.b $11                 ; $068417 m8x8
          ora.b $0fc1                ; $068419 m8x8
          beq label496               ; $06841c m8x8
-         jmp entry205               ; $06841e m8x8
+         jmp entry204               ; $06841e m8x8
 label496: lda.b $0df0, X            ; $068421 m8x8
          beq label497               ; $068424 m8x8
          dec.b $0df0, X             ; $068426 m8x8
@@ -8078,11 +8006,11 @@ label501: lda.b #$3e                ; $06846b m8x8
          sta.b $1cf0                ; $06846d m8x8
          lda.b #$01                 ; $068470 m8x8
          sta.b $1cf1                ; $068472 m8x8
-         jsl @entry199              ; $068475 m8x8
+         jsl @entry198              ; $068475 m8x8
 label502: pla.b                     ; $068479 m8x8
 label503: cmp.b #$18                ; $06847a m8x8
          bne label504               ; $06847c m8x8
-         jsr entry248               ; $06847e m8x8
+         jsr entry247               ; $06847e m8x8
 label504: lda.b $0ce2, X            ; $068481 m8x8
          cmp.b #$fb                 ; $068484 m8x8
          bcs label505               ; $068486 m8x8, c=0
@@ -8095,9 +8023,9 @@ label505: dec.b $0ef0, X            ; $068491 m8x8
 label506: stz.b $0ef0, X            ; $068496 m8x8
          stz.b $0b89, X             ; $068499 m8x8
 label507: lda.b $0f10, X            ; $06849c m8x8
-         beq entry205               ; $06849f m8x8
+         beq entry204               ; $06849f m8x8
          dec.b $0f10, X             ; $0684a1 m8x8
-entry205: .entry m8x8
+entry204: .entry m8x8
          ldy.b $ee                  ; $0684a4 m8x8
          cpy.b #$03                 ; $0684a6 m8x8
          beq label508               ; $0684a8 m8x8
@@ -8108,7 +8036,7 @@ label508: lda.b $0b89, X            ; $0684ad m8x8
          sta.b $0b89, X             ; $0684b5 m8x8
          rts                        ; $0684b8 m8x8
          .org $0684c1
-entry206: .entry m8x8
+entry205: .entry m8x8
          lda.b $0d10, X             ; $0684c1 m8x8
          sta.b $0fd8                ; $0684c4 m8x8
          lda.b $0d30, X             ; $0684c7 m8x8
@@ -8118,26 +8046,26 @@ entry206: .entry m8x8
          lda.b $0d20, X             ; $0684d3 m8x8
          sta.b $0fdb                ; $0684d6 m8x8
          rts                        ; $0684d9 m8x8
-entry207: .entry m8x8
+entry206: .entry m8x8
          phb                        ; $0684da m8x8
          phk                        ; $0684db m8x8
          plb                        ; $0684dc m8x8
-         jsr entry208               ; $0684dd m8x8
+         jsr entry207               ; $0684dd m8x8
          plb                        ; $0684e0 m8x8
          rtl                        ; $0684e1 m8x8
-entry208: .entry m8x8
+entry207: .entry m8x8
          lda.b $0dd0, X             ; $0684e2 m8x8
-         beq entry209               ; $0684e5 m8x8
+         beq entry208               ; $0684e5 m8x8
          pha.b                      ; $0684e7 m8x8
-         jsr entry204               ; $0684e8 m8x8
+         jsr entry203               ; $0684e8 m8x8
          pla.b                      ; $0684eb m8x8
          cmp.b #$09                 ; $0684ec m8x8
          beq label509               ; $0684ee m8x8
          jsl $008781 noreturn       ; $0684f0 m8x8
          .org $06850c
-label509: jmp entry218              ; $06850c m8x8
+label509: jmp entry217              ; $06850c m8x8
          .org $068510
-entry209: .entry m8x8
+entry208: .entry m8x8
          lda.b $1b                  ; $068510 m8x8
          bne label510               ; $068512 m8x8
          txa.b                      ; $068514 m8x8
@@ -8150,41 +8078,41 @@ entry209: .entry m8x8
 label510: lda.b #$ff                ; $068520 m8x8
          sta.b $0bc0, X             ; $068522 m8x8
          rts                        ; $068525 m8x8
-entry210: .entry m8x8
+entry209: .entry m8x8
          phb                        ; $068526 m8x8
          phk                        ; $068527 m8x8
          plb                        ; $068528 m8x8
-         jsr entry218               ; $068529 m8x8
+         jsr entry217               ; $068529 m8x8
          plb                        ; $06852c m8x8
          rtl                        ; $06852d m8x8
-entry211: .entry m8x8
+entry210: .entry m8x8
          lda.b $0df0, X             ; $06852e m8x8
          bne label511               ; $068531 m8x8
          stz.b $0dd0, X             ; $068533 m8x8
-         jsl @entry338              ; $068536 m8x8
+         jsl @entry337              ; $068536 m8x8
          rts                        ; $06853a m8x8
-label511: jsr entry232              ; $06853b m8x8
-         jsl @entry502              ; $06853e m8x8
+label511: jsr entry231              ; $06853b m8x8
+         jsl @entry501              ; $06853e m8x8
          rts                        ; $068542 m8x8
-entry212: .entry m8x8
-         jsl @entry501              ; $068543 m8x8
+entry211: .entry m8x8
+         jsl @entry500              ; $068543 m8x8
          rts                        ; $068547 m8x8
-entry213: .entry m8x8
-         jsl @entry351              ; $068548 m8x8
+entry212: .entry m8x8
+         jsl @entry350              ; $068548 m8x8
          rts                        ; $06854c m8x8
          .org $06859c
-entry214: .entry m8x8
+entry213: .entry m8x8
          lda.b $0d80, X             ; $06859c m8x8
          beq label516               ; $06859f m8x8
          lda.b $0d90, X             ; $0685a1 m8x8
          cmp.b #$06                 ; $0685a4 m8x8
          bne label512               ; $0685a6 m8x8
          lda.b #$08                 ; $0685a8 m8x8
-         jsl @entry430              ; $0685aa m8x8
+         jsl @entry429              ; $0685aa m8x8
 label512: lda.b $0e60, X            ; $0685ae m8x8
          eor.b #$10                 ; $0685b1 m8x8
          sta.b $0e60, X             ; $0685b3 m8x8
-         jsr entry225               ; $0685b6 m8x8
+         jsr entry224               ; $0685b6 m8x8
          lda.b $0e80, X             ; $0685b9 m8x8
          lsr.b                      ; $0685bc m8x8
          lsr.b                      ; $0685bd m8x8
@@ -8213,10 +8141,10 @@ label514: ldy.b #$02                ; $0685df m8x8
          plx.b                      ; $0685ea m8x8
          lda.b $0df0, X             ; $0685eb m8x8
          bne label515               ; $0685ee m8x8
-         jsr entry224               ; $0685f0 m8x8
+         jsr entry223               ; $0685f0 m8x8
          inc.b $0e80, X             ; $0685f3 m8x8
-         jsr entry240               ; $0685f6 m8x8
-         jsr entry243               ; $0685f9 m8x8
+         jsr entry239               ; $0685f6 m8x8
+         jsr entry242               ; $0685f9 m8x8
          lda.b $0f80, X             ; $0685fc m8x8
          sub.b #$02                 ; $0685ff m8x8
          sta.b $0f80, X             ; $068602 m8x8
@@ -8229,7 +8157,7 @@ label514: ldy.b #$02                ; $0685df m8x8
          and.b #$ef                 ; $068615 m8x8
          sta.b $0e60, X             ; $068617 m8x8
 label515: rts                       ; $06861a m8x8
-label516: jsr entry224              ; $06861b m8x8
+label516: jsr entry223              ; $06861b m8x8
          lda.b $1a                  ; $06861e m8x8
          and.b #$01                 ; $068620 m8x8
          bne label517               ; $068622 m8x8
@@ -8249,26 +8177,26 @@ label518: rep #$20                  ; $068638 m16x8
          sta.w $08                  ; $068642 m16x8
          sep #$20                   ; $068644 m8x8
          lda.b #$02                 ; $068646 m8x8
-         jsl @entry196              ; $068648 m8x8
+         jsl @entry195              ; $068648 m8x8
          rts                        ; $06864c m8x8
          .org $06925d
-entry215: .entry m8x8
+entry214: .entry m8x8
          phx.b                      ; $06925d m8x8
          phy.b                      ; $06925e m8x8
          lda.b #$22                 ; $06925f m8x8
-         jsl @entry22               ; $069261 m8x8
+         jsl @entry21               ; $069261 m8x8
          ply.b                      ; $069265 m8x8
          plx.b                      ; $069266 m8x8
-         bra entry217               ; $069267 m8x8
-entry216: .entry m8x8
+         bra entry216               ; $069267 m8x8
+entry215: .entry m8x8
          lda.b #$ff                 ; $069269 m8x8
          sta.b $0e30, X             ; $06926b m8x8
-entry217: .entry m8x8
+entry216: .entry m8x8
          lda.b $0b9b                ; $06926e m8x8
          sta.b $0cba, X             ; $069271 m8x8
          inc.b $0b9b                ; $069274 m8x8
          rts                        ; $069277 m8x8
-entry218: .entry m8x8
+entry217: .entry m8x8
          lda.b $0e20, X             ; $069278 m8x8
          rep #$30                   ; $06927b m16x16
          and.w #$00ff               ; $06927d m16x16
@@ -8280,9 +8208,9 @@ entry218: .entry m8x8
          sep #$30                   ; $069287 m8x8
          rts                        ; $069289 m8x8
          .org $06a73b
-entry219: .entry m8x8
+entry218: .entry m8x8
          lda.b #$10                 ; $06a73b m8x8
-         jsl @entry428              ; $06a73d m8x8
+         jsl @entry427              ; $06a73d m8x8
          lda.b $06                  ; $06a741 m8x8
          and.b #$18                 ; $06a743 m8x8
          beq label521               ; $06a745 m8x8
@@ -8332,7 +8260,7 @@ label520: plx.b                     ; $06a77a m8x8
          plx.b                      ; $06a794 m8x8
 label521: rtl                       ; $06a795 m8x8
          .org $06ac49
-entry220: .entry m8x8
+entry219: .entry m8x8
          lda.b $0db0, X             ; $06ac49 m8x8
          bmi label525               ; $06ac4c m8x8
          cmp.b #$06                 ; $06ac4e m8x8
@@ -8340,7 +8268,7 @@ entry220: .entry m8x8
          lda.b #$03                 ; $06ac52 m8x8, c=1
          sta.b $0d                  ; $06ac54 m8x8, c=1
 label522: lda.b #$ec                ; $06ac56 m8x8
-         jsl @entry499              ; $06ac58 m8x8
+         jsl @entry498              ; $06ac58 m8x8
          bmi label524               ; $06ac5c m8x8
          lda.b $0f70, X             ; $06ac5e m8x8
          sta.b $0f70, Y             ; $06ac61 m8x8
@@ -8361,7 +8289,7 @@ label522: lda.b #$ec                ; $06ac56 m8x8
          lda.b #$01                 ; $06ac89 m8x8
          sta.b $0db0, Y             ; $06ac8b m8x8
          tyx.b                      ; $06ac8e m8x8
-         jsr entry228               ; $06ac8f m8x8
+         jsr entry227               ; $06ac8f m8x8
          plx.b                      ; $06ac92 m8x8
          lda.b $0db0, X             ; $06ac93 m8x8
          cmp.b #$07                 ; $06ac96 m8x8
@@ -8374,7 +8302,7 @@ label524: dec.b $0d                 ; $06aca1 m8x8
          stz.b $0dd0, X             ; $06aca5 m8x8
          rts                        ; $06aca8 m8x8
 label525: stz.b $0dd0, X            ; $06aca9 m8x8
-         jsr entry232               ; $06acac m8x8
+         jsr entry231               ; $06acac m8x8
          phx.b                      ; $06acaf m8x8
          txy.b                      ; $06acb0 m8x8
          ldx.b #$1d                 ; $06acb1 m8x8
@@ -8410,7 +8338,7 @@ label527: lda.b #$16                ; $06acbd m8x8
          sta.b $7ff92c, X           ; $06ad05 m8x8
          plx.b                      ; $06ad09 m8x8
          rts                        ; $06ad0a m8x8
-entry221: .entry m8x8
+entry220: .entry m8x8
          ldy.b #$0f                 ; $06ad0b m8x8
 label528: lda.b $0caa, Y            ; $06ad0d m8x8
          and.b #$02                 ; $06ad10 m8x8
@@ -8422,9 +8350,9 @@ label528: lda.b $0caa, Y            ; $06ad0d m8x8
          beq label529               ; $06ad1e m8x8
          phx.b                      ; $06ad20 m8x8
          tyx.b                      ; $06ad21 m8x8
-         jsr entry256               ; $06ad22 m8x8
+         jsr entry255               ; $06ad22 m8x8
          plx.b                      ; $06ad25 m8x8
-         jsr entry257               ; $06ad26 m8x8
+         jsr entry256               ; $06ad26 m8x8
          bcc label530               ; $06ad29 m8x8, c=1
 label529: lda.b #$00                ; $06ad2b m8x8
          sta.b $0e90, Y             ; $06ad2d m8x8
@@ -8441,11 +8369,11 @@ label529: lda.b #$00                ; $06ad2b m8x8
          lda.b $0e20, Y             ; $06ad49 m8x8
          cmp.b #$d8                 ; $06ad4c m8x8
          bne label530               ; $06ad4e m8x8
-         jsl @entry222              ; $06ad50 m8x8
+         jsl @entry221              ; $06ad50 m8x8
 label530: dey.b                     ; $06ad54 m8x8
          bpl label528               ; $06ad55 m8x8
          rts                        ; $06ad57 m8x8
-entry222: .entry m8x8
+entry221: .entry m8x8
          lda.b #$4a                 ; $06ad58 m8x8
          sta.b $0e20, Y             ; $06ad5a m8x8
          lda.b #$01                 ; $06ad5d m8x8
@@ -8460,12 +8388,12 @@ entry222: .entry m8x8
          sta.b $0e50, Y             ; $06ad73 m8x8
          rtl                        ; $06ad76 m8x8
          .org $06cf65
-entry223: .entry m8x8
+entry222: .entry m8x8
          stz.b $0d50, X             ; $06cf65 m8x8
          stz.b $0d40, X             ; $06cf68 m8x8
          rts                        ; $06cf6b m8x8
          .org $06d9fb
-entry224: .entry m8x8
+entry223: .entry m8x8
          lda.b $0fc1                ; $06d9fb m8x8
          bne label531               ; $06d9fe m8x8
          lda.b $11                  ; $06da00 m8x8
@@ -8478,8 +8406,8 @@ label531: pla.b                     ; $06da0e m8x8
          pla.b                      ; $06da0f m8x8
 label532: rts                       ; $06da10 m8x8
          .org $06dc18
-entry225: .entry m8x8
-         jsr entry232               ; $06dc18 m8x8
+entry224: .entry m8x8
+         jsr entry231               ; $06dc18 m8x8
          lda.b $00                  ; $06dc1b m8x8
          sta.b ($90), Y             ; $06dc1d m8x8
          lda.b $01                  ; $06dc1f m8x8
@@ -8587,16 +8515,16 @@ label537: lda.b $02                 ; $06dcd7 m8x8
          sta.b ($92), Y             ; $06dcf4 m8x8
 label538: rts                       ; $06dcf6 m8x8
          .org $06e09b
-entry226: .entry m8x8
+entry225: .entry m8x8
          lda.b #$03                 ; $06e09b m8x8
          sta.b $0e40, X             ; $06e09d m8x8
          rts                        ; $06e0a0 m8x8
          .org $06e23f
-entry227: .entry m8x8
+entry226: .entry m8x8
          lda.b $0dc0, X             ; $06e23f m8x8
          beq label539               ; $06e242 m8x8
          sta.b $0b9c                ; $06e244 m8x8
-         jsr entry201               ; $06e247 m8x8
+         jsr entry200               ; $06e247 m8x8
          stz.b $0b9c                ; $06e24a m8x8
 label539: ldy.b $0db0, X            ; $06e24d m8x8
          lda.b $1b                  ; $06e250 m8x8
@@ -8604,8 +8532,8 @@ label539: ldy.b $0db0, X            ; $06e24d m8x8
          ldy.b #$00                 ; $06e254 m8x8
 label540: stz.b $012e               ; $06e256 m8x8
          lda.b $e283, Y             ; $06e259 m8x8
-         jsl @entry435              ; $06e25c m8x8
-entry228: .entry m8x8
+         jsl @entry434              ; $06e25c m8x8
+entry227: .entry m8x8
          lda.b #$1f                 ; $06e260 m8x8
          sta.b $0df0, X             ; $06e262 m8x8
          lda.b #$06                 ; $06e265 m8x8
@@ -8615,7 +8543,7 @@ entry228: .entry m8x8
          sta.b $0e40, X             ; $06e270 m8x8
          rts                        ; $06e273 m8x8
          .org $06e399
-entry229: .entry m8x8
+entry228: .entry m8x8
          lda.b $0df0, X             ; $06e399 m8x8
          bne label543               ; $06e39c m8x8
          lda.b $0e20, X             ; $06e39e m8x8
@@ -8627,7 +8555,7 @@ entry229: .entry m8x8
          phy.b                      ; $06e3ad m8x8
          ldy.b $0d30, X             ; $06e3ae m8x8
          phy.b                      ; $06e3b1 m8x8
-         jsr entry263               ; $06e3b2 m8x8
+         jsr entry262               ; $06e3b2 m8x8
          pla.b                      ; $06e3b5 m8x8
          sta.b $0d30, X             ; $06e3b6 m8x8
          pla.b                      ; $06e3b9 m8x8
@@ -8638,9 +8566,9 @@ entry229: .entry m8x8
 label541: lda.b $0cba, X            ; $06e3c4 m8x8
          bne label542               ; $06e3c7 m8x8
          ldy.b #$02                 ; $06e3c9 m8x8
-         jmp entry262               ; $06e3cb m8x8
-label542: jmp entry261              ; $06e3ce m8x8
-label543: jsr entry232              ; $06e3d1 m8x8
+         jmp entry261               ; $06e3cb m8x8
+label542: jmp entry260              ; $06e3ce m8x8
+label543: jsr entry231              ; $06e3d1 m8x8
          lda.b $0df0, X             ; $06e3d4 m8x8
          lsr.b                      ; $06e3d7 m8x8
          and.b #$fc                 ; $06e3d8 m8x8
@@ -8679,14 +8607,14 @@ label544: phx.b                     ; $06e3df m8x8
          plx.b                      ; $06e414 m8x8
          ldy.b #$ff                 ; $06e415 m8x8
          lda.b #$03                 ; $06e417 m8x8
-         jmp entry269               ; $06e419 m8x8
-entry230: .entry m8x8
-         jsr entry231               ; $06e41c m8x8
+         jmp entry268               ; $06e419 m8x8
+entry229: .entry m8x8
+         jsr entry230               ; $06e41c m8x8
          rtl                        ; $06e41f m8x8
-entry231: .entry m8x8
-         jsr entry232               ; $06e420 m8x8
+entry230: .entry m8x8
+         jsr entry231               ; $06e420 m8x8
          rts                        ; $06e423 m8x8
-entry232: .entry m8x8
+entry231: .entry m8x8
          stz.b $0f00, X             ; $06e424 m8x8
          rep #$20                   ; $06e427 m16x8
          lda.w $0fd8                ; $06e429 m16x8
@@ -8733,13 +8661,13 @@ label547: rep #$20                  ; $06e47c m16x8, c=1
 label548: inc.b $0f00, X            ; $06e48b m8x8
          lda.b $0caa, X             ; $06e48e m8x8
          bmi label549               ; $06e491 m8x8
-         jsl @entry355              ; $06e493 m8x8
+         jsl @entry354              ; $06e493 m8x8
 label549: pla.b                     ; $06e497 m8x8
          pla.b                      ; $06e498 m8x8
          sec                        ; $06e499 m8x8, c=1
          bra label546               ; $06e49a m8x8, c=1
          .org $06e742
-entry233: .entry m8x8
+entry232: .entry m8x8
          lda.b $1b                  ; $06e742 m8x8
          beq label550               ; $06e744 m8x8
          rep #$20                   ; $06e746 m16x8
@@ -8773,8 +8701,8 @@ label550: rep #$20                  ; $06e779 m16x8
          cmp.w $0fb8                ; $06e79a m16x8
 label551: sep #$20                  ; $06e79d m8x8
          bcc label552               ; $06e79f m8x8, c=1
-         jmp entry234               ; $06e7a1 m8x8
-label552: jsr entry238              ; $06e7a4 m8x8
+         jmp entry233               ; $06e7a1 m8x8
+label552: jsr entry237              ; $06e7a4 m8x8
          tay.b                      ; $06e7a7 m8x8
          lda.b $0caa, X             ; $06e7a8 m8x8
          and.b #$08                 ; $06e7ab m8x8
@@ -8793,13 +8721,13 @@ label552: jsr entry238              ; $06e7a4 m8x8
          bcc label553               ; $06e7c5 m8x8, c=1
          cmp.b #$14                 ; $06e7c7 m8x8
          bcs label553               ; $06e7c9 m8x8, c=0
-         jsr entry239               ; $06e7cb m8x8
-         jmp entry237               ; $06e7ce m8x8
-label553: jmp entry235              ; $06e7d1 m8x8
+         jsr entry238               ; $06e7cb m8x8
+         jmp entry236               ; $06e7ce m8x8
+label553: jmp entry234              ; $06e7d1 m8x8
 label554: ldy.b $1b                 ; $06e7d4 m8x8
          bne label555               ; $06e7d6 m8x8
          sta.b $0e90, X             ; $06e7d8 m8x8
-label555: jmp entry236              ; $06e7db m8x8
+label555: jmp entry235              ; $06e7db m8x8
 label556: lda.b $0be0, X            ; $06e7de m8x8
          asl.b                      ; $06e7e1 m8x8
          bpl label562               ; $06e7e2 m8x8
@@ -8824,40 +8752,40 @@ label559: cmp.b #$e3                ; $06e7fe m8x8
          cmp.b #$81                 ; $06e80a m8x8
          bne label562               ; $06e80c m8x8
 label560: cpy.b #$08                ; $06e80e m8x8
-         beq entry236               ; $06e810 m8x8
+         beq entry235               ; $06e810 m8x8
          cpy.b #$09                 ; $06e812 m8x8
-label561: beq entry236              ; $06e814 m8x8
-         bra entry235               ; $06e816 m8x8
+label561: beq entry235              ; $06e814 m8x8
+         bra entry234               ; $06e816 m8x8
 label562: phx.b                     ; $06e818 m8x8
          tyx.b                      ; $06e819 m8x8
          lda.b $1df6cf, X           ; $06e81a m8x8
          plx.b                      ; $06e81e m8x8
          ldy.b $08                  ; $06e81f m8x8
          cmp.b #$00                 ; $06e821 m8x8
-         beq entry236               ; $06e823 m8x8
+         beq entry235               ; $06e823 m8x8
          lda.b $0fa5                ; $06e825 m8x8
          cmp.b #$10                 ; $06e828 m8x8
          bcc label563               ; $06e82a m8x8, c=1
          cmp.b #$14                 ; $06e82c m8x8
          bcs label563               ; $06e82e m8x8, c=0
-         jsr entry239               ; $06e830 m8x8
-         bra entry237               ; $06e833 m8x8
+         jsr entry238               ; $06e830 m8x8
+         bra entry236               ; $06e833 m8x8
 label563: cmp.b #$44                ; $06e835 m8x8
          bne label566               ; $06e837 m8x8
          lda.b $0ea0, X             ; $06e839 m8x8
-         beq entry235               ; $06e83c m8x8
+         beq entry234               ; $06e83c m8x8
          lda.b $0ce2, X             ; $06e83e m8x8
          bmi label564               ; $06e841 m8x8
          lda.b #$04                 ; $06e843 m8x8
-         jsl @entry244              ; $06e845 m8x8
+         jsl @entry243              ; $06e845 m8x8
          lda.b $0ef0, X             ; $06e849 m8x8
          beq label564               ; $06e84c m8x8
          lda.b #$99                 ; $06e84e m8x8
          sta.b $0ef0, X             ; $06e850 m8x8
          stz.b $0ea0, X             ; $06e853 m8x8
-label564: bra entry235              ; $06e856 m8x8
-entry234: .entry m8x8
-         jsr entry235               ; $06e858 m8x8
+label564: bra entry234              ; $06e856 m8x8
+entry233: .entry m8x8
+         jsr entry234               ; $06e858 m8x8
          lda.b $0e40, X             ; $06e85b m8x8
          asl.b                      ; $06e85e m8x8
          bpl label565               ; $06e85f m8x8
@@ -8867,23 +8795,23 @@ entry234: .entry m8x8
 label565: sec                       ; $06e866 m8x8, c=1
          rts                        ; $06e867 m8x8, c=1
 label566: cmp.b #$20                ; $06e868 m8x8
-         bne entry235               ; $06e86a m8x8
+         bne entry234               ; $06e86a m8x8
          lda.b $0b6b, X             ; $06e86c m8x8
          and.b #$01                 ; $06e86f m8x8
-         beq entry235               ; $06e871 m8x8
+         beq entry234               ; $06e871 m8x8
          lda.b $0ea0, X             ; $06e873 m8x8
-         bne entry236               ; $06e876 m8x8
-entry235: .entry m8x8
+         bne entry235               ; $06e876 m8x8
+entry234: .entry m8x8
          sec                        ; $06e878 m8x8, c=1
          sep #$21                   ; $06e879 m8x8, c=1
-         bra entry237               ; $06e87b m8x8, c=1
-entry236: .entry m8x8
+         bra entry236               ; $06e87b m8x8, c=1
+entry235: .entry m8x8
          clc                        ; $06e87d m8x8, c=0
-entry237: .entry m8x8
+entry236: .entry m8x8
          ldy.b $08                  ; $06e87e m8x8
          rts                        ; $06e880 m8x8
          .org $06e889
-entry238: .entry m8x8
+entry237: .entry m8x8
          lda.b $0f20, X             ; $06e889 m8x8
          cmp.b #$01                 ; $06e88c m8x8
          rep #$30                   ; $06e88e m16x16
@@ -8922,14 +8850,14 @@ label568: lda.w $02                 ; $06e8c5 m16x16
          sep #$10                   ; $06e8cc m16x8
          phx.b                      ; $06e8ce m16x8
          phy.b                      ; $06e8cf m16x8
-         jsl @entry5                ; $06e8d0 m16x8
+         jsl @entry4                ; $06e8d0 m16x8
          sep #$30                   ; $06e8d4 m8x8
          sta.b $0fa5                ; $06e8d6 m8x8
          ply.b                      ; $06e8d9 m8x8
          plx.b                      ; $06e8da m8x8
          rts                        ; $06e8db m8x8
          .org $06e904
-entry239: .entry m8x8
+entry238: .entry m8x8
          lda.b $00                  ; $06e904 m8x8
          and.b #$07                 ; $06e906 m8x8
          sta.b $04                  ; $06e908 m8x8
@@ -8953,17 +8881,17 @@ entry239: .entry m8x8
 label569: lda.b $e8dc, Y            ; $06e92c m8x8, c=0
          cmp.b $04                  ; $06e92f m8x8
 label570: rts                       ; $06e931 m8x8
+entry239: .entry m8x8
+         jsr entry240               ; $06e932 m8x8
+         jmp entry241               ; $06e935 m8x8
 entry240: .entry m8x8
-         jsr entry241               ; $06e932 m8x8
-         jmp entry242               ; $06e935 m8x8
-entry241: .entry m8x8
          txa.b                      ; $06e938 m8x8
          add.b #$10                 ; $06e939 m8x8
          tax.b                      ; $06e93c m8x8
-         jsr entry242               ; $06e93d m8x8
+         jsr entry241               ; $06e93d m8x8
          ldx.b $0fa0                ; $06e940 m8x8
          rts                        ; $06e943 m8x8
-entry242: .entry m8x8
+entry241: .entry m8x8
          lda.b $0d40, X             ; $06e944 m8x8
          beq label572               ; $06e947 m8x8
          asl.b                      ; $06e949 m8x8
@@ -8989,7 +8917,7 @@ label571: adc.b $0d00, X            ; $06e964 m8x8
          adc.b $0d20, X             ; $06e96b m8x8
          sta.b $0d20, X             ; $06e96e m8x8
 label572: rts                       ; $06e971 m8x8
-entry243: .entry m8x8
+entry242: .entry m8x8
          lda.b $0f80, X             ; $06e972 m8x8
          asl.b                      ; $06e975 m8x8
          asl.b                      ; $06e976 m8x8
@@ -9010,7 +8938,7 @@ label573: adc.b $0f70, X            ; $06e98d m8x8
          sta.b $0f70, X             ; $06e990 m8x8
          rts                        ; $06e993 m8x8
          .org $06ece6
-entry244: .entry m8x8
+entry243: .entry m8x8
          cmp.b #$0f                 ; $06ece6 m8x8
          bne label574               ; $06ece8 m8x8
          ldy.b $0f70, X             ; $06ecea m8x8
@@ -9019,8 +8947,8 @@ entry244: .entry m8x8
 label574: cmp.b #$00                ; $06ecf0 m8x8
          beq label575               ; $06ecf2 m8x8
          cmp.b #$07                 ; $06ecf4 m8x8
-         bne entry245               ; $06ecf6 m8x8
-label575: jsl @entry245             ; $06ecf8 m8x8
+         bne entry244               ; $06ecf6 m8x8
+label575: jsl @entry244             ; $06ecf8 m8x8
          lda.b $0ce2, X             ; $06ecfc m8x8
          bne label576               ; $06ecff m8x8
          lda.b $0fac                ; $06ed01 m8x8
@@ -9037,9 +8965,9 @@ label575: jsl @entry245             ; $06ecf8 m8x8
          sta.b $0b68                ; $06ed1e m8x8
          stz.b $012e                ; $06ed21 m8x8
          lda.b #$05                 ; $06ed24 m8x8
-         jsl @entry435              ; $06ed26 m8x8
+         jsl @entry434              ; $06ed26 m8x8
 label576: rtl                       ; $06ed2a m8x8
-entry245: .entry m8x8
+entry244: .entry m8x8
          sta.b $0cf2                ; $06ed2b m8x8
          tay.b                      ; $06ed2e m8x8
          lda.b #$20                 ; $06ed2f m8x8
@@ -9083,18 +9011,18 @@ label580: rep #$20                  ; $06eda6 m16x8, c=0
          cmp.b #$f9                 ; $06edcb m8x8
          bne label581               ; $06edcd m8x8
          lda.b #$e3                 ; $06edcf m8x8
-entry246: .entry m8x8
+entry245: .entry m8x8
          sta.b $0e20, X             ; $06edd1 m8x8
-         jsl @entry425              ; $06edd4 m8x8
-         jsl @entry195              ; $06edd8 m8x8
+         jsl @entry424              ; $06edd4 m8x8
+         jsl @entry194              ; $06edd8 m8x8
          stz.b $012f                ; $06eddc m8x8
          lda.b #$32                 ; $06eddf m8x8
-         jsl @entry436              ; $06ede1 m8x8
-         jmp entry247               ; $06ede5 m8x8
+         jsl @entry435              ; $06ede1 m8x8
+         jmp entry246               ; $06ede5 m8x8
 label581: cmp.b #$fa                ; $06ede8 m8x8
          bne label582               ; $06edea m8x8
          lda.b #$8f                 ; $06edec m8x8
-         jsl @entry246              ; $06edee m8x8
+         jsl @entry245              ; $06edee m8x8
          lda.b #$02                 ; $06edf2 m8x8
          sta.b $0d80, X             ; $06edf4 m8x8
          lda.b #$20                 ; $06edf7 m8x8
@@ -9120,7 +9048,7 @@ label583: cmp.b #$00                ; $06ee1b m8x8
          and.b #$04                 ; $06ee29 m8x8
          bne label591               ; $06ee2b m8x8
          stz.b $02e3                ; $06ee2d m8x8
-label584: jmp entry247              ; $06ee30 m8x8
+label584: jmp entry246              ; $06ee30 m8x8
 label585: cmp.b #$fe                ; $06ee33 m8x8
          bcc label586               ; $06ee35 m8x8, c=1
          lda.b $0dd0, X             ; $06ee37 m8x8, c=1
@@ -9139,14 +9067,14 @@ label586: lda.b $0e20, X            ; $06ee3e m8x8
          lda.b #$0f                 ; $06ee56 m8x8, c=0
          sta.b $0df0, X             ; $06ee58 m8x8, c=0
          lda.b #$28                 ; $06ee5b m8x8, c=0
-         jsl @entry435              ; $06ee5d m8x8
+         jsl @entry434              ; $06ee5d m8x8
          rtl                        ; $06ee61 m8x8
 label587: cmp.b #$1b                ; $06ee62 m8x8
          bne label588               ; $06ee64 m8x8
          lda.b #$05                 ; $06ee66 m8x8
-         jsl @entry435              ; $06ee68 m8x8
-         jsr entry228               ; $06ee6c m8x8
-         jsl @entry255              ; $06ee6f m8x8
+         jsl @entry434              ; $06ee68 m8x8
+         jsr entry227               ; $06ee6c m8x8
+         jsl @entry254              ; $06ee6f m8x8
          rtl                        ; $06ee73 m8x8
 label588: pha.b                     ; $06ee74 m8x8
          lda.b $00                  ; $06ee75 m8x8
@@ -9167,7 +9095,7 @@ label589: ldy.b #$21                ; $06ee86 m8x8
          beq label590               ; $06ee96 m8x8
          ldy.b #$1c                 ; $06ee98 m8x8
 label590: sty.b $01                 ; $06ee9a m8x8
-         jsl @entry438              ; $06ee9c m8x8
+         jsl @entry437              ; $06ee9c m8x8
          ora.b $01                  ; $06eea0 m8x8
          sta.b $012f                ; $06eea2 m8x8
 label591: lda.b #$00                ; $06eea5 m8x8
@@ -9186,11 +9114,11 @@ label591: lda.b #$00                ; $06eea5 m8x8
 label592: lda.b #$0b                ; $06eec1 m8x8
 label593: sta.b $0ea0, X            ; $06eec3 m8x8
          rtl                        ; $06eec6 m8x8
-entry247: .entry m8x8
+entry246: .entry m8x8
          stz.b $0ef0, X             ; $06eec7 m8x8
          stz.b $0ce2, X             ; $06eeca m8x8
          rtl                        ; $06eecd m8x8
-entry248: .entry m8x8
+entry247: .entry m8x8
          lda.b $0dd0, X             ; $06eece m8x8
          cmp.b #$09                 ; $06eed1 m8x8
          bcc label594               ; $06eed3 m8x8, c=1
@@ -9200,7 +9128,7 @@ entry248: .entry m8x8
          bne label595               ; $06eedd m8x8
          stz.b $0ce2, X             ; $06eedf m8x8
          lda.b #$09                 ; $06eee2 m8x8
-         jsl @entry436              ; $06eee4 m8x8
+         jsl @entry435              ; $06eee4 m8x8
          lda.b #$07                 ; $06eee8 m8x8
          sta.b $0dd0, X             ; $06eeea m8x8
          lda.b #$70                 ; $06eeed m8x8
@@ -9231,12 +9159,12 @@ label596: tya.b                     ; $06ef15 m8x8
          asl.b $0be0, X             ; $06ef24 m8x8
          lsr.b $0be0, X             ; $06ef27 m8x8
          lda.b #$0f                 ; $06ef2a m8x8
-         jsl @entry435              ; $06ef2c m8x8
+         jsl @entry434              ; $06ef2c m8x8
          lda.b #$18                 ; $06ef30 m8x8
          sta.b $0f80, X             ; $06ef32 m8x8
          asl.b $0cd2, X             ; $06ef35 m8x8
          lsr.b $0cd2, X             ; $06ef38 m8x8
-         jsr entry223               ; $06ef3b m8x8
+         jsr entry222               ; $06ef3b m8x8
 label597: lda.b #$0b                ; $06ef3e m8x8
          sta.b $0dd0, X             ; $06ef40 m8x8
          lda.b #$40                 ; $06ef43 m8x8
@@ -9251,7 +9179,7 @@ label597: lda.b #$0b                ; $06ef3e m8x8
          bne label598               ; $06ef59 m8x8
          inc.b                      ; $06ef5b m8x8
          sta.b $0e20, X             ; $06ef5c m8x8
-label598: jmp entry249              ; $06ef5f m8x8
+label598: jmp entry248              ; $06ef5f m8x8
          .org $06ef67
 label599: lda.b $0e50, X            ; $06ef67 m8x8, c=0
          sta.b $00                  ; $06ef6a m8x8, c=0
@@ -9259,7 +9187,7 @@ label599: lda.b $0e50, X            ; $06ef67 m8x8, c=0
          sta.b $0e50, X             ; $06ef70 m8x8
          stz.b $0ce2, X             ; $06ef73 m8x8
          beq label600               ; $06ef76 m8x8
-         bcs entry249               ; $06ef78 m8x8, c=0
+         bcs entry248               ; $06ef78 m8x8, c=0
 label600: lda.b $0cba, X            ; $06ef7a m8x8
          bne label602               ; $06ef7d m8x8
          lda.b $0dd0, X             ; $06ef7f m8x8
@@ -9276,7 +9204,7 @@ label602: ldy.b $0e20, X            ; $06ef9a m8x8
          cpy.b #$1b                 ; $06ef9d m8x8
          beq label603               ; $06ef9f m8x8
          lda.b #$09                 ; $06efa1 m8x8
-         jsl @entry436              ; $06efa3 m8x8
+         jsl @entry435              ; $06efa3 m8x8
 label603: cpy.b #$40                ; $06efa7 m8x8
          bne label604               ; $06efa9 m8x8
          phx.b                      ; $06efab m8x8
@@ -9290,8 +9218,8 @@ label604: tya.b                     ; $06efb9 m8x8
          bne label605               ; $06efbc m8x8
          ldy.b $0db0, X             ; $06efbe m8x8
          cpy.b #$02                 ; $06efc1 m8x8
-         bne entry249               ; $06efc3 m8x8
-         jmp entry227               ; $06efc5 m8x8
+         bne entry248               ; $06efc3 m8x8
+         jmp entry226               ; $06efc5 m8x8
 label605: pha.b                     ; $06efc8 m8x8
          lda.b $0dd0, X             ; $06efc9 m8x8
          cmp.b #$0a                 ; $06efcc m8x8
@@ -9307,23 +9235,23 @@ label606: lda.b #$06                ; $06efd6 m8x8
          sta.b $0dd0, X             ; $06efe2 m8x8
          lda.b #$1f                 ; $06efe5 m8x8
          sta.b $0df0, X             ; $06efe7 m8x8
-         jsr entry226               ; $06efea m8x8
-entry249: .entry m8x8
+         jsr entry225               ; $06efea m8x8
+entry248: .entry m8x8
          rts                        ; $06efed m8x8
 label607: cmp.b #$92                ; $06efee m8x8
          bne label608               ; $06eff0 m8x8
-         jsl @entry354              ; $06eff2 m8x8
+         jsl @entry353              ; $06eff2 m8x8
          lda.b #$ff                 ; $06eff6 m8x8
          sta.b $0df0, X             ; $06eff8 m8x8
-         jmp entry250               ; $06effb m8x8
+         jmp entry249               ; $06effb m8x8
 label608: cmp.b #$cb                ; $06effe m8x8
          bne label609               ; $06f000 m8x8
-         jmp entry252               ; $06f002 m8x8
+         jmp entry251               ; $06f002 m8x8
 label609: cmp.b #$cc                ; $06f005 m8x8
          beq label610               ; $06f007 m8x8
          cmp.b #$cd                 ; $06f009 m8x8
          bne label611               ; $06f00b m8x8
-label610: jmp entry251              ; $06f00d m8x8
+label610: jmp entry250              ; $06f00d m8x8
 label611: cmp.b #$53                ; $06f010 m8x8
          beq label620               ; $06f012 m8x8
          cmp.b #$54                 ; $06f014 m8x8
@@ -9332,7 +9260,7 @@ label611: cmp.b #$53                ; $06f010 m8x8
          beq label615               ; $06f01a m8x8
          cmp.b #$7a                 ; $06f01c m8x8
          bne label612               ; $06f01e m8x8
-         jmp entry253               ; $06f020 m8x8
+         jmp entry252               ; $06f020 m8x8
 label612: cmp.b #$23                ; $06f023 m8x8
          beq label622               ; $06f025 m8x8
          cmp.b #$0f                 ; $06f027 m8x8
@@ -9350,7 +9278,7 @@ label613: lda.b $0b6b, X            ; $06f034 m8x8
          bcc label614               ; $06f041 m8x8, c=1
          lda.b #$1f                 ; $06f043 m8x8, c=1
 label614: sta.b $0df0, X            ; $06f045 m8x8
-         jmp entry254               ; $06f048 m8x8
+         jmp entry253               ; $06f048 m8x8
          .org $06f04c
 label615: lda.b #$03                ; $06f04c m8x8
          sta.b $0d80, X             ; $06f04e m8x8
@@ -9358,18 +9286,18 @@ label615: lda.b #$03                ; $06f04c m8x8
          sta.b $0f10, X             ; $06f053 m8x8
          lda.b #$09                 ; $06f056 m8x8
          sta.b $0dd0, X             ; $06f058 m8x8
-         bra entry250               ; $06f05b m8x8
+         bra entry249               ; $06f05b m8x8
 label616: lda.b $0e20, X            ; $06f05d m8x8
          cmp.b #$a2                 ; $06f060 m8x8
          beq label617               ; $06f062 m8x8
-         jsl @entry354              ; $06f064 m8x8
+         jsl @entry353              ; $06f064 m8x8
 label617: lda.b #$04                ; $06f068 m8x8
          sta.b $0dd0, X             ; $06f06a m8x8
          stz.b $0d90, X             ; $06f06d m8x8
          lda.b #$ff                 ; $06f070 m8x8
 label618: sta.b $0df0, X            ; $06f072 m8x8
          sta.b $0ef0, X             ; $06f075 m8x8
-         bra entry250               ; $06f078 m8x8
+         bra entry249               ; $06f078 m8x8
 label619: lda.b #$05                ; $06f07a m8x8
          sta.b $0d80, X             ; $06f07c m8x8
          lda.b #$c0                 ; $06f07f m8x8
@@ -9378,11 +9306,11 @@ label620: lda.b #$23                ; $06f083 m8x8
          sta.b $0df0, X             ; $06f085 m8x8
          stz.b $0ef0, X             ; $06f088 m8x8
          bra label621               ; $06f08b m8x8
-entry250: .entry m8x8
+entry249: .entry m8x8
          inc.b $0ffc                ; $06f08d m8x8
 label621: stz.b $012f               ; $06f090 m8x8
          lda.b #$22                 ; $06f093 m8x8
-         jsl @entry436              ; $06f095 m8x8
+         jsl @entry435              ; $06f095 m8x8
          rts                        ; $06f099 m8x8
 label622: lda.b $0db0, X            ; $06f09a m8x8
          bne label613               ; $06f09d m8x8
@@ -9394,24 +9322,24 @@ label622: lda.b $0db0, X            ; $06f09a m8x8
          sta.b $0dd0, X             ; $06f0ab m8x8
          stz.b $0ef0, X             ; $06f0ae m8x8
          rts                        ; $06f0b1 m8x8
-entry251: .entry m8x8
+entry250: .entry m8x8
          lda.b #$80                 ; $06f0b2 m8x8
          sta.b $0d80, X             ; $06f0b4 m8x8
          lda.b #$60                 ; $06f0b7 m8x8
          sta.b $0df0, X             ; $06f0b9 m8x8
          lda.b #$09                 ; $06f0bc m8x8
          sta.b $0dd0, X             ; $06f0be m8x8
-         bra entry250               ; $06f0c1 m8x8
-entry252: .entry m8x8
+         bra entry249               ; $06f0c1 m8x8
+entry251: .entry m8x8
          lda.b #$80                 ; $06f0c3 m8x8
          sta.b $0d80, X             ; $06f0c5 m8x8
          lda.b #$80                 ; $06f0c8 m8x8
          sta.b $0df0, X             ; $06f0ca m8x8
          lda.b #$09                 ; $06f0cd m8x8
          sta.b $0dd0, X             ; $06f0cf m8x8
-         bra entry250               ; $06f0d2 m8x8
-entry253: .entry m8x8
-         jsl @entry354              ; $06f0d4 m8x8
+         bra entry249               ; $06f0d2 m8x8
+entry252: .entry m8x8
+         jsl @entry353              ; $06f0d4 m8x8
          lda.b #$09                 ; $06f0d8 m8x8
          sta.b $0dd0, X             ; $06f0da m8x8
          sta.b $0ba0, X             ; $06f0dd m8x8
@@ -9423,7 +9351,7 @@ entry253: .entry m8x8
          sta.b $0df0, X             ; $06f0ec m8x8
          lda.b #$20                 ; $06f0ef m8x8
          sta.b $0f80, X             ; $06f0f1 m8x8
-         jmp entry250               ; $06f0f4 m8x8
+         jmp entry249               ; $06f0f4 m8x8
 label623: lda.b #$ff                ; $06f0f7 m8x8
          sta.b $0df0, X             ; $06f0f9 m8x8
          lda.b #$08                 ; $06f0fc m8x8
@@ -9433,8 +9361,8 @@ label623: lda.b #$ff                ; $06f0f7 m8x8
          sta.b $0d82                ; $06f105 m8x8
          stz.b $0dc1                ; $06f108 m8x8
          stz.b $0dc2                ; $06f10b m8x8
-         jmp entry250               ; $06f10e m8x8
-entry254: .entry m8x8
+         jmp entry249               ; $06f10e m8x8
+entry253: .entry m8x8
          lda.b $0e40, X             ; $06f111 m8x8
          add.b #$04                 ; $06f114 m8x8
          sta.b $0e40, X             ; $06f117 m8x8
@@ -9445,11 +9373,11 @@ entry254: .entry m8x8
          sta.b $0be0, X             ; $06f123 m8x8
 label624: rts                       ; $06f126 m8x8
          .org $06f6d0
-entry255: .entry m8x8
+entry254: .entry m8x8
          lda.b $0fac                ; $06f6d0 m8x8
          bne label625               ; $06f6d3 m8x8
          lda.b #$05                 ; $06f6d5 m8x8
-         jsl @entry435              ; $06f6d7 m8x8
+         jsl @entry434              ; $06f6d7 m8x8
          lda.b $0d10, X             ; $06f6db m8x8
          cmp.b $e2                  ; $06f6de m8x8
          lda.b $0d30, X             ; $06f6e0 m8x8
@@ -9470,7 +9398,7 @@ entry255: .entry m8x8
          sta.b $0b68                ; $06f707 m8x8
 label625: rtl                       ; $06f70a m8x8
          .org $06f7f5
-entry256: .entry m8x8
+entry255: .entry m8x8
          lda.b $0f70, X             ; $06f7f5 m8x8
          bmi label626               ; $06f7f8 m8x8
          phy.b                      ; $06f7fa m8x8
@@ -9502,7 +9430,7 @@ entry256: .entry m8x8
 label626: lda.b #$80                ; $06f837 m8x8
          sta.b $0a                  ; $06f839 m8x8
          rts                        ; $06f83b m8x8
-entry257: .entry m8x8
+entry256: .entry m8x8
          phx.b                      ; $06f83c m8x8
          ldx.b #$01                 ; $06f83d m8x8
 label627: lda.b $04, X              ; $06f83f m8x8
@@ -9529,11 +9457,11 @@ label627: lda.b $04, X              ; $06f83f m8x8
 label628: plx.b                     ; $06f868 m8x8
          rts                        ; $06f869 m8x8
          .org $06f8a8
-entry258: .entry m8x8
+entry257: .entry m8x8
          lda.b $0e20, X             ; $06f8a8 m8x8
          cmp.b #$ec                 ; $06f8ab m8x8
          bne label629               ; $06f8ad m8x8
-         jsr entry220               ; $06f8af m8x8
+         jsr entry219               ; $06f8af m8x8
          rts                        ; $06f8b2 m8x8
 label629: cmp.b #$53                ; $06f8b3 m8x8
          beq label634               ; $06f8b5 m8x8
@@ -9547,8 +9475,8 @@ label629: cmp.b #$53                ; $06f8b3 m8x8
          cmp.b #$02                 ; $06f8c6 m8x8
          bcs label634               ; $06f8c8 m8x8, c=0
 label630: lda.b $0df0, X            ; $06f8ca m8x8
-         beq entry261               ; $06f8cd m8x8
-entry259: .entry m8x8
+         beq entry260               ; $06f8cd m8x8
+entry258: .entry m8x8
          lda.b $0e60, X             ; $06f8cf m8x8
          bmi label634               ; $06f8d2 m8x8
          lda.b $1a                  ; $06f8d4 m8x8
@@ -9557,7 +9485,7 @@ entry259: .entry m8x8
          ora.b $0fc1                ; $06f8da m8x8
          bne label631               ; $06f8dd m8x8
          inc.b $0df0, X             ; $06f8df m8x8
-label631: jsr entry264              ; $06f8e2 m8x8
+label631: jsr entry263              ; $06f8e2 m8x8
          lda.b $0e20, X             ; $06f8e5 m8x8
          cmp.b #$40                 ; $06f8e8 m8x8
          beq label632               ; $06f8ea m8x8
@@ -9576,21 +9504,21 @@ label632: rep #$20                  ; $06f8f3 m16x8
          pha.b                      ; $06f90a m8x8
          sub.b #$04                 ; $06f90b m8x8
          sta.b $0e40, X             ; $06f90e m8x8
-         jsr entry218               ; $06f911 m8x8
+         jsr entry217               ; $06f911 m8x8
          pla.b                      ; $06f914 m8x8
          sta.b $0e40, X             ; $06f915 m8x8
 label633: rts                       ; $06f918 m8x8
-label634: jsr entry218              ; $06f919 m8x8
+label634: jsr entry217              ; $06f919 m8x8
          rts                        ; $06f91c m8x8
-entry260: .entry m8x8
+entry259: .entry m8x8
          phb                        ; $06f91d m8x8
          phk                        ; $06f91e m8x8
          plb                        ; $06f91f m8x8
-         jsr entry261               ; $06f920 m8x8
+         jsr entry260               ; $06f920 m8x8
          plb                        ; $06f923 m8x8
          rtl                        ; $06f924 m8x8
          .org $06f929
-entry261: .entry m8x8
+entry260: .entry m8x8
          lda.b $0e20, X             ; $06f929 m8x8
          cmp.b #$be                 ; $06f92c m8x8
          bne label635               ; $06f92e m8x8
@@ -9602,7 +9530,7 @@ label635: cmp.b #$aa                ; $06f933 m8x8
          lda.b $f924, Y             ; $06f93c m8x8
          ldy.b $0e30, X             ; $06f93f m8x8
          phy.b                      ; $06f942 m8x8
-         jsr entry263               ; $06f943 m8x8
+         jsr entry262               ; $06f943 m8x8
          pla.b                      ; $06f946 m8x8
          sta.b $0e30, X             ; $06f947 m8x8
          dec.b                      ; $06f94a m8x8
@@ -9632,12 +9560,12 @@ label638: ldy.b $0cba, X            ; $06f976 m8x8
          sta.b $0bc0, X             ; $06f983 m8x8
          lda.b #$e4                 ; $06f986 m8x8
          cpy.b #$01                 ; $06f988 m8x8
-         beq entry263               ; $06f98a m8x8
+         beq entry262               ; $06f98a m8x8
          lda.b #$e5                 ; $06f98c m8x8
          cpy.b #$03                 ; $06f98e m8x8
-         bne entry263               ; $06f990 m8x8
+         bne entry262               ; $06f990 m8x8
          lda.b #$d9                 ; $06f992 m8x8
-         bra entry263               ; $06f994 m8x8
+         bra entry262               ; $06f994 m8x8
 label639: lda.b $0be0, X            ; $06f996 m8x8
          and.b #$0f                 ; $06f999 m8x8
          beq label641               ; $06f99b m8x8
@@ -9654,11 +9582,11 @@ label640: pla.b                     ; $06f9b1 m8x8
          cpy.b #$01                 ; $06f9b2 m8x8
          beq label643               ; $06f9b4 m8x8
 label641: bra label646              ; $06f9b6 m8x8
-label642: jsl @entry427             ; $06f9b8 m8x8
+label642: jsl @entry426             ; $06f9b8 m8x8
          ply.b                      ; $06f9bc m8x8
          and.b $fa62, Y             ; $06f9bd m8x8
          bne label646               ; $06f9c0 m8x8
-entry262: .entry m8x8
+entry261: .entry m8x8
          tya.b                      ; $06f9c2 m8x8
 label643: asl.b                     ; $06f9c3 m8x8
          asl.b                      ; $06f9c4 m8x8
@@ -9671,20 +9599,20 @@ label643: asl.b                     ; $06f9c3 m8x8
          sta.b $0fc7, Y             ; $06f9d0 m8x8
          ply.b                      ; $06f9d3 m8x8
          lda.b $fa78, Y             ; $06f9d4 m8x8
-entry263: .entry m8x8
+entry262: .entry m8x8
          sta.b $0e20, X             ; $06f9d7 m8x8
          cmp.b #$e5                 ; $06f9da m8x8
          bne label644               ; $06f9dc m8x8
-         jsr entry215               ; $06f9de m8x8
+         jsr entry214               ; $06f9de m8x8
          bra label645               ; $06f9e1 m8x8
 label644: cmp.b #$e4                ; $06f9e3 m8x8
          bne label645               ; $06f9e5 m8x8
-         jsr entry217               ; $06f9e7 m8x8
+         jsr entry216               ; $06f9e7 m8x8
 label645: lda.b #$09                ; $06f9ea m8x8
          sta.b $0dd0, X             ; $06f9ec m8x8
          lda.b $0f70, X             ; $06f9ef m8x8
          pha.b                      ; $06f9f2 m8x8
-         jsl @entry425              ; $06f9f3 m8x8
+         jsl @entry424              ; $06f9f3 m8x8
          inc.b $0ba0, X             ; $06f9f7 m8x8
          ldy.b $0e20, X             ; $06f9fa m8x8
          lda.b $f991, Y             ; $06f9fd m8x8
@@ -9709,11 +9637,11 @@ label646: stz.b $0dd0, X            ; $06fa28 m8x8
 label647: lda.b $0e20, X            ; $06fa2b m8x8
          cmp.b #$a2                 ; $06fa2e m8x8
          bne label648               ; $06fa30 m8x8
-         jsl @entry322              ; $06fa32 m8x8
+         jsl @entry321              ; $06fa32 m8x8
          bcc label648               ; $06fa36 m8x8, c=1
          lda.b #$04                 ; $06fa38 m8x8, c=1
-         jsl @entry194              ; $06fa3a m8x8
-label648: jsl @entry338             ; $06fa3e m8x8
+         jsl @entry193              ; $06fa3a m8x8
+label648: jsl @entry337             ; $06fa3e m8x8
          inc.b $0cfb                ; $06fa42 m8x8
          lda.b $0e20, X             ; $06fa45 m8x8
          cmp.b #$40                 ; $06fa48 m8x8
@@ -9722,16 +9650,16 @@ label648: jsl @entry338             ; $06fa3e m8x8
          sta.b $0dd0, X             ; $06fa4e m8x8
          lda.b #$04                 ; $06fa51 m8x8
          sta.b $0dc0, X             ; $06fa53 m8x8
-         jmp entry259               ; $06fa56 m8x8
+         jmp entry258               ; $06fa56 m8x8
 label649: rts                       ; $06fa59 m8x8
          .org $06fb30
-entry264: .entry m8x8
+entry263: .entry m8x8
          lda.b $046c                ; $06fb30 m8x8
          cmp.b #$04                 ; $06fb33 m8x8
          bne label650               ; $06fb35 m8x8
          lda.b #$30                 ; $06fb37 m8x8
          sta.b $0b89, X             ; $06fb39 m8x8
-label650: jsr entry232              ; $06fb3c m8x8
+label650: jsr entry231              ; $06fb3c m8x8
          lda.b $0e60, X             ; $06fb3f m8x8
          and.b #$20                 ; $06fb42 m8x8
          lsr.b                      ; $06fb44 m8x8
@@ -9780,14 +9708,14 @@ label652: ply.b                     ; $06fb89 m8x8
          plx.b                      ; $06fb93 m8x8
          ldy.b #$00                 ; $06fb94 m8x8
          lda.b #$03                 ; $06fb96 m8x8
-         jsr entry269               ; $06fb98 m8x8
+         jsr entry268               ; $06fb98 m8x8
          rts                        ; $06fb9b m8x8
          .org $06fbf0
-entry265: .entry m8x8
+entry264: .entry m8x8
          lda.b $0df0, X             ; $06fbf0 m8x8
          bne label653               ; $06fbf3 m8x8
          stz.b $0dd0, X             ; $06fbf5 m8x8
-         jsl @entry338              ; $06fbf8 m8x8
+         jsl @entry337              ; $06fbf8 m8x8
          rts                        ; $06fbfc m8x8
 label653: cmp.b #$40                ; $06fbfd m8x8
          bcc label656               ; $06fbff m8x8, c=1
@@ -9803,9 +9731,9 @@ label654: lda.b $0df0, X            ; $06fc0f m8x8
          ora.b $0fc1                ; $06fc16 m8x8
          bne label655               ; $06fc19 m8x8
          lda.b #$31                 ; $06fc1b m8x8
-         jsl @entry436              ; $06fc1d m8x8
-label655: jsr entry218              ; $06fc21 m8x8
-         jsr entry232               ; $06fc24 m8x8
+         jsl @entry435              ; $06fc1d m8x8
+label655: jsr entry217              ; $06fc21 m8x8
+         jsr entry231               ; $06fc24 m8x8
          lda.b $02                  ; $06fc27 m8x8
          sub.b #$08                 ; $06fc29 m8x8
          sta.b $02                  ; $06fc2c m8x8
@@ -9815,13 +9743,13 @@ label655: jsr entry218              ; $06fc21 m8x8
          lda.b $0df0, X             ; $06fc34 m8x8
          add.b #$14                 ; $06fc37 m8x8
          sta.b $06                  ; $06fc3a m8x8
-         jsl @entry219              ; $06fc3c m8x8
+         jsl @entry218              ; $06fc3c m8x8
          rts                        ; $06fc40 m8x8
 label656: cmp.b #$3d                ; $06fc41 m8x8
          bne label657               ; $06fc43 m8x8
          pha.b                      ; $06fc45 m8x8
          lda.b #$20                 ; $06fc46 m8x8
-         jsl @entry435              ; $06fc48 m8x8
+         jsl @entry434              ; $06fc48 m8x8
          pla.b                      ; $06fc4c m8x8
 label657: lsr.b                     ; $06fc4d m8x8
          tay.b                      ; $06fc4e m8x8
@@ -9832,7 +9760,7 @@ label657: lsr.b                     ; $06fc4d m8x8
          bne label659               ; $06fc58 m8x8
 label658: lda.b $fbbc, Y            ; $06fc5a m8x8
          sta.b $0dc0, X             ; $06fc5d m8x8
-         jsr entry266               ; $06fc60 m8x8
+         jsr entry265               ; $06fc60 m8x8
          bra label661               ; $06fc63 m8x8
 label659: lda.b $fb9c, Y            ; $06fc65 m8x8
          cmp.b #$0c                 ; $06fc68 m8x8
@@ -9840,7 +9768,7 @@ label659: lda.b $fb9c, Y            ; $06fc65 m8x8
          ldy.b $0de0, X             ; $06fc6c m8x8, c=0
          add.b $fbec, Y             ; $06fc6f m8x8
 label660: sta.b $0dc0, X            ; $06fc73 m8x8
-         jsr entry267               ; $06fc76 m8x8
+         jsr entry266               ; $06fc76 m8x8
 label661: lda.b $0df0, X            ; $06fc79 m8x8
          lsr.b                      ; $06fc7c m8x8
          lsr.b                      ; $06fc7d m8x8
@@ -9851,7 +9779,7 @@ label661: lda.b $0df0, X            ; $06fc79 m8x8
          ora.b $11                  ; $06fc85 m8x8
          bne label663               ; $06fc87 m8x8
          ldy.b #$68                 ; $06fc89 m8x8
-         jsr entry233               ; $06fc8b m8x8
+         jsr entry232               ; $06fc8b m8x8
          lda.b $0fa5                ; $06fc8e m8x8
          cmp.b #$20                 ; $06fc91 m8x8
          beq label662               ; $06fc93 m8x8
@@ -9871,10 +9799,10 @@ label662: lda.b $0f30, X            ; $06fc9b m8x8
          ror.b $0d50, X             ; $06fcb2 m8x8
          plp                        ; $06fcb5 m8x8
          ror.b $0d50, X             ; $06fcb6 m8x8
-         jsr entry240               ; $06fcb9 m8x8
+         jsr entry239               ; $06fcb9 m8x8
 label663: rts                       ; $06fcbc m8x8
          .org $06fd1d
-entry266: .entry m8x8
+entry265: .entry m8x8
          lda.b $0e20, X             ; $06fd1d m8x8
          cmp.b #$13                 ; $06fd20 m8x8
          beq label665               ; $06fd22 m8x8
@@ -9888,7 +9816,7 @@ entry266: .entry m8x8
 label664: adc.b #$00                ; $06fd30 m8x8
          sta.b $09                  ; $06fd32 m8x8
          lda.b #$01                 ; $06fd34 m8x8
-         jsl @entry196              ; $06fd36 m8x8
+         jsl @entry195              ; $06fd36 m8x8
          rts                        ; $06fd3a m8x8
 label665: lda.b $0dc0, X            ; $06fd3b m8x8
          asl.b                      ; $06fd3e m8x8
@@ -9899,8 +9827,8 @@ label665: lda.b $0dc0, X            ; $06fd3b m8x8
          lda.b #$fc                 ; $06fd45 m8x8
          bra label664               ; $06fd47 m8x8
          .org $06fe61
-entry267: .entry m8x8
-         jsr entry232               ; $06fe61 m8x8
+entry266: .entry m8x8
+         jsr entry231               ; $06fe61 m8x8
          lda.b $0dc0, X             ; $06fe64 m8x8
          pha.b                      ; $06fe67 m8x8
          asl.b                      ; $06fe68 m8x8
@@ -9948,17 +9876,17 @@ label667: phx.b                     ; $06fe7c m8x8
          plx.b                      ; $06feb1 m8x8
          ldy.b #$ff                 ; $06feb2 m8x8
          lda.b $07                  ; $06feb4 m8x8
-         jsr entry269               ; $06feb6 m8x8
+         jsr entry268               ; $06feb6 m8x8
          rts                        ; $06feb9 m8x8
-entry268: .entry m8x8
+entry267: .entry m8x8
          phb                        ; $06feba m8x8
          phk                        ; $06febb m8x8
          plb                        ; $06febc m8x8
-         jsr entry269               ; $06febd m8x8
+         jsr entry268               ; $06febd m8x8
          plb                        ; $06fec0 m8x8
          rtl                        ; $06fec1 m8x8
-entry269: .entry m8x8
-         jsr entry270               ; $06fec2 m8x8
+entry268: .entry m8x8
+         jsr entry269               ; $06fec2 m8x8
          phx.b                      ; $06fec5 m8x8
          rep #$10                   ; $06fec6 m8x16
          ldx.w $90                  ; $06fec8 m8x16
@@ -9982,7 +9910,7 @@ label670: add.b $02                 ; $06fee9 m8x16
          tya.b                      ; $06feee m8x16
          adc.b $03                  ; $06feef m8x16
          sta.b $05                  ; $06fef1 m8x16
-         jsr entry271               ; $06fef3 m8x16
+         jsr entry270               ; $06fef3 m8x16
          bcc label671               ; $06fef6 m8x16, c=1
          ldx.w $0e                  ; $06fef8 m8x16, c=1
          inc.b $00, X               ; $06fefa m8x16, c=1
@@ -9998,7 +9926,7 @@ label672: add.b $00                 ; $06ff0a m8x16
          tya.b                      ; $06ff0f m8x16
          adc.b $01                  ; $06ff10 m8x16
          sta.b $0a                  ; $06ff12 m8x16
-         jsr entry272               ; $06ff14 m8x16
+         jsr entry271               ; $06ff14 m8x16
          bcc label673               ; $06ff17 m8x16, c=1
          lda.b #$f0                 ; $06ff19 m8x16, c=1
          sta.b $00, X               ; $06ff1b m8x16, c=1
@@ -10012,7 +9940,7 @@ label673: inx.w                     ; $06ff1d m8x16
          sep #$10                   ; $06ff28 m8x8
          plx.b                      ; $06ff2a m8x8
          rts                        ; $06ff2b m8x8
-entry270: .entry m8x8
+entry269: .entry m8x8
          sty.b $0b                  ; $06ff2c m8x8
          sta.b $08                  ; $06ff2e m8x8
          lda.b $0d00, X             ; $06ff30 m8x8
@@ -10028,14 +9956,14 @@ entry270: .entry m8x8
          lda.b $0d30, X             ; $06ff49 m8x8
          sta.b $03                  ; $06ff4c m8x8
          rts                        ; $06ff4e m8x8
-entry271: .entry m8x16
+entry270: .entry m8x16
          rep #$20                   ; $06ff4f m16x16
          lda.w $04                  ; $06ff51 m16x16
          sub.w $e2                  ; $06ff53 m16x16
          cmp.w #$0100               ; $06ff56 m16x16
          sep #$20                   ; $06ff59 m8x16
          rts                        ; $06ff5b m8x16
-entry272: .entry m8x16
+entry271: .entry m8x16
          rep #$20                   ; $06ff5c m16x16
          lda.w $09                  ; $06ff5e m16x16
          pha.w                      ; $06ff60 m16x16
@@ -10048,32 +9976,32 @@ entry272: .entry m8x16
          sep #$20                   ; $06ff70 m8x16
          rts                        ; $06ff72 m8x16
          .org $078028
-entry273: .entry m8x8
-         jsr entry275               ; $078028 m8x8
+entry272: .entry m8x8
+         jsr entry274               ; $078028 m8x8
          sta.b $012e                ; $07802b m8x8
          rts                        ; $07802e m8x8
-entry274: .entry m8x8
-         jsr entry275               ; $07802f m8x8
+entry273: .entry m8x8
+         jsr entry274               ; $07802f m8x8
          sta.b $012f                ; $078032 m8x8
          rts                        ; $078035 m8x8
-entry275: .entry m8x8
+entry274: .entry m8x8
          sta.b $0cf8                ; $078036 m8x8
-         jsl @entry434              ; $078039 m8x8
+         jsl @entry433              ; $078039 m8x8
          ora.b $0cf8                ; $07803d m8x8
          rts                        ; $078040 m8x8
          .org $0791eb
-entry276: .entry m8x8
+entry275: .entry m8x8
          lda.b $0372                ; $0791eb m8x8
          beq label674               ; $0791ee m8x8
          lda.b $02f1                ; $0791f0 m8x8
          cmp.b #$40                 ; $0791f3 m8x8
          bne label675               ; $0791f5 m8x8
 label674: brl label679              ; $0791f7 m8x8
-label675: jsl @entry278             ; $0791fa m8x8
+label675: jsl @entry277             ; $0791fa m8x8
          ldy.b #$01                 ; $0791fe m8x8
          lda.b #$1d                 ; $079200 m8x8
-         jsl @entry309              ; $079202 m8x8
-         jsl @entry200              ; $079206 m8x8
+         jsl @entry308              ; $079202 m8x8
+         jsl @entry199              ; $079206 m8x8
          lda.b $012f                ; $07920a m8x8
          and.b #$3f                 ; $07920d m8x8
          cmp.b #$1b                 ; $07920f m8x8
@@ -10081,7 +10009,7 @@ label675: jsl @entry278             ; $0791fa m8x8
          cmp.b #$32                 ; $079213 m8x8
          beq label676               ; $079215 m8x8
          lda.b #$03                 ; $079217 m8x8
-         jsr entry274               ; $079219 m8x8
+         jsr entry273               ; $079219 m8x8
 label676: ldx.b $66                 ; $07921c m8x8
          lda.b $91b7, X             ; $07921e m8x8
          sta.b $27                  ; $079221 m8x8
@@ -10134,7 +10062,7 @@ label677: lda.b #$01                ; $07926d m8x8
          bra label679               ; $079286 m8x8
 label678: stz.b $30                 ; $079288 m8x8
 label679: rts                       ; $07928a m8x8
-entry277: .entry m8x8
+entry276: .entry m8x8
          phb                        ; $07928b m8x8
          phk                        ; $07928c m8x8
          plb                        ; $07928d m8x8
@@ -10142,23 +10070,23 @@ entry277: .entry m8x8
          lda.b $2f                  ; $07928f m8x8
          lsr.b                      ; $079291 m8x8
          sta.b $66                  ; $079292 m8x8
-         jsr entry276               ; $079294 m8x8
+         jsr entry275               ; $079294 m8x8
          plx.b                      ; $079297 m8x8
          plb                        ; $079298 m8x8
          rtl                        ; $079299 m8x8
          .org $07982a
-entry278: .entry m8x8
+entry277: .entry m8x8
          phb                        ; $07982a m8x8
          phk                        ; $07982b m8x8
          plb                        ; $07982c m8x8
          stz.b $02cb                ; $07982d m8x8
          stz.b $034f                ; $079830 m8x8
          stz.b $032a                ; $079833 m8x8
-         jsr entry279               ; $079836 m8x8
+         jsr entry278               ; $079836 m8x8
          plb                        ; $079839 m8x8
          rtl                        ; $07983a m8x8
          .org $079863
-entry279: .entry m8x8
+entry278: .entry m8x8
          rep #$20                   ; $079863 m16x8
          stz.w $032f                ; $079865 m16x8
          stz.w $0331                ; $079868 m16x8
@@ -10173,7 +10101,7 @@ entry279: .entry m8x8
          sep #$20                   ; $079883 m8x8
          rts                        ; $079885 m8x8
          .org $079a1c
-entry280: .entry m8x8
+entry279: .entry m8x8
          phb                        ; $079a1c m8x8
          phk                        ; $079a1d m8x8
          plb                        ; $079a1e m8x8
@@ -10190,11 +10118,11 @@ entry280: .entry m8x8
          lda.b #$03                 ; $079a37 m8x8
          sta.b $0374                ; $079a39 m8x8
          lda.b #$20                 ; $079a3c m8x8
-         jsl @entry306              ; $079a3e m8x8
+         jsl @entry305              ; $079a3e m8x8
          plb                        ; $079a42 m8x8
          rtl                        ; $079a43 m8x8
          .org $079d74
-entry281: .entry m8x8
+entry280: .entry m8x8
          stz.b $5e                  ; $079d74 m8x8
          lda.b $48                  ; $079d76 m8x8
          and.b #$f6                 ; $079d78 m8x8
@@ -10211,7 +10139,7 @@ entry281: .entry m8x8
          .org $079e52
 label680: rts                       ; $079e52 m8x8
          .org $07ae3d
-entry282: .entry m8x8
+entry281: .entry m8x8
          lda.b #$20                 ; $07ae3d m8x8
          sta.b $02e2                ; $07ae3f m8x8
          stz.b $037b                ; $07ae42 m8x8
@@ -10219,7 +10147,7 @@ entry282: .entry m8x8
          stz.b $0360                ; $07ae47 m8x8
          rts                        ; $07ae4a m8x8
          .org $07e22e
-entry283: .entry m8x8
+entry282: .entry m8x8
          phb                        ; $07e22e m8x8
          phk                        ; $07e22f m8x8
          plb                        ; $07e230 m8x8
@@ -10422,8 +10350,8 @@ label705: plp                       ; $07e3ae m8x8
          dex.b                      ; $07e3ba m8x8
          dex.b                      ; $07e3bb m8x8
          bpl label704               ; $07e3bc m8x8
-         jsr entry284               ; $07e3be m8x8
-         jsr entry286               ; $07e3c1 m8x8
+         jsr entry283               ; $07e3be m8x8
+         jsr entry285               ; $07e3c1 m8x8
          bra label706               ; $07e3c4 m8x8
          .org $07e3c9
 label706: rep #$20                  ; $07e3c9 m16x8
@@ -10577,7 +10505,7 @@ label721: asl.b                     ; $07e50b m8x8
          lda.b $046c                ; $07e519 m8x8
          cmp.b #$04                 ; $07e51c m8x8
          bne label722               ; $07e51e m8x8
-         jsr entry285               ; $07e520 m8x8
+         jsr entry284               ; $07e520 m8x8
 label722: stz.b $68                 ; $07e523 m8x8
          stz.b $69                  ; $07e525 m8x8
          brl label706               ; $07e527 m8x8
@@ -10625,7 +10553,7 @@ label729: pha.w                     ; $07e570 m16x8
          sta.w $08, X               ; $07e577 m16x8
          sep #$20                   ; $07e579 m8x8
          brl label718               ; $07e57b m8x8
-entry284: .entry m8x8
+entry283: .entry m8x8
          lda.b $046c                ; $07e57e m8x8
          beq label734               ; $07e581 m8x8
          lda.b $24                  ; $07e583 m8x8
@@ -10648,12 +10576,12 @@ label731: tya.b                     ; $07e5a5 m8x8
          tsb.b $67                  ; $07e5a6 m8x8
 label732: ldy.b #$02                ; $07e5a8 m8x8
          lda.b $0312                ; $07e5aa m8x8
-         beq entry285               ; $07e5ad m8x8
+         beq entry284               ; $07e5ad m8x8
          bmi label733               ; $07e5af m8x8
          ldy.b #$01                 ; $07e5b1 m8x8
 label733: tya.b                     ; $07e5b3 m8x8
          tsb.b $67                  ; $07e5b4 m8x8
-entry285: .entry m8x8
+entry284: .entry m8x8
          stz.b $6a                  ; $07e5b6 m8x8
          rep #$20                   ; $07e5b8 m16x8
          lda.w $20                  ; $07e5ba m16x8
@@ -10665,7 +10593,7 @@ entry285: .entry m8x8
          sep #$20                   ; $07e5ca m8x8
 label734: rts                       ; $07e5cc m8x8
          .org $07e5d9
-entry286: .entry m8x8
+entry285: .entry m8x8
          lda.b $03f3                ; $07e5d9 m8x8
          beq label734               ; $07e5dc m8x8
          lda.b $24                  ; $07e5de m8x8
@@ -10733,7 +10661,7 @@ label738: adc.b $0020, Y            ; $07e644 m8x8
          sep #$20                   ; $07e657 m8x8
          rts                        ; $07e659 m8x8
          .org $07e68f
-entry287: .entry m8x8
+entry286: .entry m8x8
          phb                        ; $07e68f m8x8
          phk                        ; $07e690 m8x8
          plb                        ; $07e691 m8x8
@@ -10993,15 +10921,15 @@ label782: lda.b $e863, X            ; $07e8ba m8x8
 label783: sta.b $2e                 ; $07e8d5 m8x8
 label784: plb                       ; $07e8d7 m8x8
          rtl                        ; $07e8d8 m8x8
-entry288: .entry m8x8
+entry287: .entry m8x8
          lda.b $1b                  ; $07e8d9 m8x8
          beq label786               ; $07e8db m8x8
          lda.b $6c                  ; $07e8dd m8x8
          beq label785               ; $07e8df m8x8
-         jmp @entry289              ; $07e8e1 m8x8
-label785: jsl @entry290             ; $07e8e5 m8x8
+         jmp @entry288              ; $07e8e1 m8x8
+label785: jsl @entry289             ; $07e8e5 m8x8
 label786: rts                       ; $07e8e9 m8x8
-entry289: .entry m8x8
+entry288: .entry m8x8
          stz.b $68                  ; $07e8ea m8x8
          stz.b $69                  ; $07e8ec m8x8
          lda.b $26                  ; $07e8ee m8x8
@@ -11067,13 +10995,13 @@ label790: sep #$20                  ; $07e96a m8x8
          stz.b $0308                ; $07e975 m8x8
          stz.b $0309                ; $07e978 m8x8
          stz.b $0376                ; $07e97b m8x8
-         jsl @entry147              ; $07e97e m8x8
+         jsl @entry146              ; $07e97e m8x8
          rts                        ; $07e982 m8x8
 label791: stz.b $030b               ; $07e983 m8x8
          stz.b $0308                ; $07e986 m8x8
          stz.b $0309                ; $07e989 m8x8
          stz.b $0376                ; $07e98c m8x8
-         jsl @entry149              ; $07e98f m8x8
+         jsl @entry148              ; $07e98f m8x8
          rts                        ; $07e993 m8x8
 label792: lda.b $68                 ; $07e994 m8x8
          beq label794               ; $07e996 m8x8
@@ -11082,15 +11010,15 @@ label792: lda.b $68                 ; $07e994 m8x8
          stz.b $0308                ; $07e99d m8x8
          stz.b $0309                ; $07e9a0 m8x8
          stz.b $0376                ; $07e9a3 m8x8
-         jsl @entry154              ; $07e9a6 m8x8
+         jsl @entry153              ; $07e9a6 m8x8
          rts                        ; $07e9aa m8x8
 label793: stz.b $030b               ; $07e9ab m8x8
          stz.b $0308                ; $07e9ae m8x8
          stz.b $0309                ; $07e9b1 m8x8
          stz.b $0376                ; $07e9b4 m8x8
-         jsl @entry151              ; $07e9b7 m8x8
+         jsl @entry150              ; $07e9b7 m8x8
 label794: rts                       ; $07e9bb m8x8
-entry290: .entry m8x8
+entry289: .entry m8x8
          phb                        ; $07e9bc m8x8
          phk                        ; $07e9bd m8x8
          plb                        ; $07e9be m8x8
@@ -11103,20 +11031,20 @@ entry290: .entry m8x8
          lda.b $69                  ; $07e9cd m8x8
          beq label796               ; $07e9cf m8x8
          bmi label795               ; $07e9d1 m8x8
-         jsl @entry155              ; $07e9d3 m8x8
+         jsl @entry154              ; $07e9d3 m8x8
          bra label796               ; $07e9d7 m8x8
-label795: jsl @entry158             ; $07e9d9 m8x8
+label795: jsl @entry157             ; $07e9d9 m8x8
 label796: lda.b $68                 ; $07e9dd m8x8
          beq label798               ; $07e9df m8x8
          bpl label797               ; $07e9e1 m8x8
-         jsl @entry160              ; $07e9e3 m8x8
+         jsl @entry159              ; $07e9e3 m8x8
          plb                        ; $07e9e7 m8x8
          rtl                        ; $07e9e8 m8x8
-label797: jsl @entry159             ; $07e9e9 m8x8
+label797: jsl @entry158             ; $07e9e9 m8x8
 label798: plb                       ; $07e9ed m8x8
          rtl                        ; $07e9ee m8x8
          .org $07ed9e
-entry291: .entry m8x8
+entry290: .entry m8x8
          sep #$30                   ; $07ed9e m8x8
          phb                        ; $07eda0 m8x8
          phk                        ; $07eda1 m8x8
@@ -11137,7 +11065,7 @@ label799: txa.b                     ; $07edb6 m8x8
          lda.b #$09                 ; $07edb9 m8x8
          sta.b $02c4                ; $07edbb m8x8
          stz.b $02c3                ; $07edbe m8x8
-         jsr entry293               ; $07edc1 m8x8
+         jsr entry292               ; $07edc1 m8x8
          lda.b $05f0, Y             ; $07edc4 m8x8
          sta.b $72                  ; $07edc7 m8x8
          lda.b $05ec, Y             ; $07edc9 m8x8
@@ -11146,11 +11074,11 @@ label799: txa.b                     ; $07edb6 m8x8
          sta.b $74                  ; $07edd1 m8x8
          lda.b $05e0, Y             ; $07edd3 m8x8
          sta.b $75                  ; $07edd6 m8x8
-         jsr entry294               ; $07edd8 m8x8
+         jsr entry293               ; $07edd8 m8x8
 label800: plb                       ; $07eddb m8x8
          rtl                        ; $07eddc m8x8
          .org $07ede2
-entry292: .entry m8x8
+entry291: .entry m8x8
          sep #$30                   ; $07ede2 m8x8
          phb                        ; $07ede4 m8x8
          phk                        ; $07ede5 m8x8
@@ -11180,7 +11108,7 @@ label802: ply.b                     ; $07ee16 m8x8
          plb                        ; $07ee17 m8x8
          rtl                        ; $07ee18 m8x8
          .org $07ee1e
-entry293: .entry m8x8
+entry292: .entry m8x8
          stz.b $27                  ; $07ee1e m8x8
          stz.b $28                  ; $07ee20 m8x8
          lda.b $ee19                ; $07ee22 m8x8
@@ -11329,7 +11257,7 @@ label813: sep #$20                  ; $07ef43 m8x8
          plx.b                      ; $07ef48 m8x8
          rts                        ; $07ef49 m8x8
          .org $07efa2
-entry294: .entry m8x8
+entry293: .entry m8x8
          phy.b                      ; $07efa2 m8x8
          sty.b $0e                  ; $07efa3 m8x8
          stz.b $0f                  ; $07efa5 m8x8
@@ -11442,10 +11370,10 @@ label822: lda.b $30, X              ; $07f087 m8x8
          add.b $00                  ; $07f089 m8x8
          sta.b $30, X               ; $07f08c m8x8
 label823: sep #$20                  ; $07f08e m8x8
-         jsr entry288               ; $07f090 m8x8
+         jsr entry287               ; $07f090 m8x8
          ply.b                      ; $07f093 m8x8
          rts                        ; $07f094 m8x8
-entry295: .entry m8x8
+entry294: .entry m8x8
          phb                        ; $07f095 m8x8
          phk                        ; $07f096 m8x8
          plb                        ; $07f097 m8x8
@@ -11459,17 +11387,17 @@ label824: lda.b $05fc, X            ; $07f0a2 m8x8
          asl.b                      ; $07f0a8 m8x8
          tay.b                      ; $07f0a9 m8x8
          phx.b                      ; $07f0aa m8x8
-         jsr entry296               ; $07f0ab m8x8
+         jsr entry295               ; $07f0ab m8x8
          plx.b                      ; $07f0ae m8x8
 label825: dex.b                     ; $07f0af m8x8
          bpl label824               ; $07f0b0 m8x8
 label826: plb                       ; $07f0b2 m8x8
          rtl                        ; $07f0b3 m8x8
          .org $07f0c2
-entry296: .entry m8x8
+entry295: .entry m8x8
          phy.b                      ; $07f0c2 m8x8
          lda.b #$04                 ; $07f0c3 m8x8
-         jsl @entry429              ; $07f0c5 m8x8
+         jsl @entry428              ; $07f0c5 m8x8
          ply.b                      ; $07f0c9 m8x8
          lda.b $05f0, Y             ; $07f0ca m8x8
          sta.b $00                  ; $07f0cd m8x8
@@ -11519,7 +11447,7 @@ label827: xba                       ; $07f104 m8x8
          sta.b ($92), Y             ; $07f121 m8x8
 label828: ply.b                     ; $07f123 m8x8
          rts                        ; $07f124 m8x8
-entry297: .entry m8x8
+entry296: .entry m8x8
          phb                        ; $07f125 m8x8
          phk                        ; $07f126 m8x8
          plb                        ; $07f127 m8x8
@@ -11541,7 +11469,7 @@ entry297: .entry m8x8
          stz.b $0308                ; $07f14e m8x8
          stz.b $0309                ; $07f151 m8x8
          stz.b $0376                ; $07f154 m8x8
-         jsl @entry278              ; $07f157 m8x8
+         jsl @entry277              ; $07f157 m8x8
          lda.b $50                  ; $07f15b m8x8
          and.b #$fe                 ; $07f15d m8x8
          sta.b $50                  ; $07f15f m8x8
@@ -11552,8 +11480,8 @@ entry297: .entry m8x8
          stz.b $0360                ; $07f16a m8x8
          stz.b $02da                ; $07f16d m8x8
          stz.b $55                  ; $07f170 m8x8
-         jsr entry282               ; $07f172 m8x8
-         jsr entry281               ; $07f175 m8x8
+         jsr entry281               ; $07f172 m8x8
+         jsr entry280               ; $07f175 m8x8
          stz.b $037b                ; $07f178 m8x8
          stz.b $0300                ; $07f17b m8x8
          lda.b $67                  ; $07f17e m8x8
@@ -11564,7 +11492,7 @@ entry297: .entry m8x8
          plb                        ; $07f18a m8x8
          rtl                        ; $07f18b m8x8
          .org $07f243
-entry298: .entry m8x8
+entry297: .entry m8x8
          phb                        ; $07f243 m8x8
          phk                        ; $07f244 m8x8
          plb                        ; $07f245 m8x8
@@ -11585,10 +11513,10 @@ label829: stz.b $2a                 ; $07f24e m8x8
          and.b #$04                 ; $07f267 m8x8
          beq label830               ; $07f269 m8x8
          lda.b #$18                 ; $07f26b m8x8
-         jsr entry273               ; $07f26d m8x8
+         jsr entry272               ; $07f26d m8x8
          bra label831               ; $07f270 m8x8
 label830: lda.b #$16                ; $07f272 m8x8
-         jsr entry273               ; $07f274 m8x8
+         jsr entry272               ; $07f274 m8x8
 label831: stz.b $01                 ; $07f277 m8x8
          ldx.b #$10                 ; $07f279 m8x8
          lda.b $0462                ; $07f27b m8x8
@@ -11608,7 +11536,7 @@ label832: stx.b $00                 ; $07f288 m8x8
          plb                        ; $07f299 m8x8
          rtl                        ; $07f29a m8x8
          .org $07f3cd
-entry299: .entry m8x8
+entry298: .entry m8x8
          phb                        ; $07f3cd m8x8
          phk                        ; $07f3ce m8x8
          plb                        ; $07f3cf m8x8
@@ -11617,7 +11545,7 @@ entry299: .entry m8x8
          plb                        ; $07f3d5 m8x8
          rtl                        ; $07f3d6 m8x8
          .org $07f413
-entry300: .entry m8x8
+entry299: .entry m8x8
          phb                        ; $07f413 m8x8
          phk                        ; $07f414 m8x8
          plb                        ; $07f415 m8x8
@@ -11648,7 +11576,7 @@ label833: stz.b $27                 ; $07f42c m8x8
 label834: clc                       ; $07f446 m8x8, c=0
          plb                        ; $07f447 m8x8, c=0
          rtl                        ; $07f448 m8x8, c=0
-entry301: .entry m8x8
+entry300: .entry m8x8
          lda.b $5d                  ; $07f449 m8x8
          cmp.b #$00                 ; $07f44b m8x8
          beq label835               ; $07f44d m8x8
@@ -11671,25 +11599,25 @@ label835: lda.b $3a                 ; $07f457 m8x8
 label836: clc                       ; $07f474 m8x8, c=0
          rtl                        ; $07f475 m8x8, c=0
          .org $088242
-entry302: .entry m8x8
+entry301: .entry m8x8
          phb                        ; $088242 m8x8
          phk                        ; $088243 m8x8
          plb                        ; $088244 m8x8
-         jsr entry305               ; $088245 m8x8
-         jsr entry303               ; $088248 m8x8
+         jsr entry304               ; $088245 m8x8
+         jsr entry302               ; $088248 m8x8
          plb                        ; $08824b m8x8
          rtl                        ; $08824c m8x8
          .org $08832b
-entry303: .entry m8x8
+entry302: .entry m8x8
          ldx.b #$09                 ; $08832b m8x8
 label837: stx.b $0fa0               ; $08832d m8x8
          lda.b $0c4a, X             ; $088330 m8x8
          beq label838               ; $088333 m8x8
-         jsr entry304               ; $088335 m8x8
+         jsr entry303               ; $088335 m8x8
 label838: dex.b                     ; $088338 m8x8
          bpl label837               ; $088339 m8x8
          rts                        ; $08833b m8x8
-entry304: .entry m8x8
+entry303: .entry m8x8
          pha.b                      ; $08833c m8x8
          cpx.b #$06                 ; $08833d m8x8
          bcs label842               ; $08833f m8x8, c=0
@@ -11698,11 +11626,11 @@ entry304: .entry m8x8
          beq label840               ; $088347 m8x8, c=0
          ldy.b $0c7c, X             ; $088349 m8x8, c=0
          bne label839               ; $08834c m8x8, c=0
-         jsl @entry431              ; $08834e m8x8
+         jsl @entry430              ; $08834e m8x8
          bra label841               ; $088352 m8x8
-label839: jsl @entry432             ; $088354 m8x8
+label839: jsl @entry431             ; $088354 m8x8
          bra label841               ; $088358 m8x8
-label840: jsl @entry428             ; $08835a m8x8
+label840: jsl @entry427             ; $08835a m8x8
 label841: tya.b                     ; $08835e m8x8
          sta.b $0c86, X             ; $08835f m8x8
 label842: ldy.b $11                 ; $088362 m8x8
@@ -11722,7 +11650,7 @@ label843: pla.b                     ; $08836e m8x8
          .org $088f81
 label844: rts                       ; $088f81 m8x8
          .org $088f89
-entry305: .entry m8x8
+entry304: .entry m8x8
          lda.b $0fac                ; $088f89 m8x8
          beq label844               ; $088f8c m8x8
          lda.b #$02                 ; $088f8e m8x8
@@ -11737,11 +11665,11 @@ label845: lda.b #$10                ; $088fa0 m8x8
          beq label847               ; $088fa5 m8x8
          ldy.b $0b68                ; $088fa7 m8x8
          bne label846               ; $088faa m8x8
-         jsl @entry431              ; $088fac m8x8
+         jsl @entry430              ; $088fac m8x8
          bra label848               ; $088fb0 m8x8
-label846: jsl @entry432             ; $088fb2 m8x8
+label846: jsl @entry431             ; $088fb2 m8x8
          bra label848               ; $088fb6 m8x8
-label847: jsl @entry428             ; $088fb8 m8x8
+label847: jsl @entry427             ; $088fb8 m8x8
 label848: lda.b $0fad               ; $088fbc m8x8
          sub.b $00e2                ; $088fbf m8x8
          cmp.b #$f8                 ; $088fc3 m8x8
@@ -11837,7 +11765,7 @@ label851: lda.b $00                 ; $08900d m8x8, c=0
          sta.b ($92), Y             ; $08907d m8x8
          rts                        ; $08907f m8x8
          .org $098091
-entry306: .entry m8x8
+entry305: .entry m8x8
          phb                        ; $098091 m8x8
          phk                        ; $098092 m8x8
          plb                        ; $098093 m8x8
@@ -11861,19 +11789,19 @@ entry306: .entry m8x8
          lda.w #$0938               ; $0980bc m16x8
          sta.w $02                  ; $0980bf m16x8
          sep #$20                   ; $0980c1 m8x8
-label852: jsr entry320              ; $0980c3 m8x8
+label852: jsr entry319              ; $0980c3 m8x8
          plb                        ; $0980c6 m8x8
          rtl                        ; $0980c7 m8x8
          .org $098b7a
 label853: plb                       ; $098b7a m8x8, c=1
          rtl                        ; $098b7b m8x8, c=1
          .org $098bad
-entry307: .entry m8x8
+entry306: .entry m8x8
          phb                        ; $098bad m8x8
          phk                        ; $098bae m8x8
          plb                        ; $098baf m8x8
          stx.b $02d8                ; $098bb0 m8x8
-         jsr entry311               ; $098bb3 m8x8
+         jsr entry310               ; $098bb3 m8x8
          bcs label853               ; $098bb6 m8x8, c=0
          phx.b                      ; $098bb8 m8x8, c=0
          ldy.b $02d8                ; $098bb9 m8x8, c=0
@@ -11886,7 +11814,7 @@ entry307: .entry m8x8
 label854: tay.b                     ; $098bcc m8x8
          lda.b $83fe, Y             ; $098bcd m8x8
          sta.b $72                  ; $098bd0 m8x8
-         jsl @entry22               ; $098bd2 m8x8
+         jsl @entry21               ; $098bd2 m8x8
 label855: plx.b                     ; $098bd6 m8x8
          lda.b #$d0                 ; $098bd7 m8x8
          sta.b $0294, X             ; $098bd9 m8x8
@@ -11947,11 +11875,11 @@ label857: tya.b                     ; $098c43 m8x8
          sep #$20                   ; $098c58 m8x8
          brl label852               ; $098c5a m8x8
          .org $098de5
-entry308: .entry m8x8
+entry307: .entry m8x8
          phb                        ; $098de5 m8x8
          phk                        ; $098de6 m8x8
          plb                        ; $098de7 m8x8
-         jsr entry311               ; $098de8 m8x8
+         jsr entry310               ; $098de8 m8x8
          bcc label858               ; $098deb m8x8, c=1
          brl label859               ; $098ded m8x8, c=1
 label858: stz.b $03ea, X            ; $098df0 m8x8, c=0
@@ -11985,13 +11913,13 @@ label858: stz.b $03ea, X            ; $098df0 m8x8, c=0
 label859: plb                       ; $098e38 m8x8, c=1
          rtl                        ; $098e39 m8x8, c=1
          .org $0993df
-entry309: .entry m8x8
+entry308: .entry m8x8
          phb                        ; $0993df m8x8
          phk                        ; $0993e0 m8x8
          plb                        ; $0993e1 m8x8
-         jsr entry312               ; $0993e2 m8x8
+         jsr entry311               ; $0993e2 m8x8
          bcs label861               ; $0993e5 m8x8, c=0
-         jsr entry311               ; $0993e7 m8x8
+         jsr entry310               ; $0993e7 m8x8
          bcs label861               ; $0993ea m8x8, c=0
          lda.b #$10                 ; $0993ec m8x8, c=0
          sta.b $0c5e, X             ; $0993ee m8x8, c=0
@@ -12030,13 +11958,13 @@ label860: plx.b                     ; $099425 m8x8
 label861: plb                       ; $099432 m8x8
          rtl                        ; $099433 m8x8
          .org $099c24
-entry310: .entry m8x8
+entry309: .entry m8x8
          phb                        ; $099c24 m8x8
          phk                        ; $099c25 m8x8
          plb                        ; $099c26 m8x8
          ldy.b #$01                 ; $099c27 m8x8
          lda.b #$08                 ; $099c29 m8x8
-         jsr entry311               ; $099c2b m8x8
+         jsr entry310               ; $099c2b m8x8
          bcs label862               ; $099c2e m8x8, c=0
          stz.b $03c2, X             ; $099c30 m8x8, c=0
          lda.b #$07                 ; $099c33 m8x8, c=0
@@ -12045,9 +11973,9 @@ entry310: .entry m8x8
 label862: plb                       ; $099c39 m8x8
          rtl                        ; $099c3a m8x8
          .org $099cce
-entry311: .entry m8x8
+entry310: .entry m8x8
          pha.b                      ; $099cce m8x8
-         jsl @entry493              ; $099ccf m8x8
+         jsl @entry492              ; $099ccf m8x8
          pla.b                      ; $099cd3 m8x8
          tyx.b                      ; $099cd4 m8x8
          bmi label863               ; $099cd5 m8x8
@@ -12073,7 +12001,7 @@ entry311: .entry m8x8
 label863: sec                       ; $099d02 m8x8, c=1
          rts                        ; $099d03 m8x8, c=1
          .org $099d0c
-entry312: .entry m8x8
+entry311: .entry m8x8
          ldx.b #$05                 ; $099d0c m8x8
 label864: cmp.b $0c4a, X            ; $099d0e m8x8
          beq label865               ; $099d11 m8x8
@@ -12084,7 +12012,7 @@ label864: cmp.b $0c4a, X            ; $099d0e m8x8
 label865: sec                       ; $099d18 m8x8, c=1
          rts                        ; $099d19 m8x8, c=1
          .org $099ee8
-entry313: .entry m8x8
+entry312: .entry m8x8
          phb                        ; $099ee8 m8x8
          phk                        ; $099ee9 m8x8
          plb                        ; $099eea m8x8
@@ -12115,15 +12043,15 @@ entry313: .entry m8x8
          plb                        ; $099f23 m8x8
          rtl                        ; $099f24 m8x8
          .org $099f7d
-entry314: .entry m8x8
+entry313: .entry m8x8
          phb                        ; $099f7d m8x8
          phk                        ; $099f7e m8x8
          plb                        ; $099f7f m8x8
-         jsr entry315               ; $099f80 m8x8
+         jsr entry314               ; $099f80 m8x8
          plb                        ; $099f83 m8x8
          rtl                        ; $099f84 m8x8
          .org $099fb0
-entry315: .entry m8x8
+entry314: .entry m8x8
          lda.b $7ef3cc              ; $099fb0 m8x8
          bne label866               ; $099fb4 m8x8
          rts                        ; $099fb6 m8x8
@@ -12148,7 +12076,7 @@ label870: rep #$20                  ; $099fdd m16x8
          dec.w $02cd                ; $099fdf m16x8
          bpl label872               ; $099fe2 m16x8
          sep #$20                   ; $099fe4 m8x8
-         jsl @entry301              ; $099fe6 m8x8
+         jsl @entry300              ; $099fe6 m8x8
          bcs label871               ; $099fea m8x8, c=0
          stz.b $02cd                ; $099fec m8x8, c=0
          stz.b $02ce                ; $099fef m8x8, c=0
@@ -12164,7 +12092,7 @@ label871: rep #$20                  ; $099ff4 m16x8, c=1
          lda.w $9faa, Y             ; $09a003 m16x8
          sta.w $1cf0                ; $09a006 m16x8
          sep #$20                   ; $09a009 m8x8
-         jsl @entry495              ; $09a00b m8x8
+         jsl @entry494              ; $09a00b m8x8
          ply.b                      ; $09a00f m8x8
 label872: sep #$20                  ; $09a010 m8x8
          cpy.b #$00                 ; $09a012 m8x8
@@ -12332,9 +12260,9 @@ label894: lda.b $7ef3d1             ; $09a29e m8x8
          bne label893               ; $09a2a4 m8x8
          lda.b $0372                ; $09a2a6 m8x8
          bne label896               ; $09a2a9 m8x8
-         jsr entry316               ; $09a2ab m8x8
+         jsr entry315               ; $09a2ab m8x8
          bcs label896               ; $09a2ae m8x8, c=0
-         jsl @entry313              ; $09a2b0 m8x8
+         jsl @entry312              ; $09a2b0 m8x8
          lda.b $1b                  ; $09a2b4 m8x8
          sta.b $7ef3d1              ; $09a2b6 m8x8
          lda.b $7ef3cc              ; $09a2ba m8x8
@@ -12355,7 +12283,7 @@ label896: lda.b $7ef3cc             ; $09a2d3 m8x8
          bne label897               ; $09a2e2 m8x8
          ldy.b #$00                 ; $09a2e4 m8x8
          lda.b #$3a                 ; $09a2e6 m8x8
-         jsl @entry308              ; $09a2e8 m8x8
+         jsl @entry307              ; $09a2e8 m8x8
          lda.b #$00                 ; $09a2ec m8x8
          sta.b $7ef3d3              ; $09a2ee m8x8
 label897: brl label898              ; $09a2f2 m8x8
@@ -12385,7 +12313,7 @@ label899: lda.b $9ee4, X            ; $09a447 m8x8
          ldx.b #$01                 ; $09a474 m8x8
 label900: txa.b                     ; $09a476 m8x8
          brl label927               ; $09a477 m8x8
-entry316: .entry m8x8
+entry315: .entry m8x8
          dec.b $02d2                ; $09a47a m8x8
          bpl label901               ; $09a47d m8x8
          stz.b $02d2                ; $09a47f m8x8
@@ -12454,7 +12382,7 @@ label908: stx.w $0c                 ; $09a5c5 m16x16
          lda.w $a4c8, X             ; $09a5e4 m16x16
          sta.w $04                  ; $09a5e7 m16x16
          sep #$30                   ; $09a5e9 m8x8
-         jsr entry318               ; $09a5eb m8x8
+         jsr entry317               ; $09a5eb m8x8
          bcs label913               ; $09a5ee m8x8, c=0
          rep #$30                   ; $09a5f0 m16x16, c=0
 label909: lda.w $0c                 ; $09a5f2 m16x16
@@ -12482,7 +12410,7 @@ label911: stx.w $0c                 ; $09a609 m16x16
          lda.w $a546, X             ; $09a628 m16x16
          sta.w $04                  ; $09a62b m16x16
          sep #$30                   ; $09a62d m8x8
-         jsr entry318               ; $09a62f m8x8
+         jsr entry317               ; $09a62f m8x8
          bcs label913               ; $09a632 m8x8, c=0
          rep #$30                   ; $09a634 m16x16, c=0
 label912: lda.w $0c                 ; $09a636 m16x16
@@ -12516,9 +12444,9 @@ label914: sep #$20                  ; $09a671 m8x8
          cmp.b #$14                 ; $09a677 m8x8
          bne label915               ; $09a679 m8x8
          lda.b #$00                 ; $09a67b m8x8
-label915: jsl @entry508             ; $09a67d m8x8
+label915: jsl @entry507             ; $09a67d m8x8
 label916: sep #$20                  ; $09a681 m8x8
-         jsl @entry495              ; $09a683 m8x8
+         jsl @entry494              ; $09a683 m8x8
          bra label920               ; $09a687 m8x8
 label917: sep #$30                  ; $09a689 m8x8
          lda.b $02cf                ; $09a68b m8x8
@@ -12531,7 +12459,7 @@ label918: pha.b                     ; $09a695 m8x8
          and.b #$03                 ; $09a698 m8x8
          bne label919               ; $09a69a m8x8
          pla.b                      ; $09a69c m8x8
-         jsl @entry505              ; $09a69d m8x8
+         jsl @entry504              ; $09a69d m8x8
          bra label920               ; $09a6a1 m8x8
 label919: pla.b                     ; $09a6a3 m8x8
          sta.b $00                  ; $09a6a4 m8x8
@@ -12540,7 +12468,7 @@ label919: pla.b                     ; $09a6a3 m8x8
          and.b #$01                 ; $09a6ac m8x8
          bne label920               ; $09a6ae m8x8
          lda.b $00                  ; $09a6b0 m8x8
-         jsl @entry507              ; $09a6b2 m8x8
+         jsl @entry506              ; $09a6b2 m8x8
 label920: sep #$30                  ; $09a6b6 m8x8
          rts                        ; $09a6b8 m8x8
          .org $09a8f3
@@ -12747,7 +12675,7 @@ label948: lda.b $02d7               ; $09aa7e m8x8
          sta.w $02                  ; $09aa96 m16x8
          stz.w $74                  ; $09aa98 m16x8
          sep #$20                   ; $09aa9a m8x8
-         jsr entry317               ; $09aa9c m8x8
+         jsr entry316               ; $09aa9c m8x8
          lda.b $a8c5, X             ; $09aa9f m8x8
          sta.b ($90), Y             ; $09aaa2 m8x8
          iny.b                      ; $09aaa4 m8x8
@@ -12770,7 +12698,7 @@ label948: lda.b $02d7               ; $09aa7e m8x8
          sta.w $02                  ; $09aac2 m16x8
          stz.w $74                  ; $09aac4 m16x8
          sep #$20                   ; $09aac6 m8x8
-         jsr entry317               ; $09aac8 m8x8
+         jsr entry316               ; $09aac8 m8x8
          lda.b $a8c7, X             ; $09aacb m8x8
          sta.b ($90), Y             ; $09aace m8x8
          iny.b                      ; $09aad0 m8x8
@@ -12837,7 +12765,7 @@ label952: lda.b $7ef3cc             ; $09ab14 m8x8
          sta.w $02                  ; $09ab49 m16x16
          ply.w                      ; $09ab4b m16x16
          sep #$30                   ; $09ab4c m8x8
-         jsr entry317               ; $09ab4e m8x8
+         jsr entry316               ; $09ab4e m8x8
          lda.b #$20                 ; $09ab51 m8x8
          sta.b ($90), Y             ; $09ab53 m8x8
          iny.b                      ; $09ab55 m8x8
@@ -12887,7 +12815,7 @@ label953: rep #$30                  ; $09ab7e m16x16
          sta.w $02                  ; $09abab m16x16
          ply.w                      ; $09abad m16x16
          sep #$30                   ; $09abae m8x8
-         jsr entry317               ; $09abb0 m8x8
+         jsr entry316               ; $09abb0 m8x8
          lda.b #$22                 ; $09abb3 m8x8
          sta.b ($90), Y             ; $09abb5 m8x8
          iny.b                      ; $09abb7 m8x8
@@ -12918,7 +12846,7 @@ label953: rep #$30                  ; $09ab7e m16x16
          ply.b                      ; $09abe2 m8x8
          plx.b                      ; $09abe3 m8x8
          rts                        ; $09abe4 m8x8
-entry317: .entry m8x8
+entry316: .entry m8x8
          rep #$20                   ; $09abe5 m16x8
          lda.w $02                  ; $09abe7 m16x8
          sta.w ($90), Y             ; $09abe9 m16x8
@@ -12939,7 +12867,7 @@ label954: lda.w #$00f0              ; $09ac09 m16x8, c=1
 label955: sep #$20                  ; $09ac0e m8x8
          iny.b                      ; $09ac10 m8x8
          rts                        ; $09ac11 m8x8
-entry318: .entry m8x8
+entry317: .entry m8x8
          rep #$20                   ; $09ac12 m16x8
          lda.w $00                  ; $09ac14 m16x8
          add.w $0a                  ; $09ac16 m16x8
@@ -12970,7 +12898,7 @@ label957: cmp.w #$0018              ; $09ac4a m16x8
 label958: sep #$20                  ; $09ac53 m8x8, c=1
          clc                        ; $09ac55 m8x8, c=0
          rts                        ; $09ac56 m8x8, c=0
-entry319: .entry m8x8
+entry318: .entry m8x8
          phb                        ; $09ac57 m8x8
          phk                        ; $09ac58 m8x8
          plb                        ; $09ac59 m8x8
@@ -13035,7 +12963,7 @@ label965: stz.b $03f0               ; $09aca4 m8x8
 label966: plb                       ; $09acdd m8x8
          rtl                        ; $09acde m8x8
          .org $09acf2
-entry320: .entry m8x8
+entry319: .entry m8x8
          lda.b $00                  ; $09acf2 m8x8
          sta.b $0bfa, X             ; $09acf4 m8x8
          lda.b $01                  ; $09acf7 m8x8
@@ -13046,7 +12974,7 @@ entry320: .entry m8x8
          sta.b $0c18, X             ; $09ad03 m8x8
          rts                        ; $09ad06 m8x8
          .org $09ae64
-entry321: .entry m8x8
+entry320: .entry m8x8
          lda.b $00                  ; $09ae64 m8x8
          sta.b $0d10, Y             ; $09ae66 m8x8
          lda.b $01                  ; $09ae69 m8x8
@@ -13059,7 +12987,7 @@ entry321: .entry m8x8
          sta.b $0f70, Y             ; $09ae7a m8x8
          rtl                        ; $09ae7d m8x8
          .org $09af32
-entry322: .entry m8x8
+entry321: .entry m8x8
          phx.b                      ; $09af32 m8x8
          ldx.b #$0f                 ; $09af33 m8x8
 label967: lda.b $0dd0, X            ; $09af35 m8x8
@@ -13100,40 +13028,40 @@ label971: lda.b $0b00, X            ; $09af78 m8x8
          sec                        ; $09af87 m8x8, c=1
          rtl                        ; $09af88 m8x8, c=1
          .org $09b06e
-entry323: .entry m8x8
-         jsl @entry496              ; $09b06e m8x8
+entry322: .entry m8x8
+         jsl @entry495              ; $09b06e m8x8
          lda.b $0fb4                ; $09b072 m8x8
          beq label972               ; $09b075 m8x8
          phb                        ; $09b077 m8x8
          phk                        ; $09b078 m8x8
          plb                        ; $09b079 m8x8
-         jsr entry325               ; $09b07a m8x8
+         jsr entry324               ; $09b07a m8x8
          plb                        ; $09b07d m8x8
 label972: rtl                       ; $09b07e m8x8
-entry324: .entry m8x8
+entry323: .entry m8x8
          lda.b $0fb4                ; $09b07f m8x8
          beq label973               ; $09b082 m8x8
          phb                        ; $09b084 m8x8
          phk                        ; $09b085 m8x8
          plb                        ; $09b086 m8x8
-         jsr entry326               ; $09b087 m8x8
+         jsr entry325               ; $09b087 m8x8
          plb                        ; $09b08a m8x8
 label973: rtl                       ; $09b08b m8x8
-entry325: .entry m8x8
+entry324: .entry m8x8
          ldx.b #$1d                 ; $09b08c m8x8
-label974: jsr entry327              ; $09b08e m8x8
+label974: jsr entry326              ; $09b08e m8x8
          dex.b                      ; $09b091 m8x8
          cpx.b #$0e                 ; $09b092 m8x8
          bne label974               ; $09b094 m8x8
          rts                        ; $09b096 m8x8
-entry326: .entry m8x8
+entry325: .entry m8x8
          ldx.b #$0e                 ; $09b097 m8x8
-label975: jsr entry327              ; $09b099 m8x8
+label975: jsr entry326              ; $09b099 m8x8
          dex.b                      ; $09b09c m8x8
          bpl label975               ; $09b09d m8x8
          rts                        ; $09b09f m8x8
          .org $09b0b6
-entry327: .entry m8x8
+entry326: .entry m8x8
          stx.b $0fa0                ; $09b0b6 m8x8
          lda.b $7ff800, X           ; $09b0b9 m8x8
          beq label981               ; $09b0bd m8x8
@@ -13156,17 +13084,17 @@ label977: ldy.b $0fb3               ; $09b0dd m8x8
          lda.b $7ff800, X           ; $09b0e8 m8x8
          tay.b                      ; $09b0ec m8x8
          lda.b $b09f, Y             ; $09b0ed m8x8
-         jsl @entry432              ; $09b0f0 m8x8
+         jsl @entry431              ; $09b0f0 m8x8
          bra label980               ; $09b0f4 m8x8
 label978: lda.b $7ff800, X          ; $09b0f6 m8x8
          tay.b                      ; $09b0fa m8x8
          lda.b $b09f, Y             ; $09b0fb m8x8
-         jsl @entry431              ; $09b0fe m8x8
+         jsl @entry430              ; $09b0fe m8x8
          bra label980               ; $09b102 m8x8
 label979: lda.b $7ff800, X          ; $09b104 m8x8
          tay.b                      ; $09b108 m8x8
          lda.b $b09f, Y             ; $09b109 m8x8
-         jsl @entry428              ; $09b10c m8x8
+         jsl @entry427              ; $09b10c m8x8
 label980: lda.b $7ff800, X          ; $09b110 m8x8
          dec.b                      ; $09b114 m8x8
          rep #$30                   ; $09b115 m16x16
@@ -13179,7 +13107,7 @@ label980: lda.b $7ff800, X          ; $09b110 m8x8
          sep #$30                   ; $09b121 m8x8
 label981: rts                       ; $09b123 m8x8
          .org $09b714
-entry328: .entry m8x8
+entry327: .entry m8x8
          lda.b $1b                  ; $09b714 m8x8
          bne label982               ; $09b716 m8x8
          lda.b $0ffd                ; $09b718 m8x8
@@ -13197,9 +13125,9 @@ entry328: .entry m8x8
          bmi label982               ; $09b736 m8x8
          lda.b #$c2                 ; $09b738 m8x8
          ldy.b #$0d                 ; $09b73a m8x8
-         jsl @entry499              ; $09b73c m8x8
+         jsl @entry498              ; $09b73c m8x8
          bmi label982               ; $09b740 m8x8
-         jsl @entry427              ; $09b742 m8x8
+         jsl @entry426              ; $09b742 m8x8
          and.b #$7f                 ; $09b746 m8x8
          add.b #$40                 ; $09b748 m8x8
          add.b $e2                  ; $09b74b m8x8
@@ -13218,28 +13146,28 @@ entry328: .entry m8x8
          sta.b $0de0, Y             ; $09b76c m8x8
          sta.b $0f70, Y             ; $09b76f m8x8
 label982: rts                       ; $09b772 m8x8
-entry329: .entry m8x8
+entry328: .entry m8x8
          phb                        ; $09b773 m8x8
          phk                        ; $09b774 m8x8
          plb                        ; $09b775 m8x8
-         jsr entry330               ; $09b776 m8x8
-         jsr entry328               ; $09b779 m8x8
+         jsr entry329               ; $09b776 m8x8
+         jsr entry327               ; $09b779 m8x8
          plb                        ; $09b77c m8x8
          rtl                        ; $09b77d m8x8
-entry330: .entry m8x8
+entry329: .entry m8x8
          lda.b $11                  ; $09b77e m8x8
          ora.b $0fc1                ; $09b780 m8x8
          bne label985               ; $09b783 m8x8
          ldx.b #$07                 ; $09b785 m8x8
 label983: lda.b $0b00, X            ; $09b787 m8x8
          beq label984               ; $09b78a m8x8
-         jsr entry331               ; $09b78c m8x8
+         jsr entry330               ; $09b78c m8x8
 label984: dex.b                     ; $09b78f m8x8
          bpl label983               ; $09b790 m8x8
 label985: rts                       ; $09b792 m8x8
-entry331: .entry m8x8
+entry330: .entry m8x8
          pha.b                      ; $09b793 m8x8
-         jsr entry332               ; $09b794 m8x8
+         jsr entry331               ; $09b794 m8x8
          pla.b                      ; $09b797 m8x8
          dec.b                      ; $09b798 m8x8
          rep #$30                   ; $09b799 m16x16
@@ -13253,7 +13181,7 @@ entry331: .entry m8x8
          rts                        ; $09b7a7 m8x8
          .org $09c08c
 label986: rts                       ; $09c08c m8x8
-entry332: .entry m8x8
+entry331: .entry m8x8
          lda.b $1b                  ; $09c08d m8x8
          bne label986               ; $09c08f m8x8
          lda.b $1a                  ; $09c091 m8x8
@@ -13321,14 +13249,14 @@ label989: stz.b $0b00, X            ; $09c0e4 m8x8
          and.b $f24b, Y             ; $09c10e m8x8, c=0
          sta.b [$01]                ; $09c111 m8x8, c=0
 label990: rts                       ; $09c113 m8x8
-entry333: .entry m8x8
+entry332: .entry m8x8
          phb                        ; $09c114 m8x8
          phk                        ; $09c115 m8x8
          plb                        ; $09c116 m8x8
-         jsr entry334               ; $09c117 m8x8
+         jsr entry333               ; $09c117 m8x8
          stz.b $0309                ; $09c11a m8x8
          stz.b $0308                ; $09c11d m8x8
-         jsl @entry336              ; $09c120 m8x8
+         jsl @entry335              ; $09c120 m8x8
          rep #$20                   ; $09c124 m16x8
          lda.w #$ffff               ; $09c126 m16x8
          sta.w $0fba                ; $09c129 m16x8
@@ -13360,16 +13288,16 @@ label991: cmp.w $0b80, X            ; $09c134 m16x8
          lda.w #$0000               ; $09c167 m16x16
          sta.w $7fdf80, X           ; $09c16a m16x16
 label992: sep #$30                  ; $09c16e m8x8
-         jsr entry337               ; $09c170 m8x8
+         jsr entry336               ; $09c170 m8x8
          plb                        ; $09c173 m8x8
          rtl                        ; $09c174 m8x8
 label993: rts                       ; $09c175 m8x8
-entry334: .entry m8x8
+entry333: .entry m8x8
          lda.b $1b                  ; $09c176 m8x8
          beq label993               ; $09c178 m8x8
          sta.b $0ffa                ; $09c17a m8x8
          ldx.b #$0f                 ; $09c17d m8x8
-entry335: .entry m8x8
+entry334: .entry m8x8
          stz.b $1d00, X             ; $09c17f m8x8
          lda.b $0e20, X             ; $09c182 m8x8
          sta.b $1d10, X             ; $09c185 m8x8
@@ -13427,9 +13355,9 @@ entry335: .entry m8x8
          sta.b $7ffadc, X           ; $09c224 m8x8
 label994: dex.b                     ; $09c228 m8x8
          bmi label995               ; $09c229 m8x8
-         jmp entry335               ; $09c22b m8x8
+         jmp entry334               ; $09c22b m8x8
 label995: rts                       ; $09c22e m8x8
-entry336: .entry m8x8
+entry335: .entry m8x8
          ldx.b #$0f                 ; $09c22f m8x8
 label996: lda.b $0dd0, X            ; $09c231 m8x8
          beq label998               ; $09c234 m8x8
@@ -13470,7 +13398,7 @@ label1001: lda.b #$00               ; $09c286 m8x8
          dex.b                      ; $09c28c m8x8
          bpl label1001              ; $09c28d m8x8
          rtl                        ; $09c28f m8x8
-entry337: .entry m8x8
+entry336: .entry m8x8
          rep #$30                   ; $09c290 m16x16
          lda.w $048e                ; $09c292 m16x16
          asl.w                      ; $09c295 m16x16
@@ -13498,7 +13426,7 @@ label1002: ldy.b $04                ; $09c2bf m8x8
          lda.b ($00), Y             ; $09c2c1 m8x8
          cmp.b #$ff                 ; $09c2c3 m8x8
          beq label1003              ; $09c2c5 m8x8
-         jsr entry339               ; $09c2c7 m8x8
+         jsr entry338               ; $09c2c7 m8x8
          inc.b $02                  ; $09c2ca m8x8
          inc.b $04                  ; $09c2cc m8x8
          inc.b $04                  ; $09c2ce m8x8
@@ -13506,7 +13434,7 @@ label1002: ldy.b $04                ; $09c2bf m8x8
          bra label1002              ; $09c2d2 m8x8
 label1003: rts                      ; $09c2d4 m8x8
          .org $09c2f5
-entry338: .entry m8x8
+entry337: .entry m8x8
          phb                        ; $09c2f5 m8x8
          phk                        ; $09c2f6 m8x8
          plb                        ; $09c2f7 m8x8
@@ -13534,7 +13462,7 @@ entry338: .entry m8x8
          sep #$30                   ; $09c323 m8x8
 label1004: plb                      ; $09c325 m8x8
          rtl                        ; $09c326 m8x8
-entry339: .entry m8x8
+entry338: .entry m8x8
          iny.b                      ; $09c327 m8x8
          iny.b                      ; $09c328 m8x8
          lda.b ($00), Y             ; $09c329 m8x8
@@ -13547,13 +13475,13 @@ entry339: .entry m8x8
          iny.b                      ; $09c334 m8x8
          iny.b                      ; $09c335 m8x8
          cmp.b #$fe                 ; $09c336 m8x8
-         beq entry340               ; $09c338 m8x8
+         beq entry339               ; $09c338 m8x8
          cmp.b #$fd                 ; $09c33a m8x8
          bne label1006              ; $09c33c m8x8
-         jsr entry340               ; $09c33e m8x8
+         jsr entry339               ; $09c33e m8x8
          inc.b $0cba, X             ; $09c341 m8x8
          rts                        ; $09c344 m8x8
-entry340: .entry m8x8
+entry339: .entry m8x8
          dec.b $02                  ; $09c345 m8x8
          ldx.b $02                  ; $09c347 m8x8
          lda.b #$01                 ; $09c349 m8x8
@@ -13564,7 +13492,7 @@ label1005: dey.b                    ; $09c34f m8x8
          iny.b                      ; $09c352 m8x8
          cmp.b #$e0                 ; $09c353 m8x8
          bcc label1006              ; $09c355 m8x8, c=1
-         jsr entry341               ; $09c357 m8x8
+         jsr entry340               ; $09c357 m8x8
          dec.b $02                  ; $09c35a m8x8
          rts                        ; $09c35c m8x8
 label1006: lda.b $0db725, X         ; $09c35d m8x8
@@ -13639,7 +13567,7 @@ label1007: ldx.b $02                ; $09c383 m8x8
          sta.b $0bc0, X             ; $09c3e1 m8x8
          stz.b $0cba, X             ; $09c3e4 m8x8
          rts                        ; $09c3e7 m8x8
-entry341: .entry m8x8
+entry340: .entry m8x8
          ldx.b #$07                 ; $09c3e8 m8x8
 label1008: lda.b $0b00, X           ; $09c3ea m8x8
          beq label1009              ; $09c3ed m8x8
@@ -13675,7 +13603,7 @@ label1009: lda.b ($00), Y           ; $09c3f3 m8x8
          lda.b $0fb0                ; $09c41f m8x8
          adc.b #$00                 ; $09c422 m8x8
          sta.b $0b10, X             ; $09c424 m8x8
-         jsr entry350               ; $09c427 m8x8
+         jsr entry349               ; $09c427 m8x8
          lda.b $0b00, X             ; $09c42a m8x8
          cmp.b #$0a                 ; $09c42d m8x8
          beq label1011              ; $09c42f m8x8
@@ -13692,8 +13620,8 @@ label1010: rts                      ; $09c447 m8x8
 label1011: lda.b #$a0               ; $09c448 m8x8
          sta.b $0b30, X             ; $09c44a m8x8
          rts                        ; $09c44d m8x8
-entry342: .entry m8x8
-         jsl @entry336              ; $09c44e m8x8
+entry341: .entry m8x8
+         jsl @entry335              ; $09c44e m8x8
          stz.b $0fdd                ; $09c452 m8x8
          stz.b $0fdc                ; $09c455 m8x8
          stz.b $0ffd                ; $09c458 m8x8
@@ -13724,29 +13652,29 @@ label1015: sta.b $0b80, Y           ; $09c492 m8x8
          bpl label1015              ; $09c496 m8x8
          rtl                        ; $09c498 m8x8
          .org $09c58f
-entry343: .entry m8x8
+entry342: .entry m8x8
          phb                        ; $09c58f m8x8
          phk                        ; $09c590 m8x8
          plb                        ; $09c591 m8x8
          lda.b $11                  ; $09c592 m8x8
          beq label1016              ; $09c594 m8x8
-         jsr entry344               ; $09c596 m8x8
-         jsr entry345               ; $09c599 m8x8
+         jsr entry343               ; $09c596 m8x8
+         jsr entry344               ; $09c599 m8x8
          plb                        ; $09c59c m8x8
          rtl                        ; $09c59d m8x8
 label1016: lda.b $0fb7              ; $09c59e m8x8
          and.b #$01                 ; $09c5a1 m8x8
          bne label1017              ; $09c5a3 m8x8
-         jsr entry344               ; $09c5a5 m8x8
+         jsr entry343               ; $09c5a5 m8x8
 label1017: lda.b $0fb7              ; $09c5a8 m8x8
          and.b #$01                 ; $09c5ab m8x8
          beq label1018              ; $09c5ad m8x8
-         jsr entry345               ; $09c5af m8x8
+         jsr entry344               ; $09c5af m8x8
 label1018: inc.b $0fb7              ; $09c5b2 m8x8
          plb                        ; $09c5b5 m8x8
          rtl                        ; $09c5b6 m8x8
          .org $09c5bb
-entry344: .entry m8x8
+entry343: .entry m8x8
          ldy.b #$00                 ; $09c5bb m8x8
          lda.b $069f                ; $09c5bd m8x8
          beq label1021              ; $09c5c0 m8x8
@@ -13765,7 +13693,7 @@ label1019: lda.b $e2                ; $09c5c5 m8x8
          sbc.b #$00                 ; $09c5dd m8x8
          sta.b $0d                  ; $09c5df m8x8
          ldx.b #$15                 ; $09c5e1 m8x8
-label1020: jsr entry346             ; $09c5e3 m8x8
+label1020: jsr entry345             ; $09c5e3 m8x8
          rep #$20                   ; $09c5e6 m16x8
          lda.w $0c                  ; $09c5e8 m16x8
          add.w #$0010               ; $09c5ea m16x8
@@ -13775,7 +13703,7 @@ label1020: jsr entry346             ; $09c5e3 m8x8
          bpl label1020              ; $09c5f3 m8x8
 label1021: rts                      ; $09c5f5 m8x8
          .org $09c5fa
-entry345: .entry m8x8
+entry344: .entry m8x8
          ldy.b #$00                 ; $09c5fa m8x8
          lda.b $069e                ; $09c5fc m8x8
          beq label1024              ; $09c5ff m8x8
@@ -13794,7 +13722,7 @@ label1022: lda.b $e8                ; $09c604 m8x8
          sbc.b #$00                 ; $09c61c m8x8
          sta.b $0f                  ; $09c61e m8x8
          ldx.b #$15                 ; $09c620 m8x8
-label1023: jsr entry346             ; $09c622 m8x8
+label1023: jsr entry345             ; $09c622 m8x8
          rep #$20                   ; $09c625 m16x8
          lda.w $0e                  ; $09c627 m16x8
          add.w #$0010               ; $09c629 m16x8
@@ -13804,7 +13732,7 @@ label1023: jsr entry346             ; $09c622 m8x8
          bpl label1023              ; $09c632 m8x8
 label1024: rts                      ; $09c634 m8x8
          .org $09c6f5
-entry346: .entry m8x8
+entry345: .entry m8x8
          rep #$20                   ; $09c6f5 m16x8
          lda.w $0e                  ; $09c6f7 m16x8
          sub.w $0fbc                ; $09c6f9 m16x8
@@ -13833,12 +13761,12 @@ entry346: .entry m8x8
          ora.b $00                  ; $09c725 m8x8
          sta.b $00                  ; $09c727 m8x8
          phx.b                      ; $09c729 m8x8
-         jsr entry347               ; $09c72a m8x8
+         jsr entry346               ; $09c72a m8x8
          plx.b                      ; $09c72d m8x8
 label1025: sep #$20                 ; $09c72e m8x8
          rts                        ; $09c730 m8x8
          .org $09c739
-entry347: .entry m8x8
+entry346: .entry m8x8
          rep #$20                   ; $09c739 m16x8
          lda.w $00                  ; $09c73b m16x8
          add.w #$df80               ; $09c73d m16x8
@@ -13864,13 +13792,13 @@ entry347: .entry m8x8
          lda.b [$02]                ; $09c765 m8x8
          and.b $c731, Y             ; $09c767 m8x8
          bne label1026              ; $09c76a m8x8
-         jsr entry348               ; $09c76c m8x8
+         jsr entry347               ; $09c76c m8x8
 label1026: rts                      ; $09c76f m8x8
-entry348: .entry m8x8
+entry347: .entry m8x8
          lda.b [$05]                ; $09c770 m8x8
          cmp.b #$f4                 ; $09c772 m8x8
          bcc label1027              ; $09c774 m8x8, c=1
-         jsr entry349               ; $09c776 m8x8
+         jsr entry348               ; $09c776 m8x8
          rts                        ; $09c779 m8x8
 label1027: ldx.b #$04               ; $09c77a m8x8, c=0
          cmp.b #$58                 ; $09c77c m8x8
@@ -13941,7 +13869,7 @@ label1031: lda.b [$02]              ; $09c7af m8x8
          stz.b $0e30, X             ; $09c804 m8x8
          stz.b $0cba, X             ; $09c807 m8x8
          rts                        ; $09c80a m8x8
-entry349: .entry m8x8
+entry348: .entry m8x8
          ldx.b #$07                 ; $09c80b m8x8
 label1032: lda.b $0b00, X           ; $09c80d m8x8
          beq label1033              ; $09c810 m8x8
@@ -13991,7 +13919,7 @@ label1034: sta.b $0b08, X           ; $09c842 m8x8
          add.b $0fbf                ; $09c867 m8x8
          sta.b $0b20, X             ; $09c86b m8x8
          stz.b $0b40, X             ; $09c86e m8x8
-entry350: .entry m8x8
+entry349: .entry m8x8
          lda.b $040a                ; $09c871 m8x8
          sta.b $0cca, X             ; $09c874 m8x8
          stz.b $0b30, X             ; $09c877 m8x8
@@ -13999,14 +13927,14 @@ entry350: .entry m8x8
          stz.b $0b38, X             ; $09c87d m8x8
          rts                        ; $09c880 m8x8
          .org $09ed9f
-entry351: .entry m8x8
+entry350: .entry m8x8
          phb                        ; $09ed9f m8x8
          phk                        ; $09eda0 m8x8
          plb                        ; $09eda1 m8x8
-         jsr entry352               ; $09eda2 m8x8
+         jsr entry351               ; $09eda2 m8x8
          plb                        ; $09eda5 m8x8
          rtl                        ; $09eda6 m8x8
-entry352: .entry m8x8
+entry351: .entry m8x8
          lda.b $0d90, X             ; $09eda7 m8x8
          beq label1038              ; $09edaa m8x8
          lda.b $0df0, X             ; $09edac m8x8
@@ -14020,7 +13948,7 @@ label1035: lda.b $0dd0, Y           ; $09edb6 m8x8
          bpl label1035              ; $09edbe m8x8
          ldy.b #$01                 ; $09edc0 m8x8
          sty.b $0aaa                ; $09edc2 m8x8
-         jsl @entry322              ; $09edc5 m8x8
+         jsl @entry321              ; $09edc5 m8x8
          bcs label1036              ; $09edc9 m8x8, c=0
          stz.b $0ffc                ; $09edcb m8x8, c=0
 label1036: rts                      ; $09edce m8x8
@@ -14041,7 +13969,7 @@ label1037: lsr.b                    ; $09edcf m8x8
          sta.w $08                  ; $09ede4 m16x8
          sep #$20                   ; $09ede6 m8x8
          lda.b #$04                 ; $09ede8 m8x8
-         jsl @entry196              ; $09edea m8x8
+         jsl @entry195              ; $09edea m8x8
          rts                        ; $09edee m8x8
          .org $09ee0f
 label1038: lda.b #$02               ; $09ee0f m8x8
@@ -14049,13 +13977,13 @@ label1038: lda.b #$02               ; $09ee0f m8x8
          lda.b $0df0, X             ; $09ee14 m8x8
          cmp.b #$20                 ; $09ee17 m8x8
          beq label1039              ; $09ee19 m8x8
-         jmp entry353               ; $09ee1b m8x8
+         jmp entry352               ; $09ee1b m8x8
 label1039: stz.b $0dd0, X           ; $09ee1e m8x8
          stz.b $02e4                ; $09ee21 m8x8
          lda.b $5b                  ; $09ee24 m8x8
          cmp.b #$02                 ; $09ee26 m8x8
          beq label1040              ; $09ee28 m8x8
-         jsl @entry322              ; $09ee2a m8x8
+         jsl @entry321              ; $09ee2a m8x8
          bcc label1040              ; $09ee2e m8x8, c=1
          ldy.b $0e20, X             ; $09ee30 m8x8, c=1
          cpy.b #$d6                 ; $09ee33 m8x8
@@ -14063,17 +13991,17 @@ label1039: stz.b $0dd0, X           ; $09ee1e m8x8
          cpy.b #$7a                 ; $09ee37 m8x8
          bne label1042              ; $09ee39 m8x8
          phx.b                      ; $09ee3b m8x8
-         jsl @entry52               ; $09ee3c m8x8
+         jsl @entry51               ; $09ee3c m8x8
          plx.b                      ; $09ee40 m8x8
-label1040: jmp entry353             ; $09ee41 m8x8
+label1040: jmp entry352             ; $09ee41 m8x8
 label1041: lda.b #$13               ; $09ee44 m8x8, c=1
          sta.b $012c                ; $09ee46 m8x8, c=1
-         jmp entry353               ; $09ee49 m8x8
+         jmp entry352               ; $09ee49 m8x8
 label1042: sty.b $0fb5              ; $09ee4c m8x8
          lda.b #$ea                 ; $09ee4f m8x8
          ldy.b #$0e                 ; $09ee51 m8x8
-         jsl @entry500              ; $09ee53 m8x8
-         jsl @entry321              ; $09ee57 m8x8
+         jsl @entry499              ; $09ee53 m8x8
+         jsl @entry320              ; $09ee57 m8x8
          lda.b #$20                 ; $09ee5b m8x8
          sta.b $0f80, Y             ; $09ee5d m8x8
          lda.b $ee                  ; $09ee60 m8x8
@@ -14109,14 +14037,14 @@ label1044: cmp.b #$cb               ; $09ee96 m8x8
          lda.b $21                  ; $09eea7 m8x8
          sta.b $0d20, Y             ; $09eea9 m8x8
 label1045: rts                      ; $09eeac m8x8
-entry353: .entry m8x8
+entry352: .entry m8x8
          cmp.b #$40                 ; $09eead m8x8
          bcc label1047              ; $09eeaf m8x8, c=1
          cmp.b #$70                 ; $09eeb1 m8x8
          bcs label1046              ; $09eeb3 m8x8, c=0
          and.b #$01                 ; $09eeb5 m8x8, c=0
          bne label1047              ; $09eeb7 m8x8, c=0
-label1046: jsl @entry210            ; $09eeb9 m8x8
+label1046: jsl @entry209            ; $09eeb9 m8x8
 label1047: lda.b #$07               ; $09eebd m8x8
          sta.b $0e                  ; $09eebf m8x8
          lda.b $0e20, X             ; $09eec1 m8x8
@@ -14132,12 +14060,12 @@ label1049: pha.b                    ; $09eed4 m8x8, c=0
          and.b #$03                 ; $09eed5 m8x8, c=0
          bne label1050              ; $09eed7 m8x8, c=0
          lda.b #$0c                 ; $09eed9 m8x8, c=0
-         jsl @entry435              ; $09eedb m8x8
+         jsl @entry434              ; $09eedb m8x8
 label1050: pla.b                    ; $09eedf m8x8
          and.b $0e                  ; $09eee0 m8x8
          bne label1053              ; $09eee2 m8x8
          lda.b #$1c                 ; $09eee4 m8x8
-         jsl @entry499              ; $09eee6 m8x8
+         jsl @entry498              ; $09eee6 m8x8
          bmi label1053              ; $09eeea m8x8
          lda.b #$0b                 ; $09eeec m8x8
          sta.b $0aaa                ; $09eeee m8x8
@@ -14148,7 +14076,7 @@ label1050: pla.b                    ; $09eedf m8x8
          lda.b #$0c                 ; $09eefb m8x8
          sta.b $0f50, Y             ; $09eefd m8x8
          phx.b                      ; $09ef00 m8x8
-         jsl @entry427              ; $09ef01 m8x8
+         jsl @entry426              ; $09ef01 m8x8
          and.b #$07                 ; $09ef05 m8x8
          tax.b                      ; $09ef07 m8x8
          lda.b $0f                  ; $09ef08 m8x8
@@ -14163,7 +14091,7 @@ label1051: lda.b $00                ; $09ef12 m8x8
          lda.b $01                  ; $09ef1b m8x8
          adc.b $edff, X             ; $09ef1d m8x8
          sta.b $0d30, Y             ; $09ef20 m8x8
-         jsl @entry427              ; $09ef23 m8x8
+         jsl @entry426              ; $09ef23 m8x8
          and.b #$07                 ; $09ef27 m8x8
          tax.b                      ; $09ef29 m8x8
          lda.b $0f                  ; $09ef2a m8x8
@@ -14187,7 +14115,7 @@ label1052: lda.b $02                ; $09ef34 m8x8
          sta.b $0df0, Y             ; $09ef4f m8x8
          sta.b $0d90, Y             ; $09ef52 m8x8
 label1053: rts                      ; $09ef55 m8x8
-entry354: .entry m8x8
+entry353: .entry m8x8
          ldy.b #$0f                 ; $09ef56 m8x8
 label1054: cpy.b $0fa0              ; $09ef58 m8x8
          beq label1055              ; $09ef5b m8x8
@@ -14212,7 +14140,7 @@ label1055: dey.b                    ; $09ef87 m8x8
          bpl label1054              ; $09ef88 m8x8
          rtl                        ; $09ef8a m8x8
          .org $09f1f8
-entry355: .entry m8x8
+entry354: .entry m8x8
          lda.b $0caa, X             ; $09f1f8 m8x8
          and.b #$40                 ; $09f1fb m8x8
          bne label1056              ; $09f1fd m8x8
@@ -14258,7 +14186,7 @@ label1058: lda.b #$ff               ; $09f245 m8x8
          sta.b $0bc0, X             ; $09f247 m8x8
 label1059: rtl                      ; $09f24a m8x8
          .org $09f290
-entry356: .entry m8x8
+entry355: .entry m8x8
          lda.b $11                  ; $09f290 m8x8
          asl.b                      ; $09f292 m8x8
          tax.b                      ; $09f293 m8x8
@@ -14266,19 +14194,19 @@ entry356: .entry m8x8
          lda.b $11                  ; $09f297 m8x8
          cmp.b #$09                 ; $09f299 m8x8
          beq label1060              ; $09f29b m8x8
-         jsl @entry416              ; $09f29d m8x8
+         jsl @entry415              ; $09f29d m8x8
 label1060: rtl                      ; $09f2a1 m8x8
          .org $09f79c
-entry357: .entry m8x8
+entry356: .entry m8x8
          lda.b $11                  ; $09f79c m8x8
          asl.b                      ; $09f79e m8x8
          tax.b                      ; $09f79f m8x8
          jsr ($f798, X)             ; $09f7a0 m8x8
-         jsl @entry202              ; $09f7a3 m8x8
-         jsl @entry416              ; $09f7a7 m8x8
+         jsl @entry201              ; $09f7a3 m8x8
+         jsl @entry415              ; $09f7a7 m8x8
          rtl                        ; $09f7ab m8x8
          .org $09f7de
-entry358: .entry m8x8
+entry357: .entry m8x8
          php                        ; $09f7de m8x8
          phb                        ; $09f7df m8x8
          rep #$30                   ; $09f7e0 m16x16
@@ -14304,11 +14232,11 @@ entry358: .entry m8x8
          plp                        ; $09f80e m8x8
          rtl                        ; $09f80f m8x8
          .org $0afd2c
-entry359: .entry m8x8
+entry358: .entry m8x8
          rep #$30                   ; $0afd2c m16x16
          lda.w $04a0                ; $0afd2e m16x16
          and.w #$00ff               ; $0afd31 m16x16
-         beq entry360               ; $0afd34 m16x16
+         beq entry359               ; $0afd34 m16x16
          inc.w                      ; $0afd36 m16x16
          cmp.w #$00c0               ; $0afd37 m16x16
          bne label1061              ; $0afd3a m16x16
@@ -14362,7 +14290,7 @@ label1065: asl.w                    ; $0afd9a m16x16
          plb                        ; $0afdac m8x8
          inc.b $16                  ; $0afdad m8x8
          rtl                        ; $0afdaf m8x8
-entry360: .entry native
+entry359: .entry native
          rep #$20                   ; $0afdb0 m16
          lda.w #$007f               ; $0afdb2 m16
          sta.w $7ec7f2              ; $0afdb5 m16
@@ -14372,13 +14300,13 @@ entry360: .entry native
          sep #$30                   ; $0afdc5 m8x8
          rtl                        ; $0afdc7 m8x8
          .org $0afe80
-entry361: .entry m8x8
+entry360: .entry m8x8
          lda.b $ad                  ; $0afe80 m8x8
          asl.b                      ; $0afe82 m8x8
          tax.b                      ; $0afe83 m8x8
          jmp ($fe70, X)             ; $0afe84 m8x8
          .org $0cc100
-entry362: .entry m8x8
+entry361: .entry m8x8
          lda.b $11                  ; $0cc100 m8x8
          cmp.b #$04                 ; $0cc102 m8x8
          bcc label1066              ; $0cc104 m8x8, c=1
@@ -14387,15 +14315,15 @@ entry362: .entry m8x8
          ora.b $f4                  ; $0cc10a m8x8, c=1
          and.b #$d0                 ; $0cc10c m8x8, c=1
          beq label1066              ; $0cc10e m8x8, c=1
-         jmp entry368               ; $0cc110 m8x8
+         jmp entry367               ; $0cc110 m8x8
 label1066: lda.b $11                ; $0cc113 m8x8
          jsl $00879c noreturn       ; $0cc115 m8x8
          .org $0cc137
-entry363: .entry m8x8
+entry362: .entry m8x8
          lda.b #$80                 ; $0cc137 m8x8
          sta.b $0710                ; $0cc139 m8x8
-         jsl @entry8                ; $0cc13c m8x8
-         jsl @entry112              ; $0cc140 m8x8
+         jsl @entry7                ; $0cc13c m8x8
+         jsl @entry111              ; $0cc140 m8x8
          rep #$20                   ; $0cc144 m16x8
          ldx.b #$80                 ; $0cc146 m16x8
          stx.b $2115                ; $0cc148 m16x8
@@ -14420,8 +14348,8 @@ label1067: stz.w $2118              ; $0cc156 m16x8
          inc.b $11                  ; $0cc175 m8x8
          lda.b #$0a                 ; $0cc177 m8x8
          sta.b $012f                ; $0cc179 m8x8
-entry364: .entry m8x8
-         jsr entry412               ; $0cc17c m8x8
+entry363: .entry m8x8
+         jsr entry411               ; $0cc17c m8x8
          lda.b $b0                  ; $0cc17f m8x8
          inc.b $b0                  ; $0cc181 m8x8
          cmp.b #$0c                 ; $0cc183 m8x8
@@ -14430,8 +14358,8 @@ entry364: .entry m8x8
          .org $0cc204
 label1068: dec.b $13                ; $0cc204 m8x8, c=1
          bne label1069              ; $0cc206 m8x8, c=1
-         jsl @entry8                ; $0cc208 m8x8
-         jsl @entry3                ; $0cc20c m8x8
+         jsl @entry7                ; $0cc208 m8x8
+         jsl @entry2                ; $0cc20c m8x8
          lda.b #$02                 ; $0cc210 m8x8
          sta.b $2101                ; $0cc212 m8x8
          lda.b #$23                 ; $0cc215 m8x8
@@ -14442,10 +14370,10 @@ label1068: dec.b $13                ; $0cc204 m8x8, c=1
          sta.b $0aa2                ; $0cc221 m8x8
          lda.b #$08                 ; $0cc224 m8x8
          sta.b $0aa4                ; $0cc226 m8x8
-         jsl @entry28               ; $0cc229 m8x8
-         jsl @entry27               ; $0cc22d m8x8
+         jsl @entry27               ; $0cc229 m8x8
+         jsl @entry26               ; $0cc22d m8x8
          ldy.b #$5d                 ; $0cc231 m8x8
-         jsl @entry20               ; $0cc233 m8x8
+         jsl @entry19               ; $0cc233 m8x8
          lda.b #$02                 ; $0cc237 m8x8
          sta.b $7ec00d              ; $0cc239 m8x8
          lda.b #$00                 ; $0cc23d m8x8
@@ -14466,12 +14394,12 @@ label1068: dec.b $13                ; $0cc204 m8x8, c=1
          stz.b $0aa6                ; $0cc265 m8x8
          inc.b $11                  ; $0cc268 m8x8
 label1069: rtl                      ; $0cc26a m8x8
-entry365: .entry m8x8
-         jsl @entry372              ; $0cc26b m8x8
+entry364: .entry m8x8
+         jsl @entry371              ; $0cc26b m8x8
          lda.b $1a                  ; $0cc26f m8x8
          lsr.b                      ; $0cc271 m8x8
          bcc label1070              ; $0cc272 m8x8, c=1
-         jsl @entry46               ; $0cc274 m8x8
+         jsl @entry45               ; $0cc274 m8x8
          lda.b $7ec007              ; $0cc278 m8x8
          bne label1071              ; $0cc27c m8x8
          lda.b #$20                 ; $0cc27e m8x8
@@ -14484,8 +14412,8 @@ label1071: cmp.b #$0d               ; $0cc285 m8x8
          sta.b $1c                  ; $0cc28b m8x8
          stz.b $1d                  ; $0cc28d m8x8
 label1072: rtl                      ; $0cc28f m8x8
-entry366: .entry m8x8
-         jsl @entry372              ; $0cc290 m8x8
+entry365: .entry m8x8
+         jsl @entry371              ; $0cc290 m8x8
          dec.b $b0                  ; $0cc294 m8x8
          bne label1073              ; $0cc296 m8x8
          lda.b #$01                 ; $0cc298 m8x8
@@ -14494,8 +14422,8 @@ entry366: .entry m8x8
          sta.b $1e1b                ; $0cc29f m8x8
          inc.b $11                  ; $0cc2a2 m8x8
 label1073: rtl                      ; $0cc2a4 m8x8
-entry367: .entry m8x8
-         jsl @entry372              ; $0cc2a5 m8x8
+entry366: .entry m8x8
+         jsl @entry371              ; $0cc2a5 m8x8
          dec.b $b0                  ; $0cc2a9 m8x8
          bne label1074              ; $0cc2ab m8x8
          lda.b #$14                 ; $0cc2ad m8x8
@@ -14503,7 +14431,7 @@ entry367: .entry m8x8
          stz.b $11                  ; $0cc2b1 m8x8
          stz.b $22                  ; $0cc2b3 m8x8
 label1074: rtl                      ; $0cc2b5 m8x8
-entry368: .entry m8x8
+entry367: .entry m8x8
          lda.b #$ff                 ; $0cc2b6 m8x8
          sta.b $0128                ; $0cc2b8 m8x8
          lda.b #$15                 ; $0cc2bb m8x8
@@ -14512,7 +14440,7 @@ entry368: .entry m8x8
          stz.b $1b                  ; $0cc2c1 m8x8
          lda.b #$f1                 ; $0cc2c3 m8x8
          sta.b $012c                ; $0cc2c5 m8x8
-         jsl @entry415              ; $0cc2c8 m8x8
+         jsl @entry414              ; $0cc2c8 m8x8
          rep #$30                   ; $0cc2cc m16x16
          ldx.w #$006e               ; $0cc2ce m16x16
 label1075: stz.w $20, X             ; $0cc2d1 m16x16
@@ -14536,11 +14464,11 @@ label1076: sta.w $7ef000, X         ; $0cc2db m16x16
          sta.b $04aa                ; $0cc2fc m8x8
          stz.b $11                  ; $0cc2ff m8x8
          rtl                        ; $0cc301 m8x8
-entry369: .entry m8x8
+entry368: .entry m8x8
          lda.b #$08                 ; $0cc302 m8x8
          sta.b $0aa4                ; $0cc304 m8x8
-         jsl @entry30               ; $0cc307 m8x8
-         jsr entry370               ; $0cc30b m8x8
+         jsl @entry29               ; $0cc307 m8x8
+         jsr entry369               ; $0cc30b m8x8
          lda.b #$01                 ; $0cc30e m8x8
          sta.b $1e10                ; $0cc310 m8x8
          sta.b $1e11                ; $0cc313 m8x8
@@ -14557,9 +14485,9 @@ entry369: .entry m8x8
          sta.b $13                  ; $0cc330 m8x8
          inc.b $11                  ; $0cc332 m8x8
          rtl                        ; $0cc334 m8x8
-entry370: .entry m8x8
-         jsl @entry358              ; $0cc335 m8x8
-         jsr entry371               ; $0cc339 m8x8
+entry369: .entry m8x8
+         jsl @entry357              ; $0cc335 m8x8
+         jsr entry370               ; $0cc339 m8x8
          lda.b #$90                 ; $0cc33c m8x8
          sta.b $ff                  ; $0cc33e m8x8
          lda.b #$ff                 ; $0cc340 m8x8
@@ -14592,7 +14520,7 @@ label1077: stz.b $1e00, X           ; $0cc372 m8x8
          dex.b                      ; $0cc387 m8x8
          bpl label1077              ; $0cc388 m8x8
          rts                        ; $0cc38a m8x8
-entry371: .entry m8x8
+entry370: .entry m8x8
          rep #$20                   ; $0cc38b m16x8
          lda.w $0cc3f3              ; $0cc38d m16x8
          sta.w $7ec6a0              ; $0cc391 m16x8
@@ -14613,47 +14541,47 @@ entry371: .entry m8x8
          sep #$30                   ; $0cc3cd m8x8
          inc.b $15                  ; $0cc3cf m8x8
          rts                        ; $0cc3d1 m8x8
-entry372: .entry m8x8
+entry371: .entry m8x8
          phb                        ; $0cc3d2 m8x8
          phk                        ; $0cc3d3 m8x8
          plb                        ; $0cc3d4 m8x8
          inc.b $1e0a                ; $0cc3d5 m8x8
-         jsr entry374               ; $0cc3d8 m8x8
-         jsr entry373               ; $0cc3db m8x8
+         jsr entry373               ; $0cc3d8 m8x8
+         jsr entry372               ; $0cc3db m8x8
          plb                        ; $0cc3de m8x8
          rtl                        ; $0cc3df m8x8
-entry373: .entry m8x8
+entry372: .entry m8x8
          lda.b #$00                 ; $0cc3e0 m8x8
          sta.b $1e08                ; $0cc3e2 m8x8
          lda.b #$08                 ; $0cc3e5 m8x8
          sta.b $1e09                ; $0cc3e7 m8x8
          ldx.b #$07                 ; $0cc3ea m8x8
-label1078: jsr entry376             ; $0cc3ec m8x8
+label1078: jsr entry375             ; $0cc3ec m8x8
          dex.b                      ; $0cc3ef m8x8
          bpl label1078              ; $0cc3f0 m8x8
          rts                        ; $0cc3f2 m8x8
          .org $0cc403
-entry374: .entry m8x8
+entry373: .entry m8x8
          lda.b #$01                 ; $0cc403 m8x8
          sta.b $012a                ; $0cc405 m8x8
          lda.b $1f00                ; $0cc408 m8x8
          bne label1079              ; $0cc40b m8x8
-         jsr entry375               ; $0cc40d m8x8
+         jsr entry374               ; $0cc40d m8x8
          lda.b #$01                 ; $0cc410 m8x8
          sta.b $1f00                ; $0cc412 m8x8
 label1079: rts                      ; $0cc415 m8x8
-entry375: .entry m8x8
+entry374: .entry m8x8
          lda.b $1e00                ; $0cc416 m8x8
          jsl $008781 noreturn       ; $0cc419 m8x8
          .org $0cc502
-entry376: .entry m8x8
+entry375: .entry m8x8
          lda.b $1e10, X             ; $0cc502 m8x8
          beq label1080              ; $0cc505 m8x8
          jsl $008781 noreturn       ; $0cc507 m8x8
          .org $0cc511
 label1080: rts                      ; $0cc511 m8x8
          .org $0ccc6c
-entry377: .entry m8x8
+entry376: .entry m8x8
          stz.b $e4                  ; $0ccc6c m8x8
          stz.b $e5                  ; $0ccc6e m8x8
          stz.b $ea                  ; $0ccc70 m8x8
@@ -14661,8 +14589,8 @@ entry377: .entry m8x8
          lda.b $11                  ; $0ccc74 m8x8
          jsl $00879c noreturn       ; $0ccc76 m8x8
          .org $0ccc89
-entry378: .entry m8x8
-         jsl @entry8                ; $0ccc89 m8x8
+entry377: .entry m8x8
+         jsl @entry7                ; $0ccc89 m8x8
          stz.b $012a                ; $0ccc8d m8x8
          stz.b $1f0c                ; $0ccc90 m8x8
          lda.b #$0b                 ; $0ccc93 m8x8
@@ -14671,19 +14599,19 @@ entry378: .entry m8x8
          lda.b #$02                 ; $0ccc9a m8x8
          sta.b $0aa9                ; $0ccc9c m8x8
          stz.b $0ab6                ; $0ccc9f m8x8
-         jsl @entry484              ; $0ccca2 m8x8
-         jsl @entry485              ; $0ccca6 m8x8
+         jsl @entry483              ; $0ccca2 m8x8
+         jsl @entry484              ; $0ccca6 m8x8
          lda.b #$01                 ; $0cccaa m8x8
          sta.b $0ab2                ; $0cccac m8x8
-         jsl @entry483              ; $0cccaf m8x8
+         jsl @entry482              ; $0cccaf m8x8
          stz.b $0202                ; $0cccb3 m8x8
          lda.b #$01                 ; $0cccb6 m8x8
          sta.b $0aa4                ; $0cccb8 m8x8
          lda.b #$23                 ; $0cccbb m8x8
          sta.b $0aa1                ; $0cccbd m8x8
-         jsl @entry28               ; $0cccc0 m8x8
-         jsl @entry27               ; $0cccc4 m8x8
-         jsl @entry32               ; $0cccc8 m8x8
+         jsl @entry27               ; $0cccc0 m8x8
+         jsl @entry26               ; $0cccc4 m8x8
+         jsl @entry31               ; $0cccc8 m8x8
          rep #$30                   ; $0ccccc m16x16
          stz.w $00                  ; $0cccce m16x16
 label1081: ldx.w $00                ; $0cccd0 m16x16
@@ -14742,7 +14670,7 @@ label1086: stz.w $0d00, X           ; $0ccd48 m16x16
          dex.w                      ; $0ccd52 m16x16
          bpl label1086              ; $0ccd53 m16x16
          sep #$30                   ; $0ccd55 m8x8
-         jmp @entry182              ; $0ccd57 m8x8
+         jmp @entry181              ; $0ccd57 m8x8
 label1087: ldy.w #$0000             ; $0ccd5b m16x16
          tya.w                      ; $0ccd5e m16x16
 label1088: sta.w $700f00, X         ; $0ccd5f m16x16
@@ -14761,40 +14689,40 @@ label1088: sta.w $700f00, X         ; $0ccd5f m16x16
          cpy.w #$0080               ; $0ccd8a m16x16
          bne label1088              ; $0ccd8d m16x16
          bra label1085              ; $0ccd8f m16x16
-entry379: .entry m8x8
+entry378: .entry m8x8
          ldx.b #$05                 ; $0ccd91 m8x8
 label1089: stz.b $bf, X             ; $0ccd93 m8x8
          dex.b                      ; $0ccd95 m8x8
          bpl label1089              ; $0ccd96 m8x8
-entry380: .entry m8x8
+entry379: .entry m8x8
          lda.b #$80                 ; $0ccd98 m8x8
          sta.b $0710                ; $0ccd9a m8x8
-         jsl @entry8                ; $0ccd9d m8x8
-         jsl @entry2                ; $0ccda1 m8x8
-         jsl @entry489              ; $0ccda5 m8x8
+         jsl @entry7                ; $0ccd9d m8x8
+         jsl @entry1                ; $0ccda1 m8x8
+         jsl @entry488              ; $0ccda5 m8x8
          inc.b $15                  ; $0ccda9 m8x8
          inc.b $11                  ; $0ccdab m8x8
          rtl                        ; $0ccdad m8x8
-entry381: .entry m8x8
+entry380: .entry m8x8
          lda.b $0b9d                ; $0ccdae m8x8
          sta.b $c8                  ; $0ccdb1 m8x8
 label1090: inc.b $11                ; $0ccdb3 m8x8
          lda.b #$06                 ; $0ccdb5 m8x8
          sta.b $14                  ; $0ccdb7 m8x8
          rtl                        ; $0ccdb9 m8x8
-entry382: .entry m8x8
-         jsr entry384               ; $0ccdba m8x8
+entry381: .entry m8x8
+         jsr entry383               ; $0ccdba m8x8
          lda.b #$0f                 ; $0ccdbd m8x8
          sta.b $13                  ; $0ccdbf m8x8
          stz.b $0710                ; $0ccdc1 m8x8
          bra label1090              ; $0ccdc4 m8x8
-entry383: .entry m8x8
+entry382: .entry m8x8
          phb                        ; $0ccdc6 m8x8
          phk                        ; $0ccdc7 m8x8
          plb                        ; $0ccdc8 m8x8
-         jsl @entry385              ; $0ccdc9 m8x8
-         jmp entry390               ; $0ccdcd m8x8
-entry384: .entry m8x8
+         jsl @entry384              ; $0ccdc9 m8x8
+         jmp entry389               ; $0ccdcd m8x8
+entry383: .entry m8x8
          phb                        ; $0ccdd0 m8x8
          phk                        ; $0ccdd1 m8x8
          plb                        ; $0ccdd2 m8x8
@@ -14807,7 +14735,7 @@ label1091: lda.b $ded0, X           ; $0ccdd8 m8x16
          sep #$10                   ; $0ccde1 m8x8
          plb                        ; $0ccde3 m8x8
          rts                        ; $0ccde4 m8x8
-entry385: .entry m8x8
+entry384: .entry m8x8
          lda.b $c8                  ; $0ccde5 m8x8
          cmp.b #$03                 ; $0ccde7 m8x8
          bcs label1092              ; $0ccde9 m8x8, c=0
@@ -14825,7 +14753,7 @@ label1093: stx.w $00                ; $0ccdf3 m16x16
          lda.w #$0001               ; $0cce06 m16x16
          sta.w $bf, X               ; $0cce09 m16x16
          plx.w                      ; $0cce0b m16x16
-         jsr entry405               ; $0cce0c m16x16
+         jsr entry404               ; $0cce0c m16x16
 label1094: ldx.w $00                ; $0cce0f m16x16
          inx.w                      ; $0cce11 m16x16
          inx.w                      ; $0cce12 m16x16
@@ -14837,7 +14765,7 @@ label1094: ldx.w $00                ; $0cce0f m16x16
          sta.b $00                  ; $0cce1e m8x8, c=1
          lda.b $cc67, X             ; $0cce20 m8x8, c=1
          sta.b $01                  ; $0cce23 m8x8, c=1
-         jsr entry407               ; $0cce25 m8x8
+         jsr entry406               ; $0cce25 m8x8
          ldy.b #$02                 ; $0cce28 m8x8
          lda.b $f6                  ; $0cce2a m8x8
          and.b #$c0                 ; $0cce2c m8x8
@@ -14961,14 +14889,14 @@ label1106: lda.w $700000, X         ; $0cced8 m16x16
          stz.b $0710                ; $0ccf43 m8x8
          stz.b $0ab2                ; $0ccf46 m8x8
          rtl                        ; $0ccf49 m8x8
-entry386: .entry m8x8
+entry385: .entry m8x8
          stz.b $0b9d                ; $0ccf4a m8x8
          lda.b $11                  ; $0ccf4d m8x8
          jsl $00879c noreturn       ; $0ccf4f m8x8
          .org $0ccf62
-entry387: .entry m8x8
+entry386: .entry m8x8
          lda.b #$07                 ; $0ccf62 m8x8
-entry388: .entry m8x8
+entry387: .entry m8x8
          sta.b $14                  ; $0ccf64 m8x8
          inc.b $11                  ; $0ccf66 m8x8
          lda.b #$0f                 ; $0ccf68 m8x8
@@ -14983,44 +14911,44 @@ label1107: inx.b                    ; $0ccf71 m8x8
          lsr.b                      ; $0ccf78 m8x8
          sta.b $c8                  ; $0ccf79 m8x8
          rtl                        ; $0ccf7b m8x8
-entry389: .entry m8x8
+entry388: .entry m8x8
          phb                        ; $0ccf7c m8x8
          phk                        ; $0ccf7d m8x8
          plb                        ; $0ccf7e m8x8
-         jsr entry394               ; $0ccf7f m8x8
+         jsr entry393               ; $0ccf7f m8x8
          lda.b $11                  ; $0ccf82 m8x8
          cmp.b #$02                 ; $0ccf84 m8x8
-         bne entry390               ; $0ccf86 m8x8
+         bne entry389               ; $0ccf86 m8x8
          lda.b $1a                  ; $0ccf88 m8x8
          and.b #$30                 ; $0ccf8a m8x8
-         bne entry390               ; $0ccf8c m8x8
-         jsr entry393               ; $0ccf8e m8x8
-entry390: .entry m8x8
+         bne entry389               ; $0ccf8c m8x8
+         jsr entry392               ; $0ccf8e m8x8
+entry389: .entry m8x8
          lda.b #$01                 ; $0ccf91 m8x8
          sta.b $14                  ; $0ccf93 m8x8
          plb                        ; $0ccf95 m8x8
          rtl                        ; $0ccf96 m8x8
-entry391: .entry m8x8
+entry390: .entry m8x8
          phb                        ; $0ccf97 m8x8
          phk                        ; $0ccf98 m8x8
          plb                        ; $0ccf99 m8x8
-         jsr entry396               ; $0ccf9a m8x8
+         jsr entry395               ; $0ccf9a m8x8
          lda.b $11                  ; $0ccf9d m8x8
          cmp.b #$03                 ; $0ccf9f m8x8
          bne label1108              ; $0ccfa1 m8x8
          lda.b $1a                  ; $0ccfa3 m8x8
          and.b #$30                 ; $0ccfa5 m8x8
-         bne entry390               ; $0ccfa7 m8x8
-         jsr entry393               ; $0ccfa9 m8x8
-label1108: bra entry390             ; $0ccfac m8x8
-entry392: .entry m8x8
+         bne entry389               ; $0ccfa7 m8x8
+         jsr entry392               ; $0ccfa9 m8x8
+label1108: bra entry389             ; $0ccfac m8x8
+entry391: .entry m8x8
          phb                        ; $0ccfae m8x8
          phk                        ; $0ccfaf m8x8
          plb                        ; $0ccfb0 m8x8
-         jsr entry397               ; $0ccfb1 m8x8
-         jmp entry390               ; $0ccfb4 m8x8
+         jsr entry396               ; $0ccfb1 m8x8
+         jmp entry389               ; $0ccfb4 m8x8
          .org $0ccfbb
-entry393: .entry m8x8
+entry392: .entry m8x8
          rep #$30                   ; $0ccfbb m16x16
          ldx.w #$0002               ; $0ccfbd m16x16
          lda.w #$0188               ; $0ccfc0 m16x16
@@ -15038,7 +14966,7 @@ label1110: sta.w $1002, Y           ; $0ccfcb m16x16
          sep #$30                   ; $0ccfd8 m8x8
          rts                        ; $0ccfda m8x8
          .org $0cd02e
-entry394: .entry m8x8
+entry393: .entry m8x8
          rep #$10                   ; $0cd02e m8x16
          ldx.w #$00c0               ; $0cd030 m8x16
          stx.w $1000                ; $0cd033 m8x16
@@ -15083,7 +15011,7 @@ label1114: ldx.w $00                ; $0cd078 m16x16
          sta.b $00                  ; $0cd087 m8x8, c=1
          lda.b $cfdb, X             ; $0cd089 m8x8, c=1
          sta.b $01                  ; $0cd08c m8x8, c=1
-         jsr entry407               ; $0cd08e m8x8
+         jsr entry406               ; $0cd08e m8x8
          lda.b $f6                  ; $0cd091 m8x8
          and.b #$c0                 ; $0cd093 m8x8
          ora.b $f4                  ; $0cd095 m8x8
@@ -15131,7 +15059,7 @@ label1122: lda.b #$2c               ; $0cd0e1 m8x8
          sta.b $012e                ; $0cd0e3 m8x8
          lda.b $c8                  ; $0cd0e6 m8x8
          cmp.b #$03                 ; $0cd0e8 m8x8
-         beq entry395               ; $0cd0ea m8x8
+         beq entry394               ; $0cd0ea m8x8
          asl.b                      ; $0cd0ec m8x8
          sta.b $cc                  ; $0cd0ed m8x8
          stz.b $cd                  ; $0cd0ef m8x8
@@ -15154,7 +15082,7 @@ label1123: lda.b $cfde, X           ; $0cd0f3 m8x8
          sta.b $102d, X             ; $0cd116 m8x8
 label1124: inc.b $11                ; $0cd119 m8x8
          bra label1125              ; $0cd11b m8x8
-entry395: .entry m8x8
+entry394: .entry m8x8
          lda.b #$01                 ; $0cd11d m8x8
          sta.b $10                  ; $0cd11f m8x8
          lda.b #$01                 ; $0cd121 m8x8
@@ -15163,7 +15091,7 @@ entry395: .entry m8x8
 label1125: stz.b $c8                ; $0cd127 m8x8
 label1126: rts                      ; $0cd129 m8x8
          .org $0cd173
-entry396: .entry m8x8
+entry395: .entry m8x8
          lda.b #$04                 ; $0cd173 m8x8
          ldx.b #$01                 ; $0cd175 m8x8
 label1127: cmp.b $cc                ; $0cd177 m8x8
@@ -15227,7 +15155,7 @@ label1132: ldx.w $00                ; $0cd1e0 m16x16
          sta.b $00                  ; $0cd1f5 m8x8, c=1
          lda.b $d166, X             ; $0cd1f7 m8x8, c=1
          sta.b $01                  ; $0cd1fa m8x8, c=1
-         jsr entry407               ; $0cd1fc m8x8
+         jsr entry406               ; $0cd1fc m8x8
          lda.b $f6                  ; $0cd1ff m8x8
          and.b #$c0                 ; $0cd201 m8x8
          ora.b $f4                  ; $0cd203 m8x8
@@ -15272,17 +15200,17 @@ label1136: lda.b $d12a, X           ; $0cd23f m8x8
          sta.b $102d                ; $0cd254 m8x8
 label1137: inc.b $11                ; $0cd257 m8x8
          bra label1139              ; $0cd259 m8x8
-label1138: jsr entry395             ; $0cd25b m8x8
+label1138: jsr entry394             ; $0cd25b m8x8
 label1139: stz.b $c8                ; $0cd25e m8x8
 label1140: rts                      ; $0cd260 m8x8
          .org $0cd263
-entry397: .entry m8x8
+entry396: .entry m8x8
          ldx.b $c8                  ; $0cd263 m8x8
          lda.b #$14                 ; $0cd265 m8x8
          sta.b $00                  ; $0cd267 m8x8
          lda.b $d261, X             ; $0cd269 m8x8
          sta.b $01                  ; $0cd26c m8x8
-         jsr entry407               ; $0cd26e m8x8
+         jsr entry406               ; $0cd26e m8x8
          lda.b $f6                  ; $0cd271 m8x8
          and.b #$c0                 ; $0cd273 m8x8
          ora.b $f4                  ; $0cd275 m8x8
@@ -15318,15 +15246,15 @@ label1142: lda.b #$2c               ; $0cd2a3 m8x8
          ldx.w $cc                  ; $0cd2b5 m16x16
          lda.w $00848c, X           ; $0cd2b7 m16x16
          tax.w                      ; $0cd2bb m16x16
-         jsr entry398               ; $0cd2bc m16x16
+         jsr entry397               ; $0cd2bc m16x16
          ldx.w $ca                  ; $0cd2bf m16x16
          lda.w #$0001               ; $0cd2c1 m16x16
          sta.w $bf, X               ; $0cd2c4 m16x16
          sep #$30                   ; $0cd2c6 m8x8
-label1143: jsr entry395             ; $0cd2c8 m8x8
+label1143: jsr entry394             ; $0cd2c8 m8x8
          stz.b $c8                  ; $0cd2cb m8x8
 label1144: rts                      ; $0cd2cd m8x8
-entry398: .entry m16x16
+entry397: .entry m16x16
          sep #$20                   ; $0cd2ce m8x16
          phb                        ; $0cd2d0 m8x16
          lda.b #$70                 ; $0cd2d1 m8x16
@@ -15356,14 +15284,14 @@ label1145: lda.w $0000, X           ; $0cd2dc m16x16
          rep #$20                   ; $0cd305 m16x16
          rts                        ; $0cd307 m16x16
          .org $0cd35f
-entry399: .entry m8x8
+entry398: .entry m8x8
          lda.b $11                  ; $0cd35f m8x8
          jsl $00879c noreturn       ; $0cd361 m8x8
          .org $0cd371
-entry400: .entry m8x8
+entry399: .entry m8x8
          lda.b #$08                 ; $0cd371 m8x8
-         jmp entry388               ; $0cd373 m8x8
-entry401: .entry m8x8
+         jmp entry387               ; $0cd373 m8x8
+entry400: .entry m8x8
          phb                        ; $0cd376 m8x8
          phk                        ; $0cd377 m8x8
          plb                        ; $0cd378 m8x8
@@ -15371,15 +15299,15 @@ entry401: .entry m8x8
          cmp.b #$03                 ; $0cd37b m8x8
          bcs label1146              ; $0cd37d m8x8, c=0
          sta.b $0b9d                ; $0cd37f m8x8, c=0
-label1146: jsr entry403             ; $0cd382 m8x8
-         jmp entry390               ; $0cd385 m8x8
-entry402: .entry m8x8
+label1146: jsr entry402             ; $0cd382 m8x8
+         jmp entry389               ; $0cd385 m8x8
+entry401: .entry m8x8
          phb                        ; $0cd388 m8x8
          phk                        ; $0cd389 m8x8
          plb                        ; $0cd38a m8x8
-         jsr entry404               ; $0cd38b m8x8
-         jmp entry390               ; $0cd38e m8x8
-entry403: .entry m8x8
+         jsr entry403               ; $0cd38b m8x8
+         jmp entry389               ; $0cd38e m8x8
+entry402: .entry m8x8
          rep #$10                   ; $0cd391 m8x16
          ldx.w #$012d               ; $0cd393 m8x16
 label1147: lda.b $e0f6, X           ; $0cd396 m8x16
@@ -15394,7 +15322,7 @@ label1148: stx.w $00                ; $0cd3a4 m16x16
          beq label1149              ; $0cd3ab m16x16
          lda.w $00848c, X           ; $0cd3ad m16x16
          tax.w                      ; $0cd3b1 m16x16
-         jsr entry405               ; $0cd3b2 m16x16
+         jsr entry404               ; $0cd3b2 m16x16
 label1149: ldx.w $00                ; $0cd3b5 m16x16
          inx.w                      ; $0cd3b7 m16x16
          inx.w                      ; $0cd3b8 m16x16
@@ -15406,7 +15334,7 @@ label1149: ldx.w $00                ; $0cd3b5 m16x16
          sta.b $00                  ; $0cd3c4 m8x8, c=1
          lda.b $d308, X             ; $0cd3c6 m8x8, c=1
          sta.b $01                  ; $0cd3c9 m8x8, c=1
-         jsr entry407               ; $0cd3cb m8x8
+         jsr entry406               ; $0cd3cb m8x8
          ldy.b #$02                 ; $0cd3ce m8x8
          lda.b $f4                  ; $0cd3d0 m8x8
          and.b #$20                 ; $0cd3d2 m8x8
@@ -15484,22 +15412,22 @@ label1157: lda.b $c8                ; $0cd45f m8x8
          stz.b $c8                  ; $0cd463 m8x8
          bra label1159              ; $0cd465 m8x8
 label1158: sep #$30                 ; $0cd467 m8x8
-         jsr entry395               ; $0cd469 m8x8
+         jsr entry394               ; $0cd469 m8x8
 label1159: rts                      ; $0cd46c m8x8
          .org $0cd46f
-entry404: .entry m8x8
+entry403: .entry m8x8
          lda.b $b0                  ; $0cd46f m8x8
          asl.b                      ; $0cd471 m8x8
          sta.b $00                  ; $0cd472 m8x8
-         jsr entry406               ; $0cd474 m8x8
-         jsr entry408               ; $0cd477 m8x8
+         jsr entry405               ; $0cd474 m8x8
+         jsr entry407               ; $0cd477 m8x8
          sep #$30                   ; $0cd47a m8x8
          ldx.b $c8                  ; $0cd47c m8x8
          lda.b #$14                 ; $0cd47e m8x8
          sta.b $00                  ; $0cd480 m8x8
          lda.b $d46d, X             ; $0cd482 m8x8
          sta.b $01                  ; $0cd485 m8x8
-         jsr entry407               ; $0cd487 m8x8
+         jsr entry406               ; $0cd487 m8x8
          ldy.b #$02                 ; $0cd48a m8x8
          lda.b $f4                  ; $0cd48c m8x8
          and.b #$2c                 ; $0cd48e m8x8
@@ -15553,14 +15481,14 @@ label1163: sta.w $700000, X         ; $0cd4d3 m16x16
          cpy.w #$0100               ; $0cd4ff m16x16
          bne label1163              ; $0cd502 m16x16
          sep #$30                   ; $0cd504 m8x8
-label1164: jsr entry395             ; $0cd506 m8x8
+label1164: jsr entry394             ; $0cd506 m8x8
          stz.b $b0                  ; $0cd509 m8x8
 label1165: rts                      ; $0cd50b m8x8
          .org $0cd518
-entry405: .entry m16x16
+entry404: .entry m16x16
          phx.w                      ; $0cd518 m16x16
-         jsr entry406               ; $0cd519 m16x16
-         jsr entry408               ; $0cd51c m16x16
+         jsr entry405               ; $0cd519 m16x16
+         jsr entry407               ; $0cd51c m16x16
          plx.w                      ; $0cd51f m16x16
          phx.w                      ; $0cd520 m16x16
          ldy.w $00                  ; $0cd521 m16x16
@@ -15608,7 +15536,7 @@ label1168: dec.w $02                ; $0cd576 m16x16
          bne label1167              ; $0cd578 m16x16
          rts                        ; $0cd57a m16x16
          .org $0cd594
-entry406: .entry native
+entry405: .entry native
          rep #$30                   ; $0cd594 m16x16
          lda.w #$0116               ; $0cd596 m16x16
          asl.w                      ; $0cd599 m16x16
@@ -15723,7 +15651,7 @@ label1170: lda.b $d588, Y           ; $0cd637 m8x8
          rep #$30                   ; $0cd682 m16x16
          rts                        ; $0cd684 m16x16
          .org $0cd687
-entry407: .entry m8x8
+entry406: .entry m8x8
          lda.b $00                  ; $0cd687 m8x8
          sta.b $0800                ; $0cd689 m8x8
          lda.b $01                  ; $0cd68c m8x8
@@ -15743,7 +15671,7 @@ label1171: lda.b $d685, X           ; $0cd69b m8x8
          sta.b $0a20                ; $0cd6a9 m8x8
 label1172: rts                      ; $0cd6ac native
          .org $0cd6c0
-entry408: .entry native
+entry407: .entry native
          rep #$30                   ; $0cd6c0 m16x16
          ldx.w $0e                  ; $0cd6c2 m16x16
          lda.w $700401, X           ; $0cd6c4 m16x16
@@ -15823,12 +15751,12 @@ label1180: phx.b                    ; $0cd71b m8x8
          bpl label1180              ; $0cd750 m8x8
          rep #$30                   ; $0cd752 m16x16
          rts                        ; $0cd754 m16x16
-entry409: .entry m8x8
+entry408: .entry m8x8
          lda.b $11                  ; $0cd755 m8x8
          jsl $00879c noreturn       ; $0cd757 m8x8
          .org $0cd764
-entry410: .entry m8x8
-         jsl @entry380              ; $0cd764 m8x8
+entry409: .entry m8x8
+         jsl @entry379              ; $0cd764 m8x8
          lda.b #$01                 ; $0cd768 m8x8
          sta.b $0128                ; $0cd76a m8x8
          stz.b $0b12                ; $0cd76d m8x8
@@ -15869,7 +15797,7 @@ label1181: sta.w $700000, X         ; $0cd79b m16x16
          sta.w $7003df, X           ; $0cd7ca m16x16
          sep #$30                   ; $0cd7ce m8x8
          rtl                        ; $0cd7d0 m8x8
-entry411: .entry m8x8
+entry410: .entry m8x8
          lda.b #$05                 ; $0cd7d1 m8x8
          sta.b $14                  ; $0cd7d3 m8x8
          inc.b $11                  ; $0cd7d5 m8x8
@@ -15878,7 +15806,7 @@ entry411: .entry m8x8
          stz.b $0710                ; $0cd7db m8x8
          rtl                        ; $0cd7de m8x8
          .org $0cecf6
-entry412: .entry m8x8
+entry411: .entry m8x8
          phb                        ; $0cecf6 m8x8
          phk                        ; $0cecf7 m8x8
          plb                        ; $0cecf8 m8x8
@@ -15902,7 +15830,7 @@ label1182: lda.b #$02               ; $0cecfd m8x8
          bpl label1182              ; $0ced1d m8x8
          plb                        ; $0ced1f m8x8
          rts                        ; $0ced20 m8x8
-entry413: .entry m8x8
+entry412: .entry m8x8
          lda.b $13                  ; $0ced21 m8x8
          beq label1183              ; $0ced23 m8x8
          cmp.b #$80                 ; $0ced25 m8x8
@@ -15923,7 +15851,7 @@ label1183: lda.b $22                ; $0ced3f m8x8
          tax.b                      ; $0ced42 m8x8
          jmp ($ed46, X)             ; $0ced43 m8x8
          .org $0cff64
-entry414: .entry m8x8
+entry413: .entry m8x8
          rep #$20                   ; $0cff64 m16x8
          lda.w #$0000               ; $0cff66 m16x8
          sta.w $7ec500              ; $0cff69 m16x8
@@ -15931,7 +15859,7 @@ entry414: .entry m8x8
          sta.w $7ec300              ; $0cff71 m16x8
          sta.w $7ec340              ; $0cff75 m16x8
          sep #$30                   ; $0cff79 m8x8
-entry415: .entry m8x8
+entry414: .entry m8x8
          lda.b #$20                 ; $0cff7b m8x8
          sta.b $9c                  ; $0cff7d m8x8
          lda.b #$40                 ; $0cff7f m8x8
@@ -15940,7 +15868,7 @@ entry415: .entry m8x8
          sta.b $9e                  ; $0cff85 m8x8
          rtl                        ; $0cff87 m8x8
          .org $0da18e
-entry416: .entry m8x8
+entry415: .entry m8x8
          phb                        ; $0da18e m8x8
          phk                        ; $0da18f m8x8
          plb                        ; $0da190 m8x8
@@ -16182,7 +16110,7 @@ label1212: ldy.b #$04               ; $0da387 m8x8
          brl label1230              ; $0da389 m8x8
 label1213: lda.b $0308              ; $0da38c m8x8
          beq label1218              ; $0da38f m8x8
-         jsr entry417               ; $0da391 m8x8
+         jsr entry416               ; $0da391 m8x8
          cpx.b #$06                 ; $0da394 m8x8
          bcs label1214              ; $0da396 m8x8, c=0
          lda.b #$02                 ; $0da398 m8x8, c=0
@@ -16212,12 +16140,12 @@ label1218: lda.b $0377              ; $0da3c6 m8x8
          bra label1222              ; $0da3ce m8x8
 label1219: lda.b $0301              ; $0da3d0 m8x8
          beq label1220              ; $0da3d3 m8x8
-         jsr entry417               ; $0da3d5 m8x8
+         jsr entry416               ; $0da3d5 m8x8
          ldy.b $a13a, X             ; $0da3d8 m8x8
          bra label1221              ; $0da3db m8x8
 label1220: lda.b $037a              ; $0da3dd m8x8
          beq label1223              ; $0da3e0 m8x8
-         jsr entry417               ; $0da3e2 m8x8
+         jsr entry416               ; $0da3e2 m8x8
          ldy.b $a142, X             ; $0da3e5 m8x8
 label1221: lda.b $0300              ; $0da3e8 m8x8
 label1222: sta.b $02                ; $0da3eb m8x8
@@ -16443,7 +16371,7 @@ label1243: tya.w                    ; $0da5b2 m16x16
 label1244: lda.w $0309              ; $0da5ce m16x16
          and.w #$0004               ; $0da5d1 m16x16
          beq label1245              ; $0da5d4 m16x16
-         jsr entry421               ; $0da5d6 m16x16
+         jsr entry420               ; $0da5d6 m16x16
          bra label1248              ; $0da5d9 m16x16
 label1245: lda.w $5d                ; $0da5db m16x16
          and.w #$00ff               ; $0da5dd m16x16
@@ -16480,7 +16408,7 @@ label1246: lda.w $7ef359            ; $0da62b m16x16
          inc.w                      ; $0da62f m16x16
          and.w #$00fe               ; $0da630 m16x16
          beq label1248              ; $0da633 m16x16
-label1247: jsr entry418             ; $0da635 m16x16
+label1247: jsr entry417             ; $0da635 m16x16
          bcc label1249              ; $0da638 m16x16, c=1
 label1248: brl label1265            ; $0da63a m16x16
 label1249: ldy.w $02                ; $0da63d m16x16, c=0
@@ -16557,7 +16485,7 @@ label1256: rep #$20                 ; $0da6b5 m16x16
          ply.w                      ; $0da6d9 m16x16
          lda.w $0e                  ; $0da6da m16x16
          pha.w                      ; $0da6dc m16x16
-         jsr entry420               ; $0da6dd m16x16
+         jsr entry419               ; $0da6dd m16x16
          pla.w                      ; $0da6e0 m16x16
          sta.w $0e                  ; $0da6e1 m16x16
 label1257: rep #$20                 ; $0da6e3 m16x16
@@ -16641,7 +16569,7 @@ label1265: rep #$30                 ; $0da780 m16x16
          lda.w $7ef3c5              ; $0da78b m16x16
          and.w #$00ff               ; $0da78f m16x16
          beq label1266              ; $0da792 m16x16
-         jsr entry419               ; $0da794 m16x16
+         jsr entry418               ; $0da794 m16x16
          bcc label1267              ; $0da797 m16x16, c=1
 label1266: brl label1274            ; $0da799 m16x16
 label1267: ldy.w $02                ; $0da79c m16x16, c=0
@@ -16665,7 +16593,7 @@ label1269: sta.b $0b                ; $0da7b0 m8x16
          sta.b $0a                  ; $0da7c4 m8x16
          sta.b $08                  ; $0da7c6 m8x16
          lda.b $96dc, Y             ; $0da7c8 m8x16
-         jsr entry424               ; $0da7cb m8x16
+         jsr entry423               ; $0da7cb m8x16
          stz.b $0e                  ; $0da7ce m8x16
          lda.b #$0a                 ; $0da7d0 m8x16
          sta.b $0f                  ; $0da7d2 m8x16
@@ -16749,7 +16677,7 @@ label1275: lda.b $5d                ; $0da862 m8x8
          beq label1276              ; $0da86d m8x8
          lda.b $0351                ; $0da86f m8x8
          beq label1276              ; $0da872 m8x8
-         jsr entry423               ; $0da874 m8x8
+         jsr entry422               ; $0da874 m8x8
          bra label1277              ; $0da877 m8x8
 label1276: lda.b $4d                ; $0da879 m8x8
          cmp.b #$04                 ; $0da87b m8x8
@@ -16765,7 +16693,7 @@ label1276: lda.b $4d                ; $0da879 m8x8
          lda.b $5a                  ; $0da88f m8x8
          cmp.b #$06                 ; $0da891 m8x8
          bcc label1277              ; $0da893 m8x8, c=1
-         jsr entry422               ; $0da895 m8x8
+         jsr entry421               ; $0da895 m8x8
 label1277: brl label1283            ; $0da898 m8x8
 label1278: lda.b $4d                ; $0da89b m8x8
          beq label1280              ; $0da89d m8x8
@@ -17015,7 +16943,7 @@ label1295: pla.b                    ; $0daabb m8x8
          sta.b $20                  ; $0daabf m8x8
 label1296: plb                      ; $0daac1 m8x8
          rtl                        ; $0daac2 m8x8
-entry417: .entry m8x8
+entry416: .entry m8x8
          ldx.b #$07                 ; $0daac3 m8x8
 label1297: asl.b                    ; $0daac5 m8x8
          bcs label1298              ; $0daac6 m8x8, c=0
@@ -17023,7 +16951,7 @@ label1297: asl.b                    ; $0daac5 m8x8
          bpl label1297              ; $0daac9 m8x8, c=0
 label1298: rts                      ; $0daacb m8x8
          .org $0dab6e
-entry418: .entry m16x16
+entry417: .entry m16x16
          rep #$30                   ; $0dab6e m16x16
          ldy.w $02                  ; $0dab70 m16x16
          lda.w $8af1, Y             ; $0dab72 m16x16
@@ -17066,7 +16994,7 @@ label1301: clc                      ; $0dabc6 m16x16, c=0
 label1302: sec                      ; $0dabc8 m16x16, c=1
          rts                        ; $0dabc9 m16x16, c=1
          .org $0dabe6
-entry419: .entry m16x16
+entry418: .entry m16x16
          rep #$30                   ; $0dabe6 m16x16
          stz.w $0c                  ; $0dabe8 m16x16
          ldy.w $02                  ; $0dabea m16x16
@@ -17110,7 +17038,7 @@ label1306: clc                      ; $0dac41 m16x16, c=0
 label1307: sec                      ; $0dac43 m16x16, c=1
          rts                        ; $0dac44 m16x16, c=1
          .org $0dacd5
-entry420: .entry m16x16
+entry419: .entry m16x16
          lda.w $0a                  ; $0dacd5 m16x16
          pha.w                      ; $0dacd7 m16x16
          phy.w                      ; $0dacd8 m16x16
@@ -17170,7 +17098,7 @@ label1310: tya.w                    ; $0dad3b m16x16
          sta.b $44                  ; $0dad53 m8x16
          lda.b $acb1, Y             ; $0dad55 m8x16
          sta.b $45                  ; $0dad58 m8x16
-         jsr entry424               ; $0dad5a m8x16
+         jsr entry423               ; $0dad5a m8x16
          rep #$20                   ; $0dad5d m16x16
          lda.w $0a                  ; $0dad5f m16x16
          sta.w $0800, X             ; $0dad61 m16x16
@@ -17194,11 +17122,11 @@ label1311: stz.w $0e                ; $0dad7b m16x16
          sta.w $0a                  ; $0dad7f m16x16
          rts                        ; $0dad81 m16x16
          .org $0dadb6
-entry421: .entry m16x16
+entry420: .entry m16x16
          sep #$30                   ; $0dadb6 m8x8
          lsr.b                      ; $0dadb8 m8x8
          lsr.b                      ; $0dadb9 m8x8
-         jsr entry417               ; $0dadba m8x8
+         jsr entry416               ; $0dadba m8x8
          lda.b $adb4, X             ; $0dadbd m8x8
          add.b $030e                ; $0dadc0 m8x8
          asl.b                      ; $0dadc4 m8x8
@@ -17261,7 +17189,7 @@ label1313: ply.w                    ; $0dae2b m8x16
          rep #$30                   ; $0dae35 m16x16
          rts                        ; $0dae37 m16x16
          .org $0dae3b
-entry422: .entry m8x8
+entry421: .entry m8x8
          ldy.b #$00                 ; $0dae3b m8x8
          lda.b $51                  ; $0dae3d m8x8
          sub.b #$0c                 ; $0dae3f m8x8
@@ -17335,7 +17263,7 @@ label1317: phx.w                    ; $0daea7 m16x16
          sep #$10                   ; $0daec7 m8x8
          rts                        ; $0daec9 m8x8
          .org $0daed1
-entry423: .entry m8x8
+entry422: .entry m8x8
          lda.b $0356                ; $0daed1 m8x8
          inc.b                      ; $0daed4 m8x8
          and.b #$0f                 ; $0daed5 m8x8
@@ -17434,7 +17362,7 @@ label1324: rep #$30                 ; $0daf60 m16x16
          sep #$30                   ; $0daf9a m8x8
          rts                        ; $0daf9c m8x8
          .org $0dafc0
-entry424: .entry m8x16
+entry423: .entry m8x16
          rep #$20                   ; $0dafc0 m16x16
          and.w #$00ff               ; $0dafc2 m16x16
          cmp.w #$0080               ; $0dafc5 m16x16
@@ -17448,8 +17376,8 @@ label1325: add.w $22                ; $0dafcd m16x16
          sep #$20                   ; $0dafda m8x16
          rts                        ; $0dafdc m8x16
          .org $0db818
-entry425: .entry m8x8
-         jsl @entry426              ; $0db818 m8x8
+entry424: .entry m8x8
+         jsl @entry425              ; $0db818 m8x8
          phy.b                      ; $0db81c m8x8
          phb                        ; $0db81d m8x8
          phk                        ; $0db81e m8x8
@@ -17488,7 +17416,7 @@ label1326: sta.b $0c9a, X           ; $0db857 m8x8
          plb                        ; $0db86e m8x8
          ply.b                      ; $0db86f m8x8
          rtl                        ; $0db870 m8x8
-entry426: .entry m8x8
+entry425: .entry m8x8
          stz.b $0f00, X             ; $0db871 m8x8
          stz.b $0e90, X             ; $0db874 m8x8
          stz.b $0d50, X             ; $0db877 m8x8
@@ -17532,36 +17460,36 @@ entry426: .entry m8x8
          sta.b $7ff9c2, X           ; $0db8ec m8x8
          rtl                        ; $0db8f0 m8x8
          .org $0dba71
-entry427: .entry m8x8
+entry426: .entry m8x8
          lda.b $2137                ; $0dba71 m8x8
          lda.b $213c                ; $0dba74 m8x8
          adc.b $1a                  ; $0dba77 m8x8
          adc.b $0fa1                ; $0dba79 m8x8
          sta.b $0fa1                ; $0dba7c m8x8
          rtl                        ; $0dba7f m8x8
-entry428: .entry m8x8
+entry427: .entry m8x8
          ldy.b #$00                 ; $0dba80 m8x8
          bra label1327              ; $0dba82 m8x8
-entry429: .entry m8x8
+entry428: .entry m8x8
          ldy.b #$02                 ; $0dba84 m8x8
          bra label1327              ; $0dba86 m8x8
-entry430: .entry m8x8
+entry429: .entry m8x8
          ldy.b #$04                 ; $0dba88 m8x8
          bra label1327              ; $0dba8a m8x8
-entry431: .entry m8x8
+entry430: .entry m8x8
          ldy.b #$06                 ; $0dba8c m8x8
          bra label1327              ; $0dba8e m8x8
          .org $0dba94
-entry432: .entry m8x8
+entry431: .entry m8x8
          ldy.b #$0a                 ; $0dba94 m8x8
 label1327: phb                      ; $0dba96 m8x8
          phk                        ; $0dba97 m8x8
          plb                        ; $0dba98 m8x8
-         jsr entry433               ; $0dba99 m8x8
+         jsr entry432               ; $0dba99 m8x8
          plb                        ; $0dba9c m8x8
          rtl                        ; $0dba9d m8x8
          .org $0dbb0a
-entry433: .entry m8x8
+entry432: .entry m8x8
          sta.b $0e                  ; $0dbb0a m8x8
          stz.b $000f                ; $0dbb0c m8x8
          rep #$20                   ; $0dbb0f m16x8
@@ -17604,34 +17532,34 @@ label1329: lda.w $90                ; $0dbb44 m16x8
          ldy.b $90                  ; $0dbb58 m8x8
          rts                        ; $0dbb5a m8x8
          .org $0dbb67
-entry434: .entry m8x8
+entry433: .entry m8x8
          lda.b $23                  ; $0dbb67 m8x8
          xba                        ; $0dbb69 m8x8
          lda.b $22                  ; $0dbb6a m8x8
          bra label1332              ; $0dbb6c m8x8
          .org $0dbb7c
-entry435: .entry m8x8
+entry434: .entry m8x8
          phy.b                      ; $0dbb7c m8x8
          ldy.b $012e                ; $0dbb7d m8x8
          bne label1330              ; $0dbb80 m8x8
-         jsr entry437               ; $0dbb82 m8x8
+         jsr entry436               ; $0dbb82 m8x8
          sta.b $012e                ; $0dbb85 m8x8
 label1330: ply.b                    ; $0dbb88 m8x8
          rtl                        ; $0dbb89 m8x8
-entry436: .entry m8x8
+entry435: .entry m8x8
          phy.b                      ; $0dbb8a m8x8
          ldy.b $012f                ; $0dbb8b m8x8
          bne label1331              ; $0dbb8e m8x8
-         jsr entry437               ; $0dbb90 m8x8
+         jsr entry436               ; $0dbb90 m8x8
          sta.b $012f                ; $0dbb93 m8x8
 label1331: ply.b                    ; $0dbb96 m8x8
          rtl                        ; $0dbb97 m8x8
-entry437: .entry m8x8
+entry436: .entry m8x8
          sta.b $0d                  ; $0dbb98 m8x8
-         jsl @entry438              ; $0dbb9a m8x8
+         jsl @entry437              ; $0dbb9a m8x8
          ora.b $0d                  ; $0dbb9e m8x8
          rts                        ; $0dbba0 m8x8
-entry438: .entry m8x8
+entry437: .entry m8x8
          lda.b $0d30, X             ; $0dbba1 m8x8
          xba                        ; $0dbba4 m8x8
          lda.b $0d10, X             ; $0dbba5 m8x8
@@ -17651,7 +17579,7 @@ label1333: sep #$20                 ; $0dbbc0 m8x8
          plx.b                      ; $0dbbc6 m8x8
          rtl                        ; $0dbbc7 m8x8
          .org $0dbbd0
-entry439: .entry m8x8
+entry438: .entry m8x8
          sub.b $e2                  ; $0dbbd0 m8x8
          lsr.b                      ; $0dbbd3 m8x8
          lsr.b                      ; $0dbbd4 m8x8
@@ -17664,7 +17592,7 @@ entry439: .entry m8x8
          plx.b                      ; $0dbbde m8x8
          rtl                        ; $0dbbdf m8x8
          .org $0ddb75
-entry440: .entry m8x8
+entry439: .entry m8x8
          phb                        ; $0ddb75 m8x8
          phk                        ; $0ddb76 m8x8
          plb                        ; $0ddb77 m8x8
@@ -17672,13 +17600,13 @@ entry440: .entry m8x8
          beq label1334              ; $0ddb7b m8x8
          plb                        ; $0ddb7d m8x8
          rtl                        ; $0ddb7e m8x8
-entry441: .entry m8x8
+entry440: .entry m8x8
          phb                        ; $0ddb7f m8x8
          phk                        ; $0ddb80 m8x8
          plb                        ; $0ddb81 m8x8
-         jsr entry449               ; $0ddb82 m8x8
-         jsr entry446               ; $0ddb85 m8x8
-         jsr entry455               ; $0ddb88 m8x8
+         jsr entry448               ; $0ddb82 m8x8
+         jsr entry445               ; $0ddb85 m8x8
+         jsr entry454               ; $0ddb88 m8x8
          sep #$30                   ; $0ddb8b m8x8
          stz.b $0200                ; $0ddb8d m8x8
          plb                        ; $0ddb90 m8x8
@@ -17766,7 +17694,7 @@ label1342: lda.b $7ef340            ; $0ddc5c m8x8
          lda.b $7ef340              ; $0ddc68 m8x8
          inc.b                      ; $0ddc6c m8x8
          sta.b $7ef340              ; $0ddc6d m8x8
-         jsl @entry441              ; $0ddc71 m8x8
+         jsl @entry440              ; $0ddc71 m8x8
 label1343: lda.b $02e4              ; $0ddc75 m8x8
          bne label1345              ; $0ddc78 m8x8
          lda.b $7ef372              ; $0ddc7a m8x8
@@ -17821,8 +17749,8 @@ label1348: lda.b $7ef372            ; $0ddcf4 m8x8
 label1349: rep #$30                 ; $0ddd07 m16x16
          lda.w #$ffff               ; $0ddd09 m16x16
          sta.w $0e                  ; $0ddd0c m16x16
-         jsr entry460               ; $0ddd0e m16x16
-         jsr entry451               ; $0ddd11 m16x16
+         jsr entry459               ; $0ddd0e m16x16
+         jsr entry450               ; $0ddd11 m16x16
          sep #$30                   ; $0ddd14 m8x8
          inc.b $16                  ; $0ddd16 m8x8
          plb                        ; $0ddd18 m8x8
@@ -17830,17 +17758,17 @@ label1349: rep #$30                 ; $0ddd07 m16x16
 label1350: rep #$30                 ; $0ddd1a m16x16
          lda.w #$ffff               ; $0ddd1c m16x16
          sta.w $0e                  ; $0ddd1f m16x16
-         jsr entry459               ; $0ddd21 m16x16
+         jsr entry458               ; $0ddd21 m16x16
          sep #$30                   ; $0ddd24 m8x8
          inc.b $16                  ; $0ddd26 m8x8
          plb                        ; $0ddd28 m8x8
          rtl                        ; $0ddd29 m8x8
          .org $0ddd32
-entry442: .entry m8x8
-         jsr entry447               ; $0ddd32 m8x8
+entry441: .entry m8x8
+         jsr entry446               ; $0ddd32 m8x8
          rtl                        ; $0ddd35 m8x8
          .org $0ddeb0
-entry443: .entry m8x8
+entry442: .entry m8x8
          ldx.b $0202                ; $0ddeb0 m8x8
          lda.b $7ef33f, X           ; $0ddeb3 m8x8
          bne label1351              ; $0ddeb7 m8x8
@@ -17849,7 +17777,7 @@ entry443: .entry m8x8
 label1351: sec                      ; $0ddebb m8x8, c=1
          rts                        ; $0ddebc m8x8, c=1
          .org $0ddecb
-entry444: .entry m8x8
+entry443: .entry m8x8
          lda.b $0202                ; $0ddecb m8x8
          inc.b                      ; $0ddece m8x8
          cmp.b #$15                 ; $0ddecf m8x8
@@ -17858,25 +17786,25 @@ entry444: .entry m8x8
 label1352: sta.b $0202              ; $0dded5 m8x8
          rts                        ; $0dded8 m8x8
          .org $0ddee2
-entry445: .entry m8x8
-         jsr entry444               ; $0ddee2 m8x8
-         jsr entry443               ; $0ddee5 m8x8
-         bcc entry445               ; $0ddee8 m8x8, c=1
+entry444: .entry m8x8
+         jsr entry443               ; $0ddee2 m8x8
+         jsr entry442               ; $0ddee5 m8x8
+         bcc entry444               ; $0ddee8 m8x8, c=1
          rts                        ; $0ddeea m8x8, c=1
          .org $0ddfa9
-entry446: .entry m8x8
+entry445: .entry m8x8
          inc.b $0200                ; $0ddfa9 m8x8
-         jsr entry456               ; $0ddfac m8x8
-entry447: .entry m8x8
+         jsr entry455               ; $0ddfac m8x8
+entry446: .entry m8x8
          ldx.b $0202                ; $0ddfaf m8x8
          lda.b $0dfa35, X           ; $0ddfb2 m8x8
          sta.b $0303                ; $0ddfb6 m8x8
          rts                        ; $0ddfb9 m8x8
          .org $0de395
-entry448: .entry m8x8
-         jsr entry449               ; $0de395 m8x8
+entry447: .entry m8x8
+         jsr entry448               ; $0de395 m8x8
          rtl                        ; $0de398 m8x8
-entry449: .entry m8x8
+entry448: .entry m8x8
          sep #$30                   ; $0de399 m8x8
          ldx.b #$12                 ; $0de39b m8x8
          lda.b $7ef340              ; $0de39d m8x8
@@ -17893,11 +17821,11 @@ label1355: lda.b $0202              ; $0de3b6 m8x8
          bne label1356              ; $0de3b9 m8x8
          lda.b #$01                 ; $0de3bb m8x8
          sta.b $0202                ; $0de3bd m8x8
-label1356: jsr entry443             ; $0de3c0 m8x8
+label1356: jsr entry442             ; $0de3c0 m8x8
          bcs label1354              ; $0de3c3 m8x8, c=0
-         jmp entry445               ; $0de3c5 m8x8
+         jmp entry444               ; $0de3c5 m8x8
          .org $0df0f7
-entry450: .entry m16x16
+entry449: .entry m16x16
          rep #$30                   ; $0df0f7 m16x16
          stz.w $0003                ; $0df0f9 m16x16
          ldx.w #$0000               ; $0df0fc m16x16
@@ -17923,7 +17851,7 @@ label1360: sta.b $03, X             ; $0df122 m8x8
          bpl label1359              ; $0df125 m8x8
          rts                        ; $0df127 m8x8
          .org $0df14f
-entry451: .entry m16x16
+entry450: .entry m16x16
          sep #$30                   ; $0df14f m8x8
          lda.b #$68                 ; $0df151 m8x8
          sta.b $00                  ; $0df153 m8x8
@@ -17967,12 +17895,12 @@ label1361: sep #$30                 ; $0df182 m8x8
          sta.b $0209                ; $0df1a4 m8x8
          bne label1362              ; $0df1a7 m8x8
          sep #$30                   ; $0df1a9 m8x8
-         jsr entry455               ; $0df1ab m8x8
+         jsr entry454               ; $0df1ab m8x8
          stz.b $020a                ; $0df1ae m8x8
 label1362: clc                      ; $0df1b1 m8x8, c=0
          rts                        ; $0df1b2 m8x8, c=0
          .org $0dfa53
-entry452: .entry m8x8
+entry451: .entry m8x8
          lda.b $7ef34a              ; $0dfa53 m8x8
          beq label1363              ; $0dfa57 m8x8
          lda.b $7ec005              ; $0dfa59 m8x8
@@ -17989,12 +17917,12 @@ entry452: .entry m8x8
          sta.b $1d                  ; $0dfa75 m8x8
 label1363: rtl                      ; $0dfa77 m8x8
          .org $0dfa88
-entry453: .entry m8x8
+entry452: .entry m8x8
          sta.b $7ef36f              ; $0dfa88 m8x8
-entry454: .entry m8x8
-         jsr entry455               ; $0dfa8c m8x8
+entry453: .entry m8x8
+         jsr entry454               ; $0dfa8c m8x8
          rtl                        ; $0dfa8f m8x8
-entry455: .entry m8x8
+entry454: .entry m8x8
          rep #$30                   ; $0dfa90 m16x16
          phb                        ; $0dfa92 m16x16
          lda.w #$0149               ; $0dfa93 m16x16
@@ -18006,18 +17934,18 @@ entry455: .entry m8x8
          phk                        ; $0dfaa1 m16x16
          plb                        ; $0dfaa2 m16x16
          bra label1364              ; $0dfaa3 m16x16
-entry456: .entry m8x8
+entry455: .entry m8x8
          rep #$30                   ; $0dfaa5 m16x16
          phb                        ; $0dfaa7 m16x16
          phk                        ; $0dfaa8 m16x16
          plb                        ; $0dfaa9 m16x16
-label1364: jsr entry458             ; $0dfaaa m16x16
+label1364: jsr entry457             ; $0dfaaa m16x16
          plb                        ; $0dfaad m16x16
          sep #$30                   ; $0dfaae m8x8
          inc.b $16                  ; $0dfab0 m8x8
          rts                        ; $0dfab2 m8x8
          .org $0dfb1d
-entry457: .entry m16x16
+entry456: .entry m16x16
          sep #$30                   ; $0dfb1d m8x8
          lda.b $7ef340              ; $0dfb1f m8x8
          beq label1367              ; $0dfb23 m8x8
@@ -18084,9 +18012,9 @@ label1369: sta.w $02                ; $0dfb81 m16x16
          lda.w ($04), Y             ; $0dfbaa m16x16
          sta.w $7ec78c              ; $0dfbac m16x16
 label1370: rts                      ; $0dfbb0 m16x16
+entry457: .entry m16x16
+         jsr entry456               ; $0dfbb1 m16x16
 entry458: .entry m16x16
-         jsr entry457               ; $0dfbb1 m16x16
-entry459: .entry m16x16
          sep #$30                   ; $0dfbb4 m8x8
          lda.b #$1d                 ; $0dfbb6 m8x8
          sta.b $0a                  ; $0dfbb8 m8x8
@@ -18106,7 +18034,7 @@ entry459: .entry m16x16
          sta.w $00                  ; $0dfbd7 m16x16
          sta.w $02                  ; $0dfbd9 m16x16
          sta.w $04                  ; $0dfbdb m16x16
-         jsr entry461               ; $0dfbdd m16x16
+         jsr entry460               ; $0dfbdd m16x16
          sep #$30                   ; $0dfbe0 m8x8
          lda.b #$23                 ; $0dfbe2 m8x8
          sta.b $0a                  ; $0dfbe4 m8x8
@@ -18135,8 +18063,8 @@ label1371: lda.b $7ef36d            ; $0dfc0d m8x8
          lda.w $7ef36c              ; $0dfc1d m16x16
          and.w #$00ff               ; $0dfc21 m16x16
          sta.w $02                  ; $0dfc24 m16x16
-         jsr entry461               ; $0dfc26 m16x16
-entry460: .entry m16x16
+         jsr entry460               ; $0dfc26 m16x16
+entry459: .entry m16x16
          rep #$30                   ; $0dfc29 m16x16
          lda.w $7ef37b              ; $0dfc2b m16x16
          and.w #$00ff               ; $0dfc2f m16x16
@@ -18162,7 +18090,7 @@ label1372: lda.w $7ef36e            ; $0dfc4c m16x16
          lda.w $fe15, X             ; $0dfc70 m16x16
          sta.w $7ec806              ; $0dfc73 m16x16
          lda.w $7ef362              ; $0dfc77 m16x16
-         jsr entry450               ; $0dfc7b m16x16
+         jsr entry449               ; $0dfc7b m16x16
          rep #$30                   ; $0dfc7e m16x16
          lda.w $03                  ; $0dfc80 m16x16
          and.w #$00ff               ; $0dfc82 m16x16
@@ -18178,7 +18106,7 @@ label1372: lda.w $7ef36e            ; $0dfc4c m16x16
          sta.w $7ec754              ; $0dfca0 m16x16
          lda.w $7ef343              ; $0dfca4 m16x16
          and.w #$00ff               ; $0dfca8 m16x16
-         jsr entry450               ; $0dfcab m16x16
+         jsr entry449               ; $0dfcab m16x16
          rep #$30                   ; $0dfcae m16x16
          lda.w $04                  ; $0dfcb0 m16x16
          and.w #$00ff               ; $0dfcb2 m16x16
@@ -18190,7 +18118,7 @@ label1372: lda.w $7ef36e            ; $0dfc4c m16x16
          sta.w $7ec75a              ; $0dfcc4 m16x16
          lda.w $7ef377              ; $0dfcc8 m16x16
          and.w #$00ff               ; $0dfccc m16x16
-         jsr entry450               ; $0dfccf m16x16
+         jsr entry449               ; $0dfccf m16x16
          rep #$30                   ; $0dfcd2 m16x16
          lda.w $04                  ; $0dfcd4 m16x16
          and.w #$00ff               ; $0dfcd6 m16x16
@@ -18206,7 +18134,7 @@ label1372: lda.w $7ef36e            ; $0dfc4c m16x16
          and.w #$00ff               ; $0dfcf5 m16x16
          cmp.w #$00ff               ; $0dfcf8 m16x16
          beq label1373              ; $0dfcfb m16x16
-         jsr entry450               ; $0dfcfd m16x16
+         jsr entry449               ; $0dfcfd m16x16
 label1373: rep #$30                 ; $0dfd00 m16x16
          lda.w $05                  ; $0dfd02 m16x16
          and.w #$00ff               ; $0dfd04 m16x16
@@ -18218,7 +18146,7 @@ label1373: rep #$30                 ; $0dfd00 m16x16
 label1374: sep #$30                 ; $0dfd17 m8x8
          rts                        ; $0dfd19 m8x8
          .org $0dfdcb
-entry461: .entry m16x16
+entry460: .entry m16x16
          ldx.w #$0000               ; $0dfdcb m16x16
 label1375: lda.w $00                ; $0dfdce m16x16
          cmp.w #$0008               ; $0dfdd0 m16x16
@@ -18226,20 +18154,20 @@ label1375: lda.w $00                ; $0dfdce m16x16
          sbc.w #$0008               ; $0dfdd5 m16x16
          sta.w $00                  ; $0dfdd8 m16x16
          ldy.w #$0004               ; $0dfdda m16x16
-         jsr entry462               ; $0dfddd m16x16
+         jsr entry461               ; $0dfddd m16x16
          inx.w                      ; $0dfde0 m16x16
          inx.w                      ; $0dfde1 m16x16
          bra label1375              ; $0dfde2 m16x16
 label1376: cmp.w #$0005             ; $0dfde4 m16x16
          bcc label1377              ; $0dfde7 m16x16, c=1
          ldy.w #$0004               ; $0dfde9 m16x16, c=1
-         bra entry462               ; $0dfdec m16x16, c=1
+         bra entry461               ; $0dfdec m16x16, c=1
 label1377: cmp.w #$0001             ; $0dfdee m16x16
          bcc label1378              ; $0dfdf1 m16x16, c=1
          ldy.w #$0002               ; $0dfdf3 m16x16, c=1
-         bra entry462               ; $0dfdf6 m16x16, c=1
+         bra entry461               ; $0dfdf6 m16x16, c=1
 label1378: rts                      ; $0dfdf8 m16x16, c=0
-entry462: .entry m16x16
+entry461: .entry m16x16
          cpx.w #$0014               ; $0dfdf9 m16x16
          bcc label1379              ; $0dfdfc m16x16, c=1
          ldx.w #$0000               ; $0dfdfe m16x16, c=1
@@ -18251,7 +18179,7 @@ label1379: lda.w [$0a], Y           ; $0dfe09 m16x16
          sta.w [$07], Y             ; $0dfe0c m16x16
          rts                        ; $0dfe0e m16x16
          .org $0ec29e
-entry463: .entry m8x8
+entry462: .entry m8x8
          rep #$20                   ; $0ec29e m16x8
          lda.w #$0030               ; $0ec2a0 m16x8
          sta.w $0fe0                ; $0ec2a3 m16x8
@@ -18265,32 +18193,32 @@ entry463: .entry m8x8
          jsr ($c250, X)             ; $0ec2b5 m8x8
          rtl                        ; $0ec2b8 m8x8
          .org $0eee10
-entry464: .entry m8x8
+entry463: .entry m8x8
          phb                        ; $0eee10 m8x8
          phk                        ; $0eee11 m8x8
          plb                        ; $0eee12 m8x8
-         jsr entry465               ; $0eee13 m8x8
+         jsr entry464               ; $0eee13 m8x8
          plb                        ; $0eee16 m8x8
          rtl                        ; $0eee17 m8x8
-entry465: .entry m8x8
+entry464: .entry m8x8
          lda.b $1cd8                ; $0eee18 m8x8
          jsl $008781 noreturn       ; $0eee1b m8x8
          .org $0eee53
-entry466: .entry m8x8
+entry465: .entry m8x8
          lda.b $10                  ; $0eee53 m8x8
          cmp.b #$14                 ; $0eee55 m8x8
          bne label1380              ; $0eee57 m8x8
-         jsl @entry48               ; $0eee59 m8x8
-label1380: jsl @entry26             ; $0eee5d m8x8
+         jsl @entry47               ; $0eee59 m8x8
+label1380: jsl @entry25             ; $0eee5d m8x8
          ldx.b #$00                 ; $0eee61 m8x8
 label1381: lda.b $fd07, X           ; $0eee63 m8x8
          sta.b $1cd0, X             ; $0eee66 m8x8
          inx.b                      ; $0eee69 m8x8
          cpx.b #$20                 ; $0eee6a m8x8
          bcc label1381              ; $0eee6c m8x8, c=1
-         jsr entry471               ; $0eee6e m8x8
-         jsr entry467               ; $0eee71 m8x8
-         jsr entry470               ; $0eee74 m8x8
+         jsr entry470               ; $0eee6e m8x8
+         jsr entry466               ; $0eee71 m8x8
+         jsr entry469               ; $0eee74 m8x8
          rep #$30                   ; $0eee77 m16x16
          stz.w $1cd9                ; $0eee79 m16x16
          sep #$30                   ; $0eee7c m8x8
@@ -18298,7 +18226,7 @@ label1381: lda.b $fd07, X           ; $0eee63 m8x8
          sta.b $17                  ; $0eee80 m8x8
          sta.b $0710                ; $0eee82 m8x8
          rts                        ; $0eee85 m8x8
-entry467: .entry m8x8
+entry466: .entry m8x8
          rep #$30                   ; $0eee86 m16x16
          lda.w $1cf0                ; $0eee88 m16x16
          asl.w                      ; $0eee8b m16x16
@@ -18313,7 +18241,7 @@ entry467: .entry m8x8
          tyx.w                      ; $0eeea2 m16x16
          sty.w $1cd9                ; $0eeea3 m16x16
          sty.w $1cdd                ; $0eeea6 m16x16
-entry468: .entry m16x16
+entry467: .entry m16x16
          lda.w [$04], Y             ; $0eeea9 m16x16
          and.w #$00ff               ; $0eeeab m16x16
          cmp.w #$00f6               ; $0eeeae m16x16
@@ -18326,7 +18254,7 @@ label1382: xba                      ; $0eeeb3 m16x16
          inx.w                      ; $0eeebf m16x16
          inx.w                      ; $0eeec0 m16x16
          stx.w $1cd9                ; $0eeec1 m16x16
-         bra entry468               ; $0eeec4 m16x16
+         bra entry467               ; $0eeec4 m16x16
 label1383: cmp.w #$00ff             ; $0eeec6 m16x16
          beq label1382              ; $0eeec9 m16x16
          cmp.w #$00fd               ; $0eeecb m16x16
@@ -18349,10 +18277,10 @@ label1383: cmp.w #$00ff             ; $0eeec6 m16x16
          sty.w $1cdd                ; $0eeef4 m16x16
          lda.w [$04], Y             ; $0eeef7 m16x16
          and.w #$00ff               ; $0eeef9 m16x16
-         jsr entry469               ; $0eeefc m16x16
+         jsr entry468               ; $0eeefc m16x16
          ldx.w $1cd9                ; $0eeeff m16x16
          ldy.w $1cdd                ; $0eef02 m16x16
-         bra entry468               ; $0eef05 m16x16
+         bra entry467               ; $0eef05 m16x16
 label1384: lda.w [$04], Y           ; $0eef07 m16x16
          and.w #$ff01               ; $0eef09 m16x16
          sta.w $7f1200, X           ; $0eef0c m16x16
@@ -18362,7 +18290,7 @@ label1384: lda.w [$04], Y           ; $0eef07 m16x16
          inx.w                      ; $0eef15 m16x16
          inx.w                      ; $0eef16 m16x16
          stx.w $1cd9                ; $0eef17 m16x16
-         bra entry468               ; $0eef1a m16x16
+         bra entry467               ; $0eef1a m16x16
 label1385: lda.w #$7f7f             ; $0eef1c m16x16
          sta.w $7f1200, X           ; $0eef1f m16x16
          sep #$30                   ; $0eef23 m8x8
@@ -18375,7 +18303,7 @@ label1386: ldx.w $1cd9              ; $0eef26 m8x16
          stx.w $1cd9                ; $0eef32 m8x16
          sty.w $1cdd                ; $0eef35 m8x16
          rep #$30                   ; $0eef38 m16x16
-         jmp entry468               ; $0eef3a m16x16
+         jmp entry467               ; $0eef3a m16x16
 label1387: sep #$20                 ; $0eef3d m8x16
          lda.b #$73                 ; $0eef3f m8x16
          bra label1386              ; $0eef41 m8x16
@@ -18404,14 +18332,14 @@ label1392: rep #$30                 ; $0eef5b m16x16
          inx.w                      ; $0eef72 m16x16
          stx.w $1cd9                ; $0eef73 m16x16
          sty.w $1cdd                ; $0eef76 m16x16
-         jmp entry468               ; $0eef79 m16x16
+         jmp entry467               ; $0eef79 m16x16
          .org $0eef7d
-entry469: .entry m16x16
+entry468: .entry m16x16
          sep #$31                   ; $0eef7d m8x8, c=1
          sbc.b #$67                 ; $0eef7f m8x8
          jsl $008781 noreturn       ; $0eef81 m8x8
          .org $0efb45
-entry470: .entry m8x8
+entry469: .entry m8x8
          phb                        ; $0efb45 m8x8
          lda.b #$7f                 ; $0efb46 m8x8
          pha.b                      ; $0efb48 m8x8
@@ -18437,7 +18365,7 @@ label1393: stz.w $0000, X           ; $0efb50 m16x16
          stz.b $1ce6                ; $0efb78 m8x8
          rts                        ; $0efb7b m8x8
          .org $0efbcc
-entry471: .entry m8x8
+entry470: .entry m8x8
          rep #$30                   ; $0efbcc m16x16
          lda.w $20                  ; $0efbce m16x16
          sub.w $e8                  ; $0efbd0 m16x16
@@ -18452,7 +18380,7 @@ entry471: .entry m8x8
          sep #$30                   ; $0efbe5 m8x8
          rts                        ; $0efbe7 m8x8
          .org $0ffd2a
-entry472: .entry m8x8
+entry471: .entry m8x8
          rep #$20                   ; $0ffd2a m16x8
          ldx.b #$3e                 ; $0ffd2c m16x8
 label1394: lda.w $0ff7aa, X         ; $0ffd2e m16x8
@@ -18472,7 +18400,7 @@ label1394: lda.w $0ff7aa, X         ; $0ffd2e m16x8
          bpl label1394              ; $0ffd60 m16x8
          sep #$20                   ; $0ffd62 m8x8
          rtl                        ; $0ffd64 m8x8
-entry473: .entry m8x8
+entry472: .entry m8x8
          phb                        ; $0ffd65 m8x8
          phk                        ; $0ffd66 m8x8
          plb                        ; $0ffd67 m8x8
@@ -18498,7 +18426,7 @@ label1395: lda.w $f92a, Y           ; $0ffd79 m16x16
          plb                        ; $0ffd92 m8x8
          rtl                        ; $0ffd93 m8x8
          .org $1bec77
-entry474: .entry m8x8
+entry473: .entry m8x8
          rep #$21                   ; $1bec77 m16x8, c=0
          ldx.b $0aac                ; $1bec79 m16x8, c=0
          lda.w $1bebc6, X           ; $1bec7c m16x8, c=0
@@ -18511,10 +18439,10 @@ entry474: .entry m8x8
          beq label1396              ; $1bec90 m16x16
          lda.w #$01e2               ; $1bec92 m16x16
 label1396: ldx.w #$0006             ; $1bec95 m16x16
-         jsr entry486               ; $1bec98 m16x16
+         jsr entry485               ; $1bec98 m16x16
          sep #$30                   ; $1bec9b m8x8
          rtl                        ; $1bec9d m8x8
-entry475: .entry m8x8
+entry474: .entry m8x8
          rep #$21                   ; $1bec9e m16x8, c=0
          ldx.b #$00                 ; $1beca0 m16x8, c=0
          lda.w $8a                  ; $1beca2 m16x8, c=0
@@ -18529,10 +18457,10 @@ label1397: lda.w $1bec73, X         ; $1becab m16x8, c=0
          lda.w #$0122               ; $1becb6 m16x16
          ldx.w #$000e               ; $1becb9 m16x16
          ldy.w #$0003               ; $1becbc m16x16
-         jsr entry487               ; $1becbf m16x16
+         jsr entry486               ; $1becbf m16x16
          sep #$30                   ; $1becc2 m8x8
          rtl                        ; $1becc4 m8x8
-entry476: .entry m8x8
+entry475: .entry m8x8
          rep #$31                   ; $1becc5 m16x16, c=0
          lda.w $0aad                ; $1becc7 m16x16, c=0
          and.w #$00ff               ; $1becca m16x16, c=0
@@ -18543,10 +18471,10 @@ entry476: .entry m8x8
          sta.w $00                  ; $1becd6 m16x16
          lda.w #$01a2               ; $1becd8 m16x16
          ldx.w #$0006               ; $1becdb m16x16
-         jsr entry486               ; $1becde m16x16
+         jsr entry485               ; $1becde m16x16
          sep #$30                   ; $1bece1 m8x8
          rtl                        ; $1bece3 m8x8
-entry477: .entry m8x8
+entry476: .entry m8x8
          rep #$31                   ; $1bece4 m16x16, c=0
          lda.w $0aae                ; $1bece6 m16x16, c=0
          and.w #$00ff               ; $1bece9 m16x16, c=0
@@ -18557,10 +18485,10 @@ entry477: .entry m8x8
          sta.w $00                  ; $1becf5 m16x16
          lda.w #$01c2               ; $1becf7 m16x16
          ldx.w #$0006               ; $1becfa m16x16
-         jsr entry486               ; $1becfd m16x16
+         jsr entry485               ; $1becfd m16x16
          sep #$30                   ; $1bed00 m8x8
          rtl                        ; $1bed02 m8x8
-entry478: .entry m8x8
+entry477: .entry m8x8
          rep #$21                   ; $1bed03 m16x8, c=0
          lda.w $7ef359              ; $1bed05 m16x8, c=0
          and.w #$00ff               ; $1bed09 m16x8, c=0
@@ -18572,11 +18500,11 @@ entry478: .entry m8x8
          rep #$10                   ; $1bed19 m16x16
          lda.w #$01b2               ; $1bed1b m16x16
          ldx.w #$0002               ; $1bed1e m16x16
-         jsr entry488               ; $1bed21 m16x16
+         jsr entry487               ; $1bed21 m16x16
          sep #$30                   ; $1bed24 m8x8
          inc.b $15                  ; $1bed26 m8x8
          rtl                        ; $1bed28 m8x8
-entry479: .entry m8x8
+entry478: .entry m8x8
          rep #$21                   ; $1bed29 m16x8, c=0
          lda.w $7ef35a              ; $1bed2b m16x8, c=0
          and.w #$00ff               ; $1bed2f m16x8, c=0
@@ -18588,15 +18516,15 @@ entry479: .entry m8x8
          rep #$10                   ; $1bed3f m16x16
          lda.w #$01b8               ; $1bed41 m16x16
          ldx.w #$0003               ; $1bed44 m16x16
-         jsr entry488               ; $1bed47 m16x16
+         jsr entry487               ; $1bed47 m16x16
          sep #$30                   ; $1bed4a m8x8
          inc.b $15                  ; $1bed4c m8x8
          rtl                        ; $1bed4e m8x8
          .org $1bed6e
-entry480: .entry m8x8
+entry479: .entry m8x8
          lda.b $1b                  ; $1bed6e m8x8
          beq label1398              ; $1bed70 m8x8
-entry481: .entry m8x8
+entry480: .entry m8x8
          rep #$21                   ; $1bed72 m16x8, c=0
          ldx.b $0ab1                ; $1bed74 m16x8, c=0
          lda.w $1bebc6, X           ; $1bed77 m16x8, c=0
@@ -18606,7 +18534,7 @@ entry481: .entry m8x8
          rep #$10                   ; $1bed83 m16x16
          lda.w #$01d2               ; $1bed85 m16x16
          ldx.w #$0006               ; $1bed88 m16x16
-         jsr entry486               ; $1bed8b m16x16
+         jsr entry485               ; $1bed8b m16x16
          sep #$30                   ; $1bed8e m8x8
          rtl                        ; $1bed90 m8x8
 label1398: rep #$21                 ; $1bed91 m16x8, c=0
@@ -18627,7 +18555,7 @@ label1399: phx.b                    ; $1bed9e m16x8, c=0
          beq label1400              ; $1bedb3 m16x16
          lda.w #$01f2               ; $1bedb5 m16x16
 label1400: ldx.w #$0006             ; $1bedb8 m16x16
-         jsr entry486               ; $1bedbb m16x16
+         jsr entry485               ; $1bedbb m16x16
          sep #$10                   ; $1bedbe m16x8
          plx.b                      ; $1bedc0 m16x8
          dex.b                      ; $1bedc1 m16x8
@@ -18638,11 +18566,11 @@ label1400: ldx.w #$0006             ; $1bedb8 m16x16
          rep #$10                   ; $1bedcf m16x16
          lda.w #$01d2               ; $1bedd1 m16x16
          ldx.w #$0006               ; $1bedd4 m16x16
-         jsr entry486               ; $1bedd7 m16x16
+         jsr entry485               ; $1bedd7 m16x16
          sep #$30                   ; $1bedda m8x8
          rtl                        ; $1beddc m8x8
          .org $1bedf9
-entry482: .entry m8x8
+entry481: .entry m8x8
          rep #$21                   ; $1bedf9 m16x8, c=0
          lda.w $7ef35b              ; $1bedfb m16x8, c=0
          and.w #$00ff               ; $1bedff m16x8, c=0
@@ -18655,7 +18583,7 @@ entry482: .entry m8x8
          rep #$10                   ; $1bee10 m16x16
          lda.w #$01e2               ; $1bee12 m16x16
          ldx.w #$000e               ; $1bee15 m16x16
-         jsr entry488               ; $1bee18 m16x16
+         jsr entry487               ; $1bee18 m16x16
          rep #$30                   ; $1bee1b m16x16
          lda.w $7ef354              ; $1bee1d m16x16
          and.w #$00ff               ; $1bee21 m16x16
@@ -18670,7 +18598,7 @@ label1401: sep #$30                 ; $1bee35 m8x8
          inc.b $15                  ; $1bee37 m8x8
          rtl                        ; $1bee39 m8x8
          .org $1bee52
-entry483: .entry m8x8
+entry482: .entry m8x8
          rep #$21                   ; $1bee52 m16x8, c=0
          ldx.b $0ab2                ; $1bee54 m16x8, c=0
          lda.w $1bec47, X           ; $1bee57 m16x8, c=0
@@ -18681,10 +18609,10 @@ entry483: .entry m8x8
          lda.w #$0000               ; $1bee65 m16x16
          ldx.w #$000f               ; $1bee68 m16x16
          ldy.w #$0001               ; $1bee6b m16x16
-         jsr entry487               ; $1bee6e m16x16
+         jsr entry486               ; $1bee6e m16x16
          sep #$30                   ; $1bee71 m8x8
          rtl                        ; $1bee73 m8x8
-entry484: .entry m8x8
+entry483: .entry m8x8
          rep #$21                   ; $1bee74 m16x8, c=0
          ldx.b $0ab6                ; $1bee76 m16x8, c=0
          lda.w $1bec4b, X           ; $1bee79 m16x8, c=0
@@ -18695,7 +18623,7 @@ entry484: .entry m8x8
          lda.w #$0042               ; $1bee85 m16x16
          ldx.w #$000e               ; $1bee88 m16x16
          ldy.w #$0005               ; $1bee8b m16x16
-         jsr entry487               ; $1bee8e m16x16
+         jsr entry486               ; $1bee8e m16x16
          pla.w                      ; $1bee91 m16x16
          sta.w $00                  ; $1bee92 m16x16
          lda.w #$0112               ; $1bee94 m16x16
@@ -18703,10 +18631,10 @@ entry484: .entry m8x8
          beq label1402              ; $1bee9a m16x16
          lda.w #$01f2               ; $1bee9c m16x16
 label1402: ldx.w #$0006             ; $1bee9f m16x16
-         jsr entry486               ; $1beea2 m16x16
+         jsr entry485               ; $1beea2 m16x16
          sep #$30                   ; $1beea5 m8x8
          rtl                        ; $1beea7 m8x8
-entry485: .entry m8x8
+entry484: .entry m8x8
          rep #$21                   ; $1beea8 m16x8, c=0
          ldx.b $0ab8                ; $1beeaa m16x8, c=0
          lda.w $1bebc6, X           ; $1beead m16x8, c=0
@@ -18716,11 +18644,11 @@ entry485: .entry m8x8
          rep #$10                   ; $1beeb9 m16x16
          lda.w #$00e2               ; $1beebb m16x16
          ldx.w #$0006               ; $1beebe m16x16
-         jsr entry486               ; $1beec1 m16x16
+         jsr entry485               ; $1beec1 m16x16
          sep #$30                   ; $1beec4 m8x8
          rtl                        ; $1beec6 m8x8
          .org $1bef30
-entry486: .entry m16x16
+entry485: .entry m16x16
          txy.w                      ; $1bef30 m16x16
          add.w $0aa8                ; $1bef31 m16x16
          tax.w                      ; $1bef35 m16x16
@@ -18735,7 +18663,7 @@ label1403: lda.w [$00]              ; $1bef3b m16x16
          dey.w                      ; $1bef47 m16x16
          bpl label1403              ; $1bef48 m16x16
          rts                        ; $1bef4a m16x16
-entry487: .entry m16x16
+entry486: .entry m16x16
          sta.w $04                  ; $1bef4b m16x16
          stx.w $06                  ; $1bef4d m16x16
          sty.w $08                  ; $1bef4f m16x16
@@ -18759,7 +18687,7 @@ label1405: lda.w [$00]              ; $1bef5f m16x16
          dec.w $08                  ; $1bef76 m16x16
          bpl label1404              ; $1bef78 m16x16
          rts                        ; $1bef7a m16x16
-entry488: .entry m16x16
+entry487: .entry m16x16
          txy.w                      ; $1bef7b m16x16
          tax.w                      ; $1bef7c m16x16
          lda.w #$001b               ; $1bef7d m16x16
@@ -18774,7 +18702,7 @@ label1406: lda.w [$00]              ; $1bef82 m16x16
          dey.w                      ; $1bef92 m16x16
          bpl label1406              ; $1bef93 m16x16
          rts                        ; $1bef95 m16x16
-entry489: .entry m8x8
+entry488: .entry m8x8
          phb                        ; $1bef96 m8x8
          lda.b #$1b                 ; $1bef97 m8x8
          pha.b                      ; $1bef99 m8x8
@@ -18784,35 +18712,35 @@ entry489: .entry m8x8
          lda.w $700354              ; $1befa0 m16x16
          sta.w $0c                  ; $1befa4 m16x16
          lda.w $70035b              ; $1befa6 m16x16
-         jsr entry490               ; $1befaa m16x16
+         jsr entry489               ; $1befaa m16x16
          ldx.w #$0000               ; $1befad m16x16
          lda.w $700359              ; $1befb0 m16x16
-         jsr entry491               ; $1befb4 m16x16
+         jsr entry490               ; $1befb4 m16x16
          ldx.w #$0000               ; $1befb7 m16x16
          lda.w $70035a              ; $1befba m16x16
-         jsr entry492               ; $1befbe m16x16
+         jsr entry491               ; $1befbe m16x16
          ldx.w #$0040               ; $1befc1 m16x16
          lda.w $700854              ; $1befc4 m16x16
          sta.w $0c                  ; $1befc8 m16x16
          lda.w $70085b              ; $1befca m16x16
-         jsr entry490               ; $1befce m16x16
+         jsr entry489               ; $1befce m16x16
          ldx.w #$0040               ; $1befd1 m16x16
          lda.w $700859              ; $1befd4 m16x16
-         jsr entry491               ; $1befd8 m16x16
+         jsr entry490               ; $1befd8 m16x16
          ldx.w #$0040               ; $1befdb m16x16
          lda.w $70085a              ; $1befde m16x16
-         jsr entry492               ; $1befe2 m16x16
+         jsr entry491               ; $1befe2 m16x16
          ldx.w #$0080               ; $1befe5 m16x16
          lda.w $700d54              ; $1befe8 m16x16
          sta.w $0c                  ; $1befec m16x16
          lda.w $700d5b              ; $1befee m16x16
-         jsr entry490               ; $1beff2 m16x16
+         jsr entry489               ; $1beff2 m16x16
          ldx.w #$0080               ; $1beff5 m16x16
          lda.w $700d59              ; $1beff8 m16x16
-         jsr entry491               ; $1beffc m16x16
+         jsr entry490               ; $1beffc m16x16
          ldx.w #$0080               ; $1befff m16x16
          lda.w $700d5a              ; $1bf002 m16x16
-         jsr entry492               ; $1bf006 m16x16
+         jsr entry491               ; $1bf006 m16x16
          ldy.w #$0000               ; $1bf009 m16x16
          ldx.w #$0000               ; $1bf00c m16x16
 label1407: lda.w $d226, Y           ; $1bf00f m16x16
@@ -18830,7 +18758,7 @@ label1407: lda.w $d226, Y           ; $1bf00f m16x16
          sep #$30                   ; $1bf02e m8x8
          plb                        ; $1bf030 m8x8
          rtl                        ; $1bf031 m8x8
-entry490: .entry m16x16
+entry489: .entry m16x16
          phx.w                      ; $1bf032 m16x16
          and.w #$00ff               ; $1bf033 m16x16
          asl.w                      ; $1bf036 m16x16
@@ -18861,7 +18789,7 @@ label1408: lda.w $d218, Y           ; $1bf048 m16x16
          sta.w $7ec41a, X           ; $1bf069 m16x16
          sta.w $7ec61a, X           ; $1bf06d m16x16
 label1409: rts                      ; $1bf071 m16x16
-entry491: .entry m16x16
+entry490: .entry m16x16
          and.w #$00ff               ; $1bf072 m16x16
          tay.w                      ; $1bf075 m16x16
          lda.w $ebb4, Y             ; $1bf076 m16x16
@@ -18880,7 +18808,7 @@ label1410: lda.w $d218, Y           ; $1bf086 m16x16
          dec.w $0e                  ; $1bf095 m16x16
          bne label1410              ; $1bf097 m16x16
          rts                        ; $1bf099 m16x16
-entry492: .entry m16x16
+entry491: .entry m16x16
          and.w #$00ff               ; $1bf09a m16x16
          tay.w                      ; $1bf09d m16x16
          lda.w $ebc1, Y             ; $1bf09e m16x16
@@ -18900,7 +18828,7 @@ label1411: lda.w $d218, Y           ; $1bf0ae m16x16
          bne label1411              ; $1bf0bf m16x16
          rts                        ; $1bf0c1 m16x16
          .org $1cf537
-entry493: .entry m8x8
+entry492: .entry m8x8
          sty.b $0f                  ; $1cf537 m8x8
          iny.b                      ; $1cf539 m8x8
          sty.b $0e                  ; $1cf53a m8x8
@@ -18941,7 +18869,7 @@ label1417: rtl                      ; $1cf580 m8x8
 label1418: txy.b                    ; $1cf581 m8x8
          rtl                        ; $1cf582 m8x8
          .org $1cfce2
-entry494: .entry m8x8
+entry493: .entry m8x8
          lda.b $5d                  ; $1cfce2 m8x8
          cmp.b #$02                 ; $1cfce4 m8x8
          bne label1420              ; $1cfce6 m8x8
@@ -18955,7 +18883,7 @@ entry494: .entry m8x8
 label1419: sty.b $5d                ; $1cfcf8 m8x8
 label1420: rtl                      ; $1cfcfa m8x8
          .org $1cfd69
-entry495: .entry m8x8
+entry494: .entry m8x8
          lda.b $10                  ; $1cfd69 m8x8
          cmp.b #$0e                 ; $1cfd6b m8x8
          beq label1421              ; $1cfd6d m8x8
@@ -18969,23 +18897,23 @@ entry495: .entry m8x8
          sta.b $10                  ; $1cfd80 m8x8
 label1421: rtl                      ; $1cfd82 m8x8
          .org $1de9b6
-entry496: .entry m8x8
+entry495: .entry m8x8
          lda.b $0ff9                ; $1de9b6 m8x8
          beq label1425              ; $1de9b9 m8x8
          ldy.b $11                  ; $1de9bb m8x8
          bne label1425              ; $1de9bd m8x8
          dec.b $0ff9                ; $1de9bf m8x8
          bne label1422              ; $1de9c2 m8x8
-         jsl @entry193              ; $1de9c4 m8x8
+         jsl @entry192              ; $1de9c4 m8x8
          rtl                        ; $1de9c8 m8x8
 label1422: and.b #$01               ; $1de9c9 m8x8
          beq label1423              ; $1de9cb m8x8
-         jsl @entry188              ; $1de9cd m8x8
+         jsl @entry187              ; $1de9cd m8x8
          bra label1424              ; $1de9d1 m8x8
-label1423: jsl @entry191            ; $1de9d3 m8x8
+label1423: jsl @entry190            ; $1de9d3 m8x8
 label1424: inc.b $15                ; $1de9d7 m8x8
 label1425: rtl                      ; $1de9d9 m8x8
-entry497: .entry m8x8
+entry496: .entry m8x8
          lda.b $1b                  ; $1de9da m8x8
          beq label1428              ; $1de9dc m8x8
          lda.b $11                  ; $1de9de m8x8
@@ -18998,13 +18926,13 @@ entry497: .entry m8x8
 label1426: stx.b $0fa0              ; $1de9ed m8x8
          lda.b $1d00, X             ; $1de9f0 m8x8
          beq label1427              ; $1de9f3 m8x8
-         jsr entry498               ; $1de9f5 m8x8
+         jsr entry497               ; $1de9f5 m8x8
 label1427: dex.b                    ; $1de9f8 m8x8
          bpl label1426              ; $1de9f9 m8x8
          rtl                        ; $1de9fb m8x8
 label1428: stz.b $0ffa              ; $1de9fc m8x8
          rtl                        ; $1de9ff m8x8
-entry498: .entry m8x8
+entry497: .entry m8x8
          lda.b $0dd0, X             ; $1dea00 m8x8
          pha.b                      ; $1dea03 m8x8
          lda.b $0e20, X             ; $1dea04 m8x8
@@ -19101,7 +19029,7 @@ entry498: .entry m8x8
          sta.b $7ff9c2, X           ; $1deaef m8x8
          lda.b $7ffadc, X           ; $1deaf3 m8x8
          sta.b $0ba0, X             ; $1deaf7 m8x8
-         jsl @entry207              ; $1deafa m8x8
+         jsl @entry206              ; $1deafa m8x8
          lda.b $0f00, X             ; $1deafe m8x8
          beq label1429              ; $1deb01 m8x8
          stz.b $1d00, X             ; $1deb03 m8x8
@@ -19155,9 +19083,9 @@ label1429: pla.b                    ; $1deb06 m8x8
          sta.b $0dd0, X             ; $1deb64 m8x8
          rts                        ; $1deb67 m8x8
          .org $1df65d
-entry499: .entry m8x8
+entry498: .entry m8x8
          ldy.b #$0f                 ; $1df65d m8x8
-entry500: .entry m8x8
+entry499: .entry m8x8
          pha.b                      ; $1df65f m8x8
 label1430: lda.b $0dd0, Y           ; $1df660 m8x8
          beq label1431              ; $1df663 m8x8
@@ -19190,7 +19118,7 @@ label1431: pla.b                    ; $1df66b m8x8
          sta.b $08                  ; $1df69f m8x8
          phx.b                      ; $1df6a1 m8x8
          tyx.b                      ; $1df6a2 m8x8
-         jsl @entry425              ; $1df6a3 m8x8
+         jsl @entry424              ; $1df6a3 m8x8
          lda.b $1b                  ; $1df6a7 m8x8
          bne label1432              ; $1df6a9 m8x8
          txa.b                      ; $1df6ab m8x8
@@ -19211,7 +19139,7 @@ label1432: lda.b #$ff               ; $1df6b3 m8x8
          tya.b                      ; $1df6cd m8x8
          rtl                        ; $1df6ce m8x8
          .org $1dff5b
-entry501: .entry m8x8
+entry500: .entry m8x8
          phb                        ; $1dff5b m8x8
          phk                        ; $1dff5c m8x8
          plb                        ; $1dff5d m8x8
@@ -19219,7 +19147,7 @@ entry501: .entry m8x8
          lda.b $0df0, X             ; $1dff61 m8x8
          dec.b                      ; $1dff64 m8x8
          bne label1433              ; $1dff65 m8x8
-         jsl @entry260              ; $1dff67 m8x8
+         jsl @entry259              ; $1dff67 m8x8
          plb                        ; $1dff6b m8x8
          rtl                        ; $1dff6c m8x8
 label1433: ldy.b $0dc0, X           ; $1dff6d m8x8
@@ -19236,7 +19164,7 @@ label1433: ldy.b $0dc0, X           ; $1dff6d m8x8
          pha.b                      ; $1dff81 m8x8
          lda.b #$03                 ; $1dff82 m8x8
          sta.b $0f50, X             ; $1dff84 m8x8
-         jsl @entry504              ; $1dff87 m8x8
+         jsl @entry503              ; $1dff87 m8x8
          pla.b                      ; $1dff8b m8x8
          sta.b $0f50, X             ; $1dff8c m8x8
          pla.b                      ; $1dff8f m8x8
@@ -19256,13 +19184,13 @@ label1433: ldy.b $0dc0, X           ; $1dff6d m8x8
          dec.b                      ; $1dffae m8x8, c=1
          dec.b                      ; $1dffaf m8x8, c=1
          sta.b $0e40, X             ; $1dffb0 m8x8, c=1
-         jsl @entry210              ; $1dffb3 m8x8
+         jsl @entry209              ; $1dffb3 m8x8
          pla.b                      ; $1dffb7 m8x8
          sta.b $0e40, X             ; $1dffb8 m8x8
 label1434: plb                      ; $1dffbb m8x8
          rtl                        ; $1dffbc m8x8
          .org $1dffc5
-entry502: .entry m8x8
+entry501: .entry m8x8
          phb                        ; $1dffc5 m8x8
          phk                        ; $1dffc6 m8x8
          plb                        ; $1dffc7 m8x8
@@ -19289,15 +19217,15 @@ entry502: .entry m8x8
          plx.b                      ; $1dffed m8x8
          ldy.b #$00                 ; $1dffee m8x8
          lda.b #$00                 ; $1dfff0 m8x8
-         jsl @entry268              ; $1dfff2 m8x8
+         jsl @entry267              ; $1dfff2 m8x8
          plb                        ; $1dfff6 m8x8
          rtl                        ; $1dfff7 m8x8
          .org $1e87f0
-entry503: .entry m8x8
-         jsl @entry196              ; $1e87f0 m8x8
+entry502: .entry m8x8
+         jsl @entry195              ; $1e87f0 m8x8
          rts                        ; $1e87f4 m8x8
          .org $1ec356
-entry504: .entry m8x8
+entry503: .entry m8x8
          phb                        ; $1ec356 m8x8
          phk                        ; $1ec357 m8x8
          plb                        ; $1ec358 m8x8
@@ -19313,21 +19241,21 @@ entry504: .entry m8x8
          sta.w $08                  ; $1ec368 m16x8
          sep #$20                   ; $1ec36a m8x8
          lda.b #$02                 ; $1ec36c m8x8
-         jsr entry503               ; $1ec36e m8x8
+         jsr entry502               ; $1ec36e m8x8
          plb                        ; $1ec371 m8x8
          rtl                        ; $1ec372 m8x8
          .org $1ee665
-entry505: .entry m8x8
-         jsr entry506               ; $1ee665 m8x8
+entry504: .entry m8x8
+         jsr entry505               ; $1ee665 m8x8
          lda.b #$01                 ; $1ee668 m8x8
          sta.b $0e80, Y             ; $1ee66a m8x8
          lda.b #$00                 ; $1ee66d m8x8
          sta.b $7ef3cc              ; $1ee66f m8x8
          rtl                        ; $1ee673 m8x8
-entry506: .entry m8x8
+entry505: .entry m8x8
          pha.b                      ; $1ee674 m8x8
          lda.b #$b6                 ; $1ee675 m8x8
-         jsl @entry499              ; $1ee677 m8x8
+         jsl @entry498              ; $1ee677 m8x8
          bmi label1435              ; $1ee67b m8x8
          pla.b                      ; $1ee67d m8x8
          phx.b                      ; $1ee67e m8x8
@@ -19359,16 +19287,16 @@ entry506: .entry m8x8
          rts                        ; $1ee6be m8x8
 label1435: pla.b                    ; $1ee6bf m8x8
          rts                        ; $1ee6c0 m8x8
-entry507: .entry m8x8
-         jsr entry506               ; $1ee6c1 m8x8
+entry506: .entry m8x8
+         jsr entry505               ; $1ee6c1 m8x8
          lda.b #$02                 ; $1ee6c4 m8x8
          sta.b $0e80, Y             ; $1ee6c6 m8x8
          rtl                        ; $1ee6c9 m8x8
          .org $1ee932
-entry508: .entry m8x8
+entry507: .entry m8x8
          pha.b                      ; $1ee932 m8x8
          lda.b #$ad                 ; $1ee933 m8x8
-         jsl @entry499              ; $1ee935 m8x8
+         jsl @entry498              ; $1ee935 m8x8
          pla.b                      ; $1ee939 m8x8
          phx.b                      ; $1ee93a m8x8
          tax.b                      ; $1ee93b m8x8
@@ -19393,13 +19321,13 @@ entry508: .entry m8x8
          lda.b #$01                 ; $1ee96e m8x8
          sta.b $0ba0, Y             ; $1ee970 m8x8
          sta.b $0e80, Y             ; $1ee973 m8x8
-         jsr entry509               ; $1ee976 m8x8
+         jsr entry508               ; $1ee976 m8x8
          plx.b                      ; $1ee979 m8x8
          lda.b #$00                 ; $1ee97a m8x8
          sta.b $7ef3cc              ; $1ee97c m8x8
          stz.b $5e                  ; $1ee980 m8x8
          rtl                        ; $1ee982 m8x8
-entry509: .entry m8x8
+entry508: .entry m8x8
          lda.b #$01                 ; $1ee983 m8x8
          sta.b $02e4                ; $1ee985 m8x8
          sta.b $037b                ; $1ee988 m8x8

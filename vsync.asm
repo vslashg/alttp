@@ -6,7 +6,7 @@
 
          .org $0080c9
 vsync: {
-    state_var_1 .equ $0130
+    vestigial_mem .equ $0130
     current_ambient .equ $0131
     current_song .equ $0133
          .entry native
@@ -28,7 +28,6 @@ vsync: {
     ;
     ; If nonzero, and different from `current_song`, do the following:
     ;   * Write `music_cmd` to both `current_song` and to APU port 0.
-    ;   * If `music_cmd` > 0xf2, also write it to `state_var_1`
     ;   * Write 0 to music_cmd.
     ;
     ; If nonzero and equal to `current_song`, do nothing.
@@ -49,9 +48,9 @@ have_music_cmd:
          BEQ check_ambient
          STA snes::apui00
          STA current_song
-         CMP #$f2
-         BCS label2
-         STA state_var_1
+         CMP #$f2           ; These three lines are dead code.
+         BCS label2         ; The address is never read from.
+         STA vestigial_mem  ; TODO(could totally be incorrect)
 label2:  STZ vars::music_cmd
 
    ; Once-per-frame check of `vars::sound_effect_ambient_cmd`.  This
@@ -88,9 +87,13 @@ check_sound_effect:
          STZ vars::sound_effect_1_cmd
          STZ vars::sound_effect_2_cmd
 
+         ; blank screen during graphics register writes
          LDA #$80
          STA snes::inidisp
+
+         ; disable all HDMA
          STZ snes::hdmaen
+
          LDA $12
          BNE label6
          INC $12
@@ -98,7 +101,7 @@ check_sound_effect:
          JSR $83d1
 label6:  LDA $012a
          BEQ label7
-         JMP $822d
+         JMP label10
 label7:  LDA $96
          STA snes::w12sel
          LDA $97
@@ -181,7 +184,77 @@ label9:  LDA $13
          LDA $9b
          STA snes::hdmaen
          REP #$30
-
          PLB : PLD : PLY : PLX : PLA
+         RTI
+label10: .entry m8x8
+         JSR $9347
+         LDA.b $ff
+         STA.b snes::vtimel
+         STZ.b snes::vtimeh
+         LDA.b #$a1
+         STA.b snes::nmitimen
+         LDA.b $96
+         STA.b snes::w12sel
+         LDA.b $97
+         STA.b snes::w34sel
+         LDA.b $98
+         STA.b snes::wobjsel
+         LDA.b $99
+         STA.b snes::cgwsel
+         LDA.b $9a
+         STA.b snes::cgadsub
+         LDA.b $9c
+         STA.b snes::coldata
+         LDA.b $9d
+         STA.b snes::coldata
+         LDA.b $9e
+         STA.b snes::coldata
+         LDA.b $1c
+         STA.b snes::tm
+         LDA.b $1d
+         STA.b snes::ts
+         LDA.b $1e
+         STA.b snes::tmw
+         LDA.b $1f
+         STA.b snes::tsw
+         LDA.b $0120
+         STA.b snes::bg1hofs
+         LDA.b $0121
+         STA.b snes::bg1hofs
+         LDA.b $0124
+         STA.b snes::bg1vofs
+         LDA.b $0125
+         STA.b snes::bg1vofs
+         LDA.b $011e
+         STA.b snes::bg2hofs
+         LDA.b $011f
+         STA.b snes::bg2hofs
+         LDA.b $0122
+         STA.b snes::bg2vofs
+         LDA.b $0123
+         STA.b snes::bg2vofs
+         LDA.b $e4
+         STA.b snes::bg3hofs
+         LDA.b $e5
+         STA.b snes::bg3hofs
+         LDA.b $ea
+         STA.b snes::bg3vofs
+         LDA.b $eb
+         STA.b snes::bg3vofs
+         LDA.b $13
+         STA.b snes::inidisp
+         LDA.b $9b
+         STA.b snes::hdmaen
+         REP #$30
+         TSC
+         TAX.w
+         LDA.w $1f0a
+         TCS
+         STX.w $1f0a
+         PLB
+         PLD
+         PLY.w
+         PLX.w
+         PLA.w
          RTI
        }
