@@ -1,7 +1,3 @@
-         .module vsync
-         .org $00ffea
-         .dw vsync
-
 ;; Native mode interrupt vector, invoked at each vsync.
 
          .org $0080c9
